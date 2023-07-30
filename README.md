@@ -4,7 +4,7 @@
   <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/lxfriday/lxfriday/output/github-contribution-grid-snake.svg">
 </picture>
 
-img align="right" alt="Coding" width="400" src="https://media.tenor.com/uN2-zghQRyYAAAAd/roblox.gif"
+
 
 
 <h1 align="center">Hi 👋, I'm DOGbanana10</h1>
