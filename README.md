@@ -1,3 +1,18 @@
+<!--
+ * @Author: DOG_banana 91894334+DOGbanana10@users.noreply.github.com
+ * @Date: 2024-01-13 14:00:45
+ * @LastEditors: DOG_banana 91894334+DOGbanana10@users.noreply.github.com
+ * @LastEditTime: 2024-01-13 14:09:49
+ * @FilePath: \DOGbanana10\README.md
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+
+
+<picture>
+    <source media="(bg)" srcset="gipby.gif">
+</picture>
+
+
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/lxfriday/lxfriday/output/github-contribution-grid-snake-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/lxfriday/lxfriday/output/github-contribution-grid-snake.svg">
