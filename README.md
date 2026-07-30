@@ -1,17 +1,5 @@
-<!--
- * @Author: Shadows_Lunarfox 91894334+ShadowsLunarfox@users.noreply.github.com
- * @Date: 2026-07-30 16:33:16
- * @LastEditors: Shadows_Lunarfox 91894334+ShadowsLunarfox@users.noreply.github.com
- * @LastEditTime: 2026-07-30 16:33:35
- * @FilePath: \ShadowsLunarfox\README.md
- * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
--->
 # 💫 About Me:
 # Hi there, I'm Shadows_Lunarfox 🦊✨<br><br>> *"My code works fine on my machine, I have no idea why it fails on yours."* ☕<br><br>来自马来西亚吉隆坡的 **Baby Furry** 程序员 🍼。平时喜欢写代码、做网站、折腾游戏，顺便在代码注释里留下各种自己看不懂的悬案。
-
-<p align="center">
-  <img src="./assets/about-wave.svg" alt="Animated wave banner for Shadows_Lunarfox" width="100%" />
-</p>
 
 <p align="center">
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=2800&pause=800&color=FF69B4&center=true&vCenter=true&width=560&lines=Baby+Furry+Developer+from+Kuala+Lumpur;Building+websites%2C+games" alt="Typing SVG" />
