@@ -1,5 +1,5 @@
 # 💫 About Me:
-# Hi there, I'm Shadows_Lunarfox 🦊✨<br><br>> *"My code works fine on my machine, I have no idea why it fails on yours."* ☕<br><br>来自马来西亚吉隆坡的 **Baby Furry** 程序员 🍼。平时喜欢写代码、做网站、折腾游戏，顺便在代码注释里留下各种自己看不懂的悬案。
+码、做网站、折腾游戏，顺便在代码注释里留下各种自己看不懂的悬案。
 
 <p align="center">
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=2800&pause=800&color=FF69B4&center=true&vCenter=true&width=560&lines=Baby+Furry+Developer+from+Kuala+Lumpur;Building+websites%2C+games" alt="Typing SVG" />
