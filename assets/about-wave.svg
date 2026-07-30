@@ -1,0 +1,61 @@
+<svg width="1200" height="230" viewBox="0 0 1200 230" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Animated About Me wave</title>
+  <desc id="desc">A dark profile banner with softly animated pink and gold waves.</desc>
+  <defs>
+    <linearGradient id="waveHot" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#ff69b4"/>
+      <stop offset="0.45" stop-color="#ffc857"/>
+      <stop offset="1" stop-color="#5eead4"/>
+      <animateTransform attributeName="gradientTransform" type="translate" values="-240 0;240 0;-240 0" dur="9s" repeatCount="indefinite"/>
+    </linearGradient>
+    <linearGradient id="shine" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="0.45" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#ffffff" stop-opacity="0.55"/>
+      <stop offset="0.55" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+      <animate attributeName="x1" values="-1;1" dur="4.8s" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="0;2" dur="4.8s" repeatCount="indefinite"/>
+    </linearGradient>
+    <filter id="softGlow" x="-20%" y="-60%" width="140%" height="220%">
+      <feGaussianBlur stdDeviation="16" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="1 0 0 0 0.9  0 1 0 0 0.25  0 0 1 0 0.65  0 0 0 0.8 0"/>
+      <feBlend in="SourceGraphic" mode="screen"/>
+    </filter>
+    <clipPath id="cardClip">
+      <rect x="12" y="12" width="1176" height="206" rx="18"/>
+    </clipPath>
+  </defs>
+
+  <rect x="12" y="12" width="1176" height="206" rx="18" fill="#0d1117" stroke="#30363d"/>
+  <g clip-path="url(#cardClip)">
+    <circle cx="130" cy="54" r="84" fill="#ff69b4" opacity="0.1">
+      <animate attributeName="r" values="72;94;72" dur="6s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.08;0.16;0.08" dur="6s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1040" cy="174" r="112" fill="#5eead4" opacity="0.08">
+      <animate attributeName="r" values="96;122;96" dur="7.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.06;0.14;0.06" dur="7.5s" repeatCount="indefinite"/>
+    </circle>
+
+    <path d="M-80 150 C120 78 256 220 446 142 C650 58 790 202 1002 128 C1120 88 1236 108 1320 154 V250 H-80 Z" fill="url(#waveHot)" opacity="0.18">
+      <animateTransform attributeName="transform" type="translate" values="-42 0;42 0;-42 0" dur="8s" repeatCount="indefinite"/>
+    </path>
+    <path d="M-80 170 C92 126 238 80 414 154 C606 234 794 110 960 158 C1108 200 1220 146 1320 112 V250 H-80 Z" fill="#ff69b4" opacity="0.13">
+      <animateTransform attributeName="transform" type="translate" values="54 0;-54 0;54 0" dur="10s" repeatCount="indefinite"/>
+    </path>
+    <path d="M-40 132 C180 208 320 58 540 132 C712 190 850 90 1032 120 C1148 140 1226 190 1280 170" stroke="url(#waveHot)" stroke-width="4" stroke-linecap="round" opacity="0.76" filter="url(#softGlow)">
+      <animateTransform attributeName="transform" type="translate" values="-34 0;34 0;-34 0" dur="5.8s" repeatCount="indefinite"/>
+    </path>
+    <path d="M-80 96 C110 34 236 168 390 104 C568 28 760 158 916 96 C1060 38 1180 90 1280 64" stroke="#ffc857" stroke-width="2" stroke-linecap="round" opacity="0.45">
+      <animateTransform attributeName="transform" type="translate" values="28 0;-28 0;28 0" dur="7.2s" repeatCount="indefinite"/>
+    </path>
+
+    <g fill="#f0f6fc" font-family="Inter,Segoe UI,Arial,sans-serif">
+      <text x="64" y="84" font-size="30" font-weight="700">Shadows_Lunarfox</text>
+      <text x="64" y="126" font-size="18" opacity="0.78">Baby Furry Developer from Kuala Lumpur</text>
+      <text x="64" y="158" font-size="16" opacity="0.58">websites  /  games  /  code experiments</text>
+    </g>
+    <rect x="12" y="12" width="1176" height="206" rx="18" fill="url(#shine)" opacity="0.24"/>
+  </g>
+</svg>
