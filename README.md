@@ -71,8 +71,8 @@ Hi, I am **Shadows_Lunarfox**, a developer from Kuala Lumpur, Malaysia. I like b
 
 <div align="center">
 
-<a href="https://github.com/ShadowsLunarfox?tab=overview">
-  <img src="https://img.shields.io/badge/View%20Live%20GitHub%20Activity-ff8fab?style=for-the-badge&logo=github&logoColor=ffffff&labelColor=3b2d4f" alt="View live GitHub activity" />
+<a href="https://github.com/ShadowsLunarfox">
+  <img src="https://ghchart.rshah.org/ff8fab/ShadowsLunarfox" alt="ShadowsLunarfox GitHub contribution chart" width="100%" />
 </a>
 
 </div>
