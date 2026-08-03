@@ -1,3 +1,11 @@
+<!--
+ * @Author: Shadows_Lunarfox 91894334+ShadowsLunarfox@users.noreply.github.com
+ * @Date: 2026-07-30 16:33:16
+ * @LastEditors: Shadows_Lunarfox 91894334+ShadowsLunarfox@users.noreply.github.com
+ * @LastEditTime: 2026-08-04 01:44:59
+ * @FilePath: \ShadowsLunarfox\README.md
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
 <div align="center">
 
 <img src="https://capsule-render.vercel.app/api?type=waving&height=180&color=0:ff8fab,45:ffd166,100:73d2de&text=Shadows_Lunarfox%20%E6%9C%88%E7%8B%90&fontAlign=50&fontAlignY=38&fontColor=3b2d4f&fontSize=48&animation=twinkling" alt="Shadows_Lunarfox profile header" width="100%" />
@@ -74,11 +82,9 @@ Hi, I am **Shadows_Lunarfox 月狐**, a developer from Kuala Lumpur, Malaysia. I
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=ShadowsLunarfox&bg_color=00000000&hide_border=true&title_color=ff5fa2&color=3b2d4f&line=ff8fab&point=73d2de" alt="ShadowsLunarfox GitHub activity graph" width="100%" />
 </a>
 
+<div align="center">
+
 <img src="./profile-3d-contrib/profile-night-rainbow.svg" alt="ShadowsLunarfox 3D contribution graph" width="100%" />
-
-<br />
-
-<img src="https://api.assetroulette.com/random_meme" alt="Random meme" width="420" />
 
 </div>
 

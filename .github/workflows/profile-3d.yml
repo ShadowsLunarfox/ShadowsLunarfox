@@ -24,6 +24,10 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: ${{ github.repository_owner }}
 
+      - name: Keep night-rainbow version only
+        run: |
+          find profile-3d-contrib -type f -name "*.svg" ! -name "profile-night-rainbow.svg" -delete
+
       - name: Commit and push generated graph
         run: |
           git config user.name "github-actions[bot]"
