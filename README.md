@@ -71,7 +71,7 @@ Hi, I am **Shadows_Lunarfox**, a developer from Kuala Lumpur, Malaysia. I like b
 
 <div align="center">
 
-<a href="https://github.com/ShadowsLunarfox">
+<a href="https://github.com/ShadowsLunarfox?tab=overview">
   <img src="https://ghchart.rshah.org/ff8fab/ShadowsLunarfox" alt="ShadowsLunarfox GitHub contribution chart" width="100%" />
 </a>
 
