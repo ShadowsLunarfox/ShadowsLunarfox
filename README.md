@@ -21,7 +21,7 @@ Hi, I am **Shadows_Lunarfox**, a developer from Kuala Lumpur, Malaysia. I like b
 <table>
   <tr>
     <td width="50%">
-      <img src="https://github-readme-stats.vercel.app/api?username=ShadowsLunarfox&show_icons=true&hide_border=true&include_all_commits=true&rank_icon=github&bg_color=0d1117&title_color=38bdf8&text_color=c9d1d9&icon_color=14b8a6&ring_color=38bdf8&custom_title=GitHub%20Stats" alt="ShadowsLunarfox GitHub stats" width="100%" />
+      <img src="https://github-stats-extended.vercel.app/api?username=ShadowsLunarfox&show_icons=true&hide_border=true&include_all_commits=true&rank_icon=github&bg_color=0d1117&title_color=38bdf8&text_color=c9d1d9&icon_color=14b8a6&ring_color=38bdf8&custom_title=GitHub%20Stats" alt="ShadowsLunarfox GitHub stats" width="100%" />
     </td>
     <td width="50%">
       <img src="https://streak-stats.demolab.com?user=ShadowsLunarfox&hide_border=true&background=0d1117&ring=38bdf8&fire=14b8a6&currStreakLabel=38bdf8&sideLabels=c9d1d9&dates=8b949e&currStreakNum=e0f2fe&sideNums=e0f2fe" alt="ShadowsLunarfox GitHub streak" width="100%" />
@@ -31,7 +31,7 @@ Hi, I am **Shadows_Lunarfox**, a developer from Kuala Lumpur, Malaysia. I like b
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ShadowsLunarfox&layout=compact&hide_border=true&bg_color=0d1117&title_color=38bdf8&text_color=c9d1d9&langs_count=8" alt="Most used languages" width="48%" />
+<img src="https://github-stats-extended.vercel.app/api/top-langs/?username=ShadowsLunarfox&layout=compact&hide_border=true&bg_color=0d1117&title_color=38bdf8&text_color=c9d1d9&langs_count=8" alt="Most used languages" width="48%" />
 
 <img src="https://github-profile-trophy.vercel.app/?username=ShadowsLunarfox&theme=algolia&no-frame=true&no-bg=true&margin-w=10&column=4" alt="GitHub trophies" width="48%" />
 
