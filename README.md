@@ -69,7 +69,13 @@ Hi, I am **Shadows_Lunarfox**, a developer from Kuala Lumpur, Malaysia. I like b
 
 ## Activity
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=ShadowsLunarfox&bg_color=00000000&color=3b2d4f&line=ff8fab&point=9b5de5&area=true&area_color=ffd166&hide_border=true&custom_title=Contribution%20Graph" alt="ShadowsLunarfox contribution graph" width="100%" />
+<div align="center">
+
+<a href="https://github.com/ShadowsLunarfox?tab=overview">
+  <img src="https://img.shields.io/badge/View%20Live%20GitHub%20Activity-ff8fab?style=for-the-badge&logo=github&logoColor=ffffff&labelColor=3b2d4f" alt="View live GitHub activity" />
+</a>
+
+</div>
 
 <div align="center">
 
