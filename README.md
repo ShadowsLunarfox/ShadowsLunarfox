@@ -24,21 +24,10 @@ Hi, I am **Shadows_Lunarfox**, a developer from Kuala Lumpur, Malaysia. I like b
       <img src="https://github-stats-extended.vercel.app/api?username=ShadowsLunarfox&show_icons=true&hide_border=true&include_all_commits=true&rank_icon=github&bg_color=0d1117&title_color=38bdf8&text_color=c9d1d9&icon_color=14b8a6&ring_color=38bdf8&custom_title=GitHub%20Stats" alt="ShadowsLunarfox GitHub stats" width="100%" />
     </td>
     <td width="50%">
-      <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=ShadowsLunarfox&theme=github_dark&utcOffset=8" alt="ShadowsLunarfox productive time" width="100%" />
+      <img src="https://github-stats-extended.vercel.app/api/top-langs/?username=ShadowsLunarfox&layout=compact&hide_border=true&bg_color=0d1117&title_color=38bdf8&text_color=c9d1d9&langs_count=8" alt="Most used languages" width="100%" />
     </td>
   </tr>
 </table>
-
-<div align="center">
-
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=ShadowsLunarfox&theme=github_dark" alt="ShadowsLunarfox profile summary" width="100%" />
-
-<br><br>
-
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=ShadowsLunarfox&theme=github_dark" alt="Top languages by repository" width="49%" />
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=ShadowsLunarfox&theme=github_dark" alt="Top languages by commit" width="49%" />
-
-</div>
 
 ## Toolkit
 
