@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="320" viewBox="0 0 960 320" role="img" aria-labelledby="title desc">
+  <title id="title">3D contribution graph placeholder</title>
+  <desc id="desc">A placeholder shown until GitHub Actions generates the real 3D contribution graph.</desc>
+  <defs>
+    <linearGradient id="line" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#ff8fab"/>
+      <stop offset="0.55" stop-color="#ffd166"/>
+      <stop offset="1" stop-color="#73d2de"/>
+    </linearGradient>
+    <linearGradient id="top" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#ff8fab"/>
+      <stop offset="1" stop-color="#73d2de"/>
+    </linearGradient>
+    <linearGradient id="side" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#9b5de5"/>
+      <stop offset="1" stop-color="#3b2d4f"/>
+    </linearGradient>
+  </defs>
+  <rect width="960" height="320" fill="none"/>
+  <path d="M92 250L326 134L690 210L456 290Z" fill="none" stroke="url(#line)" stroke-width="2" opacity="0.7"/>
+  <g opacity="0.88">
+    <path d="M178 218L198 208L218 218L198 228Z" fill="url(#top)"/>
+    <path d="M178 218L198 228L198 250L178 239Z" fill="#3b2d4f"/>
+    <path d="M218 218L198 228L198 250L218 239Z" fill="url(#side)"/>
+
+    <path d="M250 184L270 174L290 184L270 194Z" fill="#ffd166"/>
+    <path d="M250 184L270 194L270 240L250 230Z" fill="#3b2d4f"/>
+    <path d="M290 184L270 194L270 240L290 230Z" fill="#9b5de5"/>
+
+    <path d="M326 206L346 196L366 206L346 216Z" fill="#73d2de"/>
+    <path d="M326 206L346 216L346 262L326 252Z" fill="#3b2d4f"/>
+    <path d="M366 206L346 216L346 262L366 252Z" fill="#9b5de5"/>
+
+    <path d="M404 170L424 160L444 170L424 180Z" fill="#ff8fab"/>
+    <path d="M404 170L424 180L424 250L404 240Z" fill="#3b2d4f"/>
+    <path d="M444 170L424 180L424 250L444 240Z" fill="#9b5de5"/>
+
+    <path d="M482 194L502 184L522 194L502 204Z" fill="#06d6a0"/>
+    <path d="M482 194L502 204L502 262L482 252Z" fill="#3b2d4f"/>
+    <path d="M522 194L502 204L502 262L522 252Z" fill="#9b5de5"/>
+
+    <path d="M560 222L580 212L600 222L580 232Z" fill="#ffd166"/>
+    <path d="M560 222L580 232L580 254L560 244Z" fill="#3b2d4f"/>
+    <path d="M600 222L580 232L580 254L600 244Z" fill="#9b5de5"/>
+  </g>
+  <text x="480" y="86" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700" fill="#3b2d4f">3D activity graph</text>
+  <text x="480" y="120" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="16" fill="#3b2d4f">Generating the real contribution map with GitHub Actions...</text>
+</svg>
