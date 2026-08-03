@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&height=180&color=0:ff8fab,45:ffd166,100:73d2de&text=ShadowsLunarfox&fontAlign=50&fontAlignY=38&fontColor=3b2d4f&fontSize=48&desc=Lunar%20code,%20quiet%20systems,%20sharp%20experiments&descAlign=50&descAlignY=60&descSize=18&animation=twinkling" alt="ShadowsLunarfox profile header" width="100%" />
+<img src="https://capsule-render.vercel.app/api?type=waving&height=180&color=0:ff8fab,45:ffd166,100:73d2de&text=Shadows_Lunarfox%20%E6%9C%88%E7%8B%90&fontAlign=50&fontAlignY=38&fontColor=3b2d4f&fontSize=48&animation=twinkling" alt="Shadows_Lunarfox profile header" width="100%" />
 
 <p>
   <img src="https://komarev.com/ghpvc/?username=ShadowsLunarfox&label=Profile%20Views&color=ff8fab&style=for-the-badge" alt="Profile views" />
@@ -12,9 +12,8 @@
 
 ## About Me
 
-Hi, I am **Shadows_Lunarfox**, a developer from Kuala Lumpur, Malaysia. I like building websites, games, small tools, and experiments that feel polished enough to keep.
+Hi, I am **Shadows_Lunarfox 月狐**, a developer from Kuala Lumpur, Malaysia. I like building websites, games, small tools, and experiments that feel polished enough to keep.
 
-> "My code works fine on my machine, I have no idea why it fails on yours."
 
 ## GitHub Stats
 
@@ -72,8 +71,14 @@ Hi, I am **Shadows_Lunarfox**, a developer from Kuala Lumpur, Malaysia. I like b
 <div align="center">
 
 <a href="https://github.com/ShadowsLunarfox?tab=overview">
-  <img src="https://ghchart.rshah.org/ff8fab/ShadowsLunarfox" alt="ShadowsLunarfox GitHub contribution chart" width="100%" />
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=ShadowsLunarfox&bg_color=00000000&hide_border=true&title_color=ff5fa2&color=3b2d4f&line=ff8fab&point=73d2de" alt="ShadowsLunarfox GitHub activity graph" width="100%" />
 </a>
+
+<img src="./profile-3d-contrib/profile-night-rainbow.svg" alt="ShadowsLunarfox 3D contribution graph" width="100%" />
+
+<br />
+
+<img src="https://api.assetroulette.com/random_meme" alt="Random meme" width="420" />
 
 </div>
 
