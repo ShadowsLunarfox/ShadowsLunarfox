@@ -21,10 +21,10 @@ Hi, I am **Shadows_Lunarfox**, a developer from Kuala Lumpur, Malaysia. I like b
 <table>
   <tr>
     <td width="50%">
-      <img src="https://github-stats-extended.vercel.app/api?username=ShadowsLunarfox&show_icons=true&hide_border=true&include_all_commits=true&rank_icon=github&bg_color=fff7f0&title_color=ff5fa2&text_color=3b2d4f&icon_color=06d6a0&ring_color=ffd166&custom_title=GitHub%20Stats" alt="ShadowsLunarfox GitHub stats" width="100%" />
+      <img src="https://github-stats-extended.vercel.app/api?username=ShadowsLunarfox&show_icons=true&hide_border=true&include_all_commits=true&rank_icon=github&bg_color=00000000&title_color=ff5fa2&text_color=3b2d4f&icon_color=06d6a0&ring_color=ffd166&custom_title=GitHub%20Stats" alt="ShadowsLunarfox GitHub stats" width="100%" />
     </td>
     <td width="50%">
-      <img src="https://github-stats-extended.vercel.app/api/top-langs/?username=ShadowsLunarfox&layout=compact&hide_border=true&bg_color=fff7f0&title_color=ff5fa2&text_color=3b2d4f&langs_count=8" alt="Most used languages" width="100%" />
+      <img src="https://github-stats-extended.vercel.app/api/top-langs/?username=ShadowsLunarfox&layout=compact&hide_border=true&bg_color=00000000&title_color=ff5fa2&text_color=3b2d4f&langs_count=8" alt="Most used languages" width="100%" />
     </td>
   </tr>
 </table>
@@ -69,7 +69,7 @@ Hi, I am **Shadows_Lunarfox**, a developer from Kuala Lumpur, Malaysia. I like b
 
 ## Activity
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=ShadowsLunarfox&bg_color=fff7f0&color=3b2d4f&line=ff8fab&point=9b5de5&area=true&area_color=ffd166&hide_border=true&custom_title=Contribution%20Graph" alt="ShadowsLunarfox contribution graph" width="100%" />
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=ShadowsLunarfox&bg_color=00000000&color=3b2d4f&line=ff8fab&point=9b5de5&area=true&area_color=ffd166&hide_border=true&custom_title=Contribution%20Graph" alt="ShadowsLunarfox contribution graph" width="100%" />
 
 <div align="center">
 
