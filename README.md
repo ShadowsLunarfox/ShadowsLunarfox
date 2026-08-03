@@ -88,6 +88,15 @@ Hi, I am **Shadows_Lunarfox 月狐**, a developer from Kuala Lumpur, Malaysia. I
 
 </div>
 
+## Meme
+
+
+<div align="center">
+
+<img src="https://api.assetroulette.com/random_meme" alt="Random meme" width="420" />
+
+</div>
+
 <div align="center">
 
 <img src="https://capsule-render.vercel.app/api?type=waving&height=110&section=footer&color=0:73d2de,55:ffd166,100:ff8fab" alt="Profile footer" width="100%" />
