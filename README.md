@@ -2,7 +2,7 @@
  * @Author: Shadows_Lunarfox 91894334+ShadowsLunarfox@users.noreply.github.com
  * @Date: 2026-07-30 16:33:16
  * @LastEditors: Shadows_Lunarfox 91894334+ShadowsLunarfox@users.noreply.github.com
- * @LastEditTime: 2026-08-04 01:44:59
+ * @LastEditTime: 2026-08-04 01:58:17
  * @FilePath: \ShadowsLunarfox\README.md
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 -->
@@ -88,14 +88,7 @@ Hi, I am **Shadows_Lunarfox 月狐**, a developer from Kuala Lumpur, Malaysia. I
 
 </div>
 
-## Meme
 
-
-<div align="center">
-
-<img src="https://api.assetroulette.com/random_meme" alt="Random meme" width="420" />
-
-</div>
 
 <div align="center">
 
