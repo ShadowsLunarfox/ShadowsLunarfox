@@ -1,11 +1,11 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&height=180&color=0:10172a,45:1d4ed8,100:38bdf8&text=ShadowsLunarfox&fontAlign=50&fontAlignY=38&fontColor=e0f2fe&fontSize=48&desc=Lunar%20code,%20quiet%20systems,%20sharp%20experiments&descAlign=50&descAlignY=60&animation=fadeIn" alt="ShadowsLunarfox profile header" width="100%" />
+<img src="https://capsule-render.vercel.app/api?type=waving&height=180&color=0:ff8fab,45:ffd166,100:73d2de&text=ShadowsLunarfox&fontAlign=50&fontAlignY=38&fontColor=3b2d4f&fontSize=48&desc=Lunar%20code,%20quiet%20systems,%20sharp%20experiments&descAlign=50&descAlignY=60&descSize=18&animation=twinkling" alt="ShadowsLunarfox profile header" width="100%" />
 
 <p>
-  <img src="https://komarev.com/ghpvc/?username=ShadowsLunarfox&label=Profile%20Views&color=38bdf8&style=for-the-badge" alt="Profile views" />
-  <img src="https://img.shields.io/github/followers/ShadowsLunarfox?label=Followers&style=for-the-badge&color=1d4ed8&labelColor=0f172a" alt="GitHub followers" />
-  <img src="https://img.shields.io/github/stars/ShadowsLunarfox?affiliations=OWNER%2CCOLLABORATOR&style=for-the-badge&color=14b8a6&labelColor=0f172a" alt="GitHub stars" />
+  <img src="https://komarev.com/ghpvc/?username=ShadowsLunarfox&label=Profile%20Views&color=ff8fab&style=for-the-badge" alt="Profile views" />
+  <img src="https://img.shields.io/github/followers/ShadowsLunarfox?label=Followers&style=for-the-badge&color=ffd166&labelColor=3b2d4f" alt="GitHub followers" />
+  <img src="https://img.shields.io/github/stars/ShadowsLunarfox?affiliations=OWNER%2CCOLLABORATOR&style=for-the-badge&color=73d2de&labelColor=3b2d4f" alt="GitHub stars" />
 </p>
 
 </div>
@@ -21,10 +21,10 @@ Hi, I am **Shadows_Lunarfox**, a developer from Kuala Lumpur, Malaysia. I like b
 <table>
   <tr>
     <td width="50%">
-      <img src="https://github-stats-extended.vercel.app/api?username=ShadowsLunarfox&show_icons=true&hide_border=true&include_all_commits=true&rank_icon=github&bg_color=0d1117&title_color=38bdf8&text_color=c9d1d9&icon_color=14b8a6&ring_color=38bdf8&custom_title=GitHub%20Stats" alt="ShadowsLunarfox GitHub stats" width="100%" />
+      <img src="https://github-stats-extended.vercel.app/api?username=ShadowsLunarfox&show_icons=true&hide_border=true&include_all_commits=true&rank_icon=github&bg_color=fff7f0&title_color=ff5fa2&text_color=3b2d4f&icon_color=06d6a0&ring_color=ffd166&custom_title=GitHub%20Stats" alt="ShadowsLunarfox GitHub stats" width="100%" />
     </td>
     <td width="50%">
-      <img src="https://github-stats-extended.vercel.app/api/top-langs/?username=ShadowsLunarfox&layout=compact&hide_border=true&bg_color=0d1117&title_color=38bdf8&text_color=c9d1d9&langs_count=8" alt="Most used languages" width="100%" />
+      <img src="https://github-stats-extended.vercel.app/api/top-langs/?username=ShadowsLunarfox&layout=compact&hide_border=true&bg_color=fff7f0&title_color=ff5fa2&text_color=3b2d4f&langs_count=8" alt="Most used languages" width="100%" />
     </td>
   </tr>
 </table>
@@ -33,39 +33,36 @@ Hi, I am **Shadows_Lunarfox**, a developer from Kuala Lumpur, Malaysia. I like b
 
 <div align="center">
 
-![C#](https://img.shields.io/badge/C%23-0f172a?style=for-the-badge&logo=csharp&logoColor=8b5cf6)
-![C++](https://img.shields.io/badge/C%2B%2B-0f172a?style=for-the-badge&logo=cplusplus&logoColor=60a5fa)
-![Java](https://img.shields.io/badge/Java-0f172a?style=for-the-badge&logo=openjdk&logoColor=f97316)
-![Python](https://img.shields.io/badge/Python-0f172a?style=for-the-badge&logo=python&logoColor=38bdf8)
-![JavaScript](https://img.shields.io/badge/JavaScript-0f172a?style=for-the-badge&logo=javascript&logoColor=facc15)
-![HTML5](https://img.shields.io/badge/HTML5-0f172a?style=for-the-badge&logo=html5&logoColor=f97316)
-![CSS3](https://img.shields.io/badge/CSS3-0f172a?style=for-the-badge&logo=css3&logoColor=38bdf8)
-![Git](https://img.shields.io/badge/Git-0f172a?style=for-the-badge&logo=git&logoColor=f97316)
-![GitHub](https://img.shields.io/badge/GitHub-0f172a?style=for-the-badge&logo=github&logoColor=e5e7eb)
-![VS Code](https://img.shields.io/badge/VS%20Code-0f172a?style=for-the-badge&logo=visualstudiocode&logoColor=38bdf8)
+![C#](https://img.shields.io/badge/C%23-9b5de5?style=for-the-badge&logo=csharp&logoColor=ffffff)
+![C++](https://img.shields.io/badge/C%2B%2B-00bbf9?style=for-the-badge&logo=cplusplus&logoColor=ffffff)
+![Java](https://img.shields.io/badge/Java-f15bb5?style=for-the-badge&logo=openjdk&logoColor=ffffff)
+![Python](https://img.shields.io/badge/Python-fee440?style=for-the-badge&logo=python&logoColor=3b2d4f)
+![JavaScript](https://img.shields.io/badge/JavaScript-fdc500?style=for-the-badge&logo=javascript&logoColor=3b2d4f)
+![HTML5](https://img.shields.io/badge/HTML5-ff8fab?style=for-the-badge&logo=html5&logoColor=ffffff)
+![CSS3](https://img.shields.io/badge/CSS3-73d2de?style=for-the-badge&logo=css3&logoColor=3b2d4f)
+![Git](https://img.shields.io/badge/Git-ff9770?style=for-the-badge&logo=git&logoColor=ffffff)
+![GitHub](https://img.shields.io/badge/GitHub-3b2d4f?style=for-the-badge&logo=github&logoColor=ffffff)
+![VS Code](https://img.shields.io/badge/VS%20Code-00bbf9?style=for-the-badge&logo=visualstudiocode&logoColor=ffffff)
 
 </div>
 
-## Languages
-
-`中文` | `English` | `Bahasa Melayu` | `日本語` | `Cantonese`
 
 ## Connect
 
 <p align="center">
-  <a href="https://lunarfox.my"><img src="https://img.shields.io/badge/Website-lunarfox.my-0f172a?style=for-the-badge&logo=firefox&logoColor=38bdf8" alt="Website" /></a>
-  <a href="https://discord.com"><img src="https://img.shields.io/badge/Discord-shadows__lunarfox-0f172a?style=for-the-badge&logo=discord&logoColor=5865f2" alt="Discord" /></a>
-  <a href="https://t.me/Shadows_Lunarfox"><img src="https://img.shields.io/badge/Telegram-@Shadows__Lunarfox-0f172a?style=for-the-badge&logo=telegram&logoColor=26a5e4" alt="Telegram" /></a>
-  <a href="https://www.facebook.com/Lunarfoxyuehu/"><img src="https://img.shields.io/badge/Facebook-Lunarfoxyuehu-0f172a?style=for-the-badge&logo=facebook&logoColor=1877f2" alt="Facebook" /></a>
-  <a href="https://x.com/ShadowsLunarfox"><img src="https://img.shields.io/badge/X-@ShadowsLunarfox-0f172a?style=for-the-badge&logo=x&logoColor=e5e7eb" alt="X" /></a>
+  <a href="https://lunarfox.my"><img src="https://img.shields.io/badge/Website-lunarfox.my-ff8fab?style=for-the-badge&logo=firefox&logoColor=ffffff" alt="Website" /></a>
+  <a href="https://discord.com"><img src="https://img.shields.io/badge/Discord-shadows__lunarfox-9b5de5?style=for-the-badge&logo=discord&logoColor=ffffff" alt="Discord" /></a>
+  <a href="https://t.me/Shadows_Lunarfox"><img src="https://img.shields.io/badge/Telegram-@Shadows__Lunarfox-00bbf9?style=for-the-badge&logo=telegram&logoColor=ffffff" alt="Telegram" /></a>
+  <a href="https://www.facebook.com/Lunarfoxyuehu/"><img src="https://img.shields.io/badge/Facebook-Lunarfoxyuehu-73d2de?style=for-the-badge&logo=facebook&logoColor=3b2d4f" alt="Facebook" /></a>
+  <a href="https://x.com/ShadowsLunarfox"><img src="https://img.shields.io/badge/X-@ShadowsLunarfox-3b2d4f?style=for-the-badge&logo=x&logoColor=ffffff" alt="X" /></a>
 </p>
 
 ## Activity
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=ShadowsLunarfox&bg_color=0d1117&color=c9d1d9&line=38bdf8&point=14b8a6&area=true&area_color=38bdf8&hide_border=true&custom_title=Contribution%20Graph" alt="ShadowsLunarfox contribution graph" width="100%" />
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=ShadowsLunarfox&bg_color=fff7f0&color=3b2d4f&line=ff8fab&point=9b5de5&area=true&area_color=ffd166&hide_border=true&custom_title=Contribution%20Graph" alt="ShadowsLunarfox contribution graph" width="100%" />
 
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&height=110&section=footer&color=0:38bdf8,55:1d4ed8,100:10172a" alt="Profile footer" width="100%" />
+<img src="https://capsule-render.vercel.app/api?type=waving&height=110&section=footer&color=0:73d2de,55:ffd166,100:ff8fab" alt="Profile footer" width="100%" />
 
 </div>
