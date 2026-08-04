@@ -2,7 +2,7 @@
  * @Author: Shadows_Lunarfox 91894334+ShadowsLunarfox@users.noreply.github.com
  * @Date: 2026-07-30 16:33:16
  * @LastEditors: Shadows_Lunarfox 91894334+ShadowsLunarfox@users.noreply.github.com
- * @LastEditTime: 2026-08-04 01:58:17
+ * @LastEditTime: 2026-08-04 09:00:33
  * @FilePath: \ShadowsLunarfox\README.md
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 -->
@@ -18,25 +18,14 @@
 
 </div>
 
-## About Me
+<h2 align="center">About Me (^_^)</h2>
 
-Hi, I am **Shadows_Lunarfox 月狐**, a developer from Kuala Lumpur, Malaysia. I like building websites, games, small tools, and experiments that feel polished enough to keep.
+Hi, I am **Shadows_Lunarfox &#26376;&#29392;**, a developer from Kuala Lumpur, Malaysia. I like building websites, games, small tools, and experiments that feel polished enough to keep.
 
 
-## GitHub Stats
 
-<table>
-  <tr>
-    <td width="50%">
-      <img src="https://github-stats-extended.vercel.app/api?username=ShadowsLunarfox&show_icons=true&hide_border=true&include_all_commits=true&rank_icon=github&bg_color=00000000&title_color=ff5fa2&text_color=3b2d4f&icon_color=06d6a0&ring_color=ffd166&custom_title=GitHub%20Stats" alt="ShadowsLunarfox GitHub stats" width="100%" />
-    </td>
-    <td width="50%">
-      <img src="https://github-stats-extended.vercel.app/api/top-langs/?username=ShadowsLunarfox&layout=compact&hide_border=true&bg_color=00000000&title_color=ff5fa2&text_color=3b2d4f&langs_count=8" alt="Most used languages" width="100%" />
-    </td>
-  </tr>
-</table>
 
-## Coding Languages
+<h2 align="center">Coding Languages (^_^)/</h2>
 
 <div align="center">
 
@@ -50,7 +39,7 @@ Hi, I am **Shadows_Lunarfox 月狐**, a developer from Kuala Lumpur, Malaysia. I
 
 </div>
 
-## Software
+<h2 align="center">Software (o_o)</h2>
 
 <div align="center">
 
@@ -64,7 +53,7 @@ Hi, I am **Shadows_Lunarfox 月狐**, a developer from Kuala Lumpur, Malaysia. I
 </div>
 
 
-## Connect
+<h2 align="center">Connect (^_~)</h2>
 
 <p align="center">
   <a href="https://lunarfox.my"><img src="https://img.shields.io/badge/Website-lunarfox.my-ff8fab?style=for-the-badge&logo=firefox&logoColor=ffffff" alt="Website" /></a>
@@ -74,7 +63,19 @@ Hi, I am **Shadows_Lunarfox 月狐**, a developer from Kuala Lumpur, Malaysia. I
   <a href="https://x.com/ShadowsLunarfox"><img src="https://img.shields.io/badge/X-@ShadowsLunarfox-3b2d4f?style=for-the-badge&logo=x&logoColor=ffffff" alt="X" /></a>
 </p>
 
-## Activity
+<h2 align="center">GitHub Stats (^-^)</h2>
+
+<table>
+  <tr>
+    <td width="50%">
+      <img src="https://github-stats-extended.vercel.app/api?username=ShadowsLunarfox&show_icons=true&hide_border=true&include_all_commits=true&rank_icon=github&bg_color=00000000&title_color=ff5fa2&text_color=3b2d4f&icon_color=06d6a0&ring_color=ffd166&custom_title=GitHub%20Stats" alt="ShadowsLunarfox GitHub stats" width="100%" />
+    </td>
+    <td width="50%">
+      <img src="https://github-stats-extended.vercel.app/api/top-langs/?username=ShadowsLunarfox&layout=compact&hide_border=true&bg_color=00000000&title_color=ff5fa2&text_color=3b2d4f&langs_count=8" alt="Most used languages" width="100%" />
+    </td>
+  </tr>
+</table>
+
 
 <div align="center">
 
@@ -87,6 +88,10 @@ Hi, I am **Shadows_Lunarfox 月狐**, a developer from Kuala Lumpur, Malaysia. I
 <img src="./profile-3d-contrib/profile-night-rainbow.svg" alt="ShadowsLunarfox 3D contribution graph" width="100%" />
 
 </div>
+
+
+
+
 
 
 
