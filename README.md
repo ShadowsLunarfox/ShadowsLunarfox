@@ -19,9 +19,9 @@
 </div>
 
 <h2 align="center">About Me (^_^)</h2>
-
+<div align="center">
 Hi, I am **Shadows_Lunarfox &#26376;&#29392;**, a developer from Kuala Lumpur, Malaysia. I like building websites, games, small tools, and experiments that feel polished enough to keep.
-
+</div>
 
 
 
