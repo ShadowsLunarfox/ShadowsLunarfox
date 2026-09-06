@@ -65,30 +65,10 @@ Hi, I am **Shadows_Lunarfox &#26376;&#29392;**, a developer from Kuala Lumpur, M
 
 <h2 align="center">GitHub Stats (^-^)</h2>
 
-<table>
-  <tr>
-    <td width="50%">
-      <img src="https://github-stats-extended.vercel.app/api?username=ShadowsLunarfox&show_icons=true&hide_border=true&include_all_commits=true&rank_icon=github&bg_color=00000000&title_color=ff5fa2&text_color=3b2d4f&icon_color=06d6a0&ring_color=ffd166&custom_title=GitHub%20Stats" alt="ShadowsLunarfox GitHub stats" width="100%" />
-    </td>
-    <td width="50%">
-      <img src="https://github-stats-extended.vercel.app/api/top-langs/?username=ShadowsLunarfox&layout=compact&hide_border=true&bg_color=00000000&title_color=ff5fa2&text_color=3b2d4f&langs_count=8" alt="Most used languages" width="100%" />
-    </td>
-  </tr>
-</table>
 
-
-<div align="center">
-
-<a href="https://github.com/ShadowsLunarfox?tab=overview">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=ShadowsLunarfox&bg_color=00000000&hide_border=true&title_color=ff5fa2&color=3b2d4f&line=ff8fab&point=73d2de" alt="ShadowsLunarfox GitHub activity graph" width="100%" />
-</a>
-
-<div align="center">
-
-<img src="./profile-3d-contrib/profile-night-rainbow.svg" alt="ShadowsLunarfox 3D contribution graph" width="100%" />
-
-</div>
-
+![](https://github-readme-stats.shion.dev/api?username=ShadowsLunarfox&theme=transparent&hide_border=false&include_all_commits=false&count_private=false)<br/>
+![](https://streak-stats.demolab.com/?user=ShadowsLunarfox&theme=transparent&hide_border=false)<br/>
+![](https://github-readme-stats.shion.dev/api/top-langs/?username=ShadowsLunarfox&theme=transparent&hide_border=false&include_all_commits=false&count_private=false&layout=compact)
 
 
 
