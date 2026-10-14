@@ -108,15 +108,6 @@ Hi, I am **Shadows_Lunarfox &#26376;&#29392;**, a developer from Kuala Lumpur, M
 </p>
 <!-- END 3d-contributions -->
 
-<!-- BEGIN metrics-dashboard -->
-<h2 align="center">Metrics Dashboard (&gt;_&lt;)</h2>
-
-<p align="center">
-  <img src="assets/profile/metrics-terminal.svg" alt="Terminal-style GitHub profile and programming languages" width="49%" align="top" />
-  <img src="assets/profile/metrics-insights.svg" alt="GitHub achievements, coding habits and featured repositories" width="49%" align="top" />
-</p>
-<!-- END metrics-dashboard -->
-
 
 
 
