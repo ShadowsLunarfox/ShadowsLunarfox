@@ -66,9 +66,11 @@ Hi, I am **Shadows_Lunarfox &#26376;&#29392;**, a developer from Kuala Lumpur, M
 <h2 align="center">GitHub Stats (^-^)</h2>
 
 
-![](https://github-readme-stats.shion.dev/api?username=ShadowsLunarfox&theme=transparent&hide_border=false&include_all_commits=false&count_private=false)<br/>
-![](https://streak-stats.demolab.com/?user=ShadowsLunarfox&theme=transparent&hide_border=false)<br/>
-![](https://github-readme-stats.shion.dev/api/top-langs/?username=ShadowsLunarfox&theme=transparent&hide_border=false&include_all_commits=false&count_private=false&layout=compact)
+<p align="center">
+  <img src="https://github-readme-stats.shion.dev/api?username=ShadowsLunarfox&amp;theme=transparent&amp;bg_color=00000000&amp;hide_border=true&amp;include_all_commits=false&amp;count_private=false&amp;card_width=495" alt="GitHub stats" width="32%" align="top" />
+  <img src="https://streak-stats.demolab.com/?user=ShadowsLunarfox&amp;theme=transparent&amp;background=00000000&amp;hide_border=true&amp;card_width=495" alt="GitHub contribution streak" width="32%" align="top" />
+  <img src="https://github-readme-stats.shion.dev/api/top-langs/?username=ShadowsLunarfox&amp;theme=transparent&amp;bg_color=00000000&amp;hide_border=true&amp;include_all_commits=false&amp;count_private=false&amp;layout=compact&amp;card_width=495" alt="Most used languages" width="32%" align="top" />
+</p>
 
 
 
