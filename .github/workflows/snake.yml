@@ -24,13 +24,28 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
+      - uses: actions/checkout@v5
       - name: Generate light and dark snake animations
         uses: Platane/snk/svg-only@v3
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
-            dist/github-snake.svg
-            dist/github-snake-dark.svg?palette=github-dark
+            dist/github-snake.svg?color_snake=%23ffaec5&color_dots=%23eee9f4,%23b9edf2,%23d7c4f3,%23ffd3b0,%23ffaec5
+            dist/github-snake-dark.svg?palette=github-dark&color_snake=%23ffaec5&color_dots=%23373341,%23b9edf2,%23d7c4f3,%23ffd3b0,%23ffaec5
+
+      - name: Save the updated profile animations
+        run: |
+          mkdir -p assets/profile
+          cp dist/github-snake.svg assets/profile/github-snake.svg
+          cp dist/github-snake-dark.svg assets/profile/github-snake-dark.svg
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add assets/profile/github-snake.svg assets/profile/github-snake-dark.svg
+          if ! git diff --cached --quiet; then
+            git commit -m "Update pastel contribution snake animations"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
 
       - name: Publish animations to the output branch
         uses: crazy-max/ghaction-github-pages@v5

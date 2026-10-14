@@ -13,20 +13,26 @@ async function main() {
     throw new Error(typeof data === 'string' ? data : 'Contribution data is unavailable');
   }
 
-  const card = new Card(300, 1000, 0, {
-    bgColor: '00000000',
-    borderColor: '00000000',
-    color: '8b7a9e',
-    titleColor: 'ff8fab',
-    lineColor: 'ff8fab',
-    pointColor: '73d2de',
-    areaColor: 'ff8fab',
-  }, 'Activity over the last 31 days', true);
-  const svg = await card.buildGraph(data.contributions);
-  if (!svg.includes('<svg')) throw new Error('The activity renderer did not produce an SVG');
-  await fs.mkdir(path.dirname(output), { recursive: true });
-  await fs.writeFile(output, svg);
-  console.log(`Generated ${output} for ${username}`);
+  const themes = [
+    { output, color: 'adbac7', titleColor: 'ffaec5' },
+    { output: output.replace(/\.svg$/i, '-light.svg'), color: '615276', titleColor: '615276' },
+  ];
+  for (const theme of themes) {
+    const card = new Card(300, 1000, 0, {
+      bgColor: '00000000',
+      borderColor: '00000000',
+      color: theme.color,
+      titleColor: theme.titleColor,
+      lineColor: 'ffaec5',
+      pointColor: 'b9edf2',
+      areaColor: 'd7c4f3',
+    }, 'Activity over the last 31 days', true);
+    const svg = await card.buildGraph(data.contributions);
+    if (!svg.includes('<svg')) throw new Error('The activity renderer did not produce an SVG');
+    await fs.mkdir(path.dirname(theme.output), { recursive: true });
+    await fs.writeFile(theme.output, svg);
+    console.log(`Generated ${theme.output} for ${username}`);
+  }
 }
 
 main().catch((error) => {

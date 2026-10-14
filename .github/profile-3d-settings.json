@@ -4,24 +4,21 @@
     "type": "normal",
     "backgroundColor": "transparent",
     "foregroundColor": "#3b2d4f",
-    "strongColor": "#e56b91",
+    "strongColor": "#615276",
     "weakColor": "#8b7a9e",
-    "radarColor": "#73d2de",
+    "radarColor": "#b9edf2",
     "growingAnimation": true,
-    "contribColors": ["#eee9f4", "#bde9ef", "#73d2de", "#ffaec5", "#ff8fab"]
+    "contribColors": ["#eee9f4", "#b9edf2", "#d7c4f3", "#ffd3b0", "#ffaec5"]
   },
   {
     "fileName": "3d-contributions-dark.svg",
-    "type": "rainbow",
+    "type": "normal",
     "backgroundColor": "transparent",
-    "foregroundColor": "#c9d1d9",
-    "strongColor": "#ff8fab",
-    "weakColor": "#8b7a9e",
-    "radarColor": "#73d2de",
+    "foregroundColor": "#adbac7",
+    "strongColor": "#ffaec5",
+    "weakColor": "#adbac7",
+    "radarColor": "#b9edf2",
     "growingAnimation": true,
-    "saturation": "80%",
-    "contribLightness": ["12%", "28%", "42%", "56%", "70%"],
-    "duration": "12s",
-    "hueRatio": 7
+    "contribColors": ["#373341", "#b9edf2", "#d7c4f3", "#ffd3b0", "#ffaec5"]
   }
 ]

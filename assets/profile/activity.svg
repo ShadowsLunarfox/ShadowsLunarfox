@@ -16,7 +16,7 @@
                 .header {
                     font: 600 20px 'Segoe UI', Ubuntu, Sans-Serif;
                     text-align: center;
-                    color: #ff8fab;
+                    color: #ffaec5;
                     margin-top: 20px;
                 }
                 svg {
@@ -25,8 +25,8 @@
                 }
                 
     .ct-label {
-      fill: #8b7a9e;
-      color: #8b7a9e;
+      fill: #adbac7;
+      color: #adbac7;
       font-size: .75rem;
       line-height: 1;
     }
@@ -99,7 +99,7 @@
     }
 
     .ct-grid {
-      stroke: #8b7a9e;
+      stroke: #adbac7;
       stroke-width: 1px;
       stroke-opacity: 0.3;
       stroke-dasharray: 2px;
@@ -108,7 +108,7 @@
     .ct-point {
       stroke-width: 10px;
       stroke-linecap: round;
-      stroke: #73d2de;
+      stroke: #b9edf2;
       animation: blink 1s ease-in-out forwards;
     }
 
@@ -116,7 +116,7 @@
       stroke-width: 4px;
       stroke-dasharray: 5000;
       stroke-dashoffset: 5000;
-      stroke: #ff8fab;
+      stroke: #ffaec5;
       animation: dash 5s ease-in-out forwards;
     }
 
@@ -127,7 +127,7 @@
 
     .ct-series-a .ct-area,
     .ct-series-a .ct-slice-pie {
-      fill: #ff8fab;
+      fill: #d7c4f3;
     }
 
     .ct-label .ct-horizontal {

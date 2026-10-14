@@ -2,87 +2,101 @@
  * @Author: Shadows_Lunarfox 91894334+ShadowsLunarfox@users.noreply.github.com
  * @Date: 2026-07-30 16:33:16
  * @LastEditors: Shadows_Lunarfox 91894334+ShadowsLunarfox@users.noreply.github.com
- * @LastEditTime: 2026-10-15 01:22:00
+ * @LastEditTime: 2026-10-15 02:20:32
  * @FilePath: \ShadowsLunarfox\README.md
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 -->
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&height=180&color=0:ff8fab,45:ffd166,100:73d2de&text=Shadows_Lunarfox%20%E6%9C%88%E7%8B%90&fontAlign=50&fontAlignY=38&fontColor=3b2d4f&fontSize=48&animation=twinkling" alt="Shadows_Lunarfox profile header" width="100%" />
+<img src="https://capsule-render.vercel.app/api?type=waving&height=180&color=0:ffaec5,35:d7c4f3,70:ffe9a3,100:b9edf2&text=Shadows_Lunarfox%20%E6%9C%88%E7%8B%90&fontAlign=50&fontAlignY=38&fontColor=3b2d4f&fontSize=48&animation=twinkling" alt="Shadows_Lunarfox profile header" width="100%" />
 
 <!-- BEGIN typing-animation -->
 <p>
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&amp;size=22&amp;pause=1200&amp;color=FF8FAB&amp;background=00000000&amp;center=true&amp;vCenter=true&amp;width=760&amp;height=60&amp;lines=Hi%2C+I%27m+Shadows_Lunarfox+%E6%9C%88%E7%8B%90;Building+websites%2C+games+%26+little+experiments;Coding+from+Kuala+Lumpur%2C+Malaysia" alt="Animated introduction: Shadows_Lunarfox, building websites, games and tools in Kuala Lumpur" width="100%" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&amp;size=22&amp;pause=1200&amp;color=FFAEC5&amp;background=00000000&amp;center=true&amp;vCenter=true&amp;width=760&amp;height=60&amp;lines=Hi%2C+I%27m+Shadows_Lunarfox+%E6%9C%88%E7%8B%90;Building+websites%2C+games+%26+little+experiments;Coding+from+Kuala+Lumpur%2C+Malaysia" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&amp;size=22&amp;pause=1200&amp;color=615276&amp;background=00000000&amp;center=true&amp;vCenter=true&amp;width=760&amp;height=60&amp;lines=Hi%2C+I%27m+Shadows_Lunarfox+%E6%9C%88%E7%8B%90;Building+websites%2C+games+%26+little+experiments;Coding+from+Kuala+Lumpur%2C+Malaysia" alt="Animated introduction: Shadows_Lunarfox, building websites, games and tools in Kuala Lumpur" width="100%" />
+  </picture>
 </p>
 <!-- END typing-animation -->
 
 <p>
-  <img src="https://komarev.com/ghpvc/?username=ShadowsLunarfox&label=Profile%20Views&color=ff8fab&style=for-the-badge" alt="Profile views" />
-  <img src="https://img.shields.io/github/followers/ShadowsLunarfox?label=Followers&style=for-the-badge&color=ffd166&labelColor=3b2d4f" alt="GitHub followers" />
-  <img src="https://img.shields.io/github/stars/ShadowsLunarfox?affiliations=OWNER%2CCOLLABORATOR&style=for-the-badge&color=73d2de&labelColor=3b2d4f" alt="GitHub stars" />
+  <img src="https://komarev.com/ghpvc/?username=ShadowsLunarfox&label=Profile%20Views&color=ffaec5&style=flat" alt="Profile views" />
+  <img src="https://img.shields.io/github/followers/ShadowsLunarfox?label=Followers&style=flat&color=d7c4f3&labelColor=615276" alt="GitHub followers" />
+  <img src="https://img.shields.io/github/stars/ShadowsLunarfox?affiliations=OWNER%2CCOLLABORATOR&style=flat&color=b9edf2&labelColor=615276" alt="GitHub stars" />
 </p>
 
 </div>
 
-<h2 align="center">About Me (^_^)</h2>
-<div align="center">
-Hi, I am **Shadows_Lunarfox &#26376;&#29392;**, a developer from Kuala Lumpur, Malaysia. I like building websites, games, small tools, and experiments that feel polished enough to keep.
-</div>
+<!-- BEGIN lunarfox-corner -->
+<h2 align="center">🌙 Lunarfox's Cozy Corner · 月狐小窝 🐾</h2>
 
-
-
-<h2 align="center">Coding Languages (^_^)/</h2>
-
-<div align="center">
-
-![C#](https://img.shields.io/badge/C%23-9b5de5?style=for-the-badge&logo=csharp&logoColor=ffffff)
-![C++](https://img.shields.io/badge/C%2B%2B-00bbf9?style=for-the-badge&logo=cplusplus&logoColor=ffffff)
-![Java](https://img.shields.io/badge/Java-f15bb5?style=for-the-badge&logo=openjdk&logoColor=ffffff)
-![Python](https://img.shields.io/badge/Python-fee440?style=for-the-badge&logo=python&logoColor=3b2d4f)
-![JavaScript](https://img.shields.io/badge/JavaScript-fdc500?style=for-the-badge&logo=javascript&logoColor=3b2d4f)
-![HTML5](https://img.shields.io/badge/HTML5-ff8fab?style=for-the-badge&logo=html5&logoColor=ffffff)
-![CSS3](https://img.shields.io/badge/CSS3-73d2de?style=for-the-badge&logo=css3&logoColor=3b2d4f)
-
-</div>
-
-<h2 align="center">Software (o_o)</h2>
-
-<div align="center">
-
-![Unity](https://img.shields.io/badge/Unity-3b2d4f?style=for-the-badge&logo=unity&logoColor=ffffff)
-![Blender](https://img.shields.io/badge/Blender-ff9770?style=for-the-badge&logo=blender&logoColor=ffffff)
-![Substance 3D Painter](https://img.shields.io/badge/Substance%203D%20Painter-f15bb5?style=for-the-badge&logo=adobe&logoColor=ffffff)
-![Git](https://img.shields.io/badge/Git-ff9770?style=for-the-badge&logo=git&logoColor=ffffff)
-![GitHub](https://img.shields.io/badge/GitHub-3b2d4f?style=for-the-badge&logo=github&logoColor=ffffff)
-![VS Code](https://img.shields.io/badge/VS%20Code-00bbf9?style=for-the-badge&logo=visualstudiocode&logoColor=ffffff)
-
-</div>
-
-
-<h2 align="center">Connect (^_~)</h2>
-
-<p align="center">
-  <a href="https://lunarfox.my"><img src="https://img.shields.io/badge/Website-lunarfox.my-ff8fab?style=for-the-badge&logo=firefox&logoColor=ffffff" alt="Website" /></a>
-  <a href="https://discord.com"><img src="https://img.shields.io/badge/Discord-shadows__lunarfox-9b5de5?style=for-the-badge&logo=discord&logoColor=ffffff" alt="Discord" /></a>
-  <a href="https://t.me/Shadows_Lunarfox"><img src="https://img.shields.io/badge/Telegram-@Shadows__Lunarfox-00bbf9?style=for-the-badge&logo=telegram&logoColor=ffffff" alt="Telegram" /></a>
-  <a href="https://www.facebook.com/Lunarfoxyuehu/"><img src="https://img.shields.io/badge/Facebook-Lunarfoxyuehu-73d2de?style=for-the-badge&logo=facebook&logoColor=3b2d4f" alt="Facebook" /></a>
-  <a href="https://x.com/ShadowsLunarfox"><img src="https://img.shields.io/badge/X-@ShadowsLunarfox-3b2d4f?style=for-the-badge&logo=x&logoColor=ffffff" alt="X" /></a>
-</p>
+<table align="center" width="100%">
+  <tr>
+    <td align="center" valign="middle" width="28%">
+      <img src="b7be7453e22cf7571441503a0ff8fc87_720.png" alt="A fluffy pastel moon fox coding on a little laptop" width="210" />
+      <br />
+      <strong>月狐 · Lunarfox</strong>
+      <br />
+      <sub>🌙 Small ideas, fluffy tails ✨</sub>
+    </td>
+    <td valign="top" width="72%">
+      <p>Hi, I'm <strong>Shadows_Lunarfox 月狐</strong> 🦊<br />
+      A developer from <strong>Kuala Lumpur, Malaysia</strong>. I like building websites, games, small tools, and experiments that feel polished enough to keep.</p>
+      <p><strong>🍡 Coding Languages</strong><br />
+        <img src="https://img.shields.io/badge/C%23-d7c4f3?style=flat&amp;logo=csharp&amp;logoColor=3b2d4f" alt="C#" />
+        <img src="https://img.shields.io/badge/C%2B%2B-b9edf2?style=flat&amp;logo=cplusplus&amp;logoColor=3b2d4f" alt="C++" />
+        <img src="https://img.shields.io/badge/Java-ffd3b0?style=flat&amp;logo=openjdk&amp;logoColor=3b2d4f" alt="Java" />
+        <img src="https://img.shields.io/badge/Python-ffe9a3?style=flat&amp;logo=python&amp;logoColor=3b2d4f" alt="Python" />
+        <img src="https://img.shields.io/badge/JavaScript-ffd166?style=flat&amp;logo=javascript&amp;logoColor=3b2d4f" alt="JavaScript" />
+        <img src="https://img.shields.io/badge/HTML5-ffaec5?style=flat&amp;logo=html5&amp;logoColor=3b2d4f" alt="HTML5" />
+        <img src="https://img.shields.io/badge/CSS3-bbe8f2?style=flat&amp;logo=css3&amp;logoColor=3b2d4f" alt="CSS3" />
+      </p>
+      <p><strong>🎨 Creative Toolbox</strong><br />
+        <img src="https://img.shields.io/badge/Unity-d3bcf5?style=flat&amp;logo=unity&amp;logoColor=3b2d4f" alt="Unity" />
+        <img src="https://img.shields.io/badge/Blender-ffc6a6?style=flat&amp;logo=blender&amp;logoColor=3b2d4f" alt="Blender" />
+        <img src="https://img.shields.io/badge/Substance%203D%20Painter-ffb5d8?style=flat&amp;logo=adobe&amp;logoColor=3b2d4f" alt="Substance 3D Painter" />
+        <img src="https://img.shields.io/badge/Git-ffd3b6?style=flat&amp;logo=git&amp;logoColor=3b2d4f" alt="Git" />
+        <img src="https://img.shields.io/badge/GitHub-d7c4f3?style=flat&amp;logo=github&amp;logoColor=3b2d4f" alt="GitHub" />
+        <img src="https://img.shields.io/badge/VS%20Code-bce6f4?style=flat&amp;logo=visualstudiocode&amp;logoColor=3b2d4f" alt="VS Code" />
+      </p>
+      <p><strong>💌 Come Say Hello</strong><br />
+        <a href="https://lunarfox.my"><img src="https://img.shields.io/badge/Website-lunarfox.my-ffaec5?style=flat&amp;logo=firefox&amp;logoColor=ffffff&amp;labelColor=615276" alt="Website: lunarfox.my" /></a>
+        <a href="https://discord.com"><img src="https://img.shields.io/badge/Discord-shadows__lunarfox-d7c4f3?style=flat&amp;logo=discord&amp;logoColor=ffffff&amp;labelColor=615276" alt="Discord: shadows_lunarfox" /></a>
+        <a href="https://t.me/Shadows_Lunarfox"><img src="https://img.shields.io/badge/Telegram-@Shadows__Lunarfox-b9edf2?style=flat&amp;logo=telegram&amp;logoColor=ffffff&amp;labelColor=615276" alt="Telegram: @Shadows_Lunarfox" /></a>
+        <a href="https://www.facebook.com/Lunarfoxyuehu/"><img src="https://img.shields.io/badge/Facebook-Lunarfoxyuehu-bbe8f2?style=flat&amp;logo=facebook&amp;logoColor=ffffff&amp;labelColor=615276" alt="Facebook: Lunarfoxyuehu" /></a>
+        <a href="https://x.com/ShadowsLunarfox"><img src="https://img.shields.io/badge/X-@ShadowsLunarfox-ffdab9?style=flat&amp;logo=x&amp;logoColor=ffffff&amp;labelColor=615276" alt="X: @ShadowsLunarfox" /></a>
+      </p>
+    </td>
+  </tr>
+</table>
+<!-- END lunarfox-corner -->
 
 <h2 align="center">GitHub Stats (^-^)</h2>
 
 
 <p align="center">
-  <img src="https://github-readme-stats.shion.dev/api?username=ShadowsLunarfox&amp;theme=transparent&amp;bg_color=00000000&amp;hide_border=true&amp;include_all_commits=false&amp;count_private=false&amp;card_width=495" alt="GitHub stats" width="32%" align="top" />
-  <img src="https://streak-stats.demolab.com/?user=ShadowsLunarfox&amp;theme=transparent&amp;background=00000000&amp;hide_border=true&amp;card_width=495" alt="GitHub contribution streak" width="32%" align="top" />
-  <img src="https://github-readme-stats.shion.dev/api/top-langs/?username=ShadowsLunarfox&amp;theme=transparent&amp;bg_color=00000000&amp;hide_border=true&amp;include_all_commits=false&amp;count_private=false&amp;layout=compact&amp;card_width=495" alt="Most used languages" width="32%" align="top" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.shion.dev/api?username=ShadowsLunarfox&amp;theme=transparent&amp;bg_color=00000000&amp;hide_border=true&amp;title_color=ffaec5&amp;text_color=adbac7&amp;icon_color=d7c4f3&amp;ring_color=b9edf2&amp;show_icons=true&amp;include_all_commits=false&amp;count_private=false&amp;card_width=495" />
+    <img src="https://github-readme-stats.shion.dev/api?username=ShadowsLunarfox&amp;theme=transparent&amp;bg_color=00000000&amp;hide_border=true&amp;title_color=615276&amp;text_color=3b2d4f&amp;icon_color=615276&amp;ring_color=b9edf2&amp;show_icons=true&amp;include_all_commits=false&amp;count_private=false&amp;card_width=495" alt="GitHub stats" width="32%" align="top" />
+  </picture>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com/?user=ShadowsLunarfox&amp;theme=transparent&amp;background=00000000&amp;hide_border=true&amp;stroke=615276&amp;ring=d7c4f3&amp;fire=ffd3b0&amp;currStreakNum=adbac7&amp;sideNums=adbac7&amp;currStreakLabel=ffaec5&amp;sideLabels=d7c4f3&amp;dates=adbac7&amp;card_width=495" />
+    <img src="https://streak-stats.demolab.com/?user=ShadowsLunarfox&amp;theme=transparent&amp;background=00000000&amp;hide_border=true&amp;stroke=d7c4f3&amp;ring=d7c4f3&amp;fire=ffd3b0&amp;currStreakNum=3b2d4f&amp;sideNums=3b2d4f&amp;currStreakLabel=615276&amp;sideLabels=615276&amp;dates=615276&amp;card_width=495" alt="GitHub contribution streak" width="32%" align="top" />
+  </picture>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/profile/languages-dark.svg" />
+    <img src="assets/profile/languages-light.svg" alt="Most used languages" width="32%" align="top" />
+  </picture>
 </p>
 
 <!-- BEGIN activity-graph -->
 <h2 align="center">Activity Graph (o_o)/</h2>
 
 <p align="center">
-  <img src="assets/profile/activity.svg" alt="ShadowsLunarfox's GitHub contributions over the last 31 days" width="100%" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/profile/activity.svg" />
+    <img src="assets/profile/activity-light.svg" alt="ShadowsLunarfox's GitHub contributions over the last 31 days" width="100%" />
+  </picture>
 </p>
 <!-- END activity-graph -->
 
@@ -90,9 +104,9 @@ Hi, I am **Shadows_Lunarfox &#26376;&#29392;**, a developer from Kuala Lumpur, M
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ShadowsLunarfox/ShadowsLunarfox/output/github-snake-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/ShadowsLunarfox/ShadowsLunarfox/output/github-snake.svg" />
-    <img src="https://raw.githubusercontent.com/ShadowsLunarfox/ShadowsLunarfox/output/github-snake.svg" alt="Snake animation of ShadowsLunarfox's GitHub contributions" width="100%" />
+    <source media="(prefers-color-scheme: dark)" srcset="assets/profile/github-snake-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="assets/profile/github-snake.svg" />
+    <img src="assets/profile/github-snake.svg" alt="Pastel pink snake animation of ShadowsLunarfox's GitHub contributions" width="100%" />
   </picture>
 </p>
 
@@ -116,6 +130,6 @@ Hi, I am **Shadows_Lunarfox &#26376;&#29392;**, a developer from Kuala Lumpur, M
 
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&height=110&section=footer&color=0:73d2de,55:ffd166,100:ff8fab" alt="Profile footer" width="100%" />
+<img src="https://capsule-render.vercel.app/api?type=waving&height=110&section=footer&color=0:b9edf2,35:ffe9a3,70:d7c4f3,100:ffaec5" alt="Profile footer" width="100%" />
 
 </div>
