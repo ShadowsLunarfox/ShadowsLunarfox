@@ -28,20 +28,20 @@
 </div>
 
 <!-- BEGIN lunarfox-corner -->
-<h2 align="center">🌙 Lunarfox's Cozy Corner · 月狐小窝 🐾</h2>
+<h2 align="center">🌙 <samp>Lunarfox's Cozy Corner · 月狐小窝</samp> 🐾</h2>
 
 <table align="center" width="100%">
   <tr>
     <td align="center" valign="middle" width="28%">
       <img src="b7be7453e22cf7571441503a0ff8fc87_720.png" alt="A fluffy pastel moon fox coding on a little laptop" width="210" />
       <br />
-      <strong>月狐 · Lunarfox</strong>
+      <strong><samp>月狐 · Lunarfox</samp></strong>
       <br />
-      <sub>🌙 Small ideas, fluffy tails ✨</sub>
+      <sub><em>🌙 Small ideas, fluffy tails ✨</em><br /><samp>(ᵔᴥᵔ)</samp></sub>
     </td>
     <td valign="top" width="72%">
-      <p>Hi, I'm <strong>Shadows_Lunarfox 月狐</strong> 🦊<br />
-      A developer from <strong>Kuala Lumpur, Malaysia</strong>. I like building websites, games, small tools, and experiments that feel polished enough to keep.</p>
+      <p>👋 Hi, I'm <strong><samp>Shadows_Lunarfox 月狐</samp></strong> 🦊 <samp>(｡･ω･｡)ﾉ</samp><br />
+      📍 A developer from <strong>Kuala Lumpur, Malaysia</strong>. I like building websites, games, small tools, and experiments that feel polished enough to keep.</p>
       <p><strong>🍡 Coding Languages</strong><br />
         <img src="https://img.shields.io/badge/C%23-d7c4f3?style=flat&amp;logo=csharp&amp;logoColor=3b2d4f" alt="C#" />
         <img src="https://img.shields.io/badge/C%2B%2B-b9edf2?style=flat&amp;logo=cplusplus&amp;logoColor=3b2d4f" alt="C++" />
@@ -73,7 +73,7 @@
 
 <!-- BEGIN featured-repositories -->
 <!-- Generated from .github/featured-repositories.json; edit that file to change the cards. -->
-<h2>Featured Repositories</h2>
+<h2>✨ <samp>Featured Repositories (ง •̀_•́)ง</samp></h2>
 
 <p align="left">
   <a href="https://github.com/ShadowsLunarfox/Roblox-Customizer">
@@ -131,7 +131,7 @@
 
 <!-- END featured-repositories -->
 
-<h2 align="center">GitHub Stats (^-^)</h2>
+<h2 align="center">📊 <samp>GitHub Stats (＾▽＾)</samp></h2>
 
 
 <p align="center">
@@ -150,7 +150,7 @@
 </p>
 
 <!-- BEGIN activity-graph -->
-<h2 align="center">Activity Graph (o_o)/</h2>
+<h2 align="center">🌱 <samp>Activity Graph</samp></h2>
 
 <p align="center">
   <picture>
@@ -160,7 +160,7 @@
 </p>
 <!-- END activity-graph -->
 
-<h2 align="center">Contribution Snake (~_~)</h2>
+<h2 align="center">🐍 <samp>Contribution Snake</samp></h2>
 
 <p align="center">
   <picture>
@@ -171,7 +171,7 @@
 </p>
 
 <!-- BEGIN 3d-contributions -->
-<h2 align="center">3D Contributions (☆_☆)</h2>
+<h2 align="center">🌌 <samp>3D Contributions (☆▽☆)</samp></h2>
 
 <p align="center">
   <picture>

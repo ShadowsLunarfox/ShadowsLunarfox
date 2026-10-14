@@ -137,7 +137,7 @@ function renderCard(repo, theme) {
 function renderSection(repositories, newline = '\n') {
   const lines = [BEGIN, '<!-- Generated from .github/featured-repositories.json; edit that file to change the cards. -->'];
   if (repositories.length) {
-    lines.push('<h2>Featured Repositories</h2>', '');
+    lines.push('<h2>✨ <samp>Featured Repositories (ง •̀_•́)ง</samp></h2>', '');
     for (let index = 0; index < repositories.length; index += 2) {
       lines.push('<p align="left">');
       for (let offset = index; offset < Math.min(index + 2, repositories.length); offset++) {

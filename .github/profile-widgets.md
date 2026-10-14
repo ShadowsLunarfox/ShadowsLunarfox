@@ -38,6 +38,14 @@ The snake is pastel pink (`#ffaec5`) in both themes. README uses `assets/profile
 
 To remove a widget, remove its marked README section and corresponding workflow. The typing animation has no workflow.
 
+## 字体层次与表情符号
+
+README 的栏目标题和昵称使用 `<samp>` 等宽字体，与正文的默认字体形成层次；角色下方的短句使用 `<em>` 斜体。顶部打字动画继续使用 Fira Code。表情符号放在栏目标题、问候和所在地，作为轻量的视觉提示。
+
+问候、角色短句、项目展示、统计和 3D 贡献标题加上少量颜文字，例如 `(｡･ω･｡)ﾉ`、`(ᵔᴥᵔ)` 和 `(☆▽☆)`，与现有 emoji 搭配。
+
+这些样式使用 GitHub README 支持的 HTML 标签，不依赖自定义 CSS 或特殊 Unicode 字母。仓库展示标题由 `generate-repositories.cjs` 生成，保留相同的字体、✨ 表情符号和 `(ง •̀_•́)ง` 颜文字。
+
 ## 自定义主页仓库展示
 
 配置文件：`.github/featured-repositories.json`。README 中的 **Featured Repositories** 是独立的仓库卡片区，每行两张，整张卡片都可以点击进入仓库，支持深浅色模式。
