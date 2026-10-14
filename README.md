@@ -133,19 +133,24 @@
 
 <h2 align="center">📊 <samp>GitHub Stats (＾▽＾)</samp></h2>
 
-
 <p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.shion.dev/api?username=ShadowsLunarfox&amp;theme=transparent&amp;bg_color=00000000&amp;hide_border=true&amp;title_color=ffaec5&amp;text_color=adbac7&amp;icon_color=d7c4f3&amp;ring_color=b9edf2&amp;show_icons=true&amp;include_all_commits=false&amp;count_private=false&amp;card_width=495" />
-    <img src="https://github-readme-stats.shion.dev/api?username=ShadowsLunarfox&amp;theme=transparent&amp;bg_color=00000000&amp;hide_border=true&amp;title_color=615276&amp;text_color=3b2d4f&amp;icon_color=615276&amp;ring_color=b9edf2&amp;show_icons=true&amp;include_all_commits=false&amp;count_private=false&amp;card_width=495" alt="GitHub stats" width="32%" align="top" />
+    <img src="https://github-readme-stats.shion.dev/api?username=ShadowsLunarfox&amp;theme=transparent&amp;bg_color=00000000&amp;hide_border=true&amp;title_color=615276&amp;text_color=3b2d4f&amp;icon_color=615276&amp;ring_color=b9edf2&amp;show_icons=true&amp;include_all_commits=false&amp;count_private=false&amp;card_width=495" alt="GitHub stats" width="495" />
   </picture>
+</p>
+
+<p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com/?user=ShadowsLunarfox&amp;theme=transparent&amp;background=00000000&amp;hide_border=true&amp;stroke=615276&amp;ring=d7c4f3&amp;fire=ffd3b0&amp;currStreakNum=adbac7&amp;sideNums=adbac7&amp;currStreakLabel=ffaec5&amp;sideLabels=d7c4f3&amp;dates=adbac7&amp;card_width=495" />
-    <img src="https://streak-stats.demolab.com/?user=ShadowsLunarfox&amp;theme=transparent&amp;background=00000000&amp;hide_border=true&amp;stroke=d7c4f3&amp;ring=d7c4f3&amp;fire=ffd3b0&amp;currStreakNum=3b2d4f&amp;sideNums=3b2d4f&amp;currStreakLabel=615276&amp;sideLabels=615276&amp;dates=615276&amp;card_width=495" alt="GitHub contribution streak" width="32%" align="top" />
+    <img src="https://streak-stats.demolab.com/?user=ShadowsLunarfox&amp;theme=transparent&amp;background=00000000&amp;hide_border=true&amp;stroke=d7c4f3&amp;ring=d7c4f3&amp;fire=ffd3b0&amp;currStreakNum=3b2d4f&amp;sideNums=3b2d4f&amp;currStreakLabel=615276&amp;sideLabels=615276&amp;dates=615276&amp;card_width=495" alt="GitHub contribution streak" width="495" />
   </picture>
+</p>
+
+<p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/profile/languages-dark.svg" />
-    <img src="assets/profile/languages-light.svg" alt="Most used languages" width="32%" align="top" />
+    <img src="assets/profile/languages-light.svg" alt="Most used languages" width="495" />
   </picture>
 </p>
 
