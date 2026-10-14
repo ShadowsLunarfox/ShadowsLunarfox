@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="200" viewBox="0 0 560 200" role="img" aria-labelledby="title description">
+  <title id="title">ShadowsLunarfox/Server-Check-Status</title>
+  <desc id="description">Server Check Status is a lightweight Python desktop tool for checking whether a single server accepts TCP connections on a selected port.  The tool is designed for simple availability checks: enter a server IP address or domain name, choose a port, set the number of attempts, and click Start. Python; 25 stars; 5 forks.</desc>
+  <rect x="8.5" y="8.5" width="543" height="183" rx="6" fill="none" stroke="#444c56"/>
+  <g font-family="Segoe UI, Noto Sans, Arial, sans-serif" fill="#adbac7">
+    <text x="28" y="46" font-size="18" font-weight="600" fill="#ffaec5">Server-Check-Status</text>
+    <rect x="478.5" y="28.5" width="53" height="23" rx="11.5" fill="none" stroke="#444c56"/>
+    <text x="505" y="44.5" text-anchor="middle" font-size="13">Public</text>
+    <text font-size="16"><tspan x="28" y="81">Server Check Status is a lightweight Python desktop tool for</tspan><tspan x="28" y="103">checking whether a single server accepts TCP connections on a</tspan><tspan x="28" y="125">selected port. The tool is designed for simple availability checks…</tspan></text>
+    <g font-size="14"><circle cx="35" cy="166" r="7" fill="#ffe9a3"/><text x="48" y="171">Python</text><g transform="translate(116.48 155)" fill="none" stroke="#adbac7" stroke-width="1.5" stroke-linejoin="round"><path d="M8 1.2 10.1 5.5 14.8 6.2 11.4 9.5 12.2 14.2 8 12 3.8 14.2 4.6 9.5 1.2 6.2 5.9 5.5Z"/></g><text x="139.48000000000002" y="171">25</text><g transform="translate(181.07999999999998 155)" fill="none" stroke="#adbac7" stroke-width="1.5" stroke-linejoin="round"><circle cx="4" cy="3" r="2"/><circle cx="12" cy="3" r="2"/><circle cx="8" cy="13" r="2"/><path d="M4 5v2c0 2 4 1 4 4m4-6v2c0 2-4 1-4 4"/></g><text x="204.07999999999998" y="171">5</text></g>
+  </g>
+</svg>

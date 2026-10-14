@@ -1,0 +1,14 @@
+{
+  "count": 7,
+  "repositories": [
+    "Roblox-Customizer",
+    "YouTube-Customizer",
+    "Selection-Text-Reader",
+    "Custom-Browser-Homepage",
+    "Server-Check-Status",
+    "Custom-Hierarchy-for-Unity",
+    "Custom-Folder-For-Unity"
+  ],
+  "sort": "stars",
+  "exclude": ["ShadowsLunarfox"]
+}

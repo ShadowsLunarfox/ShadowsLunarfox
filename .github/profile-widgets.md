@@ -9,6 +9,7 @@ Each optional section has `BEGIN` and `END` comments in README.md so it can be r
 | Contribution snake | [Platane/snk](https://github.com/Platane/snk) | `snake.yml`, daily |
 | 3D contributions | [yoshi389111/github-profile-3d-contrib](https://github.com/yoshi389111/github-profile-3d-contrib) | `profile-3d.yml`, daily |
 | Most used languages | [anuraghazra/github-readme-stats](https://github.com/anuraghazra/github-readme-stats), existing Shion image service | `profile-3d.yml`, daily |
+| Featured repositories | GitHub REST API, local SVG card renderer | `featured-repositories.yml`, daily or when the configuration changes |
 
 Push the workflow files to `main` to trigger the initial generation. The workflows can also be run from GitHub's Actions tab. The activity graph is generated inside the workflow because the project's public Vercel endpoint returned HTTP 402 during setup.
 
@@ -36,3 +37,24 @@ The typing animation, stats, activity graph, snake, and 3D calendar select reada
 The snake is pastel pink (`#ffaec5`) in both themes. README uses `assets/profile/github-snake.svg` and `assets/profile/github-snake-dark.svg`, so local previews show the selected palette immediately. `snake.yml` refreshes these snapshots daily and also publishes the same animations to the existing `output` branch.
 
 To remove a widget, remove its marked README section and corresponding workflow. The typing animation has no workflow.
+
+## 自定义主页仓库展示
+
+配置文件：`.github/featured-repositories.json`。README 中的 **Featured Repositories** 是独立的仓库卡片区，每行两张，整张卡片都可以点击进入仓库，支持深浅色模式。
+
+- `count`：最多显示几个仓库。改成 `8` 就展示 8 个；`0` 隐藏整个展示区。数量超过可用仓库数时，只显示实际存在的仓库。
+- `repositories`：指定优先展示的仓库名称，按数组顺序排列。名称不需要带用户名，必须是主页所有者的公开仓库。空数组表示全部自动选择。
+- `sort`：指定名单之外的仓库按什么顺序补齐。`stars` 按 Star 数，`updated` 按最近更新，`name` 按名称。
+- `exclude`：排除的仓库名称，默认排除主页仓库本身。
+
+默认展示你选择的 7 个仓库，按配置中的顺序排列。只把 `count` 改成 `8`，会保留这 7 个，再按 Star 数补上 1 个。若想完全指定这 8 个仓库，就在 `repositories` 中填入 8 个名称。自动补齐时跳过 Fork 和归档仓库，但可以通过指定名单展示它们。
+
+修改配置后，在项目根目录运行：
+
+```powershell
+node .github/scripts/generate-repositories.cjs
+```
+
+这会刷新 `assets/profile/repositories/` 中的卡片和 README 对应区块。推送配置到 `main` 后，GitHub Actions 也会自动刷新；每天吉隆坡时间 00:42 更新简介、语言、Star 和 Fork 数。无需安装 npm 依赖，本地生成公开仓库卡片无需令牌。
+
+GitHub 自带的 Popular repositories / Pinned 区域仍受最多 6 个项目的限制，README 里的自定义区块可以展示更多仓库，位置在个人介绍之后、统计图之前。

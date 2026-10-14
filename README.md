@@ -71,6 +71,66 @@
 </table>
 <!-- END lunarfox-corner -->
 
+<!-- BEGIN featured-repositories -->
+<!-- Generated from .github/featured-repositories.json; edit that file to change the cards. -->
+<h2>Featured Repositories</h2>
+
+<p align="left">
+  <a href="https://github.com/ShadowsLunarfox/Roblox-Customizer">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="assets/profile/repositories/repo-1-dark.svg" />
+      <img src="assets/profile/repositories/repo-1-light.svg" alt="ShadowsLunarfox/Roblox-Customizer: A browser extension for Chrome and Edge that adds custom backgrounds, frosted panels, and useful browsing tools to Roblox, with support for light and dark themes." width="49%" />
+    </picture>
+  </a>
+  <a href="https://github.com/ShadowsLunarfox/YouTube-Customizer">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="assets/profile/repositories/repo-2-dark.svg" />
+      <img src="assets/profile/repositories/repo-2-light.svg" alt="ShadowsLunarfox/YouTube-Customizer: YouTube Customizer is a browser extension for personalizing YouTube. It lets you restyle the page, customize the video progress bar, and hide or compact parts of YouTube&apos;s interface. The extension has an English settings UI with a Windows 98-inspired look, and changes are previewed on YouTube as you make them." width="49%" />
+    </picture>
+  </a>
+</p>
+
+<p align="left">
+  <a href="https://github.com/ShadowsLunarfox/Selection-Text-Reader">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="assets/profile/repositories/repo-3-dark.svg" />
+      <img src="assets/profile/repositories/repo-3-light.svg" alt="ShadowsLunarfox/Selection-Text-Reader: A Windows 98-style browser extension that reads, translates, highlights, and extracts text from webpages using text-to-speech and screen OCR." width="49%" />
+    </picture>
+  </a>
+  <a href="https://github.com/ShadowsLunarfox/Custom-Browser-Homepage">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="assets/profile/repositories/repo-4-dark.svg" />
+      <img src="assets/profile/repositories/repo-4-light.svg" alt="ShadowsLunarfox/Custom-Browser-Homepage: This is a tool that can modify the browser&apos;s new tab page." width="49%" />
+    </picture>
+  </a>
+</p>
+
+<p align="left">
+  <a href="https://github.com/ShadowsLunarfox/Server-Check-Status">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="assets/profile/repositories/repo-5-dark.svg" />
+      <img src="assets/profile/repositories/repo-5-light.svg" alt="ShadowsLunarfox/Server-Check-Status: Server Check Status is a lightweight Python desktop tool for checking whether a single server accepts TCP connections on a selected port.  The tool is designed for simple availability checks: enter a server IP address or domain name, choose a port, set the number of attempts, and click Start." width="49%" />
+    </picture>
+  </a>
+  <a href="https://github.com/ShadowsLunarfox/Custom-Hierarchy-for-Unity">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="assets/profile/repositories/repo-6-dark.svg" />
+      <img src="assets/profile/repositories/repo-6-light.svg" alt="ShadowsLunarfox/Custom-Hierarchy-for-Unity: Custom-Hierarchy for unity Custom Hierarchy is a Unity Editor extension for improving the Hierarchy window. It adds component icons, object colors, connection line colors, name colors, custom icons, and a management palette so scene objects are easier to identify and organize. " width="49%" />
+    </picture>
+  </a>
+</p>
+
+<p align="left">
+  <a href="https://github.com/ShadowsLunarfox/Custom-Folder-For-Unity">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="assets/profile/repositories/repo-7-dark.svg" />
+      <img src="assets/profile/repositories/repo-7-light.svg" alt="ShadowsLunarfox/Custom-Folder-For-Unity: A extension customize the unity project tab A Unity Editor tool for customizing folders in the Project window. It lets you assign custom colors, backgrounds, name colors, and icons so large Unity projects are easier to browse, organize, and recognize." width="49%" />
+    </picture>
+  </a>
+</p>
+
+<!-- END featured-repositories -->
+
 <h2 align="center">GitHub Stats (^-^)</h2>
 
 
