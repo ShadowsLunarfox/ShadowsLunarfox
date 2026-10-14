@@ -1,0 +1,56 @@
+name: Generate activity graph
+
+on:
+  schedule:
+    # Every day at 00:27 in Kuala Lumpur (UTC+8).
+    - cron: "27 16 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/activity-graph.yml
+      - .github/scripts/generate-activity.cjs
+
+permissions:
+  contents: write
+
+concurrency:
+  group: activity-graph
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v5
+      - name: Fetch the official activity graph renderer
+        uses: actions/checkout@v5
+        with:
+          repository: Ashutosh00710/github-readme-activity-graph
+          ref: main
+          path: vendor/activity-graph
+          persist-credentials: false
+      - uses: actions/setup-node@v5
+        with:
+          node-version: "24"
+      - name: Build the renderer
+        working-directory: vendor/activity-graph
+        run: |
+          npm install --ignore-scripts --no-audit --no-fund
+          npm run build
+      - name: Generate the contribution chart
+        run: node .github/scripts/generate-activity.cjs
+        env:
+          PROFILE_USERNAME: ${{ github.repository_owner }}
+          TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Save the updated chart
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add assets/profile/activity.svg
+          if ! git diff --cached --quiet; then
+            git commit -m "Update activity graph"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="210" viewBox="0 0 600 210" role="img" aria-labelledby="title description">
+  <title id="title">Metrics terminal dashboard</title>
+  <desc id="description">The personalized Metrics dashboard is being prepared.</desc>
+  <rect width="600" height="210" rx="14" fill="#171321"/>
+  <circle cx="24" cy="24" r="5" fill="#ff8fab"/>
+  <circle cx="44" cy="24" r="5" fill="#ffd166"/>
+  <circle cx="64" cy="24" r="5" fill="#73d2de"/>
+  <g font-family="monospace" font-size="18">
+    <text x="24" y="76" fill="#73d2de">shadows@github:~$ profile</text>
+    <text x="24" y="118" fill="#ff8fab">Metrics Dashboard</text>
+    <text x="24" y="155" fill="#c9c0d5">Your dashboard is being prepared.</text>
+  </g>
+</svg>

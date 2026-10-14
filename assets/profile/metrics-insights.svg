@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="210" viewBox="0 0 600 210" role="img" aria-labelledby="title description">
+  <title id="title">GitHub achievements and coding insights</title>
+  <desc id="description">The personalized achievements, coding habits and project cards are being prepared.</desc>
+  <g font-family="Segoe UI, sans-serif" font-size="18">
+    <text x="24" y="60" fill="#ff8fab" font-size="24" font-weight="600">Achievements &amp; Coding Insights</text>
+    <text x="24" y="108" fill="#8b7a9e">Achievements · Coding habits · Projects</text>
+    <text x="24" y="150" fill="#8b7a9e">Your dashboard is being prepared.</text>
+  </g>
+</svg>

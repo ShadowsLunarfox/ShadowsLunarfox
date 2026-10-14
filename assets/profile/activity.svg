@@ -1,0 +1,165 @@
+
+    <svg
+        width="1000"
+        height="300"
+        viewBox="0 0 1000 300"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+            <rect xmlns="http://www.w3.org/2000/svg" data-testid="card_bg" id="cardBg"
+            x="0" y="0" rx="0" height="100%" stroke="#E4E2E2" fill-opacity="1"
+            width="100%" fill="#00000000" stroke-opacity="1" style="stroke:#00000000; stroke-width:1;"/>
+
+            <style>
+                body {
+                    font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
+                }
+                .header {
+                    font: 600 20px 'Segoe UI', Ubuntu, Sans-Serif;
+                    text-align: center;
+                    color: #ff8fab;
+                    margin-top: 20px;
+                }
+                svg {
+                    font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
+                    user-select: none;
+                }
+                
+    .ct-label {
+      fill: #8b7a9e;
+      color: #8b7a9e;
+      font-size: .75rem;
+      line-height: 1;
+    }
+
+    .ct-grid-background,
+    .ct-line {
+      fill: none;
+    }
+
+    .ct-chart-bar .ct-label,
+    .ct-chart-line .ct-label {
+      display: block;
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+    }
+
+    .ct-label.ct-horizontal.ct-start {
+      -webkit-box-align: flex-end;
+      -webkit-align-items: flex-end;
+      -ms-flex-align: flex-end;
+      align-items: flex-end;
+      -webkit-box-pack: flex-start;
+      -webkit-justify-content: flex-start;
+      -ms-flex-pack: flex-start;
+      justify-content: flex-start;
+      text-align: left;
+      text-anchor: start;
+    }
+
+    .ct-label.ct-horizontal.ct-end {
+      -webkit-box-align: flex-start;
+      -webkit-align-items: flex-start;
+      -ms-flex-align: flex-start;
+      align-items: flex-start;
+      -webkit-box-pack: flex-start;
+      -webkit-justify-content: flex-start;
+      -ms-flex-pack: flex-start;
+      justify-content: flex-start;
+      text-align: left;
+      text-anchor: start;
+    }
+
+    .ct-label.ct-vertical.ct-start {
+      -webkit-box-align: flex-end;
+      -webkit-align-items: flex-end;
+      -ms-flex-align: flex-end;
+      align-items: flex-end;
+      -webkit-box-pack: flex-end;
+      -webkit-justify-content: flex-end;
+      -ms-flex-pack: flex-end;
+      justify-content: flex-end;
+      text-align: right;
+      text-anchor: end;
+    }
+
+    .ct-label.ct-vertical.ct-end {
+      -webkit-box-align: flex-end;
+      -webkit-align-items: flex-end;
+      -ms-flex-align: flex-end;
+      align-items: flex-end;
+      -webkit-box-pack: flex-start;
+      -webkit-justify-content: flex-start;
+      -ms-flex-pack: flex-start;
+      justify-content: flex-start;
+      text-align: left;
+      text-anchor: start;
+    }
+
+    .ct-grid {
+      stroke: #8b7a9e;
+      stroke-width: 1px;
+      stroke-opacity: 0.3;
+      stroke-dasharray: 2px;
+    }
+
+    .ct-point {
+      stroke-width: 10px;
+      stroke-linecap: round;
+      stroke: #73d2de;
+      animation: blink 1s ease-in-out forwards;
+    }
+
+    .ct-line {
+      stroke-width: 4px;
+      stroke-dasharray: 5000;
+      stroke-dashoffset: 5000;
+      stroke: #ff8fab;
+      animation: dash 5s ease-in-out forwards;
+    }
+
+    .ct-area {
+      stroke: none;
+      fill-opacity: 0.1;
+    }
+
+    .ct-series-a .ct-area,
+    .ct-series-a .ct-slice-pie {
+      fill: #ff8fab;
+    }
+
+    .ct-label .ct-horizontal {
+      transform: rotate(-90deg)
+    }
+    
+                
+        @keyframes blink {
+            from {
+                opacity: 0;
+                transform:translateX(-20px); 
+            }
+            to {
+                opacity:1;
+                transform: translateX(0);
+            }
+        }
+    
+                
+        @keyframes dash {
+            to {
+                stroke-dashoffset: 0;
+            }
+        }
+    
+    
+            </style>
+
+            <foreignObject x="0" y="0" width="1000" height="50">
+                <h1 xmlns="http://www.w3.org/1999/xhtml" class="header">
+                    Activity over the last 31 days
+                </h1>
+            </foreignObject>
+            <svg xmlns:ct="http://gionkunz.github.com/chartist-js/ct" width="1000" height="300" class="ct-chart-line"><g class="ct-grids"><line x1="90" x2="90" y1="80" y2="230" class="ct-grid ct-horizontal"></line><line x1="118.66666666666667" x2="118.66666666666667" y1="80" y2="230" class="ct-grid ct-horizontal"></line><line x1="147.33333333333334" x2="147.33333333333334" y1="80" y2="230" class="ct-grid ct-horizontal"></line><line x1="176" x2="176" y1="80" y2="230" class="ct-grid ct-horizontal"></line><line x1="204.66666666666669" x2="204.66666666666669" y1="80" y2="230" class="ct-grid ct-horizontal"></line><line x1="233.33333333333334" x2="233.33333333333334" y1="80" y2="230" class="ct-grid ct-horizontal"></line><line x1="262" x2="262" y1="80" y2="230" class="ct-grid ct-horizontal"></line><line x1="290.6666666666667" x2="290.6666666666667" y1="80" y2="230" class="ct-grid ct-horizontal"></line><line x1="319.33333333333337" x2="319.33333333333337" y1="80" y2="230" class="ct-grid ct-horizontal"></line><line x1="348" x2="348" y1="80" y2="230" class="ct-grid ct-horizontal"></line><line x1="376.6666666666667" x2="376.6666666666667" y1="80" y2="230" class="ct-grid ct-horizontal"></line><line x1="405.33333333333337" x2="405.33333333333337" y1="80" y2="230" class="ct-grid ct-horizontal"></line><line x1="434" x2="434" y1="80" y2="230" class="ct-grid ct-horizontal"></line><line x1="462.6666666666667" x2="462.6666666666667" y1="80" y2="230" class="ct-grid ct-horizontal"></line><line x1="491.33333333333337" x2="491.33333333333337" y1="80" y2="230" class="ct-grid ct-horizontal"></line><line x1="520" x2="520" y1="80" y2="230" class="ct-grid ct-horizontal"></line><line x1="548.6666666666667" x2="548.6666666666667" y1="80" y2="230" class="ct-grid ct-horizontal"></line><line x1="577.3333333333334" x2="577.3333333333334" y1="80" y2="230" class="ct-grid ct-horizontal"></line><line x1="606" x2="606" y1="80" y2="230" class="ct-grid ct-horizontal"></line><line x1="634.6666666666667" x2="634.6666666666667" y1="80" y2="230" class="ct-grid ct-horizontal"></line><line x1="663.3333333333334" x2="663.3333333333334" y1="80" y2="230" class="ct-grid ct-horizontal"></line><line x1="692" x2="692" y1="80" y2="230" class="ct-grid ct-horizontal"></line><line x1="720.6666666666667" x2="720.6666666666667" y1="80" y2="230" class="ct-grid ct-horizontal"></line><line x1="749.3333333333334" x2="749.3333333333334" y1="80" y2="230" class="ct-grid ct-horizontal"></line><line x1="778" x2="778" y1="80" y2="230" class="ct-grid ct-horizontal"></line><line x1="806.6666666666667" x2="806.6666666666667" y1="80" y2="230" class="ct-grid ct-horizontal"></line><line x1="835.3333333333334" x2="835.3333333333334" y1="80" y2="230" class="ct-grid ct-horizontal"></line><line x1="864" x2="864" y1="80" y2="230" class="ct-grid ct-horizontal"></line><line x1="892.6666666666667" x2="892.6666666666667" y1="80" y2="230" class="ct-grid ct-horizontal"></line><line x1="921.3333333333334" x2="921.3333333333334" y1="80" y2="230" class="ct-grid ct-horizontal"></line><line x1="950" x2="950" y1="80" y2="230" class="ct-grid ct-horizontal"></line><line y1="230" y2="230" x1="90" x2="950" class="ct-grid ct-vertical"></line><line y1="196.66666666666666" y2="196.66666666666666" x1="90" x2="950" class="ct-grid ct-vertical"></line><line y1="163.33333333333331" y2="163.33333333333331" x1="90" x2="950" class="ct-grid ct-vertical"></line><line y1="130" y2="130" x1="90" x2="950" class="ct-grid ct-vertical"></line><line y1="96.66666666666666" y2="96.66666666666666" x1="90" x2="950" class="ct-grid ct-vertical"></line></g><g><g class="ct-series ct-series-a"><path d="M90,230L90,230C99.556,230,109.111,230,118.667,230C128.222,230,137.778,230,147.333,230C156.889,230,166.444,230,176,230C185.556,230,195.111,230,204.667,230C214.222,230,223.778,230,233.333,230C242.889,230,252.444,230,262,230C271.556,230,281.111,230,290.667,230C300.222,230,309.778,223.21,319.333,213.333C328.889,203.457,338.444,80,348,80C357.556,80,367.111,203.457,376.667,213.333C386.222,223.21,395.778,230,405.333,230C414.889,230,424.444,230,434,230C443.556,230,453.111,222.593,462.667,213.333C472.222,204.074,481.778,139.259,491.333,130C500.889,120.741,510.444,113.333,520,113.333C529.556,113.333,539.111,230,548.667,230C558.222,230,567.778,230,577.333,230C586.889,230,596.444,230,606,230C615.556,230,625.111,230,634.667,230C644.222,230,653.778,230,663.333,230C672.889,230,682.444,230,692,230C701.556,230,711.111,180,720.667,180C730.222,180,739.778,196.667,749.333,196.667C758.889,196.667,768.444,188.333,778,180C787.556,171.667,797.111,130,806.667,130C816.222,130,825.778,187.778,835.333,196.667C844.889,205.556,854.444,213.333,864,213.333C873.556,213.333,883.111,213.333,892.667,213.333C902.222,213.333,911.778,130,921.333,130C930.889,130,940.444,152.222,950,163.333L950,230Z" class="ct-area"></path><path d="M90,230C99.556,230,109.111,230,118.667,230C128.222,230,137.778,230,147.333,230C156.889,230,166.444,230,176,230C185.556,230,195.111,230,204.667,230C214.222,230,223.778,230,233.333,230C242.889,230,252.444,230,262,230C271.556,230,281.111,230,290.667,230C300.222,230,309.778,223.21,319.333,213.333C328.889,203.457,338.444,80,348,80C357.556,80,367.111,203.457,376.667,213.333C386.222,223.21,395.778,230,405.333,230C414.889,230,424.444,230,434,230C443.556,230,453.111,222.593,462.667,213.333C472.222,204.074,481.778,139.259,491.333,130C500.889,120.741,510.444,113.333,520,113.333C529.556,113.333,539.111,230,548.667,230C558.222,230,567.778,230,577.333,230C586.889,230,596.444,230,606,230C615.556,230,625.111,230,634.667,230C644.222,230,653.778,230,663.333,230C672.889,230,682.444,230,692,230C701.556,230,711.111,180,720.667,180C730.222,180,739.778,196.667,749.333,196.667C758.889,196.667,768.444,188.333,778,180C787.556,171.667,797.111,130,806.667,130C816.222,130,825.778,187.778,835.333,196.667C844.889,205.556,854.444,213.333,864,213.333C873.556,213.333,883.111,213.333,892.667,213.333C902.222,213.333,911.778,130,921.333,130C930.889,130,940.444,152.222,950,163.333" class="ct-line"></path><line x1="90" y1="230" x2="90.01" y2="230" class="ct-point" ct:value="0"></line><line x1="118.66666666666667" y1="230" x2="118.67666666666668" y2="230" class="ct-point" ct:value="0"></line><line x1="147.33333333333334" y1="230" x2="147.34333333333333" y2="230" class="ct-point" ct:value="0"></line><line x1="176" y1="230" x2="176.01" y2="230" class="ct-point" ct:value="0"></line><line x1="204.66666666666669" y1="230" x2="204.67666666666668" y2="230" class="ct-point" ct:value="0"></line><line x1="233.33333333333334" y1="230" x2="233.34333333333333" y2="230" class="ct-point" ct:value="0"></line><line x1="262" y1="230" x2="262.01" y2="230" class="ct-point" ct:value="0"></line><line x1="290.6666666666667" y1="230" x2="290.6766666666667" y2="230" class="ct-point" ct:value="0"></line><line x1="319.33333333333337" y1="213.33333333333334" x2="319.34333333333336" y2="213.33333333333334" class="ct-point" ct:value="1"></line><line x1="348" y1="80" x2="348.01" y2="80" class="ct-point" ct:value="9"></line><line x1="376.6666666666667" y1="213.33333333333334" x2="376.6766666666667" y2="213.33333333333334" class="ct-point" ct:value="1"></line><line x1="405.33333333333337" y1="230" x2="405.34333333333336" y2="230" class="ct-point" ct:value="0"></line><line x1="434" y1="230" x2="434.01" y2="230" class="ct-point" ct:value="0"></line><line x1="462.6666666666667" y1="213.33333333333334" x2="462.6766666666667" y2="213.33333333333334" class="ct-point" ct:value="1"></line><line x1="491.33333333333337" y1="130" x2="491.34333333333336" y2="130" class="ct-point" ct:value="6"></line><line x1="520" y1="113.33333333333333" x2="520.01" y2="113.33333333333333" class="ct-point" ct:value="7"></line><line x1="548.6666666666667" y1="230" x2="548.6766666666667" y2="230" class="ct-point" ct:value="0"></line><line x1="577.3333333333334" y1="230" x2="577.3433333333334" y2="230" class="ct-point" ct:value="0"></line><line x1="606" y1="230" x2="606.01" y2="230" class="ct-point" ct:value="0"></line><line x1="634.6666666666667" y1="230" x2="634.6766666666667" y2="230" class="ct-point" ct:value="0"></line><line x1="663.3333333333334" y1="230" x2="663.3433333333334" y2="230" class="ct-point" ct:value="0"></line><line x1="692" y1="230" x2="692.01" y2="230" class="ct-point" ct:value="0"></line><line x1="720.6666666666667" y1="180" x2="720.6766666666667" y2="180" class="ct-point" ct:value="3"></line><line x1="749.3333333333334" y1="196.66666666666666" x2="749.3433333333334" y2="196.66666666666666" class="ct-point" ct:value="2"></line><line x1="778" y1="180" x2="778.01" y2="180" class="ct-point" ct:value="3"></line><line x1="806.6666666666667" y1="130" x2="806.6766666666667" y2="130" class="ct-point" ct:value="6"></line><line x1="835.3333333333334" y1="196.66666666666666" x2="835.3433333333334" y2="196.66666666666666" class="ct-point" ct:value="2"></line><line x1="864" y1="213.33333333333334" x2="864.01" y2="213.33333333333334" class="ct-point" ct:value="1"></line><line x1="892.6666666666667" y1="213.33333333333334" x2="892.6766666666667" y2="213.33333333333334" class="ct-point" ct:value="1"></line><line x1="921.3333333333334" y1="130" x2="921.3433333333334" y2="130" class="ct-point" ct:value="6"></line><line x1="950" y1="163.33333333333331" x2="950.01" y2="163.33333333333331" class="ct-point" ct:value="4"></line></g></g><g class="ct-labels"><text x="85.5" y="250" width="28.666666666666668" height="40" class="ct-label ct-horizontal ct-end">14</text><text x="114.16666666666667" y="250" width="28.666666666666668" height="40" class="ct-label ct-horizontal ct-end">15</text><text x="142.83333333333334" y="250" width="28.666666666666664" height="40" class="ct-label ct-horizontal ct-end">16</text><text x="171.5" y="250" width="28.66666666666667" height="40" class="ct-label ct-horizontal ct-end">17</text><text x="200.16666666666669" y="250" width="28.66666666666667" height="40" class="ct-label ct-horizontal ct-end">18</text><text x="228.83333333333334" y="250" width="28.666666666666657" height="40" class="ct-label ct-horizontal ct-end">19</text><text x="257.5" y="250" width="28.666666666666686" height="40" class="ct-label ct-horizontal ct-end">20</text><text x="286.1666666666667" y="250" width="28.666666666666657" height="40" class="ct-label ct-horizontal ct-end">21</text><text x="314.83333333333337" y="250" width="28.666666666666657" height="40" class="ct-label ct-horizontal ct-end">22</text><text x="343.5" y="250" width="28.666666666666686" height="40" class="ct-label ct-horizontal ct-end">23</text><text x="372.1666666666667" y="250" width="28.666666666666686" height="40" class="ct-label ct-horizontal ct-end">24</text><text x="400.83333333333337" y="250" width="28.66666666666663" height="40" class="ct-label ct-horizontal ct-end">25</text><text x="429.5" y="250" width="28.666666666666686" height="40" class="ct-label ct-horizontal ct-end">26</text><text x="458.1666666666667" y="250" width="28.666666666666686" height="40" class="ct-label ct-horizontal ct-end">27</text><text x="486.83333333333337" y="250" width="28.66666666666663" height="40" class="ct-label ct-horizontal ct-end">28</text><text x="515.5" y="250" width="28.666666666666686" height="40" class="ct-label ct-horizontal ct-end">29</text><text x="544.1666666666667" y="250" width="28.666666666666686" height="40" class="ct-label ct-horizontal ct-end">30</text><text x="572.8333333333334" y="250" width="28.66666666666663" height="40" class="ct-label ct-horizontal ct-end">1</text><text x="601.5" y="250" width="28.666666666666742" height="40" class="ct-label ct-horizontal ct-end">2</text><text x="630.1666666666667" y="250" width="28.66666666666663" height="40" class="ct-label ct-horizontal ct-end">3</text><text x="658.8333333333334" y="250" width="28.66666666666663" height="40" class="ct-label ct-horizontal ct-end">4</text><text x="687.5" y="250" width="28.666666666666742" height="40" class="ct-label ct-horizontal ct-end">5</text><text x="716.1666666666667" y="250" width="28.66666666666663" height="40" class="ct-label ct-horizontal ct-end">6</text><text x="744.8333333333334" y="250" width="28.66666666666663" height="40" class="ct-label ct-horizontal ct-end">7</text><text x="773.5" y="250" width="28.666666666666742" height="40" class="ct-label ct-horizontal ct-end">8</text><text x="802.1666666666667" y="250" width="28.66666666666663" height="40" class="ct-label ct-horizontal ct-end">9</text><text x="830.8333333333334" y="250" width="28.66666666666663" height="40" class="ct-label ct-horizontal ct-end">10</text><text x="859.5" y="250" width="28.666666666666742" height="40" class="ct-label ct-horizontal ct-end">11</text><text x="888.1666666666667" y="250" width="28.66666666666663" height="40" class="ct-label ct-horizontal ct-end">12</text><text x="916.8333333333334" y="250" width="28.66666666666663" height="40" class="ct-label ct-horizontal ct-end">13</text><text x="945.5" y="250" width="30" height="40" class="ct-label ct-horizontal ct-end">14</text><text y="234.5" x="80" height="33.333333333333336" width="60" class="ct-label ct-vertical ct-start">0</text><text y="201.16666666666666" x="80" height="33.333333333333336" width="60" class="ct-label ct-vertical ct-start">2</text><text y="167.83333333333331" x="80" height="33.33333333333333" width="60" class="ct-label ct-vertical ct-start">4</text><text y="134.5" x="80" height="33.33333333333334" width="60" class="ct-label ct-vertical ct-start">6</text><text y="101.16666666666666" x="80" height="30" width="60" class="ct-label ct-vertical ct-start">8</text></g><text class="ct-axis-title ct-label" x="520" y="280" dominant-baseline="text-after-edge" text-anchor="middle">Days</text><text class="ct-axis-title ct-label" x="20" y="155" transform="rotate(-90, 20, 155)" dominant-baseline="hanging" text-anchor="middle">Contributions</text></svg>
+    </svg>

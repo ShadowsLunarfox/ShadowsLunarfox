@@ -2,13 +2,19 @@
  * @Author: Shadows_Lunarfox 91894334+ShadowsLunarfox@users.noreply.github.com
  * @Date: 2026-07-30 16:33:16
  * @LastEditors: Shadows_Lunarfox 91894334+ShadowsLunarfox@users.noreply.github.com
- * @LastEditTime: 2026-08-04 09:00:33
+ * @LastEditTime: 2026-10-15 01:22:00
  * @FilePath: \ShadowsLunarfox\README.md
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 -->
 <div align="center">
 
 <img src="https://capsule-render.vercel.app/api?type=waving&height=180&color=0:ff8fab,45:ffd166,100:73d2de&text=Shadows_Lunarfox%20%E6%9C%88%E7%8B%90&fontAlign=50&fontAlignY=38&fontColor=3b2d4f&fontSize=48&animation=twinkling" alt="Shadows_Lunarfox profile header" width="100%" />
+
+<!-- BEGIN typing-animation -->
+<p>
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&amp;size=22&amp;pause=1200&amp;color=FF8FAB&amp;background=00000000&amp;center=true&amp;vCenter=true&amp;width=760&amp;height=60&amp;lines=Hi%2C+I%27m+Shadows_Lunarfox+%E6%9C%88%E7%8B%90;Building+websites%2C+games+%26+little+experiments;Coding+from+Kuala+Lumpur%2C+Malaysia" alt="Animated introduction: Shadows_Lunarfox, building websites, games and tools in Kuala Lumpur" width="100%" />
+</p>
+<!-- END typing-animation -->
 
 <p>
   <img src="https://komarev.com/ghpvc/?username=ShadowsLunarfox&label=Profile%20Views&color=ff8fab&style=for-the-badge" alt="Profile views" />
@@ -72,6 +78,14 @@ Hi, I am **Shadows_Lunarfox &#26376;&#29392;**, a developer from Kuala Lumpur, M
   <img src="https://github-readme-stats.shion.dev/api/top-langs/?username=ShadowsLunarfox&amp;theme=transparent&amp;bg_color=00000000&amp;hide_border=true&amp;include_all_commits=false&amp;count_private=false&amp;layout=compact&amp;card_width=495" alt="Most used languages" width="32%" align="top" />
 </p>
 
+<!-- BEGIN activity-graph -->
+<h2 align="center">Activity Graph (o_o)/</h2>
+
+<p align="center">
+  <img src="assets/profile/activity.svg" alt="ShadowsLunarfox's GitHub contributions over the last 31 days" width="100%" />
+</p>
+<!-- END activity-graph -->
+
 <h2 align="center">Contribution Snake (~_~)</h2>
 
 <p align="center">
@@ -82,9 +96,27 @@ Hi, I am **Shadows_Lunarfox &#26376;&#29392;**, a developer from Kuala Lumpur, M
   </picture>
 </p>
 
+<!-- BEGIN 3d-contributions -->
+<h2 align="center">3D Contributions (☆_☆)</h2>
+
 <p align="center">
-  <a href="https://github.com/Platane/snk">Powered by Platane/snk</a>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/profile/3d-contributions-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="assets/profile/3d-contributions-light.svg" />
+    <img src="assets/profile/3d-contributions-light.svg" alt="3D calendar of ShadowsLunarfox's GitHub contributions" width="100%" />
+  </picture>
 </p>
+<!-- END 3d-contributions -->
+
+<!-- BEGIN metrics-dashboard -->
+<h2 align="center">Metrics Dashboard (&gt;_&lt;)</h2>
+
+<p align="center">
+  <img src="assets/profile/metrics-terminal.svg" alt="Terminal-style GitHub profile and programming languages" width="49%" align="top" />
+  <img src="assets/profile/metrics-insights.svg" alt="GitHub achievements, coding habits and featured repositories" width="49%" align="top" />
+</p>
+<!-- END metrics-dashboard -->
+
 
 
 

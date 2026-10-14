@@ -1,0 +1,47 @@
+name: Generate 3D contributions
+
+on:
+  schedule:
+    # Every day at 00:32 in Kuala Lumpur (UTC+8).
+    - cron: "32 16 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/profile-3d.yml
+      - .github/profile-3d-settings.json
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-3d
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v5
+      - name: Generate contribution calendars
+        uses: yoshi389111/github-profile-3d-contrib@latest
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          USERNAME: ${{ github.repository_owner }}
+          SETTING_JSON: .github/profile-3d-settings.json
+      - name: Select the light and dark themes
+        run: |
+          mkdir -p assets/profile
+          cp profile-3d-contrib/3d-contributions-light.svg assets/profile/3d-contributions-light.svg
+          cp profile-3d-contrib/3d-contributions-dark.svg assets/profile/3d-contributions-dark.svg
+      - name: Save the updated calendars
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add assets/profile/3d-contributions-light.svg assets/profile/3d-contributions-dark.svg
+          if ! git diff --cached --quiet; then
+            git commit -m "Update 3D contribution calendars"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
