@@ -72,6 +72,20 @@ Hi, I am **Shadows_Lunarfox &#26376;&#29392;**, a developer from Kuala Lumpur, M
   <img src="https://github-readme-stats.shion.dev/api/top-langs/?username=ShadowsLunarfox&amp;theme=transparent&amp;bg_color=00000000&amp;hide_border=true&amp;include_all_commits=false&amp;count_private=false&amp;layout=compact&amp;card_width=495" alt="Most used languages" width="32%" align="top" />
 </p>
 
+<h2 align="center">Contribution Snake (~_~)</h2>
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ShadowsLunarfox/ShadowsLunarfox/output/github-snake-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/ShadowsLunarfox/ShadowsLunarfox/output/github-snake.svg" />
+    <img src="https://raw.githubusercontent.com/ShadowsLunarfox/ShadowsLunarfox/output/github-snake.svg" alt="Snake animation of ShadowsLunarfox's GitHub contributions" width="100%" />
+  </picture>
+</p>
+
+<p align="center">
+  <a href="https://github.com/Platane/snk">Powered by Platane/snk</a>
+</p>
+
 
 
 
