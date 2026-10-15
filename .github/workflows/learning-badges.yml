@@ -1,0 +1,42 @@
+name: Refresh learning badges
+
+on:
+  schedule:
+    # Every day at 01:02 in Kuala Lumpur (UTC+8).
+    - cron: "2 17 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - .github/learning-profiles.json
+      - .github/scripts/generate-learning-badges.cjs
+      - .github/workflows/learning-badges.yml
+
+permissions:
+  contents: write
+
+concurrency:
+  group: learning-badges
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: "24"
+      - name: Refresh verified Microsoft Learn achievements
+        run: node .github/scripts/generate-learning-badges.cjs
+      - name: Save the updated badge gallery
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add README.md
+          if ! git diff --cached --quiet; then
+            git commit -m "Refresh learning badges"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi

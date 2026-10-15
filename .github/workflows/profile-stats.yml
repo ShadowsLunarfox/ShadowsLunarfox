@@ -1,0 +1,47 @@
+name: Generate profile statistic cards
+
+on:
+  schedule:
+    # Every day at 00:52 in Kuala Lumpur (UTC+8).
+    - cron: "52 16 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - .github/scripts/profile-stat-cards.cjs
+      - .github/scripts/profile-stat-cards.test.cjs
+      - .github/scripts/generate-profile-stats.cjs
+      - .github/workflows/profile-stats.yml
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-statistics
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: "24"
+      - name: Verify statistic data handling
+        run: node --test .github/scripts/profile-stat-cards.test.cjs
+      - name: Generate all three cards
+        run: node .github/scripts/generate-profile-stats.cjs
+        env:
+          PROFILE_USERNAME: ${{ github.repository_owner }}
+      - name: Save the refreshed cards
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add assets/profile/stats-overview-*.svg assets/profile/stats-streak-*.svg assets/profile/languages-*.svg assets/profile/statistics.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Update profile statistic cards"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi

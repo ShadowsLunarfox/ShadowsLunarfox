@@ -11,7 +11,6 @@ on:
       - .github/workflows/profile-3d.yml
       - .github/profile-3d-settings.json
       - .github/scripts/apply-profile-palette.cjs
-      - .github/scripts/generate-languages.cjs
 
 permissions:
   contents: write
@@ -42,16 +41,11 @@ jobs:
           cp profile-3d-contrib/3d-contributions-dark.svg assets/profile/3d-contributions-dark.svg
       - name: Apply the shared language palette
         run: node .github/scripts/apply-profile-palette.cjs assets/profile/3d-contributions-light.svg assets/profile/3d-contributions-dark.svg
-      - name: Generate pastel language statistics
-        continue-on-error: true
-        run: node .github/scripts/generate-languages.cjs
-        env:
-          PROFILE_USERNAME: ${{ github.repository_owner }}
       - name: Save the updated calendars
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add assets/profile/3d-contributions-light.svg assets/profile/3d-contributions-dark.svg assets/profile/languages-light.svg assets/profile/languages-dark.svg
+          git add assets/profile/3d-contributions-light.svg assets/profile/3d-contributions-dark.svg
           if ! git diff --cached --quiet; then
             git commit -m "Update 3D contribution calendars"
             git pull --rebase origin main

@@ -1,0 +1,59 @@
+{
+  "overview": {
+    "stars": 67,
+    "commits": 134,
+    "prs": 1,
+    "issues": 1,
+    "contribs": 0,
+    "rank": "B-",
+    "rankProgress": 0.29960574
+  },
+  "streak": {
+    "mode": "daily",
+    "totalContributions": 162,
+    "firstContribution": "2021-10-04",
+    "longestStreak": {
+      "start": "2026-10-06",
+      "end": "2026-10-15",
+      "length": 10
+    },
+    "currentStreak": {
+      "start": "2026-10-06",
+      "end": "2026-10-15",
+      "length": 10
+    },
+    "excludedDays": []
+  },
+  "languages": [
+    {
+      "name": "JavaScript",
+      "percent": 67.42,
+      "percentage": "67.42%"
+    },
+    {
+      "name": "CSS",
+      "percent": 18.91,
+      "percentage": "18.91%"
+    },
+    {
+      "name": "C#",
+      "percent": 10.45,
+      "percentage": "10.45%"
+    },
+    {
+      "name": "HTML",
+      "percent": 2.57,
+      "percentage": "2.57%"
+    },
+    {
+      "name": "Python",
+      "percent": 0.64,
+      "percentage": "0.64%"
+    },
+    {
+      "name": "Batchfile",
+      "percent": 0.01,
+      "percentage": "0.01%"
+    }
+  ]
+}

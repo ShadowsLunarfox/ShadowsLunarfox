@@ -8,8 +8,10 @@ Each optional section has `BEGIN` and `END` comments in README.md so it can be r
 | Activity graph | [Ashutosh00710/github-readme-activity-graph](https://github.com/Ashutosh00710/github-readme-activity-graph) | `activity-graph.yml`, daily |
 | Contribution snake | [Platane/snk](https://github.com/Platane/snk) | `snake.yml`, daily |
 | 3D contributions | [yoshi389111/github-profile-3d-contrib](https://github.com/yoshi389111/github-profile-3d-contrib) | `profile-3d.yml`, daily |
-| Most used languages | [anuraghazra/github-readme-stats](https://github.com/anuraghazra/github-readme-stats), existing Shion image service | `profile-3d.yml`, daily |
+| GitHub overview and contribution streak | Existing Shion statistics service and [DenverCoder1/github-readme-streak-stats](https://github.com/DenverCoder1/github-readme-streak-stats), local SVG renderer | `profile-stats.yml`, daily |
+| Most used languages | [anuraghazra/github-readme-stats](https://github.com/anuraghazra/github-readme-stats), existing Shion image service and local SVG renderer | `profile-stats.yml`, daily |
 | Featured repositories | GitHub REST API, local SVG card renderer | `featured-repositories.yml`, daily or when the configuration changes |
+| Learning badges | Public Microsoft Learn profile and verified achievements, plus Google badge share links | `learning-badges.yml`, daily |
 
 Push the workflow files to `main` to trigger the initial generation. The workflows can also be run from GitHub's Actions tab. The activity graph is generated inside the workflow because the project's public Vercel endpoint returned HTTP 402 during setup.
 
@@ -30,13 +32,31 @@ The header, footer, badges, stats, activity graph, snake, and 3D calendar use th
 | Light-theme text | `#3b2d4f` |
 | Dark-theme text | `#adbac7` |
 
-The typing animation, stats, activity graph, snake, and 3D calendar select readable light/dark variants with `<picture>`. Image backgrounds stay transparent so they follow GitHub's theme. The activity workflow writes both `activity.svg` (dark) and `activity-light.svg` (light). Snake and 3D calendar contribution levels share cyan → lavender → peach → pink, with a theme-specific empty cell color. The 3D calendar retains its growing animation and uses a fixed pastel palette rather than cycling through rainbow colors.
+The typing animation, stats, activity graph, snake, and 3D calendar select readable light/dark variants with `<picture>`. Widget backgrounds stay transparent; the statistics cards also leave their inner panels and rank circle unfilled so GitHub's page background shows through. The activity workflow writes both `activity.svg` (dark) and `activity-light.svg` (light). Snake and 3D calendar contribution levels share cyan → lavender → peach → pink, with a theme-specific empty cell color. The 3D calendar retains its growing animation and uses a fixed pastel palette rather than cycling through rainbow colors.
 
-`apply-profile-palette.cjs` also recolors the language bars, pie slices, and legend swatches to match the skill badges. `generate-languages.cjs` saves `languages-dark.svg` and `languages-light.svg` using the existing language-statistics service; the 3D workflow refreshes these daily. The percentages, contribution counts, and chart geometry are preserved.
+`apply-profile-palette.cjs` recolors the 3D calendar's language pie slices and legend swatches to match the skill badges. The statistics card renderer uses the same palette for language bars and labels, preserving the service's percentage values.
 
 The snake is pastel pink (`#ffaec5`) in both themes. README uses `assets/profile/github-snake.svg` and `assets/profile/github-snake-dark.svg`, so local previews show the selected palette immediately. `snake.yml` refreshes these snapshots daily and also publishes the same animations to the existing `output` branch.
 
 To remove a widget, remove its marked README section and corresponding workflow. The typing animation has no workflow.
+
+## 三张统计卡片
+
+README 的三张统计卡片保持上下竖排，显示宽度设为 `100%`，随 README 内容区宽度缩放，充分使用左右空间，支持深浅色模式。`profile-stat-cards.cjs` 统一绘制圆角边框、衬线标题、等宽数字和粉紫色强调；卡片外层、内部面板和评级圆环底色均为透明，文字与图表按主题配色。总览保留 Stars、过去一年提交数、PR、Issues、过去一年参与仓库数和评级，连续贡献保留三个统计值及日期，语言卡片保留所有返回的语言及百分比。
+
+`generate-profile-stats.cjs` 沿用原本的公开统计服务，连续贡献按吉隆坡时区计算。全部数据抓取、校验和绘图成功后，才更新 `statistics.json` 和六份 SVG 快照；服务出错时保留现有文件。`profile-stats.yml` 每天吉隆坡时间 00:52 自动刷新，推送脚本修改到 `main` 或手动运行工作流也会刷新。语言卡片的自动更新已从 3D 工作流迁入此工作流。
+
+```powershell
+node .github/scripts/generate-profile-stats.cjs
+# 使用已有数据重新绘图，不访问网络
+node .github/scripts/generate-profile-stats.cjs --from-snapshot
+```
+
+## 学习资料与徽章
+
+`learning-profiles.json` 保存 Google 公开主页、已提供的 Google 徽章分享资料（`googleBadges`）和 Microsoft Learn 用户名。README 的 Learning & Badges 区域位于个人介绍之后，包含两个资料入口、两列排列的 Google 官方徽章图标，以及从微软公开资料中确认已获得的模块徽章和学习路径奖杯。Google 徽章链接到带本人用户名的官方分享页，微软徽章链接到本人官方成就页。当前 Google 徽章包含 Joined the Google Developer Program、Google Developer Group discovery、Code Wiki、Google Cloud & NVIDIA community member，图标和英文名称取自提供的官方分享页面。
+
+`generate-learning-badges.cjs` 保留配置中的 Google 徽章，同时读取微软公开资料与成就列表，仅展示已验证的模块徽章和学习路径奖杯，并使用官方徽章图片。新增 Google 徽章时，将其名称、本人分享链接和官方图标地址加入 `googleBadges`；不会自动抓取 Google 个人主页的完整徽章清单。`learning-badges.yml` 每天吉隆坡时间 01:02 刷新，推送相关配置或脚本也会触发。公开资料不可读、列表不完整或字段异常时保留现有展示。本地刷新命令：`node .github/scripts/generate-learning-badges.cjs`。
 
 ## 字体层次与表情符号
 

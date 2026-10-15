@@ -71,6 +71,101 @@
 </table>
 <!-- END lunarfox-corner -->
 
+<!-- BEGIN learning-badges -->
+<h2 align="center">🏅 <samp>Learning &amp; Badges (｡･ω･｡)ﾉ</samp></h2>
+
+<p align="center">
+  <a href="https://g.dev/lunarfox"><img src="https://img.shields.io/badge/Google_Developer_Program-lunarfox-ffaec5?style=flat&amp;logo=google&amp;logoColor=ffffff&amp;labelColor=615276" alt="Google Developer Program: my public profile" /></a>
+  <a href="https://learn.microsoft.com/en-us/users/shadowslunarfox-4093/achievements"><img src="https://img.shields.io/badge/Microsoft_Learn-Achievements-d7c4f3?style=flat&amp;labelColor=615276" alt="Microsoft Learn: my official achievements" /></a>
+</p>
+
+<h3 align="center">Google Developer Program</h3>
+
+<table align="center" width="100%">
+  <tr>
+    <td align="center" valign="top" width="50%">
+      <a href="https://developers.google.com/profile/badges/profile/created-profile?u=lunarfox">
+        <img src="https://developers.google.com/static/profile/badges/profile/created-profile/created_profile.svg" alt="Joined the Google Developer Program — Google Developer Program badge" width="96" height="96" />
+        <br /><strong>Joined the Google Developer Program</strong>
+      </a>
+    </td>
+    <td align="center" valign="top" width="50%">
+      <a href="https://developers.google.com/profile/badges/community/gdg/discovery?u=lunarfox">
+        <img src="https://developers.google.com/static/profile/badges/community/gdg/discovery/badge.svg" alt="Google Developer Group discovery — Google Developer Program badge" width="96" height="96" />
+        <br /><strong>Google Developer Group discovery</strong>
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" valign="top" width="50%">
+      <a href="https://developers.google.com/profile/badges/community/sdlcagents/gca-agents?u=lunarfox">
+        <img src="https://developers.google.com/static/profile/badges/community/sdlcagents/gca-agents/badge.svg" alt="Code Wiki — Google Developer Program badge" width="96" height="96" />
+        <br /><strong>Code Wiki</strong>
+      </a>
+    </td>
+    <td align="center" valign="top" width="50%">
+      <a href="https://developers.google.com/profile/badges/nvidia-developer?u=lunarfox">
+        <img src="https://developers.google.com/static/profile/badges/nvidia-developer/badge.svg" alt="Google Cloud &amp; NVIDIA community member — Google Developer Program badge" width="96" height="96" />
+        <br /><strong>Google Cloud &amp; NVIDIA community member</strong>
+      </a>
+    </td>
+  </tr>
+</table>
+
+<h3 align="center">Microsoft Learn · 4 module badges · 2 learning path trophies</h3>
+
+<table align="center" width="100%">
+  <tr>
+    <td align="center" valign="top" width="33%">
+      <a href="https://learn.microsoft.com/en-us/users/shadowslunarfox-4093/achievements">
+        <img src="https://learn.microsoft.com/training/achievements/generic.svg" alt="Understand AI agents and prompting — Module badge" width="80" height="80" />
+        <br /><strong>Understand AI agents and prompting</strong>
+      </a>
+      <br /><sub>Module badge · 2026-10-15</sub>
+    </td>
+    <td align="center" valign="top" width="33%">
+      <a href="https://learn.microsoft.com/en-us/users/shadowslunarfox-4093/achievements">
+        <img src="https://learn.microsoft.com/training/achievements/generic-badge.svg" alt="Prepare to use generative AI at work — Module badge" width="80" height="80" />
+        <br /><strong>Prepare to use generative AI at work</strong>
+      </a>
+      <br /><sub>Module badge · 2026-10-15</sub>
+    </td>
+    <td align="center" valign="top" width="33%">
+      <a href="https://learn.microsoft.com/en-us/users/shadowslunarfox-4093/achievements">
+        <img src="https://learn.microsoft.com/learn/achievements/generic-badge.svg" alt="Work smarter with AI — Module badge" width="80" height="80" />
+        <br /><strong>Work smarter with AI</strong>
+      </a>
+      <br /><sub>Module badge · 2026-10-15</sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" valign="top" width="33%">
+      <a href="https://learn.microsoft.com/en-us/users/shadowslunarfox-4093/achievements">
+        <img src="https://learn.microsoft.com/training/achievements/generic-trophy.svg" alt="Work smarter with AI — Learning path trophy" width="80" height="80" />
+        <br /><strong>Work smarter with AI</strong>
+      </a>
+      <br /><sub>Learning path trophy · 2026-10-15</sub>
+    </td>
+    <td align="center" valign="top" width="33%">
+      <a href="https://learn.microsoft.com/en-us/users/shadowslunarfox-4093/achievements">
+        <img src="https://learn.microsoft.com/training/achievements/generic-trophy.svg" alt="Enhance your productivity with prebuilt Microsoft 365 Copilot agents — Learning path trophy" width="80" height="80" />
+        <br /><strong>Enhance your productivity with prebuilt Microsoft 365 Copilot agents</strong>
+      </a>
+      <br /><sub>Learning path trophy · 2026-10-15</sub>
+    </td>
+    <td align="center" valign="top" width="33%">
+      <a href="https://learn.microsoft.com/en-us/users/shadowslunarfox-4093/achievements">
+        <img src="https://learn.microsoft.com/training/achievements/generic-badge.svg" alt="Explore prebuilt Microsoft Copilot agents — Module badge" width="80" height="80" />
+        <br /><strong>Explore prebuilt Microsoft Copilot agents</strong>
+      </a>
+      <br /><sub>Module badge · 2026-10-15</sub>
+    </td>
+  </tr>
+</table>
+
+<p align="center"><sub>Issued by Microsoft Learn · Click a badge to view my official achievement profile.</sub></p>
+<!-- END learning-badges -->
+
 <!-- BEGIN featured-repositories -->
 <!-- Generated from .github/featured-repositories.json; edit that file to change the cards. -->
 <h2>✨ <samp>Featured Repositories (ง •̀_•́)ง</samp></h2>
@@ -135,22 +230,22 @@
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.shion.dev/api?username=ShadowsLunarfox&amp;theme=transparent&amp;bg_color=00000000&amp;hide_border=true&amp;title_color=ffaec5&amp;text_color=adbac7&amp;icon_color=d7c4f3&amp;ring_color=b9edf2&amp;show_icons=true&amp;include_all_commits=false&amp;count_private=false&amp;card_width=495" />
-    <img src="https://github-readme-stats.shion.dev/api?username=ShadowsLunarfox&amp;theme=transparent&amp;bg_color=00000000&amp;hide_border=true&amp;title_color=615276&amp;text_color=3b2d4f&amp;icon_color=615276&amp;ring_color=b9edf2&amp;show_icons=true&amp;include_all_commits=false&amp;count_private=false&amp;card_width=495" alt="GitHub stats" width="495" />
+    <source media="(prefers-color-scheme: dark)" srcset="assets/profile/stats-overview-dark.svg" />
+    <img src="assets/profile/stats-overview-light.svg" alt="GitHub statistics: stars, commits in the last year, pull requests, issues, contributed repositories and rank" width="100%" />
   </picture>
 </p>
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com/?user=ShadowsLunarfox&amp;theme=transparent&amp;background=00000000&amp;hide_border=true&amp;stroke=615276&amp;ring=d7c4f3&amp;fire=ffd3b0&amp;currStreakNum=adbac7&amp;sideNums=adbac7&amp;currStreakLabel=ffaec5&amp;sideLabels=d7c4f3&amp;dates=adbac7&amp;card_width=495" />
-    <img src="https://streak-stats.demolab.com/?user=ShadowsLunarfox&amp;theme=transparent&amp;background=00000000&amp;hide_border=true&amp;stroke=d7c4f3&amp;ring=d7c4f3&amp;fire=ffd3b0&amp;currStreakNum=3b2d4f&amp;sideNums=3b2d4f&amp;currStreakLabel=615276&amp;sideLabels=615276&amp;dates=615276&amp;card_width=495" alt="GitHub contribution streak" width="495" />
+    <source media="(prefers-color-scheme: dark)" srcset="assets/profile/stats-streak-dark.svg" />
+    <img src="assets/profile/stats-streak-light.svg" alt="Contribution streak: total contributions, current streak, longest streak and date ranges" width="100%" />
   </picture>
 </p>
 
 <p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/profile/languages-dark.svg" />
-    <img src="assets/profile/languages-light.svg" alt="Most used languages" width="495" />
+    <img src="assets/profile/languages-light.svg" alt="Most used languages and their percentages" width="100%" />
   </picture>
 </p>
 

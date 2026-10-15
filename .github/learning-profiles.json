@@ -1,0 +1,26 @@
+{
+  "google": "https://g.dev/lunarfox",
+  "googleBadges": [
+    {
+      "title": "Joined the Google Developer Program",
+      "url": "https://developers.google.com/profile/badges/profile/created-profile?u=lunarfox",
+      "image": "https://developers.google.com/static/profile/badges/profile/created-profile/created_profile.svg"
+    },
+    {
+      "title": "Google Developer Group discovery",
+      "url": "https://developers.google.com/profile/badges/community/gdg/discovery?u=lunarfox",
+      "image": "https://developers.google.com/static/profile/badges/community/gdg/discovery/badge.svg"
+    },
+    {
+      "title": "Code Wiki",
+      "url": "https://developers.google.com/profile/badges/community/sdlcagents/gca-agents?u=lunarfox",
+      "image": "https://developers.google.com/static/profile/badges/community/sdlcagents/gca-agents/badge.svg"
+    },
+    {
+      "title": "Google Cloud & NVIDIA community member",
+      "url": "https://developers.google.com/profile/badges/nvidia-developer?u=lunarfox",
+      "image": "https://developers.google.com/static/profile/badges/nvidia-developer/badge.svg"
+    }
+  ],
+  "microsoft": "shadowslunarfox-4093"
+}
