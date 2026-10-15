@@ -110,6 +110,14 @@
       </a>
     </td>
   </tr>
+  <tr>
+    <td align="center" valign="top" colspan="2">
+      <a href="https://developers.google.com/profile/badges/recognitions/learnings?u=lunarfox">
+        <img src="https://developers.google.com/static/profile/badges/recognitions/learnings/learnings.svg" alt="Learning — Google Developer Program badge" width="96" height="96" />
+        <br /><strong>Learning</strong>
+      </a>
+    </td>
+  </tr>
 </table>
 
 <h3 align="center">Microsoft Learn · 4 module badges · 2 learning path trophies</h3>
