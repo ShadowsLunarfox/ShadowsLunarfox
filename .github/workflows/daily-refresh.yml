@@ -4,6 +4,8 @@ on:
   schedule:
     # Every day at 00:17 in Kuala Lumpur (UTC+8).
     - cron: "17 16 * * *"
+    # Retry at 08:17 and 16:17 if today's owner-authored commit is missing.
+    - cron: "17 0,8 * * *"
   workflow_dispatch:
   push:
     branches: [main]
@@ -28,20 +30,40 @@ jobs:
     if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     timeout-minutes: 10
+    outputs:
+      refresh_needed: ${{ steps.commit.outputs.refresh_needed }}
     steps:
       - uses: actions/checkout@v5
         with:
           ref: main
           fetch-depth: 0
       - name: Create and push the refresh commit
+        id: commit
         shell: bash
+        env:
+          PROFILE_COMMIT_NAME: ${{ github.repository_owner }}
+          PROFILE_COMMIT_EMAIL: ${{ github.repository_owner_id }}+${{ github.repository_owner }}@users.noreply.github.com
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git pull --ff-only origin main
           # Kuala Lumpur is UTC+8 year-round (POSIX TZ offsets have reversed signs).
           refresh_date=$(TZ=UTC-8 date +%F)
-          git commit --allow-empty -m "Daily profile refresh (${refresh_date}, Asia/Kuala_Lumpur)"
+          refresh_message="Daily profile refresh (${refresh_date}, Asia/Kuala_Lumpur)"
+          matching_authors=$(git log --format='%ae' --fixed-strings --grep="$refresh_message")
+          if grep -Fqx -- "$PROFILE_COMMIT_EMAIL" <<< "$matching_authors"; then
+            if [ "$GITHUB_EVENT_NAME" = 'schedule' ]; then
+              echo 'Today already has an owner-authored refresh commit; skipping the backup run.'
+              echo 'refresh_needed=false' >> "$GITHUB_OUTPUT"
+              exit 0
+            fi
+            # Manual/configuration runs still refresh widgets without another daily commit.
+            echo 'refresh_needed=true' >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          TZ=UTC-8 git commit --allow-empty \
+            --author="$PROFILE_COMMIT_NAME <$PROFILE_COMMIT_EMAIL>" \
+            -m "$refresh_message"
           # Retry if another writer updates main between checkout and push.
           for attempt in 1 2 3; do
             git pull --rebase origin main
@@ -52,40 +74,43 @@ jobs:
               exit 1
             fi
           done
+          echo 'refresh_needed=true' >> "$GITHUB_OUTPUT"
       - name: Wait five minutes after the commit is published
+        if: steps.commit.outputs.refresh_needed == 'true'
         run: sleep 300
 
   snake:
     name: Refresh contribution snake
     needs: prepare
+    if: needs.prepare.outputs.refresh_needed == 'true'
     uses: ./.github/workflows/snake.yml
 
   activity:
     name: Refresh activity graph
     needs: [prepare, snake]
-    if: ${{ !cancelled() && needs.prepare.result == 'success' }}
+    if: ${{ !cancelled() && needs.prepare.result == 'success' && needs.prepare.outputs.refresh_needed == 'true' }}
     uses: ./.github/workflows/activity-graph.yml
 
   contributions:
     name: Refresh 3D contributions
     needs: [prepare, activity]
-    if: ${{ !cancelled() && needs.prepare.result == 'success' }}
+    if: ${{ !cancelled() && needs.prepare.result == 'success' && needs.prepare.outputs.refresh_needed == 'true' }}
     uses: ./.github/workflows/profile-3d.yml
 
   repositories:
     name: Refresh featured repositories
     needs: [prepare, contributions]
-    if: ${{ !cancelled() && needs.prepare.result == 'success' }}
+    if: ${{ !cancelled() && needs.prepare.result == 'success' && needs.prepare.outputs.refresh_needed == 'true' }}
     uses: ./.github/workflows/featured-repositories.yml
 
   statistics:
     name: Refresh profile statistics
     needs: [prepare, repositories]
-    if: ${{ !cancelled() && needs.prepare.result == 'success' }}
+    if: ${{ !cancelled() && needs.prepare.result == 'success' && needs.prepare.outputs.refresh_needed == 'true' }}
     uses: ./.github/workflows/profile-stats.yml
 
   badges:
     name: Refresh learning badges
     needs: [prepare, statistics]
-    if: ${{ !cancelled() && needs.prepare.result == 'success' }}
+    if: ${{ !cancelled() && needs.prepare.result == 'success' && needs.prepare.outputs.refresh_needed == 'true' }}
     uses: ./.github/workflows/learning-badges.yml
