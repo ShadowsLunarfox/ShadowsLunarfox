@@ -13,18 +13,14 @@ Each optional section has `BEGIN` and `END` comments in README.md so it can be r
 | Featured repositories | GitHub REST API, local SVG card renderer | `featured-repositories.yml`, daily or when the configuration changes |
 | Learning badges | Public Microsoft Learn profile and verified achievements, plus Google badge share links | `learning-badges.yml`, daily |
 
-`daily-refresh.yml` is the single automatic entry point for all six refresh tasks. Its primary schedule runs daily at **00:17 Asia/Kuala_Lumpur (16:17 UTC on the previous day)**, with backup attempts at **08:17 and 16:17 Asia/Kuala_Lumpur** if that day's owner-authored refresh commit is missing. Relevant workflow, script, configuration, or README pushes to `main` also start it. It can be started manually from **Actions → Daily profile refresh → Run workflow**.
+`daily-refresh.yml` is the single automatic entry point for all six refresh tasks. It runs daily at **00:17 Asia/Kuala_Lumpur (16:17 UTC on the previous day)** and when relevant workflows, scripts, configuration, or README changes are pushed to `main`. It can also be started manually from **Actions → Daily profile refresh → Run workflow**.
 
 The sequence is:
 
 1. Check out and synchronize the latest `main`.
-2. Publish an empty `Daily profile refresh (YYYY-MM-DD, Asia/Kuala_Lumpur)` commit, even when no files have changed. The author is the repository owner, using the owner's GitHub-provided `ID+USERNAME@users.noreply.github.com` address; the committer remains `github-actions[bot]`. The commit timestamp uses UTC+8.
+2. Publish an empty `Daily profile refresh (YYYY-MM-DD, Asia/Kuala_Lumpur)` commit, even when no files have changed.
 3. Wait **300 seconds after that commit is successfully pushed**.
 4. Refresh the snake, activity graph, 3D contributions, featured repositories, statistics, and learning badges, in that order.
-
-Only one owner-authored refresh marker is created for each Kuala Lumpur calendar day. Existing bot-authored markers do not suppress it. Scheduled attempts skip the five-minute wait and all six tasks if the owner's marker already exists. Manual and configuration-triggered runs still wait and refresh the widgets, reusing an existing marker. Pushes retry up to three times if another writer updates `main`.
-
-Owner attribution and the default branch make these commits eligible for the owner's contribution graph under [GitHub's contribution criteria](https://docs.github.com/en/account-and-profile/reference/profile-contributions-reference#contribution-criteria-for-commits). GitHub may take up to 24 hours to display a qualifying contribution. Backup schedules reduce missed days but cannot guarantee an uninterrupted streak during GitHub outages or dropped schedules.
 
 The six tasks use reusable workflows, so they do not depend on a bot commit triggering another workflow. They run sequentially to avoid competing pushes to `main`. If preparation fails, none of the six tasks run. If an individual refresh fails, later tasks still run unless the overall workflow is cancelled. Every task checks out the current `main`, including when an older job is retried. Individual tasks retain their manual **Run workflow** buttons for targeted retries; their separate schedules and push triggers have been removed.
 
