@@ -22,19 +22,29 @@ jobs:
       - uses: actions/setup-node@v5
         with:
           node-version: "24"
-      - name: Verify statistic data handling
-        run: node --test .github/scripts/profile-stat-cards.test.cjs
+      - name: Verify statistic and follower data handling
+        id: verify
+        run: node --test .github/scripts/profile-stat-cards.test.cjs .github/scripts/generate-followers.test.cjs
       - name: Generate all three cards
+        id: cards
         run: node .github/scripts/generate-profile-stats.cjs
         env:
           PROFILE_USERNAME: ${{ github.repository_owner }}
-      - name: Save the refreshed cards
+      - name: Refresh the local followers badge
+        id: followers
+        if: ${{ !cancelled() && steps.verify.outcome == 'success' }}
+        run: node .github/scripts/generate-followers.cjs
+        env:
+          PROFILE_USERNAME: ${{ github.repository_owner }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Save the refreshed cards and followers badge
+        if: ${{ !cancelled() && (steps.cards.outcome == 'success' || steps.followers.outcome == 'success') }}
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add assets/profile/stats-overview-*.svg assets/profile/stats-streak-*.svg assets/profile/languages-*.svg assets/profile/statistics.json
+          git add assets/profile/stats-overview-*.svg assets/profile/stats-streak-*.svg assets/profile/languages-*.svg assets/profile/statistics.json assets/profile/followers.svg
           if ! git diff --cached --quiet; then
-            git commit -m "Update profile statistic cards"
+            git commit -m "Update profile statistics and followers badge"
             git pull --rebase origin main
             git push origin HEAD:main
           fi

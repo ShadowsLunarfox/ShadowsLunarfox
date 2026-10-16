@@ -21,7 +21,7 @@
 
 <p>
   <img src="https://komarev.com/ghpvc/?username=ShadowsLunarfox&label=Profile%20Views&color=ffaec5&style=flat" alt="Profile views" />
-  <img src="https://img.shields.io/github/followers/ShadowsLunarfox?label=Followers&style=flat&color=d7c4f3&labelColor=615276" alt="GitHub followers" />
+  <a href="https://github.com/ShadowsLunarfox?tab=followers"><img src="assets/profile/followers.svg" alt="GitHub followers" /></a>
   <img src="https://img.shields.io/github/stars/ShadowsLunarfox?affiliations=OWNER%2CCOLLABORATOR&style=flat&color=b9edf2&labelColor=615276" alt="GitHub stars" />
 </p>
 
