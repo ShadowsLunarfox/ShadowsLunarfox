@@ -1,15 +1,8 @@
 name: Generate activity graph
 
 on:
-  schedule:
-    # Every day at 00:27 in Kuala Lumpur (UTC+8).
-    - cron: "27 16 * * *"
+  workflow_call:
   workflow_dispatch:
-  push:
-    branches: [main]
-    paths:
-      - .github/workflows/activity-graph.yml
-      - .github/scripts/generate-activity.cjs
 
 permissions:
   contents: write
@@ -24,6 +17,8 @@ jobs:
     timeout-minutes: 15
     steps:
       - uses: actions/checkout@v5
+        with:
+          ref: main
       - name: Fetch the official activity graph renderer
         uses: actions/checkout@v5
         with:

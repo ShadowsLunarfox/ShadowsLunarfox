@@ -13,7 +13,20 @@ Each optional section has `BEGIN` and `END` comments in README.md so it can be r
 | Featured repositories | GitHub REST API, local SVG card renderer | `featured-repositories.yml`, daily or when the configuration changes |
 | Learning badges | Public Microsoft Learn profile and verified achievements, plus Google badge share links | `learning-badges.yml`, daily |
 
-Push the workflow files to `main` to trigger the initial generation. The workflows can also be run from GitHub's Actions tab. The activity graph is generated inside the workflow because the project's public Vercel endpoint returned HTTP 402 during setup.
+`daily-refresh.yml` is the single automatic entry point for all six refresh tasks. It runs daily at **00:17 Asia/Kuala_Lumpur (16:17 UTC on the previous day)** and when relevant workflows, scripts, configuration, or README changes are pushed to `main`. It can also be started manually from **Actions → Daily profile refresh → Run workflow**.
+
+The sequence is:
+
+1. Check out and synchronize the latest `main`.
+2. Publish an empty `Daily profile refresh (YYYY-MM-DD, Asia/Kuala_Lumpur)` commit, even when no files have changed.
+3. Wait **300 seconds after that commit is successfully pushed**.
+4. Refresh the snake, activity graph, 3D contributions, featured repositories, statistics, and learning badges, in that order.
+
+The six tasks use reusable workflows, so they do not depend on a bot commit triggering another workflow. They run sequentially to avoid competing pushes to `main`. If preparation fails, none of the six tasks run. If an individual refresh fails, later tasks still run unless the overall workflow is cancelled. Every task checks out the current `main`, including when an older job is retried. Individual tasks retain their manual **Run workflow** buttons for targeted retries; their separate schedules and push triggers have been removed.
+
+GitHub may delay or drop scheduled triggers under load; this sequence guarantees the order and the five-minute minimum delay once it starts, not an exact wall-clock start time. See [GitHub's scheduling documentation](https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows#schedule).
+
+The activity graph is generated inside the workflow because the project's public Vercel endpoint returned HTTP 402 during setup.
 
 The activity graph and initial 3D calendars use snapshots of your public GitHub contributions. The first `Generate 3D contributions` run adds the project's full language and contribution statistics.
 
@@ -44,7 +57,7 @@ To remove a widget, remove its marked README section and corresponding workflow.
 
 README 的三张统计卡片保持上下竖排，显示宽度设为 `100%`，随 README 内容区宽度缩放，充分使用左右空间，支持深浅色模式。`profile-stat-cards.cjs` 统一绘制圆角边框、衬线标题、等宽数字和粉紫色强调；卡片外层、内部面板和评级圆环底色均为透明，文字与图表按主题配色。总览保留 Stars、过去一年提交数、PR、Issues、过去一年参与仓库数和评级，连续贡献保留三个统计值及日期，语言卡片保留所有返回的语言及百分比。
 
-`generate-profile-stats.cjs` 沿用原本的公开统计服务，连续贡献按吉隆坡时区计算。全部数据抓取、校验和绘图成功后，才更新 `statistics.json` 和六份 SVG 快照；服务出错时保留现有文件。`profile-stats.yml` 每天吉隆坡时间 00:52 自动刷新，推送脚本修改到 `main` 或手动运行工作流也会刷新。语言卡片的自动更新已从 3D 工作流迁入此工作流。
+`generate-profile-stats.cjs` 沿用原本的公开统计服务，连续贡献按吉隆坡时区计算。全部数据抓取、校验和绘图成功后，才更新 `statistics.json` 和六份 SVG 快照；服务出错时保留现有文件。`profile-stats.yml` 由每天吉隆坡时间 00:17 启动的 `daily-refresh.yml` 调用：先提交刷新标记，等待五分钟，再依次刷新六个任务。推送相关脚本到 `main` 会启动同一流程，也可手动运行。语言卡片的自动更新已从 3D 工作流迁入此工作流。
 
 ```powershell
 node .github/scripts/generate-profile-stats.cjs
@@ -56,7 +69,7 @@ node .github/scripts/generate-profile-stats.cjs --from-snapshot
 
 `learning-profiles.json` 保存 Google 公开主页、已提供的 Google 徽章分享资料（`googleBadges`）和 Microsoft Learn 用户名。README 的 Learning & Badges 区域位于个人介绍之后，包含两个资料入口、两列排列的 Google 官方徽章图标，以及从微软公开资料中确认已获得的模块徽章和学习路径奖杯。Google 徽章链接到带本人用户名的官方分享页，微软徽章链接到本人官方成就页。当前 Google 徽章包含 Joined the Google Developer Program、Google Developer Group discovery、Code Wiki、Google Cloud & NVIDIA community member，图标和英文名称取自提供的官方分享页面。
 
-`generate-learning-badges.cjs` 保留配置中的 Google 徽章，同时读取微软公开资料与成就列表，仅展示已验证的模块徽章和学习路径奖杯，并使用官方徽章图片。新增 Google 徽章时，将其名称、本人分享链接和官方图标地址加入 `googleBadges`；不会自动抓取 Google 个人主页的完整徽章清单。`learning-badges.yml` 每天吉隆坡时间 01:02 刷新，推送相关配置或脚本也会触发。公开资料不可读、列表不完整或字段异常时保留现有展示。本地刷新命令：`node .github/scripts/generate-learning-badges.cjs`。
+`generate-learning-badges.cjs` 保留配置中的 Google 徽章，同时读取微软公开资料与成就列表，仅展示已验证的模块徽章和学习路径奖杯，并使用官方徽章图片。新增 Google 徽章时，将其名称、本人分享链接和官方图标地址加入 `googleBadges`；不会自动抓取 Google 个人主页的完整徽章清单。`learning-badges.yml` 作为每日 `daily-refresh.yml` 流程的最后一个任务运行，推送相关配置或脚本会启动同一流程。公开资料不可读、列表不完整或字段异常时保留现有展示。本地刷新命令：`node .github/scripts/generate-learning-badges.cjs`。
 
 ## 字体层次与表情符号
 
@@ -83,6 +96,6 @@ README 的栏目标题和昵称使用 `<samp>` 等宽字体，与正文的默认
 node .github/scripts/generate-repositories.cjs
 ```
 
-这会刷新 `assets/profile/repositories/` 中的卡片和 README 对应区块。推送配置到 `main` 后，GitHub Actions 也会自动刷新；每天吉隆坡时间 00:42 更新简介、语言、Star 和 Fork 数。无需安装 npm 依赖，本地生成公开仓库卡片无需令牌。
+这会刷新 `assets/profile/repositories/` 中的卡片和 README 对应区块。推送配置到 `main` 后，GitHub Actions 会启动统一刷新流程；每日自动流程先提交刷新标记、等待五分钟，再依次更新六个任务，其中仓库卡片会更新简介、语言、Star 和 Fork 数。无需安装 npm 依赖，本地生成公开仓库卡片无需令牌。
 
 GitHub 自带的 Popular repositories / Pinned 区域仍受最多 6 个项目的限制，README 里的自定义区块可以展示更多仓库，位置在个人介绍之后、统计图之前。

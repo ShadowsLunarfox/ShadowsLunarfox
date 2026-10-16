@@ -1,17 +1,8 @@
 name: Generate profile statistic cards
 
 on:
-  schedule:
-    # Every day at 00:52 in Kuala Lumpur (UTC+8).
-    - cron: "52 16 * * *"
+  workflow_call:
   workflow_dispatch:
-  push:
-    branches: [main]
-    paths:
-      - .github/scripts/profile-stat-cards.cjs
-      - .github/scripts/profile-stat-cards.test.cjs
-      - .github/scripts/generate-profile-stats.cjs
-      - .github/workflows/profile-stats.yml
 
 permissions:
   contents: write
@@ -26,6 +17,8 @@ jobs:
     timeout-minutes: 5
     steps:
       - uses: actions/checkout@v5
+        with:
+          ref: main
       - uses: actions/setup-node@v5
         with:
           node-version: "24"

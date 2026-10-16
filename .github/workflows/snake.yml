@@ -1,16 +1,8 @@
 name: Generate contribution snake
 
 on:
-  schedule:
-    # Every day at 00:17 in Kuala Lumpur (UTC+8).
-    - cron: "17 16 * * *"
+  workflow_call:
   workflow_dispatch:
-  push:
-    branches:
-      - main
-    paths:
-      - .github/workflows/snake.yml
-      - README.md
 
 permissions:
   contents: write
@@ -25,6 +17,8 @@ jobs:
     timeout-minutes: 10
     steps:
       - uses: actions/checkout@v5
+        with:
+          ref: main
       - name: Generate light and dark snake animations
         uses: Platane/snk/svg-only@v3
         with:

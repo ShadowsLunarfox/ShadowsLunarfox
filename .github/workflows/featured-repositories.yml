@@ -1,17 +1,8 @@
 name: Generate featured repositories
 
 on:
-  schedule:
-    # Every day at 00:42 in Kuala Lumpur (UTC+8).
-    - cron: "42 16 * * *"
+  workflow_call:
   workflow_dispatch:
-  push:
-    branches: [main]
-    paths:
-      - .github/featured-repositories.json
-      - .github/scripts/generate-repositories.cjs
-      - .github/scripts/generate-repositories.test.cjs
-      - .github/workflows/featured-repositories.yml
 
 permissions:
   contents: write
@@ -26,6 +17,8 @@ jobs:
     timeout-minutes: 10
     steps:
       - uses: actions/checkout@v5
+        with:
+          ref: main
       - uses: actions/setup-node@v5
         with:
           node-version: "24"

@@ -1,16 +1,8 @@
 name: Refresh learning badges
 
 on:
-  schedule:
-    # Every day at 01:02 in Kuala Lumpur (UTC+8).
-    - cron: "2 17 * * *"
+  workflow_call:
   workflow_dispatch:
-  push:
-    branches: [main]
-    paths:
-      - .github/learning-profiles.json
-      - .github/scripts/generate-learning-badges.cjs
-      - .github/workflows/learning-badges.yml
 
 permissions:
   contents: write
@@ -25,6 +17,8 @@ jobs:
     timeout-minutes: 5
     steps:
       - uses: actions/checkout@v5
+        with:
+          ref: main
       - uses: actions/setup-node@v5
         with:
           node-version: "24"

@@ -1,16 +1,8 @@
 name: Generate 3D contributions
 
 on:
-  schedule:
-    # Every day at 00:32 in Kuala Lumpur (UTC+8).
-    - cron: "32 16 * * *"
+  workflow_call:
   workflow_dispatch:
-  push:
-    branches: [main]
-    paths:
-      - .github/workflows/profile-3d.yml
-      - .github/profile-3d-settings.json
-      - .github/scripts/apply-profile-palette.cjs
 
 permissions:
   contents: write
@@ -25,6 +17,8 @@ jobs:
     timeout-minutes: 15
     steps:
       - uses: actions/checkout@v5
+        with:
+          ref: main
       - uses: actions/setup-node@v5
         with:
           node-version: "24"

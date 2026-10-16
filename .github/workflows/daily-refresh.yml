@@ -1,0 +1,91 @@
+name: Daily profile refresh
+
+on:
+  schedule:
+    # Every day at 00:17 in Kuala Lumpur (UTC+8).
+    - cron: "17 16 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/**
+      - .github/scripts/**
+      - .github/featured-repositories.json
+      - .github/learning-profiles.json
+      - .github/profile-3d-settings.json
+      - README.md
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-profile-refresh
+  cancel-in-progress: false
+
+jobs:
+  prepare:
+    name: Commit the daily refresh and wait five minutes
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: main
+          fetch-depth: 0
+      - name: Create and push the refresh commit
+        shell: bash
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git pull --ff-only origin main
+          # Kuala Lumpur is UTC+8 year-round (POSIX TZ offsets have reversed signs).
+          refresh_date=$(TZ=UTC-8 date +%F)
+          git commit --allow-empty -m "Daily profile refresh (${refresh_date}, Asia/Kuala_Lumpur)"
+          # Retry if another writer updates main between checkout and push.
+          for attempt in 1 2 3; do
+            git pull --rebase origin main
+            if git push origin HEAD:main; then
+              break
+            fi
+            if [ "$attempt" -eq 3 ]; then
+              exit 1
+            fi
+          done
+      - name: Wait five minutes after the commit is published
+        run: sleep 300
+
+  snake:
+    name: Refresh contribution snake
+    needs: prepare
+    uses: ./.github/workflows/snake.yml
+
+  activity:
+    name: Refresh activity graph
+    needs: [prepare, snake]
+    if: ${{ !cancelled() && needs.prepare.result == 'success' }}
+    uses: ./.github/workflows/activity-graph.yml
+
+  contributions:
+    name: Refresh 3D contributions
+    needs: [prepare, activity]
+    if: ${{ !cancelled() && needs.prepare.result == 'success' }}
+    uses: ./.github/workflows/profile-3d.yml
+
+  repositories:
+    name: Refresh featured repositories
+    needs: [prepare, contributions]
+    if: ${{ !cancelled() && needs.prepare.result == 'success' }}
+    uses: ./.github/workflows/featured-repositories.yml
+
+  statistics:
+    name: Refresh profile statistics
+    needs: [prepare, repositories]
+    if: ${{ !cancelled() && needs.prepare.result == 'success' }}
+    uses: ./.github/workflows/profile-stats.yml
+
+  badges:
+    name: Refresh learning badges
+    needs: [prepare, statistics]
+    if: ${{ !cancelled() && needs.prepare.result == 'success' }}
+    uses: ./.github/workflows/learning-badges.yml
