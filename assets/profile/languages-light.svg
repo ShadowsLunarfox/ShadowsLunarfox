@@ -1,41 +1,41 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="640" height="314" viewBox="0 0 640 314" role="img" aria-labelledby="title description">
   <title id="title">Most Used Languages</title>
-  <desc id="description">JavaScript 68.36%; CSS 18.37%; C# 10.15%; HTML 2.49%; Python 0.62%; Batchfile 0.01%</desc>
+  <desc id="description">JavaScript 65.85%; CSS 17.69%; C# 9.77%; Python 4.27%; HTML 2.40%; Batchfile 0.01%</desc>
   <rect x=".5" y=".5" width="639" height="313" rx="22" fill="none" stroke="#e6dce9"/>
   <g font-family="Segoe UI, Arial, sans-serif" fill="#3b2d4f">
     <text x="28" y="32" font-size="10" fill="#756782" font-family="Consolas, Liberation Mono, monospace" letter-spacing="1.7">THE TOOLS BEHIND THE LITTLE IDEAS</text>
     <text x="28" y="69" font-size="27" fill="#3b2d4f" font-family="Georgia, Times New Roman, serif" font-weight="700">Most Used Languages</text>
     <path d="M604 36 608 48 620 52 608 56 604 68 600 56 588 52 600 48Z" fill="#9c4268" opacity=".8"/>
     <text x="28" y="119" font-size="18" fill="#3b2d4f" font-weight="600">JavaScript</text>
-      <text x="612" y="119" font-size="29" fill="#9c4268" text-anchor="end" font-family="Consolas, Liberation Mono, monospace" font-weight="700">68.36%</text>
+      <text x="612" y="119" font-size="29" fill="#9c4268" text-anchor="end" font-family="Consolas, Liberation Mono, monospace" font-weight="700">65.85%</text>
       <defs><clipPath id="language-bar"><rect x="28" y="142" width="584" height="12" rx="6"/></clipPath></defs>
       <rect x="28" y="142" width="584" height="12" rx="6" fill="none"/>
-      <g clip-path="url(#language-bar)"><rect x="28" y="142" width="399.2224" height="12" fill="#ffd166"/><rect x="427.2224" y="142" width="107.2808" height="12" fill="#bbe8f2"/><rect x="534.5032" y="142" width="59.276" height="12" fill="#d7c4f3"/><rect x="593.7792" y="142" width="14.5416" height="12" fill="#ffaec5"/><rect x="608.3208" y="142" width="3.6208" height="12" fill="#ffe9a3"/><rect x="611.9416" y="142" width="0.0584" height="12" fill="#ffd3b0"/></g>
+      <g clip-path="url(#language-bar)"><rect x="28" y="142" width="384.56399999999996" height="12" fill="#ffd166"/><rect x="412.56399999999996" y="142" width="103.3096" height="12" fill="#bbe8f2"/><rect x="515.8736" y="142" width="57.056799999999996" height="12" fill="#d7c4f3"/><rect x="572.9304" y="142" width="24.936799999999998" height="12" fill="#ffe9a3"/><rect x="597.8671999999999" y="142" width="14.015999999999998" height="12" fill="#ffaec5"/><rect x="611.8831999999999" y="142" width="0.0584" height="12" fill="#ffd3b0"/></g>
       <circle cx="33" cy="194" r="5" fill="#ffd166"/>
       <text x="48" y="199" font-size="14" fill="#3b2d4f" >JavaScript</text>
-      <text x="304" y="199" font-size="13" fill="#756782" text-anchor="end" font-family="Consolas, Liberation Mono, monospace">68.36%</text>
+      <text x="304" y="199" font-size="13" fill="#756782" text-anchor="end" font-family="Consolas, Liberation Mono, monospace">65.85%</text>
       <rect x="28" y="211" width="276" height="3" rx="1.5" fill="none"/>
-      <rect x="28" y="211" width="188.6736" height="3" rx="1.5" fill="#ffd166"/>
+      <rect x="28" y="211" width="181.74599999999998" height="3" rx="1.5" fill="#ffd166"/>
 <circle cx="337" cy="194" r="5" fill="#bbe8f2"/>
       <text x="352" y="199" font-size="14" fill="#3b2d4f" >CSS</text>
-      <text x="608" y="199" font-size="13" fill="#756782" text-anchor="end" font-family="Consolas, Liberation Mono, monospace">18.37%</text>
+      <text x="608" y="199" font-size="13" fill="#756782" text-anchor="end" font-family="Consolas, Liberation Mono, monospace">17.69%</text>
       <rect x="332" y="211" width="276" height="3" rx="1.5" fill="none"/>
-      <rect x="332" y="211" width="50.7012" height="3" rx="1.5" fill="#bbe8f2"/>
+      <rect x="332" y="211" width="48.824400000000004" height="3" rx="1.5" fill="#bbe8f2"/>
 <circle cx="33" cy="234" r="5" fill="#d7c4f3"/>
       <text x="48" y="239" font-size="14" fill="#3b2d4f" >C#</text>
-      <text x="304" y="239" font-size="13" fill="#756782" text-anchor="end" font-family="Consolas, Liberation Mono, monospace">10.15%</text>
+      <text x="304" y="239" font-size="13" fill="#756782" text-anchor="end" font-family="Consolas, Liberation Mono, monospace">9.77%</text>
       <rect x="28" y="251" width="276" height="3" rx="1.5" fill="none"/>
-      <rect x="28" y="251" width="28.014" height="3" rx="1.5" fill="#d7c4f3"/>
-<circle cx="337" cy="234" r="5" fill="#ffaec5"/>
-      <text x="352" y="239" font-size="14" fill="#3b2d4f" >HTML</text>
-      <text x="608" y="239" font-size="13" fill="#756782" text-anchor="end" font-family="Consolas, Liberation Mono, monospace">2.49%</text>
+      <rect x="28" y="251" width="26.9652" height="3" rx="1.5" fill="#d7c4f3"/>
+<circle cx="337" cy="234" r="5" fill="#ffe9a3"/>
+      <text x="352" y="239" font-size="14" fill="#3b2d4f" >Python</text>
+      <text x="608" y="239" font-size="13" fill="#756782" text-anchor="end" font-family="Consolas, Liberation Mono, monospace">4.27%</text>
       <rect x="332" y="251" width="276" height="3" rx="1.5" fill="none"/>
-      <rect x="332" y="251" width="6.8724" height="3" rx="1.5" fill="#ffaec5"/>
-<circle cx="33" cy="274" r="5" fill="#ffe9a3"/>
-      <text x="48" y="279" font-size="14" fill="#3b2d4f" >Python</text>
-      <text x="304" y="279" font-size="13" fill="#756782" text-anchor="end" font-family="Consolas, Liberation Mono, monospace">0.62%</text>
+      <rect x="332" y="251" width="11.7852" height="3" rx="1.5" fill="#ffe9a3"/>
+<circle cx="33" cy="274" r="5" fill="#ffaec5"/>
+      <text x="48" y="279" font-size="14" fill="#3b2d4f" >HTML</text>
+      <text x="304" y="279" font-size="13" fill="#756782" text-anchor="end" font-family="Consolas, Liberation Mono, monospace">2.40%</text>
       <rect x="28" y="291" width="276" height="3" rx="1.5" fill="none"/>
-      <rect x="28" y="291" width="1.7112" height="3" rx="1.5" fill="#ffe9a3"/>
+      <rect x="28" y="291" width="6.624" height="3" rx="1.5" fill="#ffaec5"/>
 <circle cx="337" cy="274" r="5" fill="#ffd3b0"/>
       <text x="352" y="279" font-size="14" fill="#3b2d4f" >Batchfile</text>
       <text x="608" y="279" font-size="13" fill="#756782" text-anchor="end" font-family="Consolas, Liberation Mono, monospace">0.01%</text>
