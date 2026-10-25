@@ -1,6 +1,6 @@
 const fs = require('node:fs/promises');
 const path = require('node:path');
-const { parseOverview, parseLanguages, validateStreak, renderOverview, renderStreak, renderLanguages } = require('./profile-stat-cards.cjs');
+const { parseOverview, parseLanguages, validateStreak, renderDashboard } = require('./profile-stat-cards.cjs');
 
 async function fetchProfileStats(username, request = fetch) {
   const overviewUrl = new URL('https://github-readme-stats.shion.dev/api');
@@ -27,18 +27,13 @@ async function main() {
   const data = process.argv.includes('--from-snapshot')
     ? JSON.parse(await fs.readFile(path.join(root, 'assets/profile/statistics.json'), 'utf8'))
     : await fetchProfileStats(process.env.PROFILE_USERNAME || 'ShadowsLunarfox');
-  const renderers = [
-    { name: 'stats-overview', data: data.overview, render: renderOverview },
-    { name: 'stats-streak', data: data.streak, render: renderStreak },
-    { name: 'languages', data: data.languages, render: renderLanguages },
-  ];
-  // Finish fetching, validating and rendering every card before updating snapshots.
-  const cards = renderers.flatMap(({ name, data, render }) => ['dark', 'light'].map(theme => ({
-    file: path.join(root, `assets/profile/${name}-${theme}.svg`), svg: render(data, theme),
-  })));
+  // Finish fetching, validating and rendering both themes before updating snapshots.
+  const cards = ['dark', 'light'].map(theme => ({
+    file: path.join(root, `assets/profile/stats-dashboard-${theme}.svg`), svg: renderDashboard(data, theme),
+  }));
   for (const card of cards) await fs.writeFile(card.file, card.svg);
   await fs.writeFile(path.join(root, 'assets/profile/statistics.json'), JSON.stringify(data, null, 2) + '\n');
-  console.log('Generated overview, contribution streak and language cards in light and dark themes.');
+  console.log('Generated the animated GitHub statistics dashboard in light and dark themes.');
 }
 
 module.exports = { fetchProfileStats };

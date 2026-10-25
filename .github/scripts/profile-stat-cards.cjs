@@ -1,3 +1,5 @@
+const { PROFILE_FONT, applyProfileFont } = require('./profile-font.cjs');
+
 const palettes = {
   dark: { surface: 'none', inset: 'none', border: '#353445', text: '#f1eaf7', muted: '#adbac7', accent: '#ffaec5', lavender: '#d7c4f3', cyan: '#b9edf2' },
   light: { surface: 'none', inset: 'none', border: '#e6dce9', text: '#3b2d4f', muted: '#756782', accent: '#9c4268', lavender: '#756092', cyan: '#367484' },
@@ -94,95 +96,134 @@ function text(x, y, value, size = 14, color = 'currentColor', extra = '') {
 
 function digit(x, y, value, size, color, extra = '') {
   const label = number(value);
-  return text(x, y, label, label.length > 7 ? size * 0.75 : size, color, `font-family="Consolas, Liberation Mono, monospace" font-weight="700" ${extra}`);
+  return text(x, y, label, label.length > 7 ? size * 0.75 : size, color, `font-weight="700" ${extra}`);
 }
 
-function frame(title, eyebrow, description, height, theme, body) {
+function renderDashboard(data, theme) {
+  const { overview: stats, streak, languages } = data;
+  validateStreak(streak);
   const p = palettes[theme];
-  return `<svg xmlns="http://www.w3.org/2000/svg" width="640" height="${height}" viewBox="0 0 640 ${height}" role="img" aria-labelledby="title description">
-  <title id="title">${escapeXml(title)}</title>
+  const rows = Math.ceil(languages.length / 2);
+  const height = 650 + rows * 48;
+  const firstDate = streak.totalContributions ? `${date(streak.firstContribution, true)} – present` : 'No contributions yet';
+  const description = `${stats.stars} stars; ${stats.commits} commits in the last year; ${stats.prs} pull requests; ${stats.issues} issues; ${stats.contribs} repositories contributed to in the last year; GitHub rank ${stats.rank}. ${streak.totalContributions} total contributions since ${streak.firstContribution || 'joining GitHub'}; current streak ${streak.currentStreak.length} days, ${dateRange(streak.currentStreak)}; longest streak ${streak.longestStreak.length} days, ${dateRange(streak.longestStreak)}. ${languages.map(language => `${language.name} ${language.percentage}`).join('; ')}.`;
+  const kicker = (x, y, label) => text(x, y, label, 11, p.muted, 'letter-spacing="1.8"');
+  const divider = y => `<path d="M40 ${y}H800" stroke="${p.border}"/>`;
+  const circumference = 2 * Math.PI * 62;
+  const rankArc = stats.rankProgress == null ? '' : `<circle class="rank-progress" cx="680" cy="212" r="62" fill="none" stroke="url(#pastel)" stroke-width="6" stroke-linecap="round" stroke-dasharray="${circumference}" stroke-dashoffset="${(1 - stats.rankProgress) * circumference}" style="--ring-length:${circumference}" transform="rotate(-90 680 212)"/>`;
+  let offset = 0;
+  const segments = languages.map((language, index) => {
+    const width = 760 * language.percent / 100;
+    const segment = `<rect x="${40 + offset}" y="574" width="${width}" height="14" fill="${languageColors[language.name] || fallbackColors[index % fallbackColors.length]}"/>`;
+    offset += width;
+    return segment;
+  }).join('');
+  const legend = languages.map((language, index) => {
+    const x = 40 + (index % 2) * 398;
+    const y = 620 + Math.floor(index / 2) * 48;
+    const color = languageColors[language.name] || fallbackColors[index % fallbackColors.length];
+    const labelSize = language.name.length > 22 ? 12 : 15;
+    return `<g>
+      <circle cx="${x + 5}" cy="${y - 5}" r="5" fill="${color}"/>
+      ${text(x + 20, y, language.name, labelSize, p.text)}
+      ${text(x + 362, y, language.percentage, 14, p.muted, 'text-anchor="end"')}
+      <rect x="${x}" y="${y + 12}" width="362" height="3" rx="1.5" fill="${p.border}" opacity=".5"/>
+      <rect class="language-grow" x="${x}" y="${y + 12}" width="${362 * language.percent / 100}" height="3" rx="1.5" fill="${color}" style="animation-delay:${0.3 + index * 0.08}s"/>
+    </g>`;
+  }).join('\n');
+  return applyProfileFont(`<svg font-family="${PROFILE_FONT}" xmlns="http://www.w3.org/2000/svg" width="840" height="${height}" viewBox="0 0 840 ${height}" role="img" aria-labelledby="title description">
+  <title id="title">GitHub Stats · Small commits, steady growth</title>
   <desc id="description">${escapeXml(description)}</desc>
-  <rect x=".5" y=".5" width="639" height="${height - 1}" rx="22" fill="${p.surface}" stroke="${p.border}"/>
-  <g font-family="Segoe UI, Arial, sans-serif" fill="${p.text}">
-    ${text(28, 32, eyebrow, 10, p.muted, 'font-family="Consolas, Liberation Mono, monospace" letter-spacing="1.7"')}
-    ${text(28, 69, title, 27, p.text, 'font-family="Georgia, Times New Roman, serif" font-weight="700"')}
-    <path d="M604 36 608 48 620 52 608 56 604 68 600 56 588 52 600 48Z" fill="${p.accent}" opacity=".8"/>
-    ${body(p)}
+  <defs>
+    <linearGradient id="pastel" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="${p.accent}"/><stop offset=".52" stop-color="${p.lavender}"/><stop offset="1" stop-color="${p.cyan}"/>
+    </linearGradient>
+    <linearGradient id="header-wash" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="${p.lavender}" stop-opacity=".07"/><stop offset="1" stop-color="${p.accent}" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="streak-wash"><stop stop-color="${p.accent}" stop-opacity="0"/><stop offset=".5" stop-color="${p.accent}" stop-opacity=".07"/><stop offset="1" stop-color="${p.accent}" stop-opacity="0"/></linearGradient>
+    <linearGradient id="shine"><stop stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#fff" stop-opacity=".5"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+    <clipPath id="panel-clip"><rect x="1" y="1" width="838" height="${height - 2}" rx="26"/></clipPath>
+    <clipPath id="language-bar"><rect x="40" y="574" width="760" height="14" rx="7"/></clipPath>
+  </defs>
+  <style>
+    @keyframes appear { from { opacity:0; transform:translateY(6px); } to { opacity:1; transform:translateY(0); } }
+    @keyframes draw-rank { from { stroke-dashoffset:var(--ring-length); } }
+    @keyframes grow { from { transform:scaleX(0); } to { transform:scaleX(1); } }
+    @keyframes orbit { to { transform:rotate(360deg); } }
+    @keyframes twinkle { 0%,100% { opacity:.35; transform:scale(.85); } 50% { opacity:1; transform:scale(1.12); } }
+    @keyframes breathe { 0%,100% { opacity:.65; transform:scale(.94); } 50% { opacity:1; transform:scale(1.06); } }
+    @keyframes shimmer { 0%,15% { transform:translateX(0); opacity:0; } 25% { opacity:1; } 65%,100% { transform:translateX(1000px); opacity:0; } }
+    .reveal { animation:appear .8s ease-out backwards; }
+    .rank-progress { animation:draw-rank 1.5s cubic-bezier(.22,1,.36,1) backwards; }
+    .rank-orbit { transform-origin:680px 212px; animation:orbit 24s linear infinite; }
+    .spark { transform-box:fill-box; transform-origin:center; animation:twinkle 4s ease-in-out infinite; }
+    .spark-late { animation-delay:-2s; }
+    .flame { transform-box:fill-box; transform-origin:center; animation:breathe 3s ease-in-out infinite; }
+    .language-grow { transform-box:fill-box; transform-origin:left; animation:grow 1.2s cubic-bezier(.22,1,.36,1) backwards; }
+    .shimmer { animation:shimmer 8s ease-in-out infinite; }
+    @media (prefers-reduced-motion:reduce) { *, *::before, *::after { animation:none !important; } .shimmer { opacity:0; } }
+  </style>
+  <rect x=".5" y=".5" width="839" height="${height - 1}" rx="26" fill="${p.surface}" stroke="${p.border}"/>
+  <g clip-path="url(#panel-clip)">
+    <rect x="1" y="1" width="838" height="312" fill="url(#header-wash)"/>
+    <path d="M40 1H800" stroke="url(#pastel)" stroke-width="2" opacity=".7"/>
+  </g>
+  <g font-family="${PROFILE_FONT}" fill="${p.text}">
+    ${kicker(40, 38, 'LUNARFOX / GITHUB AT A GLANCE')}
+    ${text(40, 81, 'Small commits, steady growth.', 32, p.text, 'font-weight="700"')}
+    <path class="spark" d="M772 33 777 48 792 53 777 58 772 73 767 58 752 53 767 48Z" fill="${p.accent}"/>
+    <path class="spark spark-late" d="M736 25 738 31 744 33 738 35 736 41 734 35 728 33 734 31Z" fill="${p.lavender}"/>
+    ${divider(110)}
+    ${kicker(40, 141, '01 / OVERVIEW')}
+    <g class="reveal">
+      ${digit(40, 202, stats.stars, 44, p.accent)}
+      ${text(40, 226, 'Total stars', 15, p.muted)}
+      ${digit(280, 202, stats.commits, 44, p.lavender)}
+      ${text(280, 226, 'Commits · last year', 15, p.muted)}
+      ${digit(40, 276, stats.prs, 26, p.text)}
+      ${text(40, 298, 'Pull requests', 14, p.muted)}
+      ${digit(215, 276, stats.issues, 26, p.text)}
+      ${text(215, 298, 'Issues', 14, p.muted)}
+      ${digit(365, 276, stats.contribs, 26, p.text)}
+      ${text(365, 298, 'Repos · last year', 14, p.muted)}
+    </g>
+    <path d="M546 151V295" stroke="${p.border}"/>
+    <circle cx="680" cy="212" r="76" fill="none" stroke="${p.border}" stroke-dasharray="2 9" opacity=".7"/>
+    <circle cx="680" cy="212" r="62" fill="none" stroke="${p.border}" stroke-width="5"/>
+    ${rankArc}
+    <g class="rank-orbit"><circle cx="680" cy="136" r="4" fill="${p.cyan}"/><circle cx="680" cy="288" r="2.5" fill="${p.accent}"/></g>
+    ${text(680, 225, stats.rank, 42, p.text, 'text-anchor="middle" font-weight="700"')}
+    ${text(680, 299, 'GitHub rank', 14, p.muted, 'text-anchor="middle"')}
+    ${divider(322)}
+    ${kicker(40, 353, '02 / CONTRIBUTION STREAK')}
+    <rect x="40" y="370" width="760" height="109" rx="18" fill="url(#streak-wash)"/>
+    <path d="M292 387V469M548 387V469" stroke="${p.border}"/>
+    <g class="reveal" style="animation-delay:.15s">
+      ${digit(166, 417, streak.totalContributions, 36, p.cyan, 'text-anchor="middle"')}
+      ${text(166, 443, 'Total contributions', 15, p.text, 'text-anchor="middle"')}
+      ${text(166, 467, firstDate, 12, p.muted, 'text-anchor="middle"')}
+      <path class="flame" d="M373 406C361 404 360 394 365 387C365 394 370 394 369 387C368 380 373 376 376 373C375 384 386 387 385 396C385 403 380 407 373 406Z" fill="${p.accent}"/>
+      ${digit(439, 419, streak.currentStreak.length, 50, p.accent, 'text-anchor="middle"')}
+      ${text(420, 443, 'Current streak · days', 15, p.text, 'text-anchor="middle" font-weight="600"')}
+      ${text(420, 467, dateRange(streak.currentStreak), 12, p.muted, 'text-anchor="middle"')}
+      ${digit(674, 417, streak.longestStreak.length, 36, p.lavender, 'text-anchor="middle"')}
+      ${text(674, 443, 'Longest streak · days', 15, p.text, 'text-anchor="middle"')}
+      ${text(674, 467, dateRange(streak.longestStreak), 12, p.muted, 'text-anchor="middle"')}
+    </g>
+    ${divider(492)}
+    ${kicker(40, 523, '03 / MOST USED LANGUAGES')}
+    ${text(40, 555, languages[0]?.name || 'No language data yet', 18, p.text, 'font-weight="600"')}
+    ${text(800, 555, languages[0]?.percentage || '', 25, p.accent, 'text-anchor="end" font-weight="700"')}
+    <rect x="40" y="574" width="760" height="14" rx="7" fill="${p.border}"/>
+    <g clip-path="url(#language-bar)"><g class="language-grow">${segments}</g><rect class="shimmer" x="-150" y="574" width="120" height="14" fill="url(#shine)"/></g>
+    ${legend}
+    ${divider(height - 54)}
+    ${text(40, height - 27, 'Small ideas, growing into something. (ᵔᴥᵔ)', 12, p.muted)}
+    ${text(800, height - 27, `${languages.length} LANGUAGES / DAILY SNAPSHOT`, 10, p.muted, 'text-anchor="end" letter-spacing="1"')}
   </g>
 </svg>
-`;
+`);
 }
 
-function renderOverview(stats, theme) {
-  const description = `${stats.stars} stars; ${stats.commits} commits in the last year; ${stats.prs} pull requests; ${stats.issues} issues; ${stats.contribs} repositories contributed to in the last year; GitHub rank ${stats.rank}.`;
-  return frame('GitHub Overview', 'SMALL IDEAS, GROWING INTO SOMETHING', description, 302, theme, p => `
-    <rect x="24" y="94" width="406" height="168" rx="16" fill="${p.inset}"/>
-    ${digit(44, 139, stats.stars, 34, p.accent)}
-    ${text(44, 163, 'Total Stars', 14, p.muted)}
-    ${digit(246, 139, stats.commits, 34, p.lavender)}
-    ${text(246, 163, 'Commits · last year', 14, p.muted)}
-    <path d="M44 181H410" stroke="${p.border}"/>
-    ${digit(44, 216, stats.prs, 24, p.text)}
-    ${text(44, 239, 'Pull requests', 12, p.muted)}
-    ${digit(174, 216, stats.issues, 24, p.text)}
-    ${text(174, 239, 'Issues', 12, p.muted)}
-    ${digit(304, 216, stats.contribs, 24, p.text)}
-    ${text(304, 239, 'Repos · last year', 12, p.muted)}
-    <circle cx="521" cy="161" r="52" fill="${p.inset}" stroke="${p.border}" stroke-width="2"/>
-    ${stats.rankProgress == null ? '' : `<circle cx="521" cy="161" r="52" fill="none" stroke="${p.lavender}" stroke-width="5" stroke-linecap="round" stroke-dasharray="${2 * Math.PI * 52}" stroke-dashoffset="${(1 - stats.rankProgress) * 2 * Math.PI * 52}" transform="rotate(-90 521 161)"/>`}
-    ${text(521, 175, stats.rank, 38, p.text, 'text-anchor="middle" font-family="Consolas, Liberation Mono, monospace" font-weight="700"')}
-    ${text(521, 239, 'GitHub Rank', 14, p.muted, 'text-anchor="middle"')}
-    ${text(28, 284, 'Small ideas, steady progress. (ᵔᴥᵔ)', 12, p.muted)}
-  `);
-}
-
-function renderStreak(data, theme) {
-  validateStreak(data);
-  const firstDate = data.totalContributions ? `${date(data.firstContribution, true)} – present` : 'No contributions yet';
-  const description = `${data.totalContributions} total contributions since ${data.firstContribution || 'joining GitHub'}; current streak ${data.currentStreak.length} days, ${dateRange(data.currentStreak)}; longest streak ${data.longestStreak.length} days, ${dateRange(data.longestStreak)}.`;
-  return frame('Contribution Streak', 'A LITTLE PROGRESS, EVERY DAY', description, 282, theme, p => `
-    <rect x="228" y="94" width="184" height="146" rx="18" fill="${p.inset}" stroke="${p.border}"/>
-    ${digit(320, 157, data.currentStreak.length, 48, p.accent, 'text-anchor="middle"')}
-    ${text(320, 188, 'Current streak', 14, p.text, 'text-anchor="middle" font-weight="600"')}
-    ${text(320, 214, dateRange(data.currentStreak), 12, p.muted, 'text-anchor="middle"')}
-    ${digit(120, 157, data.totalContributions, 32, p.cyan, 'text-anchor="middle"')}
-    ${text(120, 188, 'Total contributions', 14, p.text, 'text-anchor="middle"')}
-    ${text(120, 214, firstDate, 11, p.muted, 'text-anchor="middle"')}
-    ${digit(520, 157, data.longestStreak.length, 32, p.lavender, 'text-anchor="middle"')}
-    ${text(520, 188, 'Longest streak', 14, p.text, 'text-anchor="middle"')}
-    ${text(520, 214, dateRange(data.longestStreak), 12, p.muted, 'text-anchor="middle"')}
-    ${text(28, 264, 'Keep showing up. (ง •̀_•́)ง', 12, p.muted)}
-  `);
-}
-
-function renderLanguages(languages, theme) {
-  const rows = Math.ceil(languages.length / 2);
-  const description = languages.map(language => `${language.name} ${language.percentage}`).join('; ');
-  return frame('Most Used Languages', 'THE TOOLS BEHIND THE LITTLE IDEAS', description, 194 + rows * 40, theme, p => {
-    let x = 28;
-    const segments = languages.map((language, index) => {
-      const width = 584 * language.percent / 100;
-      const segment = `<rect x="${x}" y="142" width="${width}" height="12" fill="${languageColors[language.name] || fallbackColors[index % fallbackColors.length]}"/>`;
-      x += width;
-      return segment;
-    }).join('');
-    const legend = languages.map((language, index) => {
-      const x = 28 + (index % 2) * 304;
-      const y = 199 + Math.floor(index / 2) * 40;
-      const color = languageColors[language.name] || fallbackColors[index % fallbackColors.length];
-      return `<circle cx="${x + 5}" cy="${y - 5}" r="5" fill="${color}"/>
-      ${text(x + 20, y, language.name, 14, p.text)}
-      ${text(x + 276, y, language.percentage, 13, p.muted, 'text-anchor="end" font-family="Consolas, Liberation Mono, monospace"')}
-      <rect x="${x}" y="${y + 12}" width="276" height="3" rx="1.5" fill="${p.inset}"/>
-      <rect x="${x}" y="${y + 12}" width="${276 * language.percent / 100}" height="3" rx="1.5" fill="${color}"/>`;
-    }).join('\n');
-    return `${text(28, 119, languages[0].name, 18, p.text, 'font-weight="600"')}
-      ${text(612, 119, languages[0].percentage, 29, p.accent, 'text-anchor="end" font-family="Consolas, Liberation Mono, monospace" font-weight="700"')}
-      <defs><clipPath id="language-bar"><rect x="28" y="142" width="584" height="12" rx="6"/></clipPath></defs>
-      <rect x="28" y="142" width="584" height="12" rx="6" fill="${p.inset}"/>
-      <g clip-path="url(#language-bar)">${segments}</g>
-      ${legend}`;
-  });
-}
-
-module.exports = { parseOverview, parseLanguages, validateStreak, renderOverview, renderStreak, renderLanguages };
+module.exports = { parseOverview, parseLanguages, validateStreak, renderDashboard };

@@ -1,4 +1,5 @@
 const fs = require('node:fs/promises');
+const { applyProfileFont } = require('./profile-font.cjs');
 
 // Language bars, pie slices and legend swatches use explicit fills. Text and
 // contribution blocks use theme CSS and retain their light/dark colors.
@@ -32,8 +33,8 @@ module.exports = { applyProfilePalette };
 if (require.main === module) {
   (async () => {
     for (const file of process.argv.slice(2)) {
-      await fs.writeFile(file, applyProfilePalette(await fs.readFile(file, 'utf8')));
-      console.log(`Applied the pastel language palette to ${file}`);
+      await fs.writeFile(file, applyProfileFont(applyProfilePalette(await fs.readFile(file, 'utf8'))));
+      console.log(`Applied the shared palette and font to ${file}`);
     }
   })().catch(error => { console.error(error.message); process.exitCode = 1; });
 }

@@ -1,20 +1,13 @@
-<!--
- * @Author: Shadows_Lunarfox 91894334+ShadowsLunarfox@users.noreply.github.com
- * @Date: 2026-07-30 16:33:16
- * @LastEditors: Shadows_Lunarfox 91894334+ShadowsLunarfox@users.noreply.github.com
- * @LastEditTime: 2026-10-15 02:20:32
- * @FilePath: \ShadowsLunarfox\README.md
- * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
--->
+
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&height=180&color=0:ffaec5,35:d7c4f3,70:ffe9a3,100:b9edf2&text=Shadows_Lunarfox%20%E6%9C%88%E7%8B%90&fontAlign=50&fontAlignY=38&fontColor=3b2d4f&fontSize=48&animation=twinkling" alt="Shadows_Lunarfox profile header" width="100%" />
+<img src="assets/profile/header.svg" alt="Shadows_Lunarfox profile header" width="100%" />
 
 <!-- BEGIN typing-animation -->
 <p>
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&amp;size=22&amp;pause=1200&amp;color=FFAEC5&amp;background=00000000&amp;center=true&amp;vCenter=true&amp;width=760&amp;height=60&amp;lines=Hi%2C+I%27m+Shadows_Lunarfox+%E6%9C%88%E7%8B%90;Building+websites%2C+games+%26+little+experiments;Coding+from+Kuala+Lumpur%2C+Malaysia" />
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&amp;size=22&amp;pause=1200&amp;color=615276&amp;background=00000000&amp;center=true&amp;vCenter=true&amp;width=760&amp;height=60&amp;lines=Hi%2C+I%27m+Shadows_Lunarfox+%E6%9C%88%E7%8B%90;Building+websites%2C+games+%26+little+experiments;Coding+from+Kuala+Lumpur%2C+Malaysia" alt="Animated introduction: Shadows_Lunarfox, building websites, games and tools in Kuala Lumpur" width="100%" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://readme-typing-svg.demolab.com?font=Comic+Neue&amp;size=22&amp;pause=1200&amp;color=FFAEC5&amp;background=00000000&amp;center=true&amp;vCenter=true&amp;width=760&amp;height=60&amp;lines=Hi%2C+I%27m+Shadows_Lunarfox+%E6%9C%88%E7%8B%90;Building+websites%2C+games+%26+little+experiments;Coding+from+Kuala+Lumpur%2C+Malaysia" />
+    <img src="https://readme-typing-svg.demolab.com?font=Comic+Neue&amp;size=22&amp;pause=1200&amp;color=615276&amp;background=00000000&amp;center=true&amp;vCenter=true&amp;width=760&amp;height=60&amp;lines=Hi%2C+I%27m+Shadows_Lunarfox+%E6%9C%88%E7%8B%90;Building+websites%2C+games+%26+little+experiments;Coding+from+Kuala+Lumpur%2C+Malaysia" alt="Animated introduction: Shadows_Lunarfox, building websites, games and tools in Kuala Lumpur" width="100%" />
   </picture>
 </p>
 <!-- END typing-animation -->
@@ -226,28 +219,17 @@
 
 <!-- END featured-repositories -->
 
+<!-- BEGIN github-stats -->
 <h2 align="center">📊 <samp>GitHub Stats (＾▽＾)</samp></h2>
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/profile/stats-overview-dark.svg" />
-    <img src="assets/profile/stats-overview-light.svg" alt="GitHub statistics: stars, commits in the last year, pull requests, issues, contributed repositories and rank" width="100%" />
+    <source media="(prefers-color-scheme: dark)" srcset="assets/profile/stats-dashboard-dark.svg" />
+    <img src="assets/profile/stats-dashboard-light.svg" alt="Animated GitHub dashboard: stars, yearly commits, pull requests, issues, contributed repositories, rank, contribution streaks with dates, and language percentages" width="100%" />
   </picture>
 </p>
 
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/profile/stats-streak-dark.svg" />
-    <img src="assets/profile/stats-streak-light.svg" alt="Contribution streak: total contributions, current streak, longest streak and date ranges" width="100%" />
-  </picture>
-</p>
-
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/profile/languages-dark.svg" />
-    <img src="assets/profile/languages-light.svg" alt="Most used languages and their percentages" width="100%" />
-  </picture>
-</p>
+<!-- END github-stats -->
 
 <!-- BEGIN activity-graph -->
 <h2 align="center">🌱 <samp>Activity Graph</samp></h2>

@@ -1,4 +1,4 @@
-name: Generate profile statistic cards
+name: Generate profile statistics dashboard
 
 on:
   workflow_call:
@@ -25,11 +25,15 @@ jobs:
       - name: Verify statistic and follower data handling
         id: verify
         run: node --test .github/scripts/profile-stat-cards.test.cjs .github/scripts/generate-followers.test.cjs
-      - name: Generate all three cards
+      - name: Generate the animated statistics dashboard
         id: cards
         run: node .github/scripts/generate-profile-stats.cjs
         env:
           PROFILE_USERNAME: ${{ github.repository_owner }}
+      - name: Refresh the header with the embedded cartoon font
+        id: header
+        if: ${{ !cancelled() && steps.verify.outcome == 'success' }}
+        run: node .github/scripts/generate-profile-header.cjs
       - name: Refresh the local followers badge
         id: followers
         if: ${{ !cancelled() && steps.verify.outcome == 'success' }}
@@ -38,11 +42,11 @@ jobs:
           PROFILE_USERNAME: ${{ github.repository_owner }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Save the refreshed cards and followers badge
-        if: ${{ !cancelled() && (steps.cards.outcome == 'success' || steps.followers.outcome == 'success') }}
+        if: ${{ !cancelled() && (steps.cards.outcome == 'success' || steps.followers.outcome == 'success' || steps.header.outcome == 'success') }}
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add assets/profile/stats-overview-*.svg assets/profile/stats-streak-*.svg assets/profile/languages-*.svg assets/profile/statistics.json assets/profile/followers.svg
+          git add assets/profile/stats-dashboard-*.svg assets/profile/statistics.json assets/profile/followers.svg assets/profile/header.svg
           if ! git diff --cached --quiet; then
             git commit -m "Update profile statistics and followers badge"
             git pull --rebase origin main

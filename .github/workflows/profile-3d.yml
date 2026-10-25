@@ -33,7 +33,7 @@ jobs:
           mkdir -p assets/profile
           cp profile-3d-contrib/3d-contributions-light.svg assets/profile/3d-contributions-light.svg
           cp profile-3d-contrib/3d-contributions-dark.svg assets/profile/3d-contributions-dark.svg
-      - name: Apply the shared language palette
+      - name: Apply the shared language palette and font
         run: node .github/scripts/apply-profile-palette.cjs assets/profile/3d-contributions-light.svg assets/profile/3d-contributions-dark.svg
       - name: Save the updated calendars
         run: |

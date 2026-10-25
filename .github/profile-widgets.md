@@ -9,8 +9,7 @@ Each optional section has `BEGIN` and `END` comments in README.md so it can be r
 | Activity graph | [Ashutosh00710/github-readme-activity-graph](https://github.com/Ashutosh00710/github-readme-activity-graph) | `activity-graph.yml`, daily |
 | Contribution snake | [Platane/snk](https://github.com/Platane/snk) | `snake.yml`, daily |
 | 3D contributions | [yoshi389111/github-profile-3d-contrib](https://github.com/yoshi389111/github-profile-3d-contrib) | `profile-3d.yml`, daily |
-| GitHub overview and contribution streak | Existing Shion statistics service and [DenverCoder1/github-readme-streak-stats](https://github.com/DenverCoder1/github-readme-streak-stats), local SVG renderer | `profile-stats.yml`, daily |
-| Most used languages | [anuraghazra/github-readme-stats](https://github.com/anuraghazra/github-readme-stats), existing Shion image service and local SVG renderer | `profile-stats.yml`, daily |
+| GitHub statistics dashboard | Existing Shion statistics service and [DenverCoder1/github-readme-streak-stats](https://github.com/DenverCoder1/github-readme-streak-stats), combined animated SVG with overview, streaks and languages | `profile-stats.yml`, daily |
 | Featured repositories | GitHub REST API, local SVG card renderer | `featured-repositories.yml`, daily or when the configuration changes |
 | Learning badges | Public Microsoft Learn profile and verified achievements, plus Google badge share links | `learning-badges.yml`, daily |
 
@@ -48,7 +47,7 @@ The header, footer, badges, stats, activity graph, snake, and 3D calendar use th
 | Light-theme text | `#3b2d4f` |
 | Dark-theme text | `#adbac7` |
 
-The typing animation, stats, activity graph, snake, and 3D calendar select readable light/dark variants with `<picture>`. Widget backgrounds stay transparent; the statistics cards also leave their inner panels and rank circle unfilled so GitHub's page background shows through. The activity workflow writes both `activity.svg` (dark) and `activity-light.svg` (light). Snake and 3D calendar contribution levels share cyan → lavender → peach → pink, with a theme-specific empty cell color. The 3D calendar retains its growing animation and uses a fixed pastel palette rather than cycling through rainbow colors.
+The typing animation, stats, activity graph, snake, and 3D calendar select readable light/dark variants with `<picture>`. Widget backgrounds stay transparent; the statistics dashboard adds faint gradient accents while its outer background and rank circle remain unfilled so GitHub's page background shows through. The activity workflow writes both `activity.svg` (dark) and `activity-light.svg` (light). Snake and 3D calendar contribution levels share cyan → lavender → peach → pink, with a theme-specific empty cell color. The 3D calendar retains its growing animation and uses a fixed pastel palette rather than cycling through rainbow colors.
 
 `apply-profile-palette.cjs` recolors the 3D calendar's language pie slices and legend swatches to match the skill badges. The statistics card renderer uses the same palette for language bars and labels, preserving the service's percentage values.
 
@@ -56,11 +55,13 @@ The snake is pastel pink (`#ffaec5`) in both themes. README uses `assets/profile
 
 To remove a widget, remove its marked README section and corresponding workflow. The typing animation has no workflow.
 
-## 三张统计卡片
+## 合并动画统计面板
 
-README 的三张统计卡片保持上下竖排，显示宽度设为 `100%`，随 README 内容区宽度缩放，充分使用左右空间，支持深浅色模式。`profile-stat-cards.cjs` 统一绘制圆角边框、衬线标题、等宽数字和粉紫色强调；卡片外层、内部面板和评级圆环底色均为透明，文字与图表按主题配色。总览保留 Stars、过去一年提交数、PR、Issues、过去一年参与仓库数和评级，连续贡献保留三个统计值及日期，语言卡片保留所有返回的语言及百分比。
+README 的 GitHub Stats 使用一个 `<picture>` 展示一张整合 SVG 面板：`stats-dashboard-dark.svg` / `stats-dashboard-light.svg`。宽度为 `100%`，随 README 内容区缩放，按主题选择深浅色版本。`profile-stat-cards.cjs` 统一绘制圆角外框、淡渐变、Comic Neue 漫画字体和粉紫色强调，底色保持透明。总览保留 Stars、过去一年提交数、PR、Issues、过去一年参与仓库数和真实评级进度；连续贡献保留三个统计值及日期；语言区保留所有返回的语言及精确百分比，面板高度随语言行数增加。
 
-`generate-profile-stats.cjs` 沿用原本的公开统计服务，连续贡献按吉隆坡时区计算。全部数据抓取、校验和绘图成功后，才更新 `statistics.json` 和六份 SVG 快照；服务出错时保留现有文件。`profile-stats.yml` 由每天吉隆坡时间 00:17 启动的 `daily-refresh.yml` 调用：先提交刷新标记，等待五分钟，再依次刷新六个任务。推送相关脚本到 `main` 会启动同一流程，也可手动运行。语言卡片的自动更新已从 3D 工作流迁入此工作流。
+动画直接包含在 SVG 的 CSS 中：数字淡入、评级进度绘制与外圈光点旋转、连续贡献火苗呼吸、星光闪烁、语言条展开及循环扫光。Comic Neue 的常规和粗体字体以数据 URL 嵌入，无需安装字体或访问字体服务。系统开启 `prefers-reduced-motion` 时，停止动画并直接展示完整数据。
+
+`generate-profile-stats.cjs` 沿用原本的公开统计服务，连续贡献按吉隆坡时区计算。全部数据抓取、校验和两种主题绘图成功后，才更新 `statistics.json` 和两份 SVG 快照；服务出错时保留现有文件。`profile-stats.yml` 由每天吉隆坡时间 00:17 启动的 `daily-refresh.yml` 调用：先提交刷新标记，等待五分钟，再依次刷新六个任务。推送相关脚本到 `main` 会启动同一流程，也可手动运行。
 
 ```powershell
 node .github/scripts/generate-profile-stats.cjs
@@ -76,7 +77,9 @@ node .github/scripts/generate-profile-stats.cjs --from-snapshot
 
 ## 字体层次与表情符号
 
-README 的栏目标题和昵称使用 `<samp>` 等宽字体，与正文的默认字体形成层次；角色下方的短句使用 `<em>` 斜体。顶部打字动画继续使用 Fira Code。表情符号放在栏目标题、问候和所在地，作为轻量的视觉提示。
+README 的栏目标题和昵称使用 `<samp>` 等宽字体，与正文的默认字体形成层次；角色下方的短句使用 `<em>` 斜体。自制图片文字统一使用 Comic Neue 漫画手写字体：顶部横幅、仓库卡片、统计面板、Followers 徽章、Activity Graph 和 3D 贡献图通过 `profile-font.cjs` 嵌入常规和粗体 WOFF2，打字动画通过 `font=Comic+Neue` 指定。标题、数字和说明均使用这套字体，通过字号和粗细区分层次。Activity Graph 和 3D 图在每日生成后应用相同字体，横幅由 `generate-profile-header.cjs` 刷新。外部平台原有徽章继续由各自的图片服务提供。
+
+Comic Neue 采用 [SIL Open Font License 1.1](https://github.com/google/fonts/blob/main/ofl/comicneue/OFL.txt)，允许免费使用、商用和嵌入，不属于公有领域字体。字体文件、来源说明和完整许可证保存在 `assets/fonts/comic-neue/`，每张包含字体的 SVG 也在元数据中保留许可证。表情符号放在栏目标题、问候和所在地，作为轻量的视觉提示。
 
 问候、角色短句、项目展示、统计和 3D 贡献标题加上少量颜文字，例如 `(｡･ω･｡)ﾉ`、`(ᵔᴥᵔ)` 和 `(☆▽☆)`，与现有 emoji 搭配。
 

@@ -1,5 +1,6 @@
 const fs = require('node:fs/promises');
 const path = require('node:path');
+const { PROFILE_FONT, applyProfileFont } = require('./profile-font.cjs');
 
 const BEGIN = '<!-- BEGIN featured-repositories -->';
 const END = '<!-- END featured-repositories -->';
@@ -63,7 +64,8 @@ function escapeXml(value) {
 function textWidth(text, size = 16) {
   return [...text].reduce((width, char) => {
     const factor = /\s/.test(char) ? 0.3 : /[ilI.,:;!|'`]/.test(char) ? 0.3 : /[frtj()[\]{}]/.test(char) ? 0.42 : /[MW@%]/.test(char) ? 0.95 : /[^\x00-\x7f]/.test(char) ? 1 : /[A-Z0-9]/.test(char) ? 0.7 : 0.55;
-    return width + size * factor;
+    // Keep a conservative width allowance for the embedded cartoon font.
+    return width + size * factor * 1.12;
   }, 0);
 }
 
@@ -119,11 +121,11 @@ function renderCard(repo, theme) {
     x += 23 + textWidth(number(value), 14) + 22;
   }
   const description = wrapDescription(repo.description).map((line, index) => `<tspan x="28" y="${81 + index * 22}">${escapeXml(line)}</tspan>`).join('');
-  return `<svg xmlns="http://www.w3.org/2000/svg" width="560" height="200" viewBox="0 0 560 200" role="img" aria-labelledby="title description">
+  return applyProfileFont(`<svg font-family="${PROFILE_FONT}" xmlns="http://www.w3.org/2000/svg" width="560" height="200" viewBox="0 0 560 200" role="img" aria-labelledby="title description">
   <title id="title">${escapeXml(repo.full_name)}</title>
   <desc id="description">${escapeXml(repo.description || '')} ${escapeXml(repo.language || '')}; ${repo.stargazers_count} stars; ${repo.forks_count} forks.</desc>
   <rect x="8.5" y="8.5" width="543" height="183" rx="6" fill="none" stroke="${colors.border}"/>
-  <g font-family="Segoe UI, Noto Sans, Arial, sans-serif" fill="${colors.text}">
+  <g font-family="${PROFILE_FONT}" fill="${colors.text}">
     <text x="28" y="46" font-size="18" font-weight="600" fill="${colors.title}">${escapeXml(truncateText(repo.name, 432, 18))}</text>
     <rect x="478.5" y="28.5" width="53" height="23" rx="11.5" fill="none" stroke="${colors.border}"/>
     <text x="505" y="44.5" text-anchor="middle" font-size="13">Public</text>
@@ -131,7 +133,7 @@ function renderCard(repo, theme) {
     <g font-size="14">${parts.join('')}</g>
   </g>
 </svg>
-`;
+`);
 }
 
 function renderSection(repositories, newline = '\n') {

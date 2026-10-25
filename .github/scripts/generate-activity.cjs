@@ -1,5 +1,6 @@
 const fs = require('node:fs/promises');
 const path = require('node:path');
+const { applyProfileFont } = require('./profile-font.cjs');
 
 async function main() {
   const source = path.resolve(process.argv[2] || 'vendor/activity-graph');
@@ -30,7 +31,7 @@ async function main() {
     const svg = await card.buildGraph(data.contributions);
     if (!svg.includes('<svg')) throw new Error('The activity renderer did not produce an SVG');
     await fs.mkdir(path.dirname(theme.output), { recursive: true });
-    await fs.writeFile(theme.output, svg);
+    await fs.writeFile(theme.output, applyProfileFont(svg));
     console.log(`Generated ${theme.output} for ${username}`);
   }
 }
