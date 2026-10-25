@@ -94,7 +94,7 @@ FROM, OUT OF THE USE OR INABILITY TO USE THE FONT SOFTWARE OR FROM
 OTHER DEALINGS IN THE FONT SOFTWARE.
 </metadata>
   <title id="title">GitHub Stats · Small commits, steady growth</title>
-  <desc id="description">67 stars; 167 commits in the last year; 1 pull requests; 1 issues; 0 repositories contributed to in the last year; GitHub rank B-. 197 total contributions since 2021-10-04; current streak 20 days, Oct 6 – Oct 25; longest streak 20 days, Oct 6 – Oct 25. JavaScript 74.93%; CSS 13.64%; C# 6.57%; Python 2.82%; HTML 1.81%; Brainfuck 0.22%.</desc>
+  <desc id="description">68 stars; 169 commits in the last year; 1 pull requests; 1 issues; 0 repositories contributed to in the last year; GitHub rank B-. 199 total contributions since 2021-10-04; current streak 21 days, Oct 6 – Oct 26; longest streak 21 days, Oct 6 – Oct 26. JavaScript 75.44%; CSS 13.37%; C# 6.40%; Python 2.75%; HTML 1.83%; Brainfuck 0.21%.</desc>
   <defs>
     <linearGradient id="pastel" x1="0" y1="0" x2="1" y2="1">
       <stop stop-color="#9c4268"/><stop offset=".52" stop-color="#756092"/><stop offset="1" stop-color="#367484"/>
@@ -138,9 +138,9 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
     <path d="M40 110H800" stroke="#e6dce9"/>
     <text x="40" y="141" font-size="11" fill="#756782" letter-spacing="1.8">01 / OVERVIEW</text>
     <g class="reveal">
-      <text x="40" y="202" font-size="44" fill="#9c4268" font-weight="700" >67</text>
+      <text x="40" y="202" font-size="44" fill="#9c4268" font-weight="700" >68</text>
       <text x="40" y="226" font-size="15" fill="#756782" >Total stars</text>
-      <text x="280" y="202" font-size="44" fill="#756092" font-weight="700" >167</text>
+      <text x="280" y="202" font-size="44" fill="#756092" font-weight="700" >169</text>
       <text x="280" y="226" font-size="15" fill="#756782" >Commits · last year</text>
       <text x="40" y="276" font-size="26" fill="#3b2d4f" font-weight="700" >1</text>
       <text x="40" y="298" font-size="14" fill="#756782" >Pull requests</text>
@@ -152,7 +152,7 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
     <path d="M546 151V295" stroke="#e6dce9"/>
     <circle cx="680" cy="212" r="76" fill="none" stroke="#e6dce9" stroke-dasharray="2 9" opacity=".7"/>
     <circle cx="680" cy="212" r="62" fill="none" stroke="#e6dce9" stroke-width="5"/>
-    <circle class="rank-progress" cx="680" cy="212" r="62" fill="none" stroke="url(#pastel)" stroke-width="6" stroke-linecap="round" stroke-dasharray="389.55748904513433" stroke-dashoffset="268.0368106152296" style="--ring-length:389.55748904513433" transform="rotate(-90 680 212)"/>
+    <circle class="rank-progress" cx="680" cy="212" r="62" fill="none" stroke="url(#pastel)" stroke-width="6" stroke-linecap="round" stroke-dasharray="389.55748904513433" stroke-dashoffset="267.34056620178393" style="--ring-length:389.55748904513433" transform="rotate(-90 680 212)"/>
     <g class="rank-orbit"><circle cx="680" cy="136" r="4" fill="#367484"/><circle cx="680" cy="288" r="2.5" fill="#9c4268"/></g>
     <text x="680" y="225" font-size="42" fill="#3b2d4f" text-anchor="middle" font-weight="700">B-</text>
     <text x="680" y="299" font-size="14" fill="#756782" text-anchor="middle">GitHub rank</text>
@@ -161,64 +161,64 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
     <rect x="40" y="370" width="760" height="109" rx="18" fill="url(#streak-wash)"/>
     <path d="M292 387V469M548 387V469" stroke="#e6dce9"/>
     <g class="reveal" style="animation-delay:.15s">
-      <text x="166" y="417" font-size="36" fill="#367484" font-weight="700" text-anchor="middle">197</text>
+      <text x="166" y="417" font-size="36" fill="#367484" font-weight="700" text-anchor="middle">199</text>
       <text x="166" y="443" font-size="15" fill="#3b2d4f" text-anchor="middle">Total contributions</text>
       <text x="166" y="467" font-size="12" fill="#756782" text-anchor="middle">Oct 4, 2021 – present</text>
       <path class="flame" d="M373 406C361 404 360 394 365 387C365 394 370 394 369 387C368 380 373 376 376 373C375 384 386 387 385 396C385 403 380 407 373 406Z" fill="#9c4268"/>
-      <text x="439" y="419" font-size="50" fill="#9c4268" font-weight="700" text-anchor="middle">20</text>
+      <text x="439" y="419" font-size="50" fill="#9c4268" font-weight="700" text-anchor="middle">21</text>
       <text x="420" y="443" font-size="15" fill="#3b2d4f" text-anchor="middle" font-weight="600">Current streak · days</text>
-      <text x="420" y="467" font-size="12" fill="#756782" text-anchor="middle">Oct 6 – Oct 25</text>
-      <text x="674" y="417" font-size="36" fill="#756092" font-weight="700" text-anchor="middle">20</text>
+      <text x="420" y="467" font-size="12" fill="#756782" text-anchor="middle">Oct 6 – Oct 26</text>
+      <text x="674" y="417" font-size="36" fill="#756092" font-weight="700" text-anchor="middle">21</text>
       <text x="674" y="443" font-size="15" fill="#3b2d4f" text-anchor="middle">Longest streak · days</text>
-      <text x="674" y="467" font-size="12" fill="#756782" text-anchor="middle">Oct 6 – Oct 25</text>
+      <text x="674" y="467" font-size="12" fill="#756782" text-anchor="middle">Oct 6 – Oct 26</text>
     </g>
     <path d="M40 492H800" stroke="#e6dce9"/>
     <text x="40" y="523" font-size="11" fill="#756782" letter-spacing="1.8">03 / MOST USED LANGUAGES</text>
     <text x="40" y="555" font-size="18" fill="#3b2d4f" font-weight="600">JavaScript</text>
-    <text x="800" y="555" font-size="25" fill="#9c4268" text-anchor="end" font-weight="700">74.93%</text>
+    <text x="800" y="555" font-size="25" fill="#9c4268" text-anchor="end" font-weight="700">75.44%</text>
     <rect x="40" y="574" width="760" height="14" rx="7" fill="#e6dce9"/>
-    <g clip-path="url(#language-bar)"><g class="language-grow"><rect x="40" y="574" width="569.4680000000001" height="14" fill="#ffd166"/><rect x="609.4680000000001" y="574" width="103.664" height="14" fill="#bbe8f2"/><rect x="713.1320000000001" y="574" width="49.931999999999995" height="14" fill="#d7c4f3"/><rect x="763.0640000000001" y="574" width="21.432" height="14" fill="#ffe9a3"/><rect x="784.4960000000001" y="574" width="13.756000000000002" height="14" fill="#ffaec5"/><rect x="798.2520000000001" y="574" width="1.672" height="14" fill="#d7c4f3"/></g><rect class="shimmer" x="-150" y="574" width="120" height="14" fill="url(#shine)"/></g>
+    <g clip-path="url(#language-bar)"><g class="language-grow"><rect x="40" y="574" width="573.344" height="14" fill="#ffd166"/><rect x="613.344" y="574" width="101.612" height="14" fill="#bbe8f2"/><rect x="714.956" y="574" width="48.64" height="14" fill="#d7c4f3"/><rect x="763.596" y="574" width="20.9" height="14" fill="#ffe9a3"/><rect x="784.496" y="574" width="13.908" height="14" fill="#ffaec5"/><rect x="798.404" y="574" width="1.5959999999999999" height="14" fill="#d7c4f3"/></g><rect class="shimmer" x="-150" y="574" width="120" height="14" fill="url(#shine)"/></g>
     <g>
       <circle cx="45" cy="615" r="5" fill="#ffd166"/>
       <text x="60" y="620" font-size="15" fill="#3b2d4f" >JavaScript</text>
-      <text x="402" y="620" font-size="14" fill="#756782" text-anchor="end">74.93%</text>
+      <text x="402" y="620" font-size="14" fill="#756782" text-anchor="end">75.44%</text>
       <rect x="40" y="632" width="362" height="3" rx="1.5" fill="#e6dce9" opacity=".5"/>
-      <rect class="language-grow" x="40" y="632" width="271.24660000000006" height="3" rx="1.5" fill="#ffd166" style="animation-delay:0.3s"/>
+      <rect class="language-grow" x="40" y="632" width="273.0928" height="3" rx="1.5" fill="#ffd166" style="animation-delay:0.3s"/>
     </g>
 <g>
       <circle cx="443" cy="615" r="5" fill="#bbe8f2"/>
       <text x="458" y="620" font-size="15" fill="#3b2d4f" >CSS</text>
-      <text x="800" y="620" font-size="14" fill="#756782" text-anchor="end">13.64%</text>
+      <text x="800" y="620" font-size="14" fill="#756782" text-anchor="end">13.37%</text>
       <rect x="438" y="632" width="362" height="3" rx="1.5" fill="#e6dce9" opacity=".5"/>
-      <rect class="language-grow" x="438" y="632" width="49.3768" height="3" rx="1.5" fill="#bbe8f2" style="animation-delay:0.38s"/>
+      <rect class="language-grow" x="438" y="632" width="48.39939999999999" height="3" rx="1.5" fill="#bbe8f2" style="animation-delay:0.38s"/>
     </g>
 <g>
       <circle cx="45" cy="663" r="5" fill="#d7c4f3"/>
       <text x="60" y="668" font-size="15" fill="#3b2d4f" >C#</text>
-      <text x="402" y="668" font-size="14" fill="#756782" text-anchor="end">6.57%</text>
+      <text x="402" y="668" font-size="14" fill="#756782" text-anchor="end">6.40%</text>
       <rect x="40" y="680" width="362" height="3" rx="1.5" fill="#e6dce9" opacity=".5"/>
-      <rect class="language-grow" x="40" y="680" width="23.7834" height="3" rx="1.5" fill="#d7c4f3" style="animation-delay:0.45999999999999996s"/>
+      <rect class="language-grow" x="40" y="680" width="23.168000000000003" height="3" rx="1.5" fill="#d7c4f3" style="animation-delay:0.45999999999999996s"/>
     </g>
 <g>
       <circle cx="443" cy="663" r="5" fill="#ffe9a3"/>
       <text x="458" y="668" font-size="15" fill="#3b2d4f" >Python</text>
-      <text x="800" y="668" font-size="14" fill="#756782" text-anchor="end">2.82%</text>
+      <text x="800" y="668" font-size="14" fill="#756782" text-anchor="end">2.75%</text>
       <rect x="438" y="680" width="362" height="3" rx="1.5" fill="#e6dce9" opacity=".5"/>
-      <rect class="language-grow" x="438" y="680" width="10.2084" height="3" rx="1.5" fill="#ffe9a3" style="animation-delay:0.54s"/>
+      <rect class="language-grow" x="438" y="680" width="9.955" height="3" rx="1.5" fill="#ffe9a3" style="animation-delay:0.54s"/>
     </g>
 <g>
       <circle cx="45" cy="711" r="5" fill="#ffaec5"/>
       <text x="60" y="716" font-size="15" fill="#3b2d4f" >HTML</text>
-      <text x="402" y="716" font-size="14" fill="#756782" text-anchor="end">1.81%</text>
+      <text x="402" y="716" font-size="14" fill="#756782" text-anchor="end">1.83%</text>
       <rect x="40" y="728" width="362" height="3" rx="1.5" fill="#e6dce9" opacity=".5"/>
-      <rect class="language-grow" x="40" y="728" width="6.5522" height="3" rx="1.5" fill="#ffaec5" style="animation-delay:0.62s"/>
+      <rect class="language-grow" x="40" y="728" width="6.6246" height="3" rx="1.5" fill="#ffaec5" style="animation-delay:0.62s"/>
     </g>
 <g>
       <circle cx="443" cy="711" r="5" fill="#d7c4f3"/>
       <text x="458" y="716" font-size="15" fill="#3b2d4f" >Brainfuck</text>
-      <text x="800" y="716" font-size="14" fill="#756782" text-anchor="end">0.22%</text>
+      <text x="800" y="716" font-size="14" fill="#756782" text-anchor="end">0.21%</text>
       <rect x="438" y="728" width="362" height="3" rx="1.5" fill="#e6dce9" opacity=".5"/>
-      <rect class="language-grow" x="438" y="728" width="0.7964" height="3" rx="1.5" fill="#d7c4f3" style="animation-delay:0.7s"/>
+      <rect class="language-grow" x="438" y="728" width="0.7602" height="3" rx="1.5" fill="#d7c4f3" style="animation-delay:0.7s"/>
     </g>
     <path d="M40 740H800" stroke="#e6dce9"/>
     <text x="40" y="767" font-size="12" fill="#756782" >Small ideas, growing into something. (ᵔᴥᵔ)</text>
