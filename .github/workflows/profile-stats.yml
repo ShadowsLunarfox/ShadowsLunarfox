@@ -41,12 +41,19 @@ jobs:
         env:
           PROFILE_USERNAME: ${{ github.repository_owner }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - name: Save the refreshed cards and followers badge
-        if: ${{ !cancelled() && (steps.cards.outcome == 'success' || steps.followers.outcome == 'success' || steps.header.outcome == 'success') }}
+      - name: Refresh the public repositories badge
+        id: repositories
+        if: ${{ !cancelled() && steps.verify.outcome == 'success' }}
+        run: node .github/scripts/generate-public-repositories.cjs
+        env:
+          PROFILE_USERNAME: ${{ github.repository_owner }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Save the refreshed dashboard and badges
+        if: ${{ !cancelled() && (steps.cards.outcome == 'success' || steps.followers.outcome == 'success' || steps.header.outcome == 'success' || steps.repositories.outcome == 'success') }}
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add assets/profile/stats-dashboard-*.svg assets/profile/statistics.json assets/profile/followers.svg assets/profile/header.svg
+          git add assets/profile/stats-dashboard-*.svg assets/profile/statistics.json assets/profile/followers.svg assets/profile/header.svg assets/profile/public-repositories.svg
           if ! git diff --cached --quiet; then
             git commit -m "Update profile statistics and followers badge"
             git pull --rebase origin main
