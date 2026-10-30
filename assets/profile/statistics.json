@@ -1,59 +1,59 @@
 {
   "overview": {
     "stars": 68,
-    "commits": 173,
-    "prs": 1,
+    "commits": 175,
+    "prs": 2,
     "issues": 1,
     "contribs": 0,
     "rank": "B-",
-    "rankProgress": 0.31590948
+    "rankProgress": 0.31987441
   },
   "streak": {
     "mode": "daily",
-    "totalContributions": 203,
+    "totalContributions": 206,
     "firstContribution": "2021-10-04",
     "longestStreak": {
       "start": "2026-10-06",
-      "end": "2026-10-29",
-      "length": 24
+      "end": "2026-10-31",
+      "length": 26
     },
     "currentStreak": {
       "start": "2026-10-06",
-      "end": "2026-10-29",
-      "length": 24
+      "end": "2026-10-31",
+      "length": 26
     },
     "excludedDays": []
   },
   "languages": [
     {
       "name": "JavaScript",
-      "percent": 77.83,
-      "percentage": "77.83%"
+      "percent": 77.96,
+      "percentage": "77.96%"
     },
     {
       "name": "CSS",
-      "percent": 11.92,
-      "percentage": "11.92%"
+      "percent": 11.72,
+      "percentage": "11.72%"
     },
     {
       "name": "C#",
-      "percent": 5.81,
-      "percentage": "5.81%"
-    },
-    {
-      "name": "Python",
-      "percent": 2.5,
-      "percentage": "2.50%"
+      "percent": 5.43,
+      "percentage": "5.43%"
     },
     {
       "name": "HTML",
-      "percent": 1.75,
-      "percentage": "1.75%"
+      "percent": 2.37,
+      "percentage": "2.37%"
+    },
+    {
+      "name": "Python",
+      "percent": 2.33,
+      "percentage": "2.33%"
     },
     {
       "name": "Brainfuck",
-      "percent": 0.19,
-      "percentage": "0.19%"
+      "percent": 0.18,
+      "percentage": "0.18%"
     }
   ]
 }
