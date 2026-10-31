@@ -186,10 +186,10 @@
       <img src="assets/profile/repositories/repo-3-light.svg" alt="ShadowsLunarfox/Selection-Text-Reader: A Windows 98-style browser extension that reads, translates, highlights, and extracts text from webpages using text-to-speech and screen OCR." width="49%" />
     </picture>
   </a>
-  <a href="https://github.com/ShadowsLunarfox/Custom-Browser-Homepage">
+  <a href="https://github.com/ShadowsLunarfox/Lunar-Start-Page">
     <picture>
       <source media="(prefers-color-scheme: dark)" srcset="assets/profile/repositories/repo-4-dark.svg" />
-      <img src="assets/profile/repositories/repo-4-light.svg" alt="ShadowsLunarfox/Custom-Browser-Homepage: This is a tool that can modify the browser&apos;s new tab page." width="49%" />
+      <img src="assets/profile/repositories/repo-4-light.svg" alt="ShadowsLunarfox/Lunar-Start-Page: This is a tool that can modify the browser&apos;s new tab page." width="49%" />
     </picture>
   </a>
 </p>
