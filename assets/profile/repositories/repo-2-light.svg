@@ -94,13 +94,14 @@ FROM, OUT OF THE USE OR INABILITY TO USE THE FONT SOFTWARE OR FROM
 OTHER DEALINGS IN THE FONT SOFTWARE.
 </metadata>
   <title id="title">ShadowsLunarfox/YouTube-Customizer</title>
-  <desc id="description">YouTube Customizer is a browser extension for personalizing YouTube. It lets you restyle the page, customize the video progress bar, and hide or compact parts of YouTube&apos;s interface. The extension has an English settings UI with a Windows 98-inspired look, and changes are previewed on YouTube as you make them. JavaScript; 2 stars; 0 forks.</desc>
+  <desc id="description">YouTube Customizer is a browser extension for personalizing YouTube. It lets you restyle the page, customize the video progress bar, and hide or compact parts of YouTube&apos;s interface. The extension has an English settings UI with a Windows 98-inspired look, and changes are previewed on YouTube as you make them. JavaScript 98%, HTML 2%; 2 stars; 0 forks.</desc>
   <rect x="8.5" y="8.5" width="543" height="183" rx="6" fill="none" stroke="#d0d7de"/>
+  <defs><clipPath id="language-bar"><rect x="28" y="143" width="504" height="5" rx="2.5"/></clipPath></defs><g clip-path="url(#language-bar)"><rect x="28" y="143" width="493.80932257641734" height="5" fill="#ffd166"/><rect x="521.8093225764173" y="143" width="10.19067742358274" height="5" fill="#ffaec5"/></g>
   <g font-family="Comic Neue, cursive" fill="#3b2d4f">
     <text x="28" y="46" font-size="18" font-weight="600" fill="#615276">YouTube-Customizer</text>
     <rect x="478.5" y="28.5" width="53" height="23" rx="11.5" fill="none" stroke="#d0d7de"/>
     <text x="505" y="44.5" text-anchor="middle" font-size="13">Public</text>
     <text font-size="16"><tspan x="28" y="81">YouTube Customizer is a browser extension for</tspan><tspan x="28" y="103">personalizing YouTube. It lets you restyle the page,</tspan><tspan x="28" y="125">customize the video progress bar, and hide or compact par…</tspan></text>
-    <g font-size="14"><circle cx="35" cy="166" r="7" fill="#ffd166"/><text x="48" y="171">JavaScript</text><g transform="translate(152.9472 155)" fill="none" stroke="#3b2d4f" stroke-width="1.5" stroke-linejoin="round"><path d="M8 1.2 10.1 5.5 14.8 6.2 11.4 9.5 12.2 14.2 8 12 3.8 14.2 4.6 9.5 1.2 6.2 5.9 5.5Z"/></g><text x="175.9472" y="171">2</text></g>
+    <g font-size="14"><g class="repository-language"><title>JavaScript 98%</title><circle cx="33" cy="166" r="5" fill="#ffd166"/><text x="44" y="171" font-size="13">JavaScript 98%</text></g><g class="repository-language"><title>HTML 2%</title><circle cx="182.6064" cy="166" r="5" fill="#ffaec5"/><text x="193.6064" y="171" font-size="13">HTML 2%</text></g><g transform="translate(498.024 155)" fill="none" stroke="#3b2d4f" stroke-width="1.5" stroke-linejoin="round"><path d="M8 1.2 10.1 5.5 14.8 6.2 11.4 9.5 12.2 14.2 8 12 3.8 14.2 4.6 9.5 1.2 6.2 5.9 5.5Z"/></g><text x="521.024" y="171">2</text></g>
   </g>
 </svg>

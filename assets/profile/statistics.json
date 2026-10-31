@@ -1,59 +1,64 @@
 {
   "overview": {
     "stars": 68,
-    "commits": 177,
+    "commits": 181,
     "prs": 2,
     "issues": 1,
-    "contribs": 0,
+    "contribs": 1,
     "rank": "B-",
-    "rankProgress": 0.32044175
+    "rankProgress": 0.32054075
   },
   "streak": {
     "mode": "daily",
-    "totalContributions": 206,
+    "totalContributions": 211,
     "firstContribution": "2021-10-04",
     "longestStreak": {
       "start": "2026-10-06",
-      "end": "2026-10-31",
-      "length": 26
+      "end": "2026-11-01",
+      "length": 27
     },
     "currentStreak": {
       "start": "2026-10-06",
-      "end": "2026-10-31",
-      "length": 26
+      "end": "2026-11-01",
+      "length": 27
     },
     "excludedDays": []
   },
   "languages": [
     {
       "name": "JavaScript",
-      "percent": 77.96,
-      "percentage": "77.96%"
+      "percent": 78.22,
+      "percentage": "78.22%"
     },
     {
       "name": "CSS",
-      "percent": 11.72,
-      "percentage": "11.72%"
+      "percent": 11.31,
+      "percentage": "11.31%"
     },
     {
       "name": "C#",
-      "percent": 5.43,
-      "percentage": "5.43%"
+      "percent": 5.39,
+      "percentage": "5.39%"
     },
     {
       "name": "HTML",
-      "percent": 2.37,
-      "percentage": "2.37%"
+      "percent": 2.54,
+      "percentage": "2.54%"
     },
     {
       "name": "Python",
-      "percent": 2.33,
-      "percentage": "2.33%"
+      "percent": 2.23,
+      "percentage": "2.23%"
     },
     {
-      "name": "Brainfuck",
-      "percent": 0.18,
-      "percentage": "0.18%"
+      "name": "PowerShell",
+      "percent": 0.29,
+      "percentage": "0.29%"
+    },
+    {
+      "name": "Batchfile",
+      "percent": 0.01,
+      "percentage": "0.01%"
     }
   ]
 }

@@ -14,7 +14,6 @@
 
 <p>
   <img src="https://komarev.com/ghpvc/?username=ShadowsLunarfox&label=Profile%20Views&color=ffaec5&style=flat" alt="Profile views" />
-  <a href="https://github.com/ShadowsLunarfox?tab=followers"><img src="assets/profile/followers.svg" alt="GitHub followers" /></a>
   <img src="https://img.shields.io/github/stars/ShadowsLunarfox?affiliations=OWNER%2CCOLLABORATOR&style=flat&color=b9edf2&labelColor=615276" alt="GitHub stars" />
   <a href="https://github.com/ShadowsLunarfox?tab=repositories&amp;type=public"><img src="assets/profile/public-repositories.svg" alt="GitHub public repositories" /></a>
 </p>
@@ -66,98 +65,47 @@
 <!-- END lunarfox-corner -->
 
 <!-- BEGIN learning-badges -->
-<h2 align="center">🏅 <samp>Learning &amp; Badges (｡･ω･｡)ﾉ</samp></h2>
+<h2 align="center">🏅 <samp>Learning &amp; Badges</samp></h2>
 
 <p align="center">
-  <a href="https://g.dev/lunarfox"><img src="https://img.shields.io/badge/Google_Developer_Program-lunarfox-ffaec5?style=flat&amp;logo=google&amp;logoColor=ffffff&amp;labelColor=615276" alt="Google Developer Program: my public profile" /></a>
-  <a href="https://learn.microsoft.com/en-us/users/shadowslunarfox-4093/achievements"><img src="https://img.shields.io/badge/Microsoft_Learn-Achievements-d7c4f3?style=flat&amp;labelColor=615276" alt="Microsoft Learn: my official achievements" /></a>
+  <a href="https://g.dev/lunarfox"><strong>Google Developer Program</strong></a> <sub>· 4 badges</sub>
+  <br />
+  <a href="https://developers.google.com/profile/badges/profile/created-profile?u=lunarfox"><img src="https://developers.google.com/static/profile/badges/profile/created-profile/created_profile.svg" alt="Joined the Google Developer Program — Program badge" title="Joined the Google Developer Program — Program badge" width="40" height="40" /></a>
+  <a href="https://developers.google.com/profile/badges/community/gdg/discovery?u=lunarfox"><img src="https://developers.google.com/static/profile/badges/community/gdg/discovery/badge.svg" alt="Google Developer Group discovery — Program badge" title="Google Developer Group discovery — Program badge" width="40" height="40" /></a>
+  <a href="https://developers.google.com/profile/badges/community/sdlcagents/gca-agents?u=lunarfox"><img src="https://developers.google.com/static/profile/badges/community/sdlcagents/gca-agents/badge.svg" alt="Code Wiki — Program badge" title="Code Wiki — Program badge" width="40" height="40" /></a>
+  <a href="https://developers.google.com/profile/badges/nvidia-developer?u=lunarfox"><img src="https://developers.google.com/static/profile/badges/nvidia-developer/badge.svg" alt="Google Cloud &amp; NVIDIA community member — Program badge" title="Google Cloud &amp; NVIDIA community member — Program badge" width="40" height="40" /></a>
 </p>
 
-<h3 align="center">Google Developer Program</h3>
+<p align="center">
+  <a href="https://learn.microsoft.com/en-us/users/shadowslunarfox-4093/achievements"><strong>Microsoft Learn</strong></a> <sub>· 4 module badges · 2 trophies</sub>
+  <br />
+  <a href="https://learn.microsoft.com/en-us/users/shadowslunarfox-4093/achievements"><img src="https://learn.microsoft.com/training/achievements/generic.svg" alt="Understand AI agents and prompting — Module badge · 2026-10-15" title="Understand AI agents and prompting — Module badge · 2026-10-15" width="40" height="40" /></a>
+  <a href="https://learn.microsoft.com/en-us/users/shadowslunarfox-4093/achievements"><img src="https://learn.microsoft.com/training/achievements/generic-badge.svg" alt="Prepare to use generative AI at work — Module badge · 2026-10-15" title="Prepare to use generative AI at work — Module badge · 2026-10-15" width="40" height="40" /></a>
+  <a href="https://learn.microsoft.com/en-us/users/shadowslunarfox-4093/achievements"><img src="https://learn.microsoft.com/learn/achievements/generic-badge.svg" alt="Work smarter with AI — Module badge · 2026-10-15" title="Work smarter with AI — Module badge · 2026-10-15" width="40" height="40" /></a>
+  <a href="https://learn.microsoft.com/en-us/users/shadowslunarfox-4093/achievements"><img src="https://learn.microsoft.com/training/achievements/generic-trophy.svg" alt="Work smarter with AI — Learning path trophy · 2026-10-15" title="Work smarter with AI — Learning path trophy · 2026-10-15" width="40" height="40" /></a>
+  <a href="https://learn.microsoft.com/en-us/users/shadowslunarfox-4093/achievements"><img src="https://learn.microsoft.com/training/achievements/generic-trophy.svg" alt="Enhance your productivity with prebuilt Microsoft 365 Copilot agents — Learning path trophy · 2026-10-15" title="Enhance your productivity with prebuilt Microsoft 365 Copilot agents — Learning path trophy · 2026-10-15" width="40" height="40" /></a>
+  <a href="https://learn.microsoft.com/en-us/users/shadowslunarfox-4093/achievements"><img src="https://learn.microsoft.com/training/achievements/generic-badge.svg" alt="Explore prebuilt Microsoft Copilot agents — Module badge · 2026-10-15" title="Explore prebuilt Microsoft Copilot agents — Module badge · 2026-10-15" width="40" height="40" /></a>
+</p>
 
-<table align="center" width="100%">
-  <tr>
-    <td align="center" valign="top" width="50%">
-      <a href="https://developers.google.com/profile/badges/profile/created-profile?u=lunarfox">
-        <img src="https://developers.google.com/static/profile/badges/profile/created-profile/created_profile.svg" alt="Joined the Google Developer Program — Google Developer Program badge" width="96" height="96" />
-        <br /><strong>Joined the Google Developer Program</strong>
-      </a>
-    </td>
-    <td align="center" valign="top" width="50%">
-      <a href="https://developers.google.com/profile/badges/community/gdg/discovery?u=lunarfox">
-        <img src="https://developers.google.com/static/profile/badges/community/gdg/discovery/badge.svg" alt="Google Developer Group discovery — Google Developer Program badge" width="96" height="96" />
-        <br /><strong>Google Developer Group discovery</strong>
-      </a>
-    </td>
-  </tr>
-  <tr>
-    <td align="center" valign="top" width="50%">
-      <a href="https://developers.google.com/profile/badges/community/sdlcagents/gca-agents?u=lunarfox">
-        <img src="https://developers.google.com/static/profile/badges/community/sdlcagents/gca-agents/badge.svg" alt="Code Wiki — Google Developer Program badge" width="96" height="96" />
-        <br /><strong>Code Wiki</strong>
-      </a>
-    </td>
-    <td align="center" valign="top" width="50%">
-      <a href="https://developers.google.com/profile/badges/nvidia-developer?u=lunarfox">
-        <img src="https://developers.google.com/static/profile/badges/nvidia-developer/badge.svg" alt="Google Cloud &amp; NVIDIA community member — Google Developer Program badge" width="96" height="96" />
-        <br /><strong>Google Cloud &amp; NVIDIA community member</strong>
-      </a>
-    </td>
-  </tr>
+<details>
+<summary>Badge details · 10 achievements</summary>
+
+<table>
+  <tr><th>Platform</th><th>Achievement</th><th>Details</th></tr>
+  <tr><td>Google</td><td><a href="https://developers.google.com/profile/badges/profile/created-profile?u=lunarfox">Joined the Google Developer Program</a></td><td><sub>Program badge</sub></td></tr>
+  <tr><td>Google</td><td><a href="https://developers.google.com/profile/badges/community/gdg/discovery?u=lunarfox">Google Developer Group discovery</a></td><td><sub>Program badge</sub></td></tr>
+  <tr><td>Google</td><td><a href="https://developers.google.com/profile/badges/community/sdlcagents/gca-agents?u=lunarfox">Code Wiki</a></td><td><sub>Program badge</sub></td></tr>
+  <tr><td>Google</td><td><a href="https://developers.google.com/profile/badges/nvidia-developer?u=lunarfox">Google Cloud &amp; NVIDIA community member</a></td><td><sub>Program badge</sub></td></tr>
+  <tr><td>Microsoft</td><td><a href="https://learn.microsoft.com/en-us/users/shadowslunarfox-4093/achievements">Understand AI agents and prompting</a></td><td><sub>Module badge · 2026-10-15</sub></td></tr>
+  <tr><td>Microsoft</td><td><a href="https://learn.microsoft.com/en-us/users/shadowslunarfox-4093/achievements">Prepare to use generative AI at work</a></td><td><sub>Module badge · 2026-10-15</sub></td></tr>
+  <tr><td>Microsoft</td><td><a href="https://learn.microsoft.com/en-us/users/shadowslunarfox-4093/achievements">Work smarter with AI</a></td><td><sub>Module badge · 2026-10-15</sub></td></tr>
+  <tr><td>Microsoft</td><td><a href="https://learn.microsoft.com/en-us/users/shadowslunarfox-4093/achievements">Work smarter with AI</a></td><td><sub>Learning path trophy · 2026-10-15</sub></td></tr>
+  <tr><td>Microsoft</td><td><a href="https://learn.microsoft.com/en-us/users/shadowslunarfox-4093/achievements">Enhance your productivity with prebuilt Microsoft 365 Copilot agents</a></td><td><sub>Learning path trophy · 2026-10-15</sub></td></tr>
+  <tr><td>Microsoft</td><td><a href="https://learn.microsoft.com/en-us/users/shadowslunarfox-4093/achievements">Explore prebuilt Microsoft Copilot agents</a></td><td><sub>Module badge · 2026-10-15</sub></td></tr>
 </table>
 
-<h3 align="center">Microsoft Learn · 4 module badges · 2 learning path trophies</h3>
+</details>
 
-<table align="center" width="100%">
-  <tr>
-    <td align="center" valign="top" width="33%">
-      <a href="https://learn.microsoft.com/en-us/users/shadowslunarfox-4093/achievements">
-        <img src="https://learn.microsoft.com/training/achievements/generic.svg" alt="Understand AI agents and prompting — Module badge" width="80" height="80" />
-        <br /><strong>Understand AI agents and prompting</strong>
-      </a>
-      <br /><sub>Module badge · 2026-10-15</sub>
-    </td>
-    <td align="center" valign="top" width="33%">
-      <a href="https://learn.microsoft.com/en-us/users/shadowslunarfox-4093/achievements">
-        <img src="https://learn.microsoft.com/training/achievements/generic-badge.svg" alt="Prepare to use generative AI at work — Module badge" width="80" height="80" />
-        <br /><strong>Prepare to use generative AI at work</strong>
-      </a>
-      <br /><sub>Module badge · 2026-10-15</sub>
-    </td>
-    <td align="center" valign="top" width="33%">
-      <a href="https://learn.microsoft.com/en-us/users/shadowslunarfox-4093/achievements">
-        <img src="https://learn.microsoft.com/learn/achievements/generic-badge.svg" alt="Work smarter with AI — Module badge" width="80" height="80" />
-        <br /><strong>Work smarter with AI</strong>
-      </a>
-      <br /><sub>Module badge · 2026-10-15</sub>
-    </td>
-  </tr>
-  <tr>
-    <td align="center" valign="top" width="33%">
-      <a href="https://learn.microsoft.com/en-us/users/shadowslunarfox-4093/achievements">
-        <img src="https://learn.microsoft.com/training/achievements/generic-trophy.svg" alt="Work smarter with AI — Learning path trophy" width="80" height="80" />
-        <br /><strong>Work smarter with AI</strong>
-      </a>
-      <br /><sub>Learning path trophy · 2026-10-15</sub>
-    </td>
-    <td align="center" valign="top" width="33%">
-      <a href="https://learn.microsoft.com/en-us/users/shadowslunarfox-4093/achievements">
-        <img src="https://learn.microsoft.com/training/achievements/generic-trophy.svg" alt="Enhance your productivity with prebuilt Microsoft 365 Copilot agents — Learning path trophy" width="80" height="80" />
-        <br /><strong>Enhance your productivity with prebuilt Microsoft 365 Copilot agents</strong>
-      </a>
-      <br /><sub>Learning path trophy · 2026-10-15</sub>
-    </td>
-    <td align="center" valign="top" width="33%">
-      <a href="https://learn.microsoft.com/en-us/users/shadowslunarfox-4093/achievements">
-        <img src="https://learn.microsoft.com/training/achievements/generic-badge.svg" alt="Explore prebuilt Microsoft Copilot agents — Module badge" width="80" height="80" />
-        <br /><strong>Explore prebuilt Microsoft Copilot agents</strong>
-      </a>
-      <br /><sub>Module badge · 2026-10-15</sub>
-    </td>
-  </tr>
-</table>
-
-<p align="center"><sub>Issued by Microsoft Learn · Click a badge to view my official achievement profile.</sub></p>
 <!-- END learning-badges -->
 
 <!-- BEGIN featured-repositories -->

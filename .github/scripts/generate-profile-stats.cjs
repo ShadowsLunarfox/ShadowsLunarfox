@@ -8,7 +8,7 @@ async function fetchProfileStats(username, request = fetch) {
   const streakUrl = new URL('https://streak-stats.demolab.com/');
   streakUrl.search = new URLSearchParams({ user: username, type: 'json', mode: 'daily', timezone: 'Asia/Kuala_Lumpur' }).toString();
   const languagesUrl = new URL('https://github-readme-stats.shion.dev/api/top-langs/');
-  languagesUrl.search = new URLSearchParams({ username, layout: 'compact', disable_animations: 'true' }).toString();
+  languagesUrl.search = new URLSearchParams({ username, layout: 'compact', langs_count: '20', disable_animations: 'true' }).toString();
   const responses = await Promise.all([overviewUrl, streakUrl, languagesUrl].map(async url => {
     let response;
     try {

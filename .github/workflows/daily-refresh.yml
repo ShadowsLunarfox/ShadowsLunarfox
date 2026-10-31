@@ -24,7 +24,7 @@ concurrency:
 
 jobs:
   prepare:
-    name: Commit the daily refresh and wait five minutes
+    name: Commit the daily refresh
     if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     timeout-minutes: 10
@@ -52,8 +52,6 @@ jobs:
               exit 1
             fi
           done
-      - name: Wait five minutes after the commit is published
-        run: sleep 300
 
   snake:
     name: Refresh contribution snake

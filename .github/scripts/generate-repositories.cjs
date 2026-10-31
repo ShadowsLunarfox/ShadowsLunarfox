@@ -41,20 +41,44 @@ function selectRepositories(repositories, config) {
   return [...selected.values()].slice(0, config.count);
 }
 
+function githubHeaders(token) {
+  const headers = { Accept: 'application/vnd.github+json', 'User-Agent': 'Lunarfox-profile-generator', 'X-GitHub-Api-Version': '2022-11-28' };
+  if (token) headers.Authorization = `Bearer ${token}`;
+  return headers;
+}
+
 async function fetchRepositories(username, token, request = fetch) {
   const repositories = [];
   for (let page = 1; ; page++) {
     const url = new URL(`https://api.github.com/users/${encodeURIComponent(username)}/repos`);
     url.search = new URLSearchParams({ type: 'owner', per_page: '100', sort: 'full_name', direction: 'asc', page: String(page) }).toString();
-    const headers = { Accept: 'application/vnd.github+json', 'User-Agent': 'Lunarfox-profile-generator', 'X-GitHub-Api-Version': '2022-11-28' };
-    if (token) headers.Authorization = `Bearer ${token}`;
-    const response = await request(url, { headers, signal: AbortSignal.timeout(30000) });
+    const response = await request(url, { headers: githubHeaders(token), signal: AbortSignal.timeout(30000) });
     const data = await response.json();
     if (!response.ok || !Array.isArray(data)) throw new Error(`GitHub repository data is unavailable (${response.status}): ${data.message || 'invalid response'}`);
     repositories.push(...data.filter(repo => repo.owner?.login?.toLowerCase() === username.toLowerCase() && !repo.private));
     if (data.length < 100) break;
   }
   return repositories;
+}
+
+async function fetchRepositoryLanguages(repo, token, request = fetch) {
+  const url = new URL(`https://api.github.com/repos/${encodeURIComponent(repo.owner.login)}/${encodeURIComponent(repo.name)}/languages`);
+  const response = await request(url, { headers: githubHeaders(token), signal: AbortSignal.timeout(30000) });
+  const data = await response.json();
+  if (!response.ok || !data || typeof data !== 'object' || Array.isArray(data)) {
+    throw new Error(`GitHub language data for ${repo.full_name} is unavailable (${response.status})`);
+  }
+  const entries = Object.entries(data);
+  if (entries.some(([name, bytes]) => !name.trim() || !Number.isSafeInteger(bytes) || bytes < 0)) {
+    throw new Error(`Invalid language byte counts for ${repo.full_name}`);
+  }
+  const total = entries.reduce((sum, [, bytes]) => sum + bytes, 0);
+  if (!Number.isSafeInteger(total)) throw new Error(`Invalid language byte total for ${repo.full_name}`);
+  return entries.filter(([, bytes]) => bytes > 0).sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0], 'en')).map(([name, bytes]) => {
+    const percent = bytes / total * 100;
+    const percentage = percent < 0.1 ? '<0.1%' : `${new Intl.NumberFormat('en', { maximumFractionDigits: 1 }).format(percent)}%`;
+    return { name, bytes, percent, percentage };
+  });
 }
 
 function escapeXml(value) {
@@ -99,32 +123,65 @@ function wrapDescription(description) {
   return lines;
 }
 
-function renderCard(repo, theme) {
+function cardLayout(repo) {
+  const languages = repo.languages || [];
+  const number = value => new Intl.NumberFormat('en', { notation: 'compact', maximumFractionDigits: 1 }).format(value);
+  const statistics = [['stars', repo.stargazers_count], ['forks', repo.forks_count]].filter(([, value]) => value).map(([kind, value]) => ({ kind, label: number(value) }));
+  const statisticsWidth = statistics.reduce((width, { label }) => width + 23 + textWidth(label, 14), 0) + Math.max(0, statistics.length - 1) * 22;
+  let availableWidth = 504 - (statisticsWidth ? statisticsWidth + 24 : 0);
+  let x = 28;
+  let row = 0;
+  const labels = languages.map(language => {
+    const label = truncateText(`${language.name} ${language.percentage}`, 488, 13);
+    const width = 16 + textWidth(label, 13);
+    if (x + width > 28 + availableWidth) {
+      row++;
+      x = 28;
+      availableWidth = 504;
+    }
+    const positioned = { language, label, x, y: 171 + row * 24 };
+    x += width + 18;
+    return positioned;
+  });
+  return { languages, labels, statistics, statisticsWidth, height: 200 + row * 24 };
+}
+
+function renderCard(repo, theme, minimumHeight = 200) {
   const colors = theme === 'dark'
     ? { title: '#ffaec5', text: '#adbac7', border: '#444c56' }
     : { title: '#615276', text: '#3b2d4f', border: '#d0d7de' };
   const languageColors = { 'C#': '#d7c4f3', 'C++': '#b9edf2', Java: '#ffd3b0', Python: '#ffe9a3', JavaScript: '#ffd166', HTML: '#ffaec5', CSS: '#bbe8f2', TypeScript: '#b9edf2' };
+  const fallbackColors = ['#d7c4f3', '#b9edf2', '#ffd3b0', '#ffaec5', '#ffe9a3'];
+  const layout = cardLayout(repo);
+  const { languages, statistics, statisticsWidth } = layout;
   const parts = [];
-  let x = 28;
-  if (repo.language) {
-    const language = truncateText(repo.language, 160, 14);
-    parts.push(`<circle cx="${x + 7}" cy="166" r="7" fill="${languageColors[repo.language] || '#d7c4f3'}"/><text x="${x + 20}" y="171">${escapeXml(language)}</text>`);
-    x += 20 + textWidth(language, 14) + 22;
+  let barX = 28;
+  const segments = [];
+  for (const [index, { language, label, x, y }] of layout.labels.entries()) {
+    const color = languageColors[language.name] || fallbackColors[index % fallbackColors.length];
+    parts.push(`<g class="repository-language"><title>${escapeXml(`${language.name} ${language.percentage}`)}</title><circle cx="${x + 5}" cy="${y - 5}" r="5" fill="${color}"/><text x="${x + 16}" y="${y}" font-size="13">${escapeXml(label)}</text></g>`);
+    const barWidth = 504 * language.percent / 100;
+    segments.push(`<rect x="${barX}" y="143" width="${barWidth}" height="5" fill="${color}"/>`);
+    barX += barWidth;
   }
-  const number = value => new Intl.NumberFormat('en', { notation: 'compact', maximumFractionDigits: 1 }).format(value);
-  for (const [kind, value] of [['stars', repo.stargazers_count], ['forks', repo.forks_count]]) {
-    if (!value) continue;
+  if (!languages.length) parts.push('<text x="28" y="171" font-size="13">No language data</text>');
+  let x = 532 - statisticsWidth;
+  for (const { kind, label } of statistics) {
     const icon = kind === 'stars'
       ? '<path d="M8 1.2 10.1 5.5 14.8 6.2 11.4 9.5 12.2 14.2 8 12 3.8 14.2 4.6 9.5 1.2 6.2 5.9 5.5Z"/>'
       : '<circle cx="4" cy="3" r="2"/><circle cx="12" cy="3" r="2"/><circle cx="8" cy="13" r="2"/><path d="M4 5v2c0 2 4 1 4 4m4-6v2c0 2-4 1-4 4"/>';
-    parts.push(`<g transform="translate(${x} 155)" fill="none" stroke="${colors.text}" stroke-width="1.5" stroke-linejoin="round">${icon}</g><text x="${x + 23}" y="171">${number(value)}</text>`);
-    x += 23 + textWidth(number(value), 14) + 22;
+    parts.push(`<g transform="translate(${x} 155)" fill="none" stroke="${colors.text}" stroke-width="1.5" stroke-linejoin="round">${icon}</g><text x="${x + 23}" y="171">${label}</text>`);
+    x += 23 + textWidth(label, 14) + 22;
   }
+  const height = Math.max(layout.height, minimumHeight);
+  const languageDescription = languages.map(language => `${language.name} ${language.percentage}`).join(', ') || 'No language data';
+  const languageBar = languages.length ? `<defs><clipPath id="language-bar"><rect x="28" y="143" width="504" height="5" rx="2.5"/></clipPath></defs><g clip-path="url(#language-bar)">${segments.join('')}</g>` : '';
   const description = wrapDescription(repo.description).map((line, index) => `<tspan x="28" y="${81 + index * 22}">${escapeXml(line)}</tspan>`).join('');
-  return applyProfileFont(`<svg font-family="${PROFILE_FONT}" xmlns="http://www.w3.org/2000/svg" width="560" height="200" viewBox="0 0 560 200" role="img" aria-labelledby="title description">
+  return applyProfileFont(`<svg font-family="${PROFILE_FONT}" xmlns="http://www.w3.org/2000/svg" width="560" height="${height}" viewBox="0 0 560 ${height}" role="img" aria-labelledby="title description">
   <title id="title">${escapeXml(repo.full_name)}</title>
-  <desc id="description">${escapeXml(repo.description || '')} ${escapeXml(repo.language || '')}; ${repo.stargazers_count} stars; ${repo.forks_count} forks.</desc>
-  <rect x="8.5" y="8.5" width="543" height="183" rx="6" fill="none" stroke="${colors.border}"/>
+  <desc id="description">${escapeXml(repo.description || '')} ${escapeXml(languageDescription)}; ${repo.stargazers_count} stars; ${repo.forks_count} forks.</desc>
+  <rect x="8.5" y="8.5" width="543" height="${height - 17}" rx="6" fill="none" stroke="${colors.border}"/>
+  ${languageBar}
   <g font-family="${PROFILE_FONT}" fill="${colors.text}">
     <text x="28" y="46" font-size="18" font-weight="600" fill="${colors.title}">${escapeXml(truncateText(repo.name, 432, 18))}</text>
     <rect x="478.5" y="28.5" width="53" height="23" rx="11.5" fill="none" stroke="${colors.border}"/>
@@ -173,10 +230,17 @@ async function main() {
   const readmePath = path.join(root, 'README.md');
   const readme = await fs.readFile(readmePath, 'utf8');
   const repositories = config.count ? await fetchRepositories(username, process.env.GITHUB_TOKEN) : [];
-  const selected = selectRepositories(repositories, config);
+  const selected = await Promise.all(selectRepositories(repositories, config).map(async repo => ({
+    ...repo, languages: await fetchRepositoryLanguages(repo, process.env.GITHUB_TOKEN),
+  })));
   const updatedReadme = replaceSection(readme, selected);
   const output = path.join(root, 'assets/profile/repositories');
-  const cards = selected.flatMap((repo, index) => ['dark', 'light'].map(theme => ({ name: `repo-${index + 1}-${theme}.svg`, svg: renderCard(repo, theme) })));
+  const heights = selected.map(repo => cardLayout(repo).height);
+  const cards = selected.flatMap((repo, index) => {
+    const pair = index - index % 2;
+    const height = Math.max(heights[pair], heights[pair + 1] || 200);
+    return ['dark', 'light'].map(theme => ({ name: `repo-${index + 1}-${theme}.svg`, svg: renderCard(repo, theme, height) }));
+  });
   await fs.mkdir(output, { recursive: true });
   for (const card of cards) await fs.writeFile(path.join(output, card.name), card.svg);
   await fs.writeFile(readmePath, updatedReadme);
@@ -191,5 +255,5 @@ async function main() {
   console.log(`Displayed ${selected.length}/${config.count} repositories: ${selected.map(repo => repo.name).join(', ') || '(hidden)'}`);
 }
 
-module.exports = { validateConfig, selectRepositories, fetchRepositories, renderCard, renderSection, replaceSection, wrapDescription };
+module.exports = { validateConfig, selectRepositories, fetchRepositories, fetchRepositoryLanguages, renderCard, renderSection, replaceSection, wrapDescription };
 if (require.main === module) main().catch(error => { console.error(error.message); process.exitCode = 1; });
