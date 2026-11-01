@@ -94,7 +94,7 @@ FROM, OUT OF THE USE OR INABILITY TO USE THE FONT SOFTWARE OR FROM
 OTHER DEALINGS IN THE FONT SOFTWARE.
 </metadata>
   <title id="title">GitHub Stats · Small commits, steady growth</title>
-  <desc id="description">68 stars; 181 commits in the last year; 2 pull requests; 1 issues; 1 repositories contributed to in the last year; GitHub rank B-. 211 total contributions since 2021-10-04; current streak 27 days, Oct 6 – Nov 1; longest streak 27 days, Oct 6 – Nov 1. JavaScript 78.22%; CSS 11.31%; C# 5.39%; HTML 2.54%; Python 2.23%; PowerShell 0.29%; Batchfile 0.01%.</desc>
+  <desc id="description">68 stars; 184 commits in the last year; 2 pull requests; 1 issues; 1 repositories contributed to in the last year; GitHub rank B-. 214 total contributions since 2021-10-04; current streak 28 days, Oct 6 – Nov 2; longest streak 28 days, Oct 6 – Nov 2. JavaScript 78.28%; CSS 11.25%; C# 5.38%; HTML 2.56%; Python 2.22%; PowerShell 0.29%; Batchfile 0.01%.</desc>
   <defs>
     <linearGradient id="pastel" x1="0" y1="0" x2="1" y2="1">
       <stop stop-color="#9c4268"/><stop offset=".52" stop-color="#756092"/><stop offset="1" stop-color="#367484"/>
@@ -140,7 +140,7 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
     <g class="reveal">
       <text x="40" y="202" font-size="44" fill="#9c4268" font-weight="700" >68</text>
       <text x="40" y="226" font-size="15" fill="#756782" >Total stars</text>
-      <text x="280" y="202" font-size="44" fill="#756092" font-weight="700" >181</text>
+      <text x="280" y="202" font-size="44" fill="#756092" font-weight="700" >184</text>
       <text x="280" y="226" font-size="15" fill="#756782" >Commits · last year</text>
       <text x="40" y="276" font-size="26" fill="#3b2d4f" font-weight="700" >2</text>
       <text x="40" y="298" font-size="14" fill="#756782" >Pull requests</text>
@@ -152,7 +152,7 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
     <path d="M546 151V295" stroke="#e6dce9"/>
     <circle cx="680" cy="212" r="76" fill="none" stroke="#e6dce9" stroke-dasharray="2 9" opacity=".7"/>
     <circle cx="680" cy="212" r="62" fill="none" stroke="#e6dce9" stroke-width="5"/>
-    <circle class="rank-progress" cx="680" cy="212" r="62" fill="none" stroke="url(#pastel)" stroke-width="6" stroke-linecap="round" stroke-dasharray="389.55748904513433" stroke-dashoffset="264.68843933849024" style="--ring-length:389.55748904513433" transform="rotate(-90 680 212)"/>
+    <circle class="rank-progress" cx="680" cy="212" r="62" fill="none" stroke="url(#pastel)" stroke-width="6" stroke-linecap="round" stroke-dasharray="389.55748904513433" stroke-dashoffset="264.36284329357136" style="--ring-length:389.55748904513433" transform="rotate(-90 680 212)"/>
     <g class="rank-orbit"><circle cx="680" cy="136" r="4" fill="#367484"/><circle cx="680" cy="288" r="2.5" fill="#9c4268"/></g>
     <text x="680" y="225" font-size="42" fill="#3b2d4f" text-anchor="middle" font-weight="700">B-</text>
     <text x="680" y="299" font-size="14" fill="#756782" text-anchor="middle">GitHub rank</text>
@@ -161,57 +161,57 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
     <rect x="40" y="370" width="760" height="109" rx="18" fill="url(#streak-wash)"/>
     <path d="M292 387V469M548 387V469" stroke="#e6dce9"/>
     <g class="reveal" style="animation-delay:.15s">
-      <text x="166" y="417" font-size="36" fill="#367484" font-weight="700" text-anchor="middle">211</text>
+      <text x="166" y="417" font-size="36" fill="#367484" font-weight="700" text-anchor="middle">214</text>
       <text x="166" y="443" font-size="15" fill="#3b2d4f" text-anchor="middle">Total contributions</text>
       <text x="166" y="467" font-size="12" fill="#756782" text-anchor="middle">Oct 4, 2021 – present</text>
       <path class="flame" d="M373 406C361 404 360 394 365 387C365 394 370 394 369 387C368 380 373 376 376 373C375 384 386 387 385 396C385 403 380 407 373 406Z" fill="#9c4268"/>
-      <text x="439" y="419" font-size="50" fill="#9c4268" font-weight="700" text-anchor="middle">27</text>
+      <text x="439" y="419" font-size="50" fill="#9c4268" font-weight="700" text-anchor="middle">28</text>
       <text x="420" y="443" font-size="15" fill="#3b2d4f" text-anchor="middle" font-weight="600">Current streak · days</text>
-      <text x="420" y="467" font-size="12" fill="#756782" text-anchor="middle">Oct 6 – Nov 1</text>
-      <text x="674" y="417" font-size="36" fill="#756092" font-weight="700" text-anchor="middle">27</text>
+      <text x="420" y="467" font-size="12" fill="#756782" text-anchor="middle">Oct 6 – Nov 2</text>
+      <text x="674" y="417" font-size="36" fill="#756092" font-weight="700" text-anchor="middle">28</text>
       <text x="674" y="443" font-size="15" fill="#3b2d4f" text-anchor="middle">Longest streak · days</text>
-      <text x="674" y="467" font-size="12" fill="#756782" text-anchor="middle">Oct 6 – Nov 1</text>
+      <text x="674" y="467" font-size="12" fill="#756782" text-anchor="middle">Oct 6 – Nov 2</text>
     </g>
     <path d="M40 492H800" stroke="#e6dce9"/>
     <text x="40" y="523" font-size="11" fill="#756782" letter-spacing="1.8">03 / MOST USED LANGUAGES</text>
     <text x="40" y="555" font-size="18" fill="#3b2d4f" font-weight="600">JavaScript</text>
-    <text x="800" y="555" font-size="25" fill="#9c4268" text-anchor="end" font-weight="700">78.22%</text>
+    <text x="800" y="555" font-size="25" fill="#9c4268" text-anchor="end" font-weight="700">78.28%</text>
     <rect x="40" y="574" width="760" height="14" rx="7" fill="#e6dce9"/>
-    <g clip-path="url(#language-bar)"><g class="language-grow"><rect x="40" y="574" width="594.472" height="14" fill="#ffd166"/><rect x="634.472" y="574" width="85.956" height="14" fill="#bbe8f2"/><rect x="720.428" y="574" width="40.964" height="14" fill="#d7c4f3"/><rect x="761.392" y="574" width="19.304000000000002" height="14" fill="#ffaec5"/><rect x="780.696" y="574" width="16.948" height="14" fill="#ffe9a3"/><rect x="797.644" y="574" width="2.2039999999999997" height="14" fill="#d7c4f3"/><rect x="799.848" y="574" width="0.07600000000000001" height="14" fill="#ffd3b0"/></g><rect class="shimmer" x="-150" y="574" width="120" height="14" fill="url(#shine)"/></g>
+    <g clip-path="url(#language-bar)"><g class="language-grow"><rect x="40" y="574" width="594.928" height="14" fill="#ffd166"/><rect x="634.928" y="574" width="85.5" height="14" fill="#bbe8f2"/><rect x="720.428" y="574" width="40.888" height="14" fill="#d7c4f3"/><rect x="761.316" y="574" width="19.456000000000003" height="14" fill="#ffaec5"/><rect x="780.772" y="574" width="16.872" height="14" fill="#ffe9a3"/><rect x="797.644" y="574" width="2.2039999999999997" height="14" fill="#d7c4f3"/><rect x="799.848" y="574" width="0.07600000000000001" height="14" fill="#ffd3b0"/></g><rect class="shimmer" x="-150" y="574" width="120" height="14" fill="url(#shine)"/></g>
     <g>
       <circle cx="45" cy="615" r="5" fill="#ffd166"/>
       <text x="60" y="620" font-size="15" fill="#3b2d4f" >JavaScript</text>
-      <text x="402" y="620" font-size="14" fill="#756782" text-anchor="end">78.22%</text>
+      <text x="402" y="620" font-size="14" fill="#756782" text-anchor="end">78.28%</text>
       <rect x="40" y="632" width="362" height="3" rx="1.5" fill="#e6dce9" opacity=".5"/>
-      <rect class="language-grow" x="40" y="632" width="283.1564" height="3" rx="1.5" fill="#ffd166" style="animation-delay:0.3s"/>
+      <rect class="language-grow" x="40" y="632" width="283.3736" height="3" rx="1.5" fill="#ffd166" style="animation-delay:0.3s"/>
     </g>
 <g>
       <circle cx="443" cy="615" r="5" fill="#bbe8f2"/>
       <text x="458" y="620" font-size="15" fill="#3b2d4f" >CSS</text>
-      <text x="800" y="620" font-size="14" fill="#756782" text-anchor="end">11.31%</text>
+      <text x="800" y="620" font-size="14" fill="#756782" text-anchor="end">11.25%</text>
       <rect x="438" y="632" width="362" height="3" rx="1.5" fill="#e6dce9" opacity=".5"/>
-      <rect class="language-grow" x="438" y="632" width="40.9422" height="3" rx="1.5" fill="#bbe8f2" style="animation-delay:0.38s"/>
+      <rect class="language-grow" x="438" y="632" width="40.725" height="3" rx="1.5" fill="#bbe8f2" style="animation-delay:0.38s"/>
     </g>
 <g>
       <circle cx="45" cy="663" r="5" fill="#d7c4f3"/>
       <text x="60" y="668" font-size="15" fill="#3b2d4f" >C#</text>
-      <text x="402" y="668" font-size="14" fill="#756782" text-anchor="end">5.39%</text>
+      <text x="402" y="668" font-size="14" fill="#756782" text-anchor="end">5.38%</text>
       <rect x="40" y="680" width="362" height="3" rx="1.5" fill="#e6dce9" opacity=".5"/>
-      <rect class="language-grow" x="40" y="680" width="19.511799999999997" height="3" rx="1.5" fill="#d7c4f3" style="animation-delay:0.45999999999999996s"/>
+      <rect class="language-grow" x="40" y="680" width="19.4756" height="3" rx="1.5" fill="#d7c4f3" style="animation-delay:0.45999999999999996s"/>
     </g>
 <g>
       <circle cx="443" cy="663" r="5" fill="#ffaec5"/>
       <text x="458" y="668" font-size="15" fill="#3b2d4f" >HTML</text>
-      <text x="800" y="668" font-size="14" fill="#756782" text-anchor="end">2.54%</text>
+      <text x="800" y="668" font-size="14" fill="#756782" text-anchor="end">2.56%</text>
       <rect x="438" y="680" width="362" height="3" rx="1.5" fill="#e6dce9" opacity=".5"/>
-      <rect class="language-grow" x="438" y="680" width="9.1948" height="3" rx="1.5" fill="#ffaec5" style="animation-delay:0.54s"/>
+      <rect class="language-grow" x="438" y="680" width="9.2672" height="3" rx="1.5" fill="#ffaec5" style="animation-delay:0.54s"/>
     </g>
 <g>
       <circle cx="45" cy="711" r="5" fill="#ffe9a3"/>
       <text x="60" y="716" font-size="15" fill="#3b2d4f" >Python</text>
-      <text x="402" y="716" font-size="14" fill="#756782" text-anchor="end">2.23%</text>
+      <text x="402" y="716" font-size="14" fill="#756782" text-anchor="end">2.22%</text>
       <rect x="40" y="728" width="362" height="3" rx="1.5" fill="#e6dce9" opacity=".5"/>
-      <rect class="language-grow" x="40" y="728" width="8.0726" height="3" rx="1.5" fill="#ffe9a3" style="animation-delay:0.62s"/>
+      <rect class="language-grow" x="40" y="728" width="8.0364" height="3" rx="1.5" fill="#ffe9a3" style="animation-delay:0.62s"/>
     </g>
 <g>
       <circle cx="443" cy="711" r="5" fill="#d7c4f3"/>
