@@ -21,24 +21,45 @@
 </div>
 
 <!-- BEGIN lunarfox-corner -->
-<h2 align="center">🌙 <samp>Lunarfox · 月狐小窝</samp></h2>
+<h2 align="center">🌙 <samp>Lunarfox · 月狐小窝</samp> 🐾</h2>
 
 <table align="center" width="100%">
   <tr>
     <td align="center" valign="middle" width="136">
       <img src="b7be7453e22cf7571441503a0ff8fc87_720.png" alt="Lunarfox's pastel moon fox avatar" width="112" />
+      <br /><sub><samp>(｡･ω･｡)ﾉ</samp></sub>
     </td>
     <td valign="middle">
-      <p><strong><samp>Hi, I'm Shadows_Lunarfox</samp></strong><br />
+      <p>🦊 <samp>Hey there!</samp><br />
+      <strong><samp>I'm Shadows_Lunarfox</samp></strong><br />
       <sub>📍 Kuala Lumpur, Malaysia</sub></p>
-      <p><strong>Web · Browser Extensions · Unity Tools</strong><br />
-      <sub><em>Small ideas, fluffy tails.</em> <samp>(ᵔᴥᵔ)</samp></sub></p>
+      <p><strong>Code tinkerer · Retro collector</strong><br />
+      <sub><em>Small ideas, fluffy tails &amp; a little chaos.</em></sub></p>
     </td>
   </tr>
   <tr>
     <td colspan="2" valign="top">
-      <p>I build <strong>browser extensions, websites and Unity editor tools</strong>. I like making interfaces more personal, simplifying everyday tasks and giving small ideas a useful place to live.</p>
-      <p>My projects include <strong>Roblox and YouTube customization</strong>, browser start pages, text-reading tools and <strong>Unity workflow improvements</strong>. I also enjoy experimenting with games and web ideas, then refining the details that make them feel good to use.</p>
+      <p align="center">
+        <img src="https://img.shields.io/badge/Java-just_a_pinch-ffe9a3?style=flat&amp;logo=openjdk&amp;logoColor=ffffff&amp;labelColor=615276" alt="Java: just a pinch" />
+        <img src="https://img.shields.io/badge/Bugs-features_in_disguise-d7c4f3?style=flat&amp;labelColor=615276" alt="Bugs: features in disguise" />
+        <img src="https://img.shields.io/badge/Printers-final_boss-ffaec5?style=flat&amp;labelColor=615276" alt="Printers: final boss" />
+      </p>
+      <h3>🧩 <samp>A Little Code, A Little Chaos</samp></h3>
+      <p><strong>🧂 Pocket Skill:</strong> Java? Just a tiny pinch. <em>Literally a pinch—no secret Java wizard hiding here!</em> 😂</p>
+      <p><strong>🐛 Dev Joke:</strong><br />
+      <em>"If my code compiles on the first try, I'll start suspecting my life and hunt for hidden bugs."</em></p>
+      <p>✨ Expert at turning bugs into features.<br />
+      🖨️ Completely helpless when it comes to fixing printers. <em>My true final boss.</em></p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" valign="top">
+      <h3>⚙️ <samp>Retro Collector</samp> <sub>( •̀ ω •́ )✧</sub></h3>
+      <p>Besides coding, I have a soft spot for <strong>vintage components and classic tech gear</strong>. To me, retro devices are little works of art. 💾</p>
+      <p>Bringing them back to life gives me more adrenaline than running new code. Think of me as a <strong>"digital archaeologist"</strong>, digging for treasure in electronic ruins. 🔎</p>
+      <p><strong>🦊 Random Thought:</strong><br />
+      Wait… why did I buy a domain ending in <strong>.wtf</strong> again?!<br />
+      Must have been bored and fidgety. Someone save this fox with a <strong>3-second memory span</strong>! 🍼</p>
     </td>
   </tr>
 </table>

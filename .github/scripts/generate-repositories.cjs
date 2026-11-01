@@ -1,6 +1,7 @@
 const fs = require('node:fs/promises');
 const path = require('node:path');
 const { PROFILE_FONT, applyProfileFont } = require('./profile-font.cjs');
+const { LANGUAGE_MOTION_CSS, languageMotionDelay } = require('./profile-language-motion.cjs');
 
 const BEGIN = '<!-- BEGIN featured-repositories -->';
 const END = '<!-- END featured-repositories -->';
@@ -159,7 +160,7 @@ function renderCard(repo, theme, minimumHeight = 200) {
   const segments = [];
   for (const [index, { language, label, x, y }] of layout.labels.entries()) {
     const color = languageColors[language.name] || fallbackColors[index % fallbackColors.length];
-    parts.push(`<g class="repository-language"><title>${escapeXml(`${language.name} ${language.percentage}`)}</title><circle cx="${x + 5}" cy="${y - 5}" r="5" fill="${color}"/><text x="${x + 16}" y="${y}" font-size="13">${escapeXml(label)}</text></g>`);
+    parts.push(`<g class="repository-language"><title>${escapeXml(`${language.name} ${language.percentage}`)}</title><g class="language-pop" style="--language-delay:${languageMotionDelay(index)}"><circle cx="${x + 5}" cy="${y - 5}" r="5" fill="${color}"/><text x="${x + 16}" y="${y}" font-size="13">${escapeXml(label)}</text></g></g>`);
     const barWidth = 504 * language.percent / 100;
     segments.push(`<rect x="${barX}" y="143" width="${barWidth}" height="5" fill="${color}"/>`);
     barX += barWidth;
@@ -175,11 +176,12 @@ function renderCard(repo, theme, minimumHeight = 200) {
   }
   const height = Math.max(layout.height, minimumHeight);
   const languageDescription = languages.map(language => `${language.name} ${language.percentage}`).join(', ') || 'No language data';
-  const languageBar = languages.length ? `<defs><clipPath id="language-bar"><rect x="28" y="143" width="504" height="5" rx="2.5"/></clipPath></defs><g clip-path="url(#language-bar)">${segments.join('')}</g>` : '';
+  const languageBar = languages.length ? `<defs><clipPath id="language-bar"><rect x="28" y="143" width="504" height="5" rx="2.5"/></clipPath></defs><g class="language-grow" style="--language-delay:${languageMotionDelay(0, 0.08)}" clip-path="url(#language-bar)">${segments.join('')}</g>` : '';
   const description = wrapDescription(repo.description).map((line, index) => `<tspan x="28" y="${81 + index * 22}">${escapeXml(line)}</tspan>`).join('');
   return applyProfileFont(`<svg font-family="${PROFILE_FONT}" xmlns="http://www.w3.org/2000/svg" width="560" height="${height}" viewBox="0 0 560 ${height}" role="img" aria-labelledby="title description">
   <title id="title">${escapeXml(repo.full_name)}</title>
   <desc id="description">${escapeXml(repo.description || '')} ${escapeXml(languageDescription)}; ${repo.stargazers_count} stars; ${repo.forks_count} forks.</desc>
+  <style>${LANGUAGE_MOTION_CSS}</style>
   <rect x="8.5" y="8.5" width="543" height="${height - 17}" rx="6" fill="none" stroke="${colors.border}"/>
   ${languageBar}
   <g font-family="${PROFILE_FONT}" fill="${colors.text}">

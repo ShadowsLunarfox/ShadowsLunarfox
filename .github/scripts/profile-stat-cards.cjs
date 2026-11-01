@@ -1,4 +1,5 @@
 const { PROFILE_FONT, applyProfileFont } = require('./profile-font.cjs');
+const { LANGUAGE_MOTION_CSS, languageMotionDelay } = require('./profile-language-motion.cjs');
 
 const palettes = {
   dark: { surface: 'none', inset: 'none', border: '#353445', text: '#f1eaf7', muted: '#adbac7', accent: '#ffaec5', lavender: '#d7c4f3', cyan: '#b9edf2' },
@@ -123,12 +124,14 @@ function renderDashboard(data, theme) {
     const y = 620 + Math.floor(index / 2) * 48;
     const color = languageColors[language.name] || fallbackColors[index % fallbackColors.length];
     const labelSize = language.name.length > 22 ? 12 : 15;
-    return `<g>
+    return `<g class="language-entry">
+      <g class="language-pop" style="--language-delay:${languageMotionDelay(index)}">
       <circle cx="${x + 5}" cy="${y - 5}" r="5" fill="${color}"/>
       ${text(x + 20, y, language.name, labelSize, p.text)}
       ${text(x + 362, y, language.percentage, 14, p.muted, 'text-anchor="end"')}
+      </g>
       <rect x="${x}" y="${y + 12}" width="362" height="3" rx="1.5" fill="${p.border}" opacity=".5"/>
-      <rect class="language-grow" x="${x}" y="${y + 12}" width="${362 * language.percent / 100}" height="3" rx="1.5" fill="${color}" style="animation-delay:${0.3 + index * 0.08}s"/>
+      <rect class="language-grow" x="${x}" y="${y + 12}" width="${362 * language.percent / 100}" height="3" rx="1.5" fill="${color}" style="--language-delay:${languageMotionDelay(index, 0.2)}"/>
     </g>`;
   }).join('\n');
   return applyProfileFont(`<svg font-family="${PROFILE_FONT}" xmlns="http://www.w3.org/2000/svg" width="840" height="${height}" viewBox="0 0 840 ${height}" role="img" aria-labelledby="title description">
@@ -147,9 +150,9 @@ function renderDashboard(data, theme) {
     <clipPath id="language-bar"><rect x="40" y="574" width="760" height="14" rx="7"/></clipPath>
   </defs>
   <style>
+${LANGUAGE_MOTION_CSS}
     @keyframes appear { from { opacity:0; transform:translateY(6px); } to { opacity:1; transform:translateY(0); } }
     @keyframes draw-rank { from { stroke-dashoffset:var(--ring-length); } }
-    @keyframes grow { from { transform:scaleX(0); } to { transform:scaleX(1); } }
     @keyframes orbit { to { transform:rotate(360deg); } }
     @keyframes twinkle { 0%,100% { opacity:.35; transform:scale(.85); } 50% { opacity:1; transform:scale(1.12); } }
     @keyframes breathe { 0%,100% { opacity:.65; transform:scale(.94); } 50% { opacity:1; transform:scale(1.06); } }
@@ -160,7 +163,6 @@ function renderDashboard(data, theme) {
     .spark { transform-box:fill-box; transform-origin:center; animation:twinkle 4s ease-in-out infinite; }
     .spark-late { animation-delay:-2s; }
     .flame { transform-box:fill-box; transform-origin:center; animation:breathe 3s ease-in-out infinite; }
-    .language-grow { transform-box:fill-box; transform-origin:left; animation:grow 1.2s cubic-bezier(.22,1,.36,1) backwards; }
     .shimmer { animation:shimmer 8s ease-in-out infinite; }
     @media (prefers-reduced-motion:reduce) { *, *::before, *::after { animation:none !important; } .shimmer { opacity:0; } }
   </style>
@@ -213,10 +215,12 @@ function renderDashboard(data, theme) {
     </g>
     ${divider(492)}
     ${kicker(40, 523, '03 / MOST USED LANGUAGES')}
+    <g class="language-pop" style="--language-delay:${languageMotionDelay(0, 0.04)}">
     ${text(40, 555, languages[0]?.name || 'No language data yet', 18, p.text, 'font-weight="600"')}
     ${text(800, 555, languages[0]?.percentage || '', 25, p.accent, 'text-anchor="end" font-weight="700"')}
+    </g>
     <rect x="40" y="574" width="760" height="14" rx="7" fill="${p.border}"/>
-    <g clip-path="url(#language-bar)"><g class="language-grow">${segments}</g><rect class="shimmer" x="-150" y="574" width="120" height="14" fill="url(#shine)"/></g>
+    <g clip-path="url(#language-bar)"><g class="language-grow" style="--language-delay:${languageMotionDelay(0, 0.08)}">${segments}</g><rect class="shimmer" x="-150" y="574" width="120" height="14" fill="url(#shine)"/></g>
     ${legend}
     ${divider(height - 54)}
     ${text(40, height - 27, 'Small ideas, growing into something. (ᵔᴥᵔ)', 12, p.muted)}

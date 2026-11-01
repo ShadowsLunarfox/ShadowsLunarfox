@@ -58,7 +58,7 @@ To remove a widget, remove its marked README section and corresponding workflow.
 
 README 的 GitHub Stats 使用一个 `<picture>` 展示一张整合 SVG 面板：`stats-dashboard-dark.svg` / `stats-dashboard-light.svg`。宽度为 `100%`，随 README 内容区缩放，按主题选择深浅色版本。`profile-stat-cards.cjs` 统一绘制圆角外框、淡渐变、Comic Neue 漫画字体和粉紫色强调，底色保持透明。总览保留 Stars、过去一年提交数、PR、Issues、过去一年参与仓库数和真实评级进度；连续贡献保留三个统计值及日期；语言接口通过 `langs_count=20` 请求最多 20 种语言，语言区保留所有返回的语言及精确百分比，面板高度随语言行数增加。实际展示数量取决于公开仓库中被统计服务识别到的语言。
 
-动画直接包含在 SVG 的 CSS 中：数字淡入、评级进度绘制与外圈光点旋转、连续贡献火苗呼吸、星光闪烁、语言条展开及循环扫光。Comic Neue 的常规和粗体字体以数据 URL 嵌入，无需安装字体或访问字体服务。系统开启 `prefers-reduced-motion` 时，停止动画并直接展示完整数据。
+动画直接包含在 SVG 的 CSS 中：数字淡入、评级进度绘制与外圈光点旋转、连续贡献火苗呼吸、星光闪烁、语言标签错峰轻弹、语言条从左展开及循环扫光。语言标签与进度条共用 `profile-language-motion.cjs`，入场动效在图片加载时播放一次，结束后保持真实数据。Comic Neue 的常规和粗体字体以数据 URL 嵌入，无需安装字体或访问字体服务。系统开启 `prefers-reduced-motion` 时，停止动画并直接展示完整数据。
 
 `generate-profile-stats.cjs` 沿用原本的公开统计服务，连续贡献按吉隆坡时区计算。全部数据抓取、校验和两种主题绘图成功后，才更新 `statistics.json` 和两份 SVG 快照；服务出错时保留现有文件。`profile-stats.yml` 由每天吉隆坡时间 00:17 启动的 `daily-refresh.yml` 调用：先提交刷新标记，提交成功后直接依次刷新六个任务。推送相关脚本到 `main` 会启动同一流程，也可手动运行。
 
@@ -76,7 +76,7 @@ node .github/scripts/generate-profile-stats.cjs --from-snapshot
 
 ## 字体层次与表情符号
 
-README 的「Lunarfox · 月狐小窝」采用独立个人名片、并排技能分组和居中联系按钮。名片上方保留原头像、昵称、吉隆坡位置和开发方向，头像固定为 112px；下方整行自我介绍说明浏览器扩展、网页、Unity 编辑器工具及代表项目，避免长段落挤在头像旁。语言与工具各占一组，徽章可在组内自然换行。联系按钮统一使用 for-the-badge 样式，Discord 按钮直接显示用户名，其余按钮显示平台或网站名称；完整账号也保留在提示和替代文本中。此区只使用 GitHub README 支持的 HTML，不依赖自定义 CSS；窄屏下按钮自动换行。
+README 的「Lunarfox · 月狐小窝」采用独立个人名片、并排技能分组和居中联系按钮。名片上方保留原头像、昵称和吉隆坡位置，配上狐狸问候、颜文字和轻松短句，头像固定为 112px。下方用三枚粉紫色小徽章点缀 Java、bug 与打印机的玩笑，再分为 A Little Code, A Little Chaos 和 Retro Collector 两段；根据本人提供的内容轻快改写，保留编译成功反而找 bug、修不了打印机、数字考古学家、.wtf 域名与三秒记忆的笑点。介绍整行显示，避免长段落挤在头像旁。语言与工具各占一组，徽章可在组内自然换行。联系按钮统一使用 for-the-badge 样式，Discord 按钮直接显示用户名，其余按钮显示平台或网站名称；完整账号也保留在提示和替代文本中。此区只使用 GitHub README 支持的 HTML，不依赖自定义 CSS；窄屏下按钮自动换行。
 
 README 的栏目标题和昵称使用 `<samp>` 等宽字体，与正文的默认字体形成层次；角色下方的短句使用 `<em>` 斜体。自制图片文字统一使用 Comic Neue 漫画手写字体：顶部横幅、仓库卡片、统计面板、Activity Graph 和 3D 贡献图通过 `profile-font.cjs` 嵌入常规和粗体 WOFF2，打字动画通过 `font=Comic+Neue` 指定。标题、数字和说明均使用这套字体，通过字号和粗细区分层次。Activity Graph 和 3D 图在每日生成后应用相同字体，横幅由 `generate-profile-header.cjs` 刷新。外部平台原有徽章继续由各自的图片服务提供。
 
@@ -91,6 +91,8 @@ Comic Neue 采用 [SIL Open Font License 1.1](https://github.com/google/fonts/bl
 配置文件：`.github/featured-repositories.json`。README 中的 **Featured Repositories** 是独立的仓库卡片区，每行两张，整张卡片都可以点击进入仓库，支持深浅色模式。
 
 每张卡片从 GitHub 的仓库语言接口读取全部已识别语言，按代码字节数降序显示名称、占比和配色比例条；不再只显示主要语言。语言较多时自动换行并增加卡片高度，同一行的两张卡片保持等高，同时为 Star 和 Fork 数保留独立空间。没有语言数据时显示 No language data；接口失败或返回无效数据时保留现有卡片和 README。
+
+仓库语言标签与总统计区使用相同的轻弹入场动画，进度条随后从左向右展开；均在图片加载时播放一次。动效直接嵌入深浅色 SVG，不需要 JavaScript，系统设置减少动态效果时直接显示完整语言和进度条。
 
 - `count`：最多显示几个仓库。改成 `8` 就展示 8 个；`0` 隐藏整个展示区。数量超过可用仓库数时，只显示实际存在的仓库。
 - `repositories`：指定优先展示的仓库名称，按数组顺序排列。名称不需要带用户名，必须是主页所有者的公开仓库。空数组表示全部自动选择。
