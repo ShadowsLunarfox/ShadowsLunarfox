@@ -21,47 +21,60 @@
 </div>
 
 <!-- BEGIN lunarfox-corner -->
-<h2 align="center">🌙 <samp>Lunarfox's Cozy Corner · 月狐小窝</samp> 🐾</h2>
+<h2 align="center">🌙 <samp>Lunarfox · 月狐小窝</samp></h2>
 
 <table align="center" width="100%">
   <tr>
-    <td align="center" valign="middle" width="28%">
-      <img src="b7be7453e22cf7571441503a0ff8fc87_720.png" alt="A fluffy pastel moon fox coding on a little laptop" width="210" />
-      <br />
-      <strong><samp>月狐 · Lunarfox</samp></strong>
-      <br />
-      <sub><em>🌙 Small ideas, fluffy tails ✨</em><br /><samp>(ᵔᴥᵔ)</samp></sub>
+    <td align="center" valign="middle" width="136">
+      <img src="b7be7453e22cf7571441503a0ff8fc87_720.png" alt="Lunarfox's pastel moon fox avatar" width="112" />
     </td>
-    <td valign="top" width="72%">
-      <p>👋 Hi, I'm <strong><samp>Shadows_Lunarfox 月狐</samp></strong> 🦊 <samp>(｡･ω･｡)ﾉ</samp><br />
-      📍 A developer from <strong>Kuala Lumpur, Malaysia</strong>. I like building websites, games, small tools, and experiments that feel polished enough to keep.</p>
-      <p><strong>🍡 Coding Languages</strong><br />
-        <img src="https://img.shields.io/badge/C%23-d7c4f3?style=flat&amp;logo=csharp&amp;logoColor=3b2d4f" alt="C#" />
-        <img src="https://img.shields.io/badge/C%2B%2B-b9edf2?style=flat&amp;logo=cplusplus&amp;logoColor=3b2d4f" alt="C++" />
-        <img src="https://img.shields.io/badge/Java-ffd3b0?style=flat&amp;logo=openjdk&amp;logoColor=3b2d4f" alt="Java" />
-        <img src="https://img.shields.io/badge/Python-ffe9a3?style=flat&amp;logo=python&amp;logoColor=3b2d4f" alt="Python" />
-        <img src="https://img.shields.io/badge/JavaScript-ffd166?style=flat&amp;logo=javascript&amp;logoColor=3b2d4f" alt="JavaScript" />
-        <img src="https://img.shields.io/badge/HTML5-ffaec5?style=flat&amp;logo=html5&amp;logoColor=3b2d4f" alt="HTML5" />
-        <img src="https://img.shields.io/badge/CSS3-bbe8f2?style=flat&amp;logo=css3&amp;logoColor=3b2d4f" alt="CSS3" />
-      </p>
-      <p><strong>🎨 Creative Toolbox</strong><br />
-        <img src="https://img.shields.io/badge/Unity-d3bcf5?style=flat&amp;logo=unity&amp;logoColor=3b2d4f" alt="Unity" />
-        <img src="https://img.shields.io/badge/Blender-ffc6a6?style=flat&amp;logo=blender&amp;logoColor=3b2d4f" alt="Blender" />
-        <img src="https://img.shields.io/badge/Substance%203D%20Painter-ffb5d8?style=flat&amp;logo=adobe&amp;logoColor=3b2d4f" alt="Substance 3D Painter" />
-        <img src="https://img.shields.io/badge/Git-ffd3b6?style=flat&amp;logo=git&amp;logoColor=3b2d4f" alt="Git" />
-        <img src="https://img.shields.io/badge/GitHub-d7c4f3?style=flat&amp;logo=github&amp;logoColor=3b2d4f" alt="GitHub" />
-        <img src="https://img.shields.io/badge/VS%20Code-bce6f4?style=flat&amp;logo=visualstudiocode&amp;logoColor=3b2d4f" alt="VS Code" />
-      </p>
-      <p><strong>💌 Come Say Hello</strong><br />
-        <a href="https://lunarfox.my"><img src="https://img.shields.io/badge/Website-lunarfox.my-ffaec5?style=flat&amp;logo=firefox&amp;logoColor=ffffff&amp;labelColor=615276" alt="Website: lunarfox.my" /></a>
-        <a href="https://discord.com"><img src="https://img.shields.io/badge/Discord-shadows__lunarfox-d7c4f3?style=flat&amp;logo=discord&amp;logoColor=ffffff&amp;labelColor=615276" alt="Discord: shadows_lunarfox" /></a>
-        <a href="https://t.me/Shadows_Lunarfox"><img src="https://img.shields.io/badge/Telegram-@Shadows__Lunarfox-b9edf2?style=flat&amp;logo=telegram&amp;logoColor=ffffff&amp;labelColor=615276" alt="Telegram: @Shadows_Lunarfox" /></a>
-        <a href="https://www.facebook.com/Lunarfoxyuehu/"><img src="https://img.shields.io/badge/Facebook-Lunarfoxyuehu-bbe8f2?style=flat&amp;logo=facebook&amp;logoColor=ffffff&amp;labelColor=615276" alt="Facebook: Lunarfoxyuehu" /></a>
-        <a href="https://x.com/ShadowsLunarfox"><img src="https://img.shields.io/badge/X-@ShadowsLunarfox-ffdab9?style=flat&amp;logo=x&amp;logoColor=ffffff&amp;labelColor=615276" alt="X: @ShadowsLunarfox" /></a>
-      </p>
+    <td valign="middle">
+      <p><strong><samp>Hi, I'm Shadows_Lunarfox</samp></strong><br />
+      <sub>📍 Kuala Lumpur, Malaysia</sub></p>
+      <p><strong>Web · Browser Extensions · Unity Tools</strong><br />
+      <sub><em>Small ideas, fluffy tails.</em> <samp>(ᵔᴥᵔ)</samp></sub></p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" valign="top">
+      <p>I build <strong>browser extensions, websites and Unity editor tools</strong>. I like making interfaces more personal, simplifying everyday tasks and giving small ideas a useful place to live.</p>
+      <p>My projects include <strong>Roblox and YouTube customization</strong>, browser start pages, text-reading tools and <strong>Unity workflow improvements</strong>. I also enjoy experimenting with games and web ideas, then refining the details that make them feel good to use.</p>
     </td>
   </tr>
 </table>
+
+<table align="center" width="100%">
+  <tr>
+    <td align="center" valign="top" width="50%">
+      <p><strong>🍡 <samp>Coding Languages</samp></strong></p>
+      <img src="https://img.shields.io/badge/C%23-d7c4f3?style=flat&amp;logo=csharp&amp;logoColor=3b2d4f" alt="C#" />
+      <img src="https://img.shields.io/badge/C%2B%2B-b9edf2?style=flat&amp;logo=cplusplus&amp;logoColor=3b2d4f" alt="C++" />
+      <img src="https://img.shields.io/badge/Java-ffd3b0?style=flat&amp;logo=openjdk&amp;logoColor=3b2d4f" alt="Java" />
+      <img src="https://img.shields.io/badge/Python-ffe9a3?style=flat&amp;logo=python&amp;logoColor=3b2d4f" alt="Python" />
+      <img src="https://img.shields.io/badge/JavaScript-ffd166?style=flat&amp;logo=javascript&amp;logoColor=3b2d4f" alt="JavaScript" />
+      <img src="https://img.shields.io/badge/HTML5-ffaec5?style=flat&amp;logo=html5&amp;logoColor=3b2d4f" alt="HTML5" />
+      <img src="https://img.shields.io/badge/CSS3-bbe8f2?style=flat&amp;logo=css3&amp;logoColor=3b2d4f" alt="CSS3" />
+    </td>
+    <td align="center" valign="top" width="50%">
+      <p><strong>🎨 <samp>Creative Toolbox</samp></strong></p>
+      <img src="https://img.shields.io/badge/Unity-d3bcf5?style=flat&amp;logo=unity&amp;logoColor=3b2d4f" alt="Unity" />
+      <img src="https://img.shields.io/badge/Blender-ffc6a6?style=flat&amp;logo=blender&amp;logoColor=3b2d4f" alt="Blender" />
+      <img src="https://img.shields.io/badge/Substance%203D%20Painter-ffb5d8?style=flat&amp;logo=adobe&amp;logoColor=3b2d4f" alt="Substance 3D Painter" />
+      <img src="https://img.shields.io/badge/Git-ffd3b6?style=flat&amp;logo=git&amp;logoColor=3b2d4f" alt="Git" />
+      <img src="https://img.shields.io/badge/GitHub-d7c4f3?style=flat&amp;logo=github&amp;logoColor=3b2d4f" alt="GitHub" />
+      <img src="https://img.shields.io/badge/VS%20Code-bce6f4?style=flat&amp;logo=visualstudiocode&amp;logoColor=3b2d4f" alt="VS Code" />
+    </td>
+  </tr>
+</table>
+
+<p align="center">
+  <strong>💌 <samp>Come Say Hello</samp></strong><br />
+  <a href="https://lunarfox.my" title="Website: lunarfox.my"><img src="https://img.shields.io/badge/lunarfox.my-ffaec5?style=for-the-badge&amp;logo=firefox&amp;logoColor=3b2d4f" alt="Website: lunarfox.my" /></a>
+  <a href="https://discord.com" title="Discord: shadows_lunarfox"><img src="https://img.shields.io/badge/Discord-shadows__lunarfox-d7c4f3?style=for-the-badge&amp;logo=discord&amp;logoColor=ffffff&amp;labelColor=615276" alt="Discord: shadows_lunarfox" /></a>
+  <a href="https://t.me/Shadows_Lunarfox" title="Telegram: @Shadows_Lunarfox"><img src="https://img.shields.io/badge/Telegram-b9edf2?style=for-the-badge&amp;logo=telegram&amp;logoColor=3b2d4f" alt="Telegram: @Shadows_Lunarfox" /></a>
+  <a href="https://www.facebook.com/Lunarfoxyuehu/" title="Facebook: Lunarfoxyuehu"><img src="https://img.shields.io/badge/Facebook-bbe8f2?style=for-the-badge&amp;logo=facebook&amp;logoColor=3b2d4f" alt="Facebook: Lunarfoxyuehu" /></a>
+  <a href="https://x.com/ShadowsLunarfox" title="X: @ShadowsLunarfox"><img src="https://img.shields.io/badge/X-ffdab9?style=for-the-badge&amp;logoColor=3b2d4f" alt="X: @ShadowsLunarfox" /></a>
+</p>
 <!-- END lunarfox-corner -->
 
 <!-- BEGIN learning-badges -->

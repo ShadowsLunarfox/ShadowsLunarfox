@@ -76,6 +76,8 @@ node .github/scripts/generate-profile-stats.cjs --from-snapshot
 
 ## 字体层次与表情符号
 
+README 的「Lunarfox · 月狐小窝」采用独立个人名片、并排技能分组和居中联系按钮。名片上方保留原头像、昵称、吉隆坡位置和开发方向，头像固定为 112px；下方整行自我介绍说明浏览器扩展、网页、Unity 编辑器工具及代表项目，避免长段落挤在头像旁。语言与工具各占一组，徽章可在组内自然换行。联系按钮统一使用 for-the-badge 样式，Discord 按钮直接显示用户名，其余按钮显示平台或网站名称；完整账号也保留在提示和替代文本中。此区只使用 GitHub README 支持的 HTML，不依赖自定义 CSS；窄屏下按钮自动换行。
+
 README 的栏目标题和昵称使用 `<samp>` 等宽字体，与正文的默认字体形成层次；角色下方的短句使用 `<em>` 斜体。自制图片文字统一使用 Comic Neue 漫画手写字体：顶部横幅、仓库卡片、统计面板、Activity Graph 和 3D 贡献图通过 `profile-font.cjs` 嵌入常规和粗体 WOFF2，打字动画通过 `font=Comic+Neue` 指定。标题、数字和说明均使用这套字体，通过字号和粗细区分层次。Activity Graph 和 3D 图在每日生成后应用相同字体，横幅由 `generate-profile-header.cjs` 刷新。外部平台原有徽章继续由各自的图片服务提供。
 
 Comic Neue 采用 [SIL Open Font License 1.1](https://github.com/google/fonts/blob/main/ofl/comicneue/OFL.txt)，允许免费使用、商用和嵌入，不属于公有领域字体。字体文件、来源说明和完整许可证保存在 `assets/fonts/comic-neue/`，每张包含字体的 SVG 也在元数据中保留许可证。表情符号放在栏目标题、问候和所在地，作为轻量的视觉提示。

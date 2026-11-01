@@ -7,7 +7,8 @@
     "Lunar-Start-Page",
     "Server-Check-Status",
     "Custom-Hierarchy-for-Unity",
-    "Custom-Folder-For-Unity"
+    "Custom-Folder-For-Unity",
+    "QR-Maker"
   ],
   "sort": "stars",
   "exclude": ["ShadowsLunarfox"]
