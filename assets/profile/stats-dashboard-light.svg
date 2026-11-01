@@ -201,126 +201,54 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
     <text x="40" y="523" font-size="11" fill="#756782" letter-spacing="1.8">03 / MOST USED LANGUAGES</text>
     <g class="language-pop" style="--language-delay:0.04s">
     <text x="40" y="555" font-size="18" fill="#3b2d4f" font-weight="600">JavaScript</text>
-<<<<<<< Updated upstream
     <text x="800" y="555" font-size="25" fill="#9c4268" text-anchor="end" font-weight="700">78.28%</text>
-    <rect x="40" y="574" width="760" height="14" rx="7" fill="#e6dce9"/>
-    <g clip-path="url(#language-bar)"><g class="language-grow"><rect x="40" y="574" width="594.928" height="14" fill="#ffd166"/><rect x="634.928" y="574" width="85.5" height="14" fill="#bbe8f2"/><rect x="720.428" y="574" width="40.888" height="14" fill="#d7c4f3"/><rect x="761.316" y="574" width="19.456000000000003" height="14" fill="#ffaec5"/><rect x="780.772" y="574" width="16.872" height="14" fill="#ffe9a3"/><rect x="797.644" y="574" width="2.2039999999999997" height="14" fill="#d7c4f3"/><rect x="799.848" y="574" width="0.07600000000000001" height="14" fill="#ffd3b0"/></g><rect class="shimmer" x="-150" y="574" width="120" height="14" fill="url(#shine)"/></g>
-    <g>
-      <circle cx="45" cy="615" r="5" fill="#ffd166"/>
-      <text x="60" y="620" font-size="15" fill="#3b2d4f" >JavaScript</text>
-      <text x="402" y="620" font-size="14" fill="#756782" text-anchor="end">78.28%</text>
-      <rect x="40" y="632" width="362" height="3" rx="1.5" fill="#e6dce9" opacity=".5"/>
-      <rect class="language-grow" x="40" y="632" width="283.3736" height="3" rx="1.5" fill="#ffd166" style="animation-delay:0.3s"/>
-=======
-<<<<<<< HEAD
-    <text x="800" y="555" font-size="25" fill="#9c4268" text-anchor="end" font-weight="700">78.22%</text>
     </g>
     <rect x="40" y="574" width="760" height="14" rx="7" fill="#e6dce9"/>
-    <g clip-path="url(#language-bar)"><g class="language-grow" style="--language-delay:0.08s"><rect x="40" y="574" width="594.472" height="14" fill="#ffd166"/><rect x="634.472" y="574" width="85.956" height="14" fill="#bbe8f2"/><rect x="720.428" y="574" width="40.964" height="14" fill="#d7c4f3"/><rect x="761.392" y="574" width="19.304000000000002" height="14" fill="#ffaec5"/><rect x="780.696" y="574" width="16.948" height="14" fill="#ffe9a3"/><rect x="797.644" y="574" width="2.2039999999999997" height="14" fill="#d7c4f3"/><rect x="799.848" y="574" width="0.07600000000000001" height="14" fill="#ffd3b0"/></g><rect class="shimmer" x="-150" y="574" width="120" height="14" fill="url(#shine)"/></g>
+    <g clip-path="url(#language-bar)"><g class="language-grow" style="--language-delay:0.08s"><rect x="40" y="574" width="594.928" height="14" fill="#ffd166"/><rect x="634.928" y="574" width="85.5" height="14" fill="#bbe8f2"/><rect x="720.428" y="574" width="40.888" height="14" fill="#d7c4f3"/><rect x="761.316" y="574" width="19.456000000000003" height="14" fill="#ffaec5"/><rect x="780.772" y="574" width="16.872" height="14" fill="#ffe9a3"/><rect x="797.644" y="574" width="2.2039999999999997" height="14" fill="#d7c4f3"/><rect x="799.848" y="574" width="0.07600000000000001" height="14" fill="#ffd3b0"/></g><rect class="shimmer" x="-150" y="574" width="120" height="14" fill="url(#shine)"/></g>
     <g class="language-entry">
       <g class="language-pop" style="--language-delay:0.12s">
       <circle cx="45" cy="615" r="5" fill="#ffd166"/>
       <text x="60" y="620" font-size="15" fill="#3b2d4f" >JavaScript</text>
-      <text x="402" y="620" font-size="14" fill="#756782" text-anchor="end">78.22%</text>
+      <text x="402" y="620" font-size="14" fill="#756782" text-anchor="end">78.28%</text>
       </g>
       <rect x="40" y="632" width="362" height="3" rx="1.5" fill="#e6dce9" opacity=".5"/>
-      <rect class="language-grow" x="40" y="632" width="283.1564" height="3" rx="1.5" fill="#ffd166" style="--language-delay:0.20s"/>
-=======
-    <text x="800" y="555" font-size="25" fill="#9c4268" text-anchor="end" font-weight="700">78.28%</text>
-    <rect x="40" y="574" width="760" height="14" rx="7" fill="#e6dce9"/>
-    <g clip-path="url(#language-bar)"><g class="language-grow"><rect x="40" y="574" width="594.928" height="14" fill="#ffd166"/><rect x="634.928" y="574" width="85.5" height="14" fill="#bbe8f2"/><rect x="720.428" y="574" width="40.888" height="14" fill="#d7c4f3"/><rect x="761.316" y="574" width="19.456000000000003" height="14" fill="#ffaec5"/><rect x="780.772" y="574" width="16.872" height="14" fill="#ffe9a3"/><rect x="797.644" y="574" width="2.2039999999999997" height="14" fill="#d7c4f3"/><rect x="799.848" y="574" width="0.07600000000000001" height="14" fill="#ffd3b0"/></g><rect class="shimmer" x="-150" y="574" width="120" height="14" fill="url(#shine)"/></g>
-    <g>
-      <circle cx="45" cy="615" r="5" fill="#ffd166"/>
-      <text x="60" y="620" font-size="15" fill="#3b2d4f" >JavaScript</text>
-      <text x="402" y="620" font-size="14" fill="#756782" text-anchor="end">78.28%</text>
-      <rect x="40" y="632" width="362" height="3" rx="1.5" fill="#e6dce9" opacity=".5"/>
-      <rect class="language-grow" x="40" y="632" width="283.3736" height="3" rx="1.5" fill="#ffd166" style="animation-delay:0.3s"/>
->>>>>>> 6e7418eed6f76520be832f92d4e0891a368a161c
->>>>>>> Stashed changes
+      <rect class="language-grow" x="40" y="632" width="283.3736" height="3" rx="1.5" fill="#ffd166" style="--language-delay:0.20s"/>
     </g>
 <g class="language-entry">
       <g class="language-pop" style="--language-delay:0.19s">
       <circle cx="443" cy="615" r="5" fill="#bbe8f2"/>
       <text x="458" y="620" font-size="15" fill="#3b2d4f" >CSS</text>
-<<<<<<< Updated upstream
       <text x="800" y="620" font-size="14" fill="#756782" text-anchor="end">11.25%</text>
-      <rect x="438" y="632" width="362" height="3" rx="1.5" fill="#e6dce9" opacity=".5"/>
-      <rect class="language-grow" x="438" y="632" width="40.725" height="3" rx="1.5" fill="#bbe8f2" style="animation-delay:0.38s"/>
-=======
-<<<<<<< HEAD
-      <text x="800" y="620" font-size="14" fill="#756782" text-anchor="end">11.31%</text>
       </g>
       <rect x="438" y="632" width="362" height="3" rx="1.5" fill="#e6dce9" opacity=".5"/>
-      <rect class="language-grow" x="438" y="632" width="40.9422" height="3" rx="1.5" fill="#bbe8f2" style="--language-delay:0.27s"/>
-=======
-      <text x="800" y="620" font-size="14" fill="#756782" text-anchor="end">11.25%</text>
-      <rect x="438" y="632" width="362" height="3" rx="1.5" fill="#e6dce9" opacity=".5"/>
-      <rect class="language-grow" x="438" y="632" width="40.725" height="3" rx="1.5" fill="#bbe8f2" style="animation-delay:0.38s"/>
->>>>>>> 6e7418eed6f76520be832f92d4e0891a368a161c
->>>>>>> Stashed changes
+      <rect class="language-grow" x="438" y="632" width="40.725" height="3" rx="1.5" fill="#bbe8f2" style="--language-delay:0.27s"/>
     </g>
 <g class="language-entry">
       <g class="language-pop" style="--language-delay:0.26s">
       <circle cx="45" cy="663" r="5" fill="#d7c4f3"/>
       <text x="60" y="668" font-size="15" fill="#3b2d4f" >C#</text>
-<<<<<<< Updated upstream
       <text x="402" y="668" font-size="14" fill="#756782" text-anchor="end">5.38%</text>
-      <rect x="40" y="680" width="362" height="3" rx="1.5" fill="#e6dce9" opacity=".5"/>
-      <rect class="language-grow" x="40" y="680" width="19.4756" height="3" rx="1.5" fill="#d7c4f3" style="animation-delay:0.45999999999999996s"/>
-=======
-<<<<<<< HEAD
-      <text x="402" y="668" font-size="14" fill="#756782" text-anchor="end">5.39%</text>
       </g>
       <rect x="40" y="680" width="362" height="3" rx="1.5" fill="#e6dce9" opacity=".5"/>
-      <rect class="language-grow" x="40" y="680" width="19.511799999999997" height="3" rx="1.5" fill="#d7c4f3" style="--language-delay:0.34s"/>
-=======
-      <text x="402" y="668" font-size="14" fill="#756782" text-anchor="end">5.38%</text>
-      <rect x="40" y="680" width="362" height="3" rx="1.5" fill="#e6dce9" opacity=".5"/>
-      <rect class="language-grow" x="40" y="680" width="19.4756" height="3" rx="1.5" fill="#d7c4f3" style="animation-delay:0.45999999999999996s"/>
->>>>>>> 6e7418eed6f76520be832f92d4e0891a368a161c
->>>>>>> Stashed changes
+      <rect class="language-grow" x="40" y="680" width="19.4756" height="3" rx="1.5" fill="#d7c4f3" style="--language-delay:0.34s"/>
     </g>
 <g class="language-entry">
       <g class="language-pop" style="--language-delay:0.33s">
       <circle cx="443" cy="663" r="5" fill="#ffaec5"/>
       <text x="458" y="668" font-size="15" fill="#3b2d4f" >HTML</text>
-<<<<<<< Updated upstream
       <text x="800" y="668" font-size="14" fill="#756782" text-anchor="end">2.56%</text>
-      <rect x="438" y="680" width="362" height="3" rx="1.5" fill="#e6dce9" opacity=".5"/>
-      <rect class="language-grow" x="438" y="680" width="9.2672" height="3" rx="1.5" fill="#ffaec5" style="animation-delay:0.54s"/>
-=======
-<<<<<<< HEAD
-      <text x="800" y="668" font-size="14" fill="#756782" text-anchor="end">2.54%</text>
       </g>
       <rect x="438" y="680" width="362" height="3" rx="1.5" fill="#e6dce9" opacity=".5"/>
-      <rect class="language-grow" x="438" y="680" width="9.1948" height="3" rx="1.5" fill="#ffaec5" style="--language-delay:0.41s"/>
-=======
-      <text x="800" y="668" font-size="14" fill="#756782" text-anchor="end">2.56%</text>
-      <rect x="438" y="680" width="362" height="3" rx="1.5" fill="#e6dce9" opacity=".5"/>
-      <rect class="language-grow" x="438" y="680" width="9.2672" height="3" rx="1.5" fill="#ffaec5" style="animation-delay:0.54s"/>
->>>>>>> 6e7418eed6f76520be832f92d4e0891a368a161c
->>>>>>> Stashed changes
+      <rect class="language-grow" x="438" y="680" width="9.2672" height="3" rx="1.5" fill="#ffaec5" style="--language-delay:0.41s"/>
     </g>
 <g class="language-entry">
       <g class="language-pop" style="--language-delay:0.40s">
       <circle cx="45" cy="711" r="5" fill="#ffe9a3"/>
       <text x="60" y="716" font-size="15" fill="#3b2d4f" >Python</text>
-<<<<<<< Updated upstream
       <text x="402" y="716" font-size="14" fill="#756782" text-anchor="end">2.22%</text>
-      <rect x="40" y="728" width="362" height="3" rx="1.5" fill="#e6dce9" opacity=".5"/>
-      <rect class="language-grow" x="40" y="728" width="8.0364" height="3" rx="1.5" fill="#ffe9a3" style="animation-delay:0.62s"/>
-=======
-<<<<<<< HEAD
-      <text x="402" y="716" font-size="14" fill="#756782" text-anchor="end">2.23%</text>
       </g>
       <rect x="40" y="728" width="362" height="3" rx="1.5" fill="#e6dce9" opacity=".5"/>
-      <rect class="language-grow" x="40" y="728" width="8.0726" height="3" rx="1.5" fill="#ffe9a3" style="--language-delay:0.48s"/>
-=======
-      <text x="402" y="716" font-size="14" fill="#756782" text-anchor="end">2.22%</text>
-      <rect x="40" y="728" width="362" height="3" rx="1.5" fill="#e6dce9" opacity=".5"/>
-      <rect class="language-grow" x="40" y="728" width="8.0364" height="3" rx="1.5" fill="#ffe9a3" style="animation-delay:0.62s"/>
->>>>>>> 6e7418eed6f76520be832f92d4e0891a368a161c
->>>>>>> Stashed changes
+      <rect class="language-grow" x="40" y="728" width="8.0364" height="3" rx="1.5" fill="#ffe9a3" style="--language-delay:0.48s"/>
     </g>
 <g class="language-entry">
       <g class="language-pop" style="--language-delay:0.47s">
