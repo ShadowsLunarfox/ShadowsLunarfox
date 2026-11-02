@@ -23,13 +23,13 @@ test('language precision and XML entities are preserved without altering percent
   for (const svg of ['<svg/>', '<svg><text data-testid="lang-name">C# 101%</text></svg>', languagesSvg.replace('34.75%', '90%')]) assert.throws(() => parseLanguages(svg), /language|Language/);
 });
 
-test('the rank ring uses the source progress and omits the arc if progress is unavailable', () => {
+test('rank progress is preserved in source data while the compact dashboard displays a plain rank', () => {
   assert.equal(parseOverview(overviewSvg()).rankProgress, 0.3);
   const noProgress = parseOverview(overviewSvg().replace(/<style>.*?<\/style>/, ''));
   assert.equal(noProgress.rankProgress, null);
   assert.doesNotMatch(renderDashboard(dashboard({ overview: noProgress }), 'dark'), /class="rank-progress"/);
-  const arc = renderDashboard(dashboard(), 'dark').match(/class="rank-progress"[^>]*stroke-dasharray="([\d.]+)" stroke-dashoffset="([\d.]+)"/);
-  assert.ok(Math.abs(1 - Number(arc[2]) / Number(arc[1]) - overview.rankProgress) < 1e-10);
+  assert.match(renderDashboard(dashboard(), 'dark'), />B-<\/text>/);
+  assert.doesNotMatch(renderDashboard(dashboard(), 'dark'), /class="rank-progress"/);
   assert.throws(() => parseOverview(overviewSvg().replace('stroke-dashoffset: 70', 'stroke-dashoffset: 170')), /rank progress/);
 });
 
@@ -45,35 +45,42 @@ test('daily streak dates are validated while zero streaks and zero contributions
 
 test('rendering retains metric values, rank, streak dates and precise language percentages in both themes', () => {
   for (const theme of ['light', 'dark']) {
-    const output = renderDashboard(dashboard(), theme);
-    assert.match(output, /67 stars; 134 commits.*1 pull requests; 1 issues; 0 repositories.*rank B-/);
-    assert.match(output, /162 total contributions/);
-    assert.match(output, /Oct 6 – Oct 15/);
-    assert.match(output, /Oct 4, 2021 – present/);
-    assert.match(output, /65\.25%/);
-    assert.match(output, /34\.75%/);
+    for (const compact of [false, true]) {
+      const output = renderDashboard(dashboard(), theme, compact);
+      assert.match(output, /67 stars; 134 commits.*1 pull requests; 1 issues; 0 repositories.*rank B-/);
+      assert.match(output, /162 total contributions/);
+      assert.match(output, /Oct 6 – Oct 15/);
+      assert.match(output, /Oct 4, 2021 – present/);
+      assert.match(output, /65\.25%/);
+      assert.match(output, /34\.75%/);
+    }
   }
   const escaped = renderDashboard(dashboard({ languages: [{ name: '<script> & "', percent: 100, percentage: '100%' }] }), 'dark');
   assert.doesNotMatch(escaped, /<script>/);
   assert.match(escaped, /&lt;script&gt; &amp; &quot;/);
 });
 
-test('one self-contained dashboard supports animation, reduced motion and any number of language rows', () => {
-  const output = renderDashboard(dashboard(), 'dark');
-  assert.equal((output.match(/<svg\b/g) || []).length, 1);
-  assert.doesNotMatch(output, /<script\b|<foreignObject\b|<image\b|(?:href=["']|url\(["']?)https?:\/\//);
-  assert.match(output, /@media \(prefers-reduced-motion:reduce\)/);
-  assert.match(output, /animation:none !important/);
-  assert.match(output, /animation:orbit 24s linear infinite/);
-  assert.match(output, /animation:shimmer 8s ease-in-out infinite/);
-  assert.match(output, /width="495\.9[0-9]*" height="14"/);
-  const languages = Array.from({ length: 9 }, (_, index) => ({ name: `Language ${index}`, percent: 10, percentage: '10%' }));
-  const expanded = renderDashboard(dashboard({ languages }), 'light');
-  assert.match(expanded, /viewBox="0 0 840 890"/);
-  assert.match(expanded, /Language 8/);
-  const empty = renderDashboard(dashboard({ languages: [] }), 'light');
-  assert.match(empty, /No language data yet/);
-  assert.match(empty, /viewBox="0 0 840 650"/);
+test('responsive dashboards preserve all languages and reduced motion while removing decorative loops', () => {
+  for (const compact of [false, true]) {
+    const output = renderDashboard(dashboard(), 'dark', compact);
+    assert.equal((output.match(/<svg\b/g) || []).length, 1);
+    assert.doesNotMatch(output, /<script\b|<foreignObject\b|<image\b|(?:href=["']|url\(["']?)https?:\/\//);
+    assert.match(output, /@media \(prefers-reduced-motion:reduce\)/);
+    assert.match(output, /animation:none !important/);
+    assert.match(output, /profile-language-pop/);
+    assert.match(output, /profile-language-grow/);
+    assert.doesNotMatch(output, /linearGradient|radialGradient|\binfinite\b/);
+    const languages = Array.from({ length: 9 }, (_, index) => ({ name: `Language ${index}`, percent: 10, percentage: '10%' }));
+    const expanded = renderDashboard(dashboard({ languages }), 'light', compact);
+    assert.equal((expanded.match(/class="language-entry /g) || []).length, languages.length);
+    for (const language of languages) assert.ok(expanded.includes(language.name));
+    const dimensions = image => image.match(/viewBox="0 0 (\d+) (\d+)"/).slice(1).map(Number);
+    assert.ok(dimensions(expanded)[1] > dimensions(output)[1]);
+    assert.equal(dimensions(output)[0], compact ? 360 : 840);
+    const empty = renderDashboard(dashboard({ languages: [] }), 'light', compact);
+    assert.match(empty, /No language data yet/);
+    assert.equal((empty.match(/class="language-entry /g) || []).length, 0);
+  }
 });
 
 test('a failed service prevents a refresh and valid services preserve the established counting options', async () => {

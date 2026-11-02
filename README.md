@@ -13,80 +13,46 @@
 <!-- END typing-animation -->
 
 <p>
-  <img src="https://komarev.com/ghpvc/?username=ShadowsLunarfox&label=Profile%20Views&color=ffaec5&style=flat" alt="Profile views" />
-  <img src="https://img.shields.io/github/stars/ShadowsLunarfox?affiliations=OWNER%2CCOLLABORATOR&style=flat&color=b9edf2&labelColor=615276" alt="GitHub stars" />
-  <a href="https://github.com/ShadowsLunarfox?tab=repositories&amp;type=public"><img src="assets/profile/public-repositories.svg" alt="GitHub public repositories" /></a>
+  <img src="https://komarev.com/ghpvc/?username=ShadowsLunarfox&amp;label=Profile%20Views&amp;color=ffaec5&amp;style=for-the-badge" alt="Profile views" height="32" />
+  <img src="https://img.shields.io/github/stars/ShadowsLunarfox?affiliations=OWNER%2CCOLLABORATOR&amp;style=for-the-badge&amp;color=b9edf2&amp;labelColor=615276" alt="GitHub stars" height="32" />
+  <a href="https://github.com/ShadowsLunarfox?tab=repositories&amp;type=public"><img src="assets/profile/public-repositories.svg?v=2" alt="GitHub public repositories" height="32" /></a>
 </p>
 
 </div>
 
-<!-- BEGIN lunarfox-corner -->
-<h2 align="center">🌙 <samp>Lunarfox · 月狐小窝</samp> 🐾</h2>
+<!-- BEGIN professional-intro -->
+<h2 align="center"><samp>About Me</samp></h2>
 
-<table align="center" width="100%">
-  <tr>
-    <td align="center" valign="middle" width="136">
-      <img src="b7be7453e22cf7571441503a0ff8fc87_720.png" alt="Lunarfox's pastel moon fox avatar" width="112" />
-      <br /><sub><samp>(｡･ω･｡)ﾉ</samp></sub>
-    </td>
-    <td valign="middle">
-      <p>🦊 <samp>Hey there!</samp><br />
-      <strong><samp>I'm Shadows_Lunarfox</samp></strong><br />
-      <sub>📍 Kuala Lumpur, Malaysia</sub></p>
-      <p><strong>Code tinkerer · Retro collector</strong><br />
-      <sub><em>Small ideas, fluffy tails &amp; a little chaos.</em></sub></p>
-    </td>
-  </tr>
-  <tr>
-    <td colspan="2" valign="top">
-      <p align="center">
-        <img src="https://img.shields.io/badge/Java-just_a_pinch-ffe9a3?style=flat&amp;logo=openjdk&amp;logoColor=ffffff&amp;labelColor=615276" alt="Java: just a pinch" />
-        <img src="https://img.shields.io/badge/Bugs-features_in_disguise-d7c4f3?style=flat&amp;labelColor=615276" alt="Bugs: features in disguise" />
-        <img src="https://img.shields.io/badge/Printers-final_boss-ffaec5?style=flat&amp;labelColor=615276" alt="Printers: final boss" />
-      </p>
-      <h3>🧩 <samp>A Little Code, A Little Chaos</samp></h3>
-      <p><strong>🧂 Pocket Skill:</strong> Java? Just a tiny pinch. <em>Literally a pinch—no secret Java wizard hiding here!</em> 😂</p>
-      <p><strong>🐛 Dev Joke:</strong><br />
-      <em>"If my code compiles on the first try, I'll start suspecting my life and hunt for hidden bugs."</em></p>
-      <p>✨ Expert at turning bugs into features.<br />
-      🖨️ Completely helpless when it comes to fixing printers. <em>My true final boss.</em></p>
-    </td>
-  </tr>
-  <tr>
-    <td colspan="2" valign="top">
-      <h3>⚙️ <samp>Retro Collector</samp> <sub>( •̀ ω •́ )✧</sub></h3>
-      <p>Besides coding, I have a soft spot for <strong>vintage components and classic tech gear</strong>. To me, retro devices are little works of art. 💾</p>
-      <p>Bringing them back to life gives me more adrenaline than running new code. Think of me as a <strong>"digital archaeologist"</strong>, digging for treasure in electronic ruins. 🔎</p>
-      <p><strong>🦊 Random Thought:</strong><br />
-      Wait… why did I buy a domain ending in <strong>.wtf</strong> again?!<br />
-      Must have been bored and fidgety. Someone save this fox with a <strong>3-second memory span</strong>! 🍼</p>
-    </td>
-  </tr>
-</table>
+<p>
+  I'm <strong>Shadows_Lunarfox</strong>, a software developer based in Kuala Lumpur, Malaysia. I build <strong>browser extensions, Windows desktop utilities, and Unity Editor tools</strong> to simplify everyday tasks and improve development workflows.
+</p>
 
-<table align="center" width="100%">
-  <tr>
-    <td align="center" valign="top" width="50%">
-      <p><strong>🍡 <samp>Coding Languages</samp></strong></p>
-      <img src="https://img.shields.io/badge/C%23-d7c4f3?style=flat&amp;logo=csharp&amp;logoColor=3b2d4f" alt="C#" />
-      <img src="https://img.shields.io/badge/C%2B%2B-b9edf2?style=flat&amp;logo=cplusplus&amp;logoColor=3b2d4f" alt="C++" />
-      <img src="https://img.shields.io/badge/Java-ffd3b0?style=flat&amp;logo=openjdk&amp;logoColor=3b2d4f" alt="Java" />
-      <img src="https://img.shields.io/badge/Python-ffe9a3?style=flat&amp;logo=python&amp;logoColor=3b2d4f" alt="Python" />
-      <img src="https://img.shields.io/badge/JavaScript-ffd166?style=flat&amp;logo=javascript&amp;logoColor=3b2d4f" alt="JavaScript" />
-      <img src="https://img.shields.io/badge/HTML5-ffaec5?style=flat&amp;logo=html5&amp;logoColor=3b2d4f" alt="HTML5" />
-      <img src="https://img.shields.io/badge/CSS3-bbe8f2?style=flat&amp;logo=css3&amp;logoColor=3b2d4f" alt="CSS3" />
-    </td>
-    <td align="center" valign="top" width="50%">
-      <p><strong>🎨 <samp>Creative Toolbox</samp></strong></p>
-      <img src="https://img.shields.io/badge/Unity-d3bcf5?style=flat&amp;logo=unity&amp;logoColor=3b2d4f" alt="Unity" />
-      <img src="https://img.shields.io/badge/Blender-ffc6a6?style=flat&amp;logo=blender&amp;logoColor=3b2d4f" alt="Blender" />
-      <img src="https://img.shields.io/badge/Substance%203D%20Painter-ffb5d8?style=flat&amp;logo=adobe&amp;logoColor=3b2d4f" alt="Substance 3D Painter" />
-      <img src="https://img.shields.io/badge/Git-ffd3b6?style=flat&amp;logo=git&amp;logoColor=3b2d4f" alt="Git" />
-      <img src="https://img.shields.io/badge/GitHub-d7c4f3?style=flat&amp;logo=github&amp;logoColor=3b2d4f" alt="GitHub" />
-      <img src="https://img.shields.io/badge/VS%20Code-bce6f4?style=flat&amp;logo=visualstudiocode&amp;logoColor=3b2d4f" alt="VS Code" />
-    </td>
-  </tr>
-</table>
+<p>
+  My projects cover web interface customization, text-to-speech and translation, server connectivity checks, and Unity Editor enhancements. I work with <strong>JavaScript, Python, and C#</strong>, alongside <strong>HTML and CSS</strong>, with an emphasis on usability and useful, focused features.
+</p>
+<!-- END professional-intro -->
+
+<!-- BEGIN languages-and-apps -->
+<h2 align="center">💻 <samp>Languages &amp; Apps</samp></h2>
+
+<p align="center">
+  <strong><samp>Programming Languages</samp></strong><br />
+  <img src="https://img.shields.io/badge/Python-ffe9a3?style=flat-square&amp;logo=python&amp;logoColor=3b2d4f" alt="Python" />
+  <img src="https://img.shields.io/badge/JavaScript-ffd166?style=flat-square&amp;logo=javascript&amp;logoColor=3b2d4f" alt="JavaScript" />
+  <img src="https://img.shields.io/badge/C%23-d7c4f3?style=flat-square" alt="C#" />
+  <img src="https://img.shields.io/badge/HTML-ffaec5?style=flat-square&amp;logo=html5&amp;logoColor=3b2d4f" alt="HTML" />
+  <img src="https://img.shields.io/badge/CSS-bbe8f2?style=flat-square&amp;logo=css&amp;logoColor=3b2d4f" alt="CSS" />
+</p>
+
+<p align="center">
+  <strong><samp>Apps I Use</samp></strong><br />
+  <img src="https://img.shields.io/badge/Visual_Studio_Code-bce6f4?style=flat-square" alt="Visual Studio Code" />
+  <img src="https://img.shields.io/badge/Unity_Engine-d3bcf5?style=flat-square&amp;logo=unity&amp;logoColor=3b2d4f" alt="Unity Engine" />
+  <img src="https://img.shields.io/badge/Blender-ffc6a6?style=flat-square&amp;logo=blender&amp;logoColor=3b2d4f" alt="Blender" />
+</p>
+<!-- END languages-and-apps -->
+
+<!-- BEGIN contact-links -->
 
 <p align="center">
   <strong>💌 <samp>Come Say Hello</samp></strong><br />
@@ -96,7 +62,7 @@
   <a href="https://www.facebook.com/Lunarfoxyuehu/" title="Facebook: Lunarfoxyuehu"><img src="https://img.shields.io/badge/Facebook-bbe8f2?style=for-the-badge&amp;logo=facebook&amp;logoColor=3b2d4f" alt="Facebook: Lunarfoxyuehu" /></a>
   <a href="https://x.com/ShadowsLunarfox" title="X: @ShadowsLunarfox"><img src="https://img.shields.io/badge/X-ffdab9?style=for-the-badge&amp;logoColor=3b2d4f" alt="X: @ShadowsLunarfox" /></a>
 </p>
-<!-- END lunarfox-corner -->
+<!-- END contact-links -->
 
 <!-- BEGIN learning-badges -->
 <h2 align="center">🏅 <samp>Learning &amp; Badges</samp></h2>
@@ -203,12 +169,14 @@
 <!-- END featured-repositories -->
 
 <!-- BEGIN github-stats -->
-<h2 align="center">📊 <samp>GitHub Stats (＾▽＾)</samp></h2>
+<h2 align="center">📊 <samp>GitHub Stats</samp></h2>
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/profile/stats-dashboard-dark.svg" />
-    <img src="assets/profile/stats-dashboard-light.svg" alt="Animated GitHub dashboard: stars, yearly commits, pull requests, issues, contributed repositories, rank, contribution streaks with dates, and language percentages" width="100%" />
+    <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/profile/stats-dashboard-dark-compact.svg?v=2" />
+    <source media="(max-width: 600px)" srcset="assets/profile/stats-dashboard-light-compact.svg?v=2" />
+    <source media="(prefers-color-scheme: dark)" srcset="assets/profile/stats-dashboard-dark.svg?v=2" />
+    <img src="assets/profile/stats-dashboard-light.svg?v=2" alt="GitHub statistics: stars, yearly commits, pull requests, issues, contributed repositories, rank, contribution streaks with dates, and language percentages" width="100%" />
   </picture>
 </p>
 

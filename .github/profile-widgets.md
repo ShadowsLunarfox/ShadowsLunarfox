@@ -31,9 +31,9 @@ The activity graph and initial 3D calendars use snapshots of your public GitHub 
 
 ## Shared pastel palette
 
-The Public repos badge sits immediately to the right of Stars and links to the profile's public repository list. `generate-public-repositories.cjs` reads GitHub's `public_repos` field and writes `assets/profile/public-repositories.svg` with the embedded Comic Neue font. It refreshes daily in `profile-stats.yml`, independently of the statistics services, and preserves the previous badge if GitHub is unavailable. To refresh locally, run `node .github/scripts/generate-public-repositories.cjs`.
+Profile Views, Stars, and Public repos are displayed at a shared height of 32px, with proportional widths and solid flat backgrounds. They wrap naturally on narrow screens. The Public repos badge sits immediately to the right of Stars and links to the profile's public repository list. `generate-public-repositories.cjs` reads GitHub's `public_repos` field and writes `assets/profile/public-repositories.svg`, matching the adjacent Shields badge's uppercase labels, Verdana font stack, effective 10px type, bold values, 28px view box, and 12px horizontal padding. README scales both badges to 32px high. This top badge uses the Shields typography rather than the Comic Neue font used in the larger profile cards. It refreshes daily in `profile-stats.yml`, independently of the statistics services, and preserves the previous badge if GitHub is unavailable. To refresh locally, run `node .github/scripts/generate-public-repositories.cjs`.
 
-The header, footer, badges, stats, activity graph, snake, and 3D calendar use the same colors as the Coding Languages / Creative Toolbox / Come Say Hello badges:
+The header, footer, badges, stats, activity graph, snake, and 3D calendar use the same pastel palette as the Come Say Hello badges:
 
 | Role | Color |
 | --- | --- |
@@ -46,7 +46,7 @@ The header, footer, badges, stats, activity graph, snake, and 3D calendar use th
 | Light-theme text | `#3b2d4f` |
 | Dark-theme text | `#adbac7` |
 
-The typing animation, stats, activity graph, snake, and 3D calendar select readable light/dark variants with `<picture>`. Widget backgrounds stay transparent; the statistics dashboard adds faint gradient accents while its outer background and rank circle remain unfilled so GitHub's page background shows through. The activity workflow writes both `activity.svg` (dark) and `activity-light.svg` (light). Snake and 3D calendar contribution levels share cyan → lavender → peach → pink, with a theme-specific empty cell color. The 3D calendar retains its growing animation and uses a fixed pastel palette rather than cycling through rainbow colors.
+The typing animation, stats, activity graph, snake, and 3D calendar select readable light/dark variants with `<picture>`. Widget backgrounds stay transparent; the statistics dashboard uses flat pastel accents without a filled background or decorative gradients. The activity workflow writes both `activity.svg` (dark) and `activity-light.svg` (light). Snake and 3D calendar contribution levels share cyan → lavender → peach → pink, with a theme-specific empty cell color. The 3D calendar retains its growing animation and uses a fixed pastel palette rather than cycling through rainbow colors.
 
 `apply-profile-palette.cjs` recolors the 3D calendar's language pie slices and legend swatches to match the skill badges. The statistics card renderer uses the same palette for language bars and labels, preserving the service's percentage values.
 
@@ -56,9 +56,9 @@ To remove a widget, remove its marked README section and corresponding workflow.
 
 ## 合并动画统计面板
 
-README 的 GitHub Stats 使用一个 `<picture>` 展示一张整合 SVG 面板：`stats-dashboard-dark.svg` / `stats-dashboard-light.svg`。宽度为 `100%`，随 README 内容区缩放，按主题选择深浅色版本。`profile-stat-cards.cjs` 统一绘制圆角外框、淡渐变、Comic Neue 漫画字体和粉紫色强调，底色保持透明。总览保留 Stars、过去一年提交数、PR、Issues、过去一年参与仓库数和真实评级进度；连续贡献保留三个统计值及日期；语言接口通过 `langs_count=20` 请求最多 20 种语言，语言区保留所有返回的语言及精确百分比，面板高度随语言行数增加。实际展示数量取决于公开仓库中被统计服务识别到的语言。
+README 的 GitHub Stats 使用一个 `<picture>` 展示紧凑 SVG 面板。`stats-dashboard-dark.svg` / `stats-dashboard-light.svg` 为宽屏版本，对应的 `-compact.svg` 为手机版，600px 以下自动选择手机版排版。宽度为 `100%`，底色保持透明，使用平面粉彩配色、细边框和 Comic Neue 字体。总览将 Stars、过去一年提交数、PR、Issues、过去一年参与仓库数和评级排成一行，手机上分为两行；评级仅显示文字。连续贡献保留三个统计值及日期。语言区只保留一条总比例条，以及包含所有语言和精确百分比的图例；宽屏两列、手机单列，高度随语言数量增长。语言接口仍通过 `langs_count=20` 请求最多 20 种语言，实际数量取决于公开仓库中被统计服务识别到的语言。
 
-动画直接包含在 SVG 的 CSS 中：数字淡入、评级进度绘制与外圈光点旋转、连续贡献火苗呼吸、星光闪烁、语言标签错峰轻弹、语言条从左展开及循环扫光。语言标签与进度条共用 `profile-language-motion.cjs`，入场动效在图片加载时播放一次，结束后保持真实数据。Comic Neue 的常规和粗体字体以数据 URL 嵌入，无需安装字体或访问字体服务。系统开启 `prefers-reduced-motion` 时，停止动画并直接展示完整数据。
+动画直接包含在 SVG 的 CSS 中：数字淡入、语言标签错峰轻弹、总比例条从左展开，均在加载时播放一次。语言动效沿用 `profile-language-motion.cjs`，结束后保持真实数据。精简版移除了大标题、标语、评级圆环、星光、火苗、渐变底色、重复的逐项语言进度条、循环扫光和页脚。Comic Neue 常规和粗体 WOFF2 嵌入 SVG，无需安装字体或访问字体服务。系统开启 `prefers-reduced-motion` 时直接展示完整静态数据。
 
 `generate-profile-stats.cjs` 沿用原本的公开统计服务，连续贡献按吉隆坡时区计算。全部数据抓取、校验和两种主题绘图成功后，才更新 `statistics.json` 和两份 SVG 快照；服务出错时保留现有文件。`profile-stats.yml` 由每天吉隆坡时间 00:17 启动的 `daily-refresh.yml` 调用：先提交刷新标记，提交成功后直接依次刷新六个任务。推送相关脚本到 `main` 会启动同一流程，也可手动运行。
 
@@ -70,19 +70,23 @@ node .github/scripts/generate-profile-stats.cjs --from-snapshot
 
 ## 学习资料与徽章
 
-`learning-profiles.json` 保存 Google 公开主页、已提供的 Google 徽章分享资料（`googleBadges`）和 Microsoft Learn 用户名。README 的 Learning & Badges 区域位于个人介绍之后，按 Google 和 Microsoft 分组，以 40px 官方徽章图标紧凑排列，并显示资料入口和徽章数量。完整名称、类型和获得日期放在默认收起的 Badge details 中，悬停图标也可查看详情。Google 徽章链接到带本人用户名的官方分享页，微软徽章链接到本人官方成就页。当前 Google 徽章包含 Joined the Google Developer Program、Google Developer Group discovery、Code Wiki、Google Cloud & NVIDIA community member，图标和英文名称取自提供的官方分享页面。
+`learning-profiles.json` 保存 Google 公开主页、已提供的 Google 徽章分享资料（`googleBadges`）和 Microsoft Learn 用户名。README 的 Learning & Badges 区域位于联系链接之后，按 Google 和 Microsoft 分组，以 40px 官方徽章图标紧凑排列，并显示资料入口和徽章数量。完整名称、类型和获得日期放在默认收起的 Badge details 中，悬停图标也可查看详情。Google 徽章链接到带本人用户名的官方分享页，微软徽章链接到本人官方成就页。当前 Google 徽章包含 Joined the Google Developer Program、Google Developer Group discovery、Code Wiki、Google Cloud & NVIDIA community member，图标和英文名称取自提供的官方分享页面。
 
 `generate-learning-badges.cjs` 保留配置中的 Google 徽章，同时读取微软公开资料与成就列表，仅展示已验证的模块徽章和学习路径奖杯，并使用官方徽章图片。新增 Google 徽章时，将其名称、本人分享链接和官方图标地址加入 `googleBadges`；不会自动抓取 Google 个人主页的完整徽章清单。`learning-badges.yml` 作为每日 `daily-refresh.yml` 流程的最后一个任务运行，推送相关配置或脚本会启动同一流程。公开资料不可读、列表不完整或字段异常时保留现有展示。本地刷新命令：`node .github/scripts/generate-learning-badges.cjs`。
 
 ## 字体层次与表情符号
 
-README 的「Lunarfox · 月狐小窝」采用独立个人名片、并排技能分组和居中联系按钮。名片上方保留原头像、昵称和吉隆坡位置，配上狐狸问候、颜文字和轻松短句，头像固定为 112px。下方用三枚粉紫色小徽章点缀 Java、bug 与打印机的玩笑，再分为 A Little Code, A Little Chaos 和 Retro Collector 两段；根据本人提供的内容轻快改写，保留编译成功反而找 bug、修不了打印机、数字考古学家、.wtf 域名与三秒记忆的笑点。介绍整行显示，避免长段落挤在头像旁。语言与工具各占一组，徽章可在组内自然换行。联系按钮统一使用 for-the-badge 样式，Discord 按钮直接显示用户名，其余按钮显示平台或网站名称；完整账号也保留在提示和替代文本中。此区只使用 GitHub README 支持的 HTML，不依赖自定义 CSS；窄屏下按钮自动换行。
+README 的 About Me 简介位于顶部统计徽章之后，采用两段英文正文，介绍吉隆坡所在地、浏览器扩展、Windows 桌面实用程序、Unity 编辑器工具及本人提供的技术栈。内容依据已展示的项目与个人信息撰写，使用原生文字排版。
 
-README 的栏目标题和昵称使用 `<samp>` 等宽字体，与正文的默认字体形成层次；角色下方的短句使用 `<em>` 斜体。自制图片文字统一使用 Comic Neue 漫画手写字体：顶部横幅、仓库卡片、统计面板、Activity Graph 和 3D 贡献图通过 `profile-font.cjs` 嵌入常规和粗体 WOFF2，打字动画通过 `font=Comic+Neue` 指定。标题、数字和说明均使用这套字体，通过字号和粗细区分层次。Activity Graph 和 3D 图在每日生成后应用相同字体，横幅由 `generate-profile-header.cjs` 刷新。外部平台原有徽章继续由各自的图片服务提供。
+README 的 Languages & Apps 区域位于 About Me 与联系链接之间。Programming Languages 展示 Python、JavaScript、C#、HTML、CSS；Apps I Use 展示 Visual Studio Code、Unity Engine、Blender。此列表按本人提供的内容手动维护，与下方 GitHub 自动统计的语言占比分开。两组使用 `flat-square` 纯色平面 Shields 徽章和居中段落，无渐变和阴影，背景沿用页面底色，窄屏下自然换行。
 
-Comic Neue 采用 [SIL Open Font License 1.1](https://github.com/google/fonts/blob/main/ofl/comicneue/OFL.txt)，允许免费使用、商用和嵌入，不属于公有领域字体。字体文件、来源说明和完整许可证保存在 `assets/fonts/comic-neue/`，每张包含字体的 SVG 也在元数据中保留许可证。表情符号放在栏目标题、问候和所在地，作为轻量的视觉提示。
+README 的 Come Say Hello 联系按钮居中显示，统一使用 for-the-badge 样式。Discord 按钮直接显示用户名，其余按钮显示平台或网站名称；完整账号也保留在提示和替代文本中。HTML 排版使用 GitHub README 支持的标签；窄屏下按钮自动换行。
 
-问候、角色短句、项目展示、统计和 3D 贡献标题加上少量颜文字，例如 `(｡･ω･｡)ﾉ`、`(ᵔᴥᵔ)` 和 `(☆▽☆)`，与现有 emoji 搭配。
+README 的栏目标题使用 `<samp>` 等宽字体，与正文的默认字体形成层次。自制图片文字统一使用 Comic Neue 漫画手写字体：顶部横幅、仓库卡片、统计面板、Activity Graph 和 3D 贡献图通过 `profile-font.cjs` 嵌入常规和粗体 WOFF2，打字动画通过 `font=Comic+Neue` 指定。标题、数字和说明均使用这套字体，通过字号和粗细区分层次。Activity Graph 和 3D 图在每日生成后应用相同字体，横幅由 `generate-profile-header.cjs` 刷新。外部平台原有徽章继续由各自的图片服务提供。
+
+Comic Neue 采用 [SIL Open Font License 1.1](https://github.com/google/fonts/blob/main/ofl/comicneue/OFL.txt)，允许免费使用、商用和嵌入，不属于公有领域字体。字体文件、来源说明和完整许可证保存在 `assets/fonts/comic-neue/`，每张包含字体的 SVG 也在元数据中保留许可证。表情符号放在栏目标题中，作为轻量的视觉提示。
+
+项目展示、统计和 3D 贡献标题保留少量颜文字，与现有 emoji 搭配。
 
 这些样式使用 GitHub README 支持的 HTML 标签，不依赖自定义 CSS 或特殊 Unicode 字母。仓库展示标题由 `generate-repositories.cjs` 生成，保留相同的字体、✨ 表情符号和 `(ง •̀_•́)ง` 颜文字。
 

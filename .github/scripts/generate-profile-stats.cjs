@@ -28,9 +28,9 @@ async function main() {
     ? JSON.parse(await fs.readFile(path.join(root, 'assets/profile/statistics.json'), 'utf8'))
     : await fetchProfileStats(process.env.PROFILE_USERNAME || 'ShadowsLunarfox');
   // Finish fetching, validating and rendering both themes before updating snapshots.
-  const cards = ['dark', 'light'].map(theme => ({
-    file: path.join(root, `assets/profile/stats-dashboard-${theme}.svg`), svg: renderDashboard(data, theme),
-  }));
+  const cards = ['dark', 'light'].flatMap(theme => [false, true].map(compact => ({
+    file: path.join(root, `assets/profile/stats-dashboard-${theme}${compact ? '-compact' : ''}.svg`), svg: renderDashboard(data, theme, compact),
+  })));
   for (const card of cards) await fs.writeFile(card.file, card.svg);
   await fs.writeFile(path.join(root, 'assets/profile/statistics.json'), JSON.stringify(data, null, 2) + '\n');
   console.log('Generated the animated GitHub statistics dashboard in light and dark themes.');
