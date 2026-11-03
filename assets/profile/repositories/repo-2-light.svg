@@ -123,7 +123,7 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
   }
 </style>
   <rect x="8.5" y="8.5" width="543" height="183" rx="6" fill="none" stroke="#d0d7de"/>
-  <defs><clipPath id="language-bar"><rect x="28" y="143" width="504" height="5" rx="2.5"/></clipPath></defs><g class="language-grow" style="--language-delay:0.08s" clip-path="url(#language-bar)"><rect x="28" y="143" width="494.39717048996886" height="5" fill="#ffd166"/><rect x="522.3971704899689" y="143" width="9.602829510031173" height="5" fill="#ffaec5"/></g>
+  <defs><clipPath id="language-bar"><rect x="28" y="143" width="504" height="5" rx="2.5"/></clipPath></defs><g class="language-grow" style="--language-delay:0.08s" clip-path="url(#language-bar)"><rect x="28" y="143" width="494.4265419972949" height="5" fill="#ffd166"/><rect x="522.4265419972949" y="143" width="9.57345800270503" height="5" fill="#ffaec5"/></g>
   <g font-family="Comic Neue, cursive" fill="#3b2d4f">
     <text x="28" y="46" font-size="18" font-weight="600" fill="#615276">YouTube-Customizer</text>
     <rect x="478.5" y="28.5" width="53" height="23" rx="11.5" fill="none" stroke="#d0d7de"/>
