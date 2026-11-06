@@ -111,10 +111,13 @@ function renderDashboard(data, theme, compact = false) {
   const rows = Math.max(1, Math.ceil(languages.length / columns));
   const legendTop = compact ? 389 : 318;
   const rowHeight = compact ? 28 : 32;
-  const height = legendTop + (rows - 1) * rowHeight + (compact ? 22 : 18);
+  const height = legendTop + (rows - 1) * rowHeight + 26;
   const firstDate = streak.totalContributions ? `${date(streak.firstContribution, true)} – present` : 'No contributions yet';
   const description = `${stats.stars} stars; ${stats.commits} commits in the last year; ${stats.prs} pull requests; ${stats.issues} issues; ${stats.contribs} repositories contributed to in the last year; GitHub rank ${stats.rank}. ${streak.totalContributions} total contributions since ${streak.firstContribution || 'joining GitHub'}; current streak ${streak.currentStreak.length} days, ${dateRange(streak.currentStreak)}; longest streak ${streak.longestStreak.length} days, ${dateRange(streak.longestStreak)}. ${languages.map(language => `${language.name} ${language.percentage}`).join('; ')}.`;
-  const heading = (y, label) => text(padding, y, label, 14, p.muted, 'font-weight="700"');
+  const heading = (y, label, color) => `<g class="section-heading">
+    <rect x="${padding}" y="${y - 11}" width="3" height="12" rx="1.5" fill="${color}"/>
+    ${text(padding + 11, y, label, 14, p.muted, 'font-weight="700"')}
+  </g>`;
   const divider = y => `<path d="M${padding} ${y}H${width - padding}" stroke="${p.border}"/>`;
   const metrics = [
     { value: stats.stars, label: 'Stars', color: p.accent },
@@ -126,7 +129,7 @@ function renderDashboard(data, theme, compact = false) {
   ].map((metric, index) => {
     const x = padding + index % (compact ? 3 : 6) * contentWidth / (compact ? 3 : 6);
     const y = (compact ? 67 : 74) + Math.floor(index / (compact ? 3 : 6)) * 55;
-    return `<g class="reveal">
+    return `<g class="reveal" style="--stat-delay:${(index * 0.065).toFixed(3)}s">
       ${typeof metric.value === 'number' ? digit(x, y, metric.value, 28, metric.color || p.text) : text(x, y, metric.value, 28, p.text, 'font-weight="700"')}
       ${text(x, y + 22, metric.label, compact ? 12 : 13, p.muted)}
     </g>`;
@@ -144,7 +147,7 @@ function renderDashboard(data, theme, compact = false) {
       details = [date(metric.dates.start, true), `– ${date(metric.dates.end, true)}`];
     }
     if (compact && metric.detail === 'No contributions yet') details = ['No contributions', 'yet'];
-    return `<g class="reveal" style="animation-delay:.08s">
+    return `<g class="reveal" style="--stat-delay:${(0.18 + index * 0.075).toFixed(3)}s">
       <title>${escapeXml(`${metric.label}: ${metric.value}; ${metric.detail}`)}</title>
       ${digit(x, y, metric.value, 28, metric.color)}
       ${text(x, y + 22, metric.label, compact ? 12 : 13, p.muted)}
@@ -165,10 +168,14 @@ function renderDashboard(data, theme, compact = false) {
     const y = legendTop + Math.floor(index / columns) * rowHeight;
     const color = languageColors[language.name] || fallbackColors[index % fallbackColors.length];
     const labelSize = language.name.length > 22 ? 12 : 14;
-    return `<g class="language-entry language-pop" style="--language-delay:${languageMotionDelay(index)}">
+    return `<g class="language-entry">
+      <g class="language-pop" style="--language-delay:${languageMotionDelay(index)}">
       <circle cx="${x + 4}" cy="${y - 4}" r="4" fill="${color}"/>
       ${text(x + 16, y, language.name, labelSize, p.text)}
       ${text(x + columnWidth, y, language.percentage, 14, p.muted, 'text-anchor="end"')}
+      </g>
+      <rect class="language-track" x="${x}" y="${y + 9}" width="${columnWidth}" height="3" rx="1.5" fill="${p.border}" opacity=".6"/>
+      <rect class="language-grow language-progress" x="${x}" y="${y + 9}" width="${columnWidth * language.percent / 100}" height="3" rx="1.5" fill="${color}" style="--language-delay:${languageMotionDelay(index, 0.2)}"/>
     </g>`;
   }).join('\n');
   return applyProfileFont(`<svg font-family="${PROFILE_FONT}" xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}" viewBox="0 0 ${width} ${height}" role="img" aria-labelledby="title description">
@@ -178,18 +185,26 @@ function renderDashboard(data, theme, compact = false) {
   <style>
 ${LANGUAGE_MOTION_CSS}
     @keyframes appear { from { opacity:0; transform:translateY(4px); } to { opacity:1; transform:translateY(0); } }
-    .reveal { animation:appear .5s ease-out backwards; }
+    @keyframes accent-draw { from { transform:scaleX(0); } to { transform:scaleX(1); } }
+    @keyframes dot-pulse { 0%,100% { opacity:.4; } 50% { opacity:.85; } }
+    .reveal { animation:appear .55s ease-out backwards; animation-delay:var(--stat-delay,0s); }
+    .frame-accent { transform-box:fill-box; transform-origin:left center; animation:accent-draw .65s ease-out backwards; animation-delay:var(--stat-delay,0s); }
+    .status-dot { opacity:.65; animation:dot-pulse 4.8s ease-in-out infinite; animation-delay:var(--dot-delay,0s); }
     @media (prefers-reduced-motion:reduce) { *, *::before, *::after { animation:none !important; } }
   </style>
   <rect x=".5" y=".5" width="${width - 1}" height="${height - 1}" rx="12" fill="none" stroke="${p.border}"/>
+  <g aria-hidden="true">
+    ${[p.accent, p.lavender, p.cyan].map((color, index) => `<rect class="frame-accent" x="${padding + index * 26}" y=".5" width="20" height="2" rx="1" fill="${color}" style="--stat-delay:${(index * 0.08).toFixed(2)}s"/>`).join('')}
+    ${[p.accent, p.lavender, p.cyan].map((color, index) => `<circle class="status-dot" cx="${width - padding - 20 + index * 10}" cy="${compact ? 25 : 27}" r="2" fill="${color}" style="--dot-delay:${(-index * 1.6).toFixed(1)}s"/>`).join('')}
+  </g>
   <g font-family="${PROFILE_FONT}" fill="${p.text}">
-    ${heading(compact ? 30 : 32, 'Overview')}
+    ${heading(compact ? 30 : 32, 'Overview', p.accent)}
     ${metrics}
     ${divider(compact ? 164 : 116)}
-    ${heading(compact ? 192 : 144, 'Contribution streak')}
+    ${heading(compact ? 192 : 144, 'Contribution streak', p.cyan)}
     ${streakMetrics}
     ${divider(compact ? 307 : 238)}
-    ${heading(compact ? 335 : 266, 'Languages')}
+    ${heading(compact ? 335 : 266, 'Languages', p.lavender)}
     ${languages.length ? `<rect x="${padding}" y="${barY}" width="${contentWidth}" height="8" rx="4" fill="${p.border}"/>
     <g clip-path="url(#language-bar)"><g class="language-grow" style="--language-delay:${languageMotionDelay(0, 0.08)}">${segments}</g></g>
     ${legend}` : text(padding, legendTop, 'No language data yet', 14, p.muted)}

@@ -6,7 +6,7 @@ async function main() {
   const url = new URL('https://capsule-render.vercel.app/api');
   url.search = new URLSearchParams({
     type: 'waving', height: '180', color: '0:ffaec5,35:d7c4f3,70:ffe9a3,100:b9edf2',
-    text: 'Shadows_Lunarfox 月狐', fontAlign: '50', fontAlignY: '38',
+    text: 'Shadows_Lunarfox', fontAlign: '50', fontAlignY: '38',
     fontColor: '3b2d4f', fontSize: '48', fontFamily: 'Comic Neue', animation: 'twinkling',
   }).toString();
   const response = await fetch(url, { signal: AbortSignal.timeout(30000) });

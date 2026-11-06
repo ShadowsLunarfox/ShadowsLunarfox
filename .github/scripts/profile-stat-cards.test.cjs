@@ -60,7 +60,7 @@ test('rendering retains metric values, rank, streak dates and precise language p
   assert.match(escaped, /&lt;script&gt; &amp; &quot;/);
 });
 
-test('responsive dashboards preserve all languages and reduced motion while removing decorative loops', () => {
+test('responsive dashboards preserve all languages and reduced motion with flat decoration', () => {
   for (const compact of [false, true]) {
     const output = renderDashboard(dashboard(), 'dark', compact);
     assert.equal((output.match(/<svg\b/g) || []).length, 1);
@@ -69,17 +69,17 @@ test('responsive dashboards preserve all languages and reduced motion while remo
     assert.match(output, /animation:none !important/);
     assert.match(output, /profile-language-pop/);
     assert.match(output, /profile-language-grow/);
-    assert.doesNotMatch(output, /linearGradient|radialGradient|\binfinite\b/);
+    assert.doesNotMatch(output, /<(?:linearGradient|radialGradient|filter)\b|(?:box-shadow|text-shadow|drop-shadow)\s*[:(]/i);
     const languages = Array.from({ length: 9 }, (_, index) => ({ name: `Language ${index}`, percent: 10, percentage: '10%' }));
     const expanded = renderDashboard(dashboard({ languages }), 'light', compact);
-    assert.equal((expanded.match(/class="language-entry /g) || []).length, languages.length);
+    assert.equal((expanded.match(/class="language-entry"/g) || []).length, languages.length);
     for (const language of languages) assert.ok(expanded.includes(language.name));
     const dimensions = image => image.match(/viewBox="0 0 (\d+) (\d+)"/).slice(1).map(Number);
     assert.ok(dimensions(expanded)[1] > dimensions(output)[1]);
     assert.equal(dimensions(output)[0], compact ? 360 : 840);
     const empty = renderDashboard(dashboard({ languages: [] }), 'light', compact);
     assert.match(empty, /No language data yet/);
-    assert.equal((empty.match(/class="language-entry /g) || []).length, 0);
+    assert.equal((empty.match(/class="language-entry"/g) || []).length, 0);
   }
 });
 

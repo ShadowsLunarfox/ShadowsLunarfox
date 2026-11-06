@@ -12,13 +12,16 @@ Each optional section has `BEGIN` and `END` comments in README.md so it can be r
 | GitHub statistics dashboard | Existing Shion statistics service and [DenverCoder1/github-readme-streak-stats](https://github.com/DenverCoder1/github-readme-streak-stats), combined animated SVG with overview, streaks and languages | `profile-stats.yml`, daily |
 | Featured repositories | GitHub REST API, local SVG card renderer | `featured-repositories.yml`, daily or when the configuration changes |
 | Learning badges | Public Microsoft Learn profile and verified achievements, plus Google badge share links | `learning-badges.yml`, daily |
+| Daily developer note | Local quote collection, rotated by Kuala Lumpur calendar date | `daily-refresh.yml`, preparation step |
+| Hidden fox | Native collapsed section with a transparent flat fox illustration and a developer joke | Static, click to expand |
+| Developer meme | Local image snapshot from r/ProgrammerHumor via [Meme API](https://github.com/D3vd/Meme_Api), with original-post attribution | `daily-refresh.yml`, preparation step |
 
-`daily-refresh.yml` is the single automatic entry point for all six refresh tasks. It runs daily at **00:17 Asia/Kuala_Lumpur (16:17 UTC on the previous day)** and when relevant workflows, scripts, configuration, or README changes are pushed to `main`. It can also be started manually from **Actions → Daily profile refresh → Run workflow**.
+`daily-refresh.yml` is the single automatic entry point for all six widget refresh tasks, the daily developer note, and the developer meme. It runs daily at **00:17 Asia/Kuala_Lumpur (16:17 UTC on the previous day)** and when relevant workflows, scripts, configuration, or README changes are pushed to `main`. It can also be started manually from **Actions → Daily profile refresh → Run workflow**.
 
 The sequence is:
 
 1. Check out and synchronize the latest `main`.
-2. Publish an empty `Daily profile refresh (YYYY-MM-DD, Asia/Kuala_Lumpur)` commit, even when no files have changed.
+2. Verify and refresh the daily developer note and meme, then publish a `Daily profile refresh (YYYY-MM-DD, Asia/Kuala_Lumpur)` commit containing the README and image updates. The commit is allowed to be empty when that day's content is already current. An unavailable meme feed preserves the previous image and does not block the six widget tasks.
 3. After that commit is successfully pushed, refresh the snake, activity graph, 3D contributions, featured repositories, statistics, and learning badges, in that order.
 
 The six tasks use reusable workflows, so they do not depend on a bot commit triggering another workflow. They run sequentially to avoid competing pushes to `main`. If preparation fails, none of the six tasks run. If an individual refresh fails, later tasks still run unless the overall workflow is cancelled. Every task checks out the current `main`, including when an older job is retried. Individual tasks retain their manual **Run workflow** buttons for targeted retries; their separate schedules and push triggers have been removed.
@@ -54,63 +57,87 @@ The snake is pastel pink (`#ffaec5`) in both themes. README uses `assets/profile
 
 To remove a widget, remove its marked README section and corresponding workflow. The typing animation has no workflow.
 
-## 合并动画统计面板
+## Compact animated statistics dashboard
 
-README 的 GitHub Stats 使用一个 `<picture>` 展示紧凑 SVG 面板。`stats-dashboard-dark.svg` / `stats-dashboard-light.svg` 为宽屏版本，对应的 `-compact.svg` 为手机版，600px 以下自动选择手机版排版。宽度为 `100%`，底色保持透明，使用平面粉彩配色、细边框和 Comic Neue 字体。总览将 Stars、过去一年提交数、PR、Issues、过去一年参与仓库数和评级排成一行，手机上分为两行；评级仅显示文字。连续贡献保留三个统计值及日期。语言区只保留一条总比例条，以及包含所有语言和精确百分比的图例；宽屏两列、手机单列，高度随语言数量增长。语言接口仍通过 `langs_count=20` 请求最多 20 种语言，实际数量取决于公开仓库中被统计服务识别到的语言。
+README displays one responsive SVG dashboard. `stats-dashboard-dark.svg` and `stats-dashboard-light.svg` are the desktop variants; the matching `-compact.svg` files provide a mobile layout below 600px. The dashboard fills the available width, keeps its background transparent, and uses flat pastel colors, a thin border, and Comic Neue. Stars, yearly commits, pull requests, issues, yearly contributed repositories, and rank form one row on desktop and two on mobile. Rank is shown as text. Contribution totals and streaks retain their dates.
 
-动画直接包含在 SVG 的 CSS 中：数字淡入、语言标签错峰轻弹、总比例条从左展开，均在加载时播放一次。语言动效沿用 `profile-language-motion.cjs`，结束后保持真实数据。精简版移除了大标题、标语、评级圆环、星光、火苗、渐变底色、重复的逐项语言进度条、循环扫光和页脚。Comic Neue 常规和粗体 WOFF2 嵌入 SVG，无需安装字体或访问字体服务。系统开启 `prefers-reduced-motion` 时直接展示完整静态数据。
+The language section includes a combined distribution bar, every returned language, and its precise percentage. Each language has a 3px solid progress bar proportional to its share. The list uses two columns on desktop and one on mobile, with height growing as needed. The service request still uses `langs_count=20`; the actual number depends on the languages recognized in public repositories.
 
-`generate-profile-stats.cjs` 沿用原本的公开统计服务，连续贡献按吉隆坡时区计算。全部数据抓取、校验和两种主题绘图成功后，才更新 `statistics.json` 和两份 SVG 快照；服务出错时保留现有文件。`profile-stats.yml` 由每天吉隆坡时间 00:17 启动的 `daily-refresh.yml` 调用：先提交刷新标记，提交成功后直接依次刷新六个任务。推送相关脚本到 `main` 会启动同一流程，也可手动运行。
+Flat decorations consist of short pastel heading accents, three colored lines on the top border, and three slowly pulsing dots. Metric values fade in with staggered delays. Border accents draw in, language labels pop in, and progress bars grow from the left. Data entrance animations play once and use `profile-language-motion.cjs`. The dashboard has no gradients, shadows, filters, or 3D effects. Comic Neue regular and bold WOFF2 files are embedded. `prefers-reduced-motion` disables animation and shows complete static data.
+
+`generate-profile-stats.cjs` uses the existing public statistics services and calculates streaks in `Asia/Kuala_Lumpur`. It fetches, validates, and renders both themes and sizes before updating `statistics.json` and the four SVG snapshots. Service errors preserve existing files. `daily-refresh.yml` calls `profile-stats.yml` as part of the daily 00:17 Kuala Lumpur refresh. Relevant pushes and manual runs use the same sequence.
 
 ```powershell
 node .github/scripts/generate-profile-stats.cjs
-# 使用已有数据重新绘图，不访问网络
+# Redraw existing data without network requests.
 node .github/scripts/generate-profile-stats.cjs --from-snapshot
 ```
 
-## 学习资料与徽章
+## Learning profiles and badges
 
-`learning-profiles.json` 保存 Google 公开主页、已提供的 Google 徽章分享资料（`googleBadges`）和 Microsoft Learn 用户名。README 的 Learning & Badges 区域位于联系链接之后，按 Google 和 Microsoft 分组，以 40px 官方徽章图标紧凑排列，并显示资料入口和徽章数量。完整名称、类型和获得日期放在默认收起的 Badge details 中，悬停图标也可查看详情。Google 徽章链接到带本人用户名的官方分享页，微软徽章链接到本人官方成就页。当前 Google 徽章包含 Joined the Google Developer Program、Google Developer Group discovery、Code Wiki、Google Cloud & NVIDIA community member，图标和英文名称取自提供的官方分享页面。
+`learning-profiles.json` stores the public Google profile, explicitly configured Google badge links (`googleBadges`), and the Microsoft Learn username. Learning & Badges follows the contact links and small extras. Google and Microsoft achievements are grouped as compact 40px official icons with profile links and counts. Full names, types, and earned dates appear in the collapsed Badge details section and image tooltips. Google badge links include the owner's username; Microsoft icons link to the owner's achievement page. The configured Google badges are Joined the Google Developer Program, Google Developer Group discovery, Code Wiki, and Google Cloud & NVIDIA community member.
 
-`generate-learning-badges.cjs` 保留配置中的 Google 徽章，同时读取微软公开资料与成就列表，仅展示已验证的模块徽章和学习路径奖杯，并使用官方徽章图片。新增 Google 徽章时，将其名称、本人分享链接和官方图标地址加入 `googleBadges`；不会自动抓取 Google 个人主页的完整徽章清单。`learning-badges.yml` 作为每日 `daily-refresh.yml` 流程的最后一个任务运行，推送相关配置或脚本会启动同一流程。公开资料不可读、列表不完整或字段异常时保留现有展示。本地刷新命令：`node .github/scripts/generate-learning-badges.cjs`。
+`generate-learning-badges.cjs` preserves the configured Google badges and fetches verified public Microsoft Learn modules and learning paths. Add Google badges manually with their name, owner-specific share link, and official image URL; the complete Google profile badge list is not scraped. The daily sequence runs `learning-badges.yml` last, and relevant script or configuration pushes start that sequence. Private profiles, service errors, and invalid or incomplete responses leave the current gallery intact.
 
-## 字体层次与表情符号
+```powershell
+node .github/scripts/generate-learning-badges.cjs
+```
 
-README 的 About Me 简介位于顶部统计徽章之后，采用两段英文正文，介绍吉隆坡所在地、浏览器扩展、Windows 桌面实用程序、Unity 编辑器工具及本人提供的技术栈。内容依据已展示的项目与个人信息撰写，使用原生文字排版。
+## Typography and profile layout
 
-README 的 Languages & Apps 区域位于 About Me 与联系链接之间。Programming Languages 展示 Python、JavaScript、C#、HTML、CSS；Apps I Use 展示 Visual Studio Code、Unity Engine、Blender。此列表按本人提供的内容手动维护，与下方 GitHub 自动统计的语言占比分开。两组使用 `flat-square` 纯色平面 Shields 徽章和居中段落，无渐变和阴影，背景沿用页面底色，窄屏下自然换行。
+About Me follows the top statistics badges and uses native README text throughout. A centered introduction includes the developer's name, software, web, and game development roles, location, Malaysian furry identity, and kemono fox fursona. A visible caption under the furry identity introduces photography and fursuiting. The bottle-and-fox furry identity line and caption form the native details toggle, collapsed by default; clicking it reveals the Baby Traits heading and supplied playful personal habits. A blockquote highlights the development focus, and five short list items describe websites and web interfaces, gameplay maps and scenic worlds for VRChat and Roblox, browser extensions, Windows utilities, and Unity Editor tools. A Retro Collector subsection describes collecting and reviving vintage technology, with the playful "digital archaeologist" description. Small emoji and bold labels provide visual hierarchy. Text remains selectable, follows GitHub's theme, and wraps naturally on mobile. This section uses no images, SVGs, custom CSS, or generator.
 
-README 的 Come Say Hello 联系按钮居中显示，统一使用 for-the-badge 样式。Discord 按钮直接显示用户名，其余按钮显示平台或网站名称；完整账号也保留在提示和替代文本中。HTML 排版使用 GitHub README 支持的标签；窄屏下按钮自动换行。
+Languages & Apps sits between About Me and the contact links, with a short caption and small keyboard and toolbox decorations marking the two groups. Programming Languages lists Python, JavaScript, C#, HTML, and CSS. Apps I Use lists Visual Studio Code, Unity Engine, Blender, Adobe Lightroom, Adobe Photoshop, CapCut, and OBS Studio. The app badges form three compact rows: development and 3D tools, photo and image editors, then video and streaming tools. This manually maintained list is separate from automatic GitHub language statistics. Solid `flat-square` Shields badges share a 21px height, sit in centered paragraphs, and wrap naturally on narrow screens.
 
-README 的栏目标题使用 `<samp>` 等宽字体，与正文的默认字体形成层次。自制图片文字统一使用 Comic Neue 漫画手写字体：顶部横幅、仓库卡片、统计面板、Activity Graph 和 3D 贡献图通过 `profile-font.cjs` 嵌入常规和粗体 WOFF2，打字动画通过 `font=Comic+Neue` 指定。标题、数字和说明均使用这套字体，通过字号和粗细区分层次。Activity Graph 和 3D 图在每日生成后应用相同字体，横幅由 `generate-profile-header.cjs` 刷新。外部平台原有徽章继续由各自的图片服务提供。
+Come Say Hello uses the same 21px `flat-square` badges under a centered heading. Website, Discord, and X form the first group; Telegram, Facebook, Bilibili, and Reddit form the second; TikTok and Douyin form the third. The Douyin badge displays the supplied ID, `Shadows_Lunarfox`, for visitors to search. It has no profile link because `/user/self` is session-dependent and no public profile URL was supplied. Discord displays the username directly; the remaining links show the platform or website name. Titles and alt text retain the complete account information. The Bilibili link uses the supplied public UID without tracking parameters; TikTok and Reddit keep the supplied account handles. Layout uses HTML supported by GitHub README rendering.
 
-Comic Neue 采用 [SIL Open Font License 1.1](https://github.com/google/fonts/blob/main/ofl/comicneue/OFL.txt)，允许免费使用、商用和嵌入，不属于公有领域字体。字体文件、来源说明和完整许可证保存在 `assets/fonts/comic-neue/`，每张包含字体的 SVG 也在元数据中保留许可证。表情符号放在栏目标题中，作为轻量的视觉提示。
+Section headings use `<samp>` to distinguish them from body text. Custom header, repository, statistics, activity, and 3D images use Comic Neue through `profile-font.cjs`; the typing service receives `font=Comic+Neue`. Regular and bold WOFF2 fonts are embedded, with size and weight establishing hierarchy. Activity and 3D outputs receive the same font during daily generation. `generate-profile-header.cjs` maintains the English-only header. Third-party platform badges keep their service-provided typography, including the matching top statistics badges.
 
-项目展示、统计和 3D 贡献标题保留少量颜文字，与现有 emoji 搭配。
+Comic Neue is licensed under the [SIL Open Font License 1.1](https://github.com/google/fonts/blob/main/ofl/comicneue/OFL.txt), which permits personal and commercial use and embedding while retaining its notice. It is not public domain. Font files, source information, and the full license live in `assets/fonts/comic-neue/`; generated font-bearing SVGs also include the license as metadata.
 
-这些样式使用 GitHub README 支持的 HTML 标签，不依赖自定义 CSS 或特殊 Unicode 字母。仓库展示标题由 `generate-repositories.cjs` 生成，保留相同的字体、✨ 表情符号和 `(ง •̀_•́)ง` 颜文字。
+Small emoji and kaomoji decorate headings for projects, statistics, and 3D contributions. The repository heading is generated by `generate-repositories.cjs` and retains its emoji and kaomoji. Native README formatting does not require custom page CSS or stylized Unicode alphabets.
 
-## 自定义主页仓库展示
+## Daily note and hidden fox
 
-配置文件：`.github/featured-repositories.json`。README 中的 **Featured Repositories** 是独立的仓库卡片区，每行两张，整张卡片都可以点击进入仓库，支持深浅色模式。
+Daily Dev Note follows the contact links in a native blockquote, with centered text and a thin theme-aware side border. `.github/daily-dev-notes.json` contains 31 distinct English notes and a rotation start date. `generate-daily-dev-note.cjs` selects a note using the `Asia/Kuala_Lumpur` calendar date. Rerunning it on the same day keeps the same note, and the sequence repeats after a complete cycle. It needs no external API, key, or browser script. Generation runs during the preparation stage of the daily workflow and is included in that refresh commit; the six widget tasks keep their existing order. Pushing note configuration changes to `main` also triggers a refresh.
 
-每张卡片从 GitHub 的仓库语言接口读取全部已识别语言，按代码字节数降序显示名称、占比和配色比例条；不再只显示主要语言。语言较多时自动换行并增加卡片高度，同一行的两张卡片保持等高，同时为 Star 和 Fork 数保留独立空间。没有语言数据时显示 No language data；接口失败或返回无效数据时保留现有卡片和 README。
+The centered native `<details>` section labeled "Nothing hidden here" is collapsed by default. Opening it reveals the supplied pastel fox image (`assets/profile/hidden-fox.png`) and an English developer joke. The original square PNG is displayed at 112px by 112px, preserving its proportions and transparency.
 
-仓库语言标签与总统计区使用相同的轻弹入场动画，进度条随后从左向右展开；均在图片加载时播放一次。动效直接嵌入深浅色 SVG，不需要 JavaScript，系统设置减少动态效果时直接显示完整语言和进度条。
+```powershell
+node .github/scripts/generate-daily-dev-note.cjs
+node --test .github/scripts/generate-daily-dev-note.test.cjs
+```
 
-- `count`：最多显示几个仓库。改成 `8` 就展示 8 个；`0` 隐藏整个展示区。数量超过可用仓库数时，只显示实际存在的仓库。
-- `repositories`：指定优先展示的仓库名称，按数组顺序排列。名称不需要带用户名，必须是主页所有者的公开仓库。空数组表示全部自动选择。
-- `sort`：指定名单之外的仓库按什么顺序补齐。`stars` 按 Star 数，`updated` 按最近更新，`name` 按名称。
-- `exclude`：排除的仓库名称，默认排除主页仓库本身。
+## Featured repositories
 
-默认展示你选择的 7 个仓库，按配置中的顺序排列。只把 `count` 改成 `8`，会保留这 7 个，再按 Star 数补上 1 个。若想完全指定这 8 个仓库，就在 `repositories` 中填入 8 个名称。自动补齐时跳过 Fork 和归档仓库，但可以通过指定名单展示它们。
+Configuration lives in `.github/featured-repositories.json`. The standalone Featured Repositories area displays two linked cards per row, with light and dark variants.
 
-修改配置后，在项目根目录运行：
+Each card fetches every detected language from GitHub's repository languages endpoint, sorts by code bytes, and shows the language name, percentage, and a proportional colored bar. Labels wrap and cards grow to fit. Paired cards share a height, with reserved space for star and fork counts. Empty language data shows "No language data"; invalid or unavailable responses preserve existing cards and README content.
+
+Language labels and bars use the shared one-shot pop and grow animations, embedded directly in the SVG. Reduced-motion settings show complete static content without JavaScript.
+
+- `count`: Maximum number of repositories to display, currently `8`. Set it to `0` to hide the section. Counts above availability show only actual repositories.
+- `repositories`: Preferred repository names in display order, without the owner prefix. Entries must be public repositories owned by the profile owner. An empty list enables automatic selection.
+- `sort`: Fill remaining slots by `stars`, `updated`, or `name`.
+- `exclude`: Names to omit; the profile repository `ShadowsLunarfox` is excluded by default.
+
+The current list explicitly selects eight repositories, with QR-Maker last. If the count exceeds the preferred list length, remaining slots follow the sort rule. Automatic selection skips forks and archived repositories, which may still be explicitly selected.
 
 ```powershell
 node .github/scripts/generate-repositories.cjs
 ```
 
-这会刷新 `assets/profile/repositories/` 中的卡片和 README 对应区块。推送配置到 `main` 后，GitHub Actions 会启动统一刷新流程；每日自动流程先提交刷新标记，提交成功后直接依次更新六个任务，其中仓库卡片会更新简介、语言、Star 和 Fork 数。无需安装 npm 依赖，本地生成公开仓库卡片无需令牌。
+This refreshes `assets/profile/repositories/` and its marked README section. Configuration pushes to `main` start the shared refresh workflow. Daily updates fetch descriptions, languages, stars, and forks. No npm dependencies or token are needed to generate public repository cards locally.
 
-GitHub 自带的 Popular repositories / Pinned 区域仍受最多 6 个项目的限制，README 里的自定义区块可以展示更多仓库，位置在个人介绍之后、统计图之前。
+## Developer meme
+
+Daily Dev Meme is the last content section, immediately above the footer wave. `.github/dev-meme.json` selects the `ProgrammerHumor` community. `generate-dev-meme.cjs` requests candidates from Meme API, accepts only posts marked neither NSFW nor spoilers, and downloads a supported PNG, JPEG, or GIF from the allowed image hosts. The source post and author remain linked below the image. Images are limited to 4 MB and displayed proportionally within 520px width and 380px height, with natural shrinking on mobile.
+
+The current image and its source metadata live in `assets/profile/dev-meme/`. The generator uses a content hash in the README image URL to avoid stale image caching. A successful same-day run is reused; the next Kuala Lumpur calendar day selects a different post. Feed, image, or validation errors preserve the current snapshot. The daily preparation step tolerates those source failures so the other widgets still refresh. No API key or npm package is required.
+
+```powershell
+node .github/scripts/generate-dev-meme.cjs
+# Request a fresh image even if today's snapshot already exists.
+node .github/scripts/generate-dev-meme.cjs --force
+node --test .github/scripts/generate-dev-meme.test.cjs
+```

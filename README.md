@@ -6,11 +6,12 @@
 <!-- BEGIN typing-animation -->
 <p>
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://readme-typing-svg.demolab.com?font=Comic+Neue&amp;size=22&amp;pause=1200&amp;color=FFAEC5&amp;background=00000000&amp;center=true&amp;vCenter=true&amp;width=760&amp;height=60&amp;lines=Hi%2C+I%27m+Shadows_Lunarfox+%E6%9C%88%E7%8B%90;Building+websites%2C+games+%26+little+experiments;Coding+from+Kuala+Lumpur%2C+Malaysia" />
-    <img src="https://readme-typing-svg.demolab.com?font=Comic+Neue&amp;size=22&amp;pause=1200&amp;color=615276&amp;background=00000000&amp;center=true&amp;vCenter=true&amp;width=760&amp;height=60&amp;lines=Hi%2C+I%27m+Shadows_Lunarfox+%E6%9C%88%E7%8B%90;Building+websites%2C+games+%26+little+experiments;Coding+from+Kuala+Lumpur%2C+Malaysia" alt="Animated introduction: Shadows_Lunarfox, building websites, games and tools in Kuala Lumpur" width="100%" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://readme-typing-svg.demolab.com?font=Comic+Neue&amp;size=22&amp;pause=1200&amp;color=FFAEC5&amp;background=00000000&amp;center=true&amp;vCenter=true&amp;width=760&amp;height=60&amp;lines=Hi%2C+I%27m+Shadows_Lunarfox;Building+websites%2C+games+%26+little+experiments;Coding+from+Kuala+Lumpur%2C+Malaysia" />
+    <img src="https://readme-typing-svg.demolab.com?font=Comic+Neue&amp;size=22&amp;pause=1200&amp;color=615276&amp;background=00000000&amp;center=true&amp;vCenter=true&amp;width=760&amp;height=60&amp;lines=Hi%2C+I%27m+Shadows_Lunarfox;Building+websites%2C+games+%26+little+experiments;Coding+from+Kuala+Lumpur%2C+Malaysia" alt="Animated introduction: Shadows_Lunarfox, building websites, games and tools in Kuala Lumpur" width="100%" />
   </picture>
 </p>
 <!-- END typing-animation -->
+
 
 <p>
   <img src="https://komarev.com/ghpvc/?username=ShadowsLunarfox&amp;label=Profile%20Views&amp;color=ffaec5&amp;style=for-the-badge" alt="Profile views" height="32" />
@@ -23,46 +24,129 @@
 <!-- BEGIN professional-intro -->
 <h2 align="center"><samp>About Me</samp></h2>
 
+<p align="center">
+  <strong>Hi, I'm Shadows_Lunarfox.</strong><br />
+  <sub>Software, web &amp; game developer · Kuala Lumpur, Malaysia</sub>
+</p>
+
+<div align="center">
+<details>
+<summary>🍼🦊 <em>I'm a Malaysian furry with a kemono fox fursona.</em><br />
+  <sub>📷 I'm also a photographer and fursuiter.</sub>
+</summary>
+
+<p align="left">
+  <strong>🧸 Baby Traits</strong><br />
+  Must hug a plushie to sleep. Always fidgeting with small movements—never staying still. Occasionally sneaks out a pacifier or other silly accessories. 🤫
+</p>
+
+</details>
+</div>
+
+<br />
+
+<blockquote>
+  <p><strong>Practical tools. Worlds to explore.</strong><br />
+  I build websites, practical software, and virtual worlds for play and exploration.</p>
+</blockquote>
+
+<ul>
+  <li>💻 <strong>Web development</strong> — Websites and web interfaces with a focus on usability.</li>
+  <li>🌐 <strong>Game &amp; world development</strong> — Gameplay maps and scenic worlds for VRChat and Roblox.</li>
+  <li>🧩 <strong>Browser extensions</strong> — Interface customization, text-to-speech, and translation.</li>
+  <li>🛠️ <strong>Windows utilities</strong> — Desktop helpers and server connectivity checks.</li>
+  <li>🎮 <strong>Unity Editor tools</strong> — Editor enhancements for smoother development.</li>
+</ul>
+
+<h3>💾 <samp>Retro Collector</samp></h3>
+
 <p>
-  I'm <strong>Shadows_Lunarfox</strong>, a software developer based in Kuala Lumpur, Malaysia. I build <strong>browser extensions, Windows desktop utilities, and Unity Editor tools</strong> to simplify everyday tasks and improve development workflows.
+  Besides coding, I have a weird hobby—collecting <strong>vintage and classic tech gear</strong>.
 </p>
 
 <p>
-  My projects cover web interface customization, text-to-speech and translation, server connectivity checks, and Unity Editor enhancements. I work with <strong>JavaScript, Python, and C#</strong>, alongside <strong>HTML and CSS</strong>, with an emphasis on usability and useful, focused features.
+  Vintage components and retro devices feel like works of art to me! Bringing them back to life gives me more adrenaline than running new code. I guess I'm a <strong>“digital archaeologist”</strong>, digging for treasure in electronic ruins.
 </p>
+
 <!-- END professional-intro -->
 
 <!-- BEGIN languages-and-apps -->
 <h2 align="center">💻 <samp>Languages &amp; Apps</samp></h2>
 
 <p align="center">
-  <strong><samp>Programming Languages</samp></strong><br />
-  <img src="https://img.shields.io/badge/Python-ffe9a3?style=flat-square&amp;logo=python&amp;logoColor=3b2d4f" alt="Python" />
-  <img src="https://img.shields.io/badge/JavaScript-ffd166?style=flat-square&amp;logo=javascript&amp;logoColor=3b2d4f" alt="JavaScript" />
-  <img src="https://img.shields.io/badge/C%23-d7c4f3?style=flat-square" alt="C#" />
-  <img src="https://img.shields.io/badge/HTML-ffaec5?style=flat-square&amp;logo=html5&amp;logoColor=3b2d4f" alt="HTML" />
-  <img src="https://img.shields.io/badge/CSS-bbe8f2?style=flat-square&amp;logo=css&amp;logoColor=3b2d4f" alt="CSS" />
+  <sub>Code, create, and bring ideas to life.</sub>
 </p>
 
 <p align="center">
-  <strong><samp>Apps I Use</samp></strong><br />
-  <img src="https://img.shields.io/badge/Visual_Studio_Code-bce6f4?style=flat-square" alt="Visual Studio Code" />
-  <img src="https://img.shields.io/badge/Unity_Engine-d3bcf5?style=flat-square&amp;logo=unity&amp;logoColor=3b2d4f" alt="Unity Engine" />
-  <img src="https://img.shields.io/badge/Blender-ffc6a6?style=flat-square&amp;logo=blender&amp;logoColor=3b2d4f" alt="Blender" />
+  <strong>⌨️ <samp>Programming Languages</samp></strong><br /><br />
+  <img src="https://img.shields.io/badge/Python-ffe9a3?style=flat-square&amp;logo=python&amp;logoColor=3b2d4f" alt="Python" height="21" />
+  <img src="https://img.shields.io/badge/JavaScript-ffd166?style=flat-square&amp;logo=javascript&amp;logoColor=3b2d4f" alt="JavaScript" height="21" />
+  <img src="https://img.shields.io/badge/C%23-d7c4f3?style=flat-square" alt="C#" height="21" />
+  <img src="https://img.shields.io/badge/HTML-ffaec5?style=flat-square&amp;logo=html5&amp;logoColor=3b2d4f" alt="HTML" height="21" />
+  <img src="https://img.shields.io/badge/CSS-bbe8f2?style=flat-square&amp;logo=css&amp;logoColor=3b2d4f" alt="CSS" height="21" />
+</p>
+
+<p align="center">
+  <strong>🛠️ <samp>Apps I Use</samp></strong><br /><br />
+  <img src="https://img.shields.io/badge/Visual_Studio_Code-bce6f4?style=flat-square" alt="Visual Studio Code" height="21" />
+  <img src="https://img.shields.io/badge/Unity_Engine-d3bcf5?style=flat-square&amp;logo=unity&amp;logoColor=3b2d4f" alt="Unity Engine" height="21" />
+  <img src="https://img.shields.io/badge/Blender-ffc6a6?style=flat-square&amp;logo=blender&amp;logoColor=3b2d4f" alt="Blender" height="21" />
+</p>
+<p align="center">
+  <img src="https://img.shields.io/badge/Adobe_Lightroom-bce6f4?style=flat-square" alt="Adobe Lightroom" height="21" />
+  <img src="https://img.shields.io/badge/Adobe_Photoshop-bbe8f2?style=flat-square" alt="Adobe Photoshop" height="21" />
+</p>
+<p align="center">
+  <img src="https://img.shields.io/badge/CapCut-ffaec5?style=flat-square" alt="CapCut" height="21" />
+  <img src="https://img.shields.io/badge/OBS_Studio-d7c4f3?style=flat-square&amp;logo=obsstudio&amp;logoColor=3b2d4f" alt="OBS Studio" height="21" />
 </p>
 <!-- END languages-and-apps -->
 
 <!-- BEGIN contact-links -->
 
+<h3 align="center">💌 <samp>Come Say Hello</samp></h3>
+
 <p align="center">
-  <strong>💌 <samp>Come Say Hello</samp></strong><br />
-  <a href="https://lunarfox.my" title="Website: lunarfox.my"><img src="https://img.shields.io/badge/lunarfox.my-ffaec5?style=for-the-badge&amp;logo=firefox&amp;logoColor=3b2d4f" alt="Website: lunarfox.my" /></a>
-  <a href="https://discord.com" title="Discord: shadows_lunarfox"><img src="https://img.shields.io/badge/Discord-shadows__lunarfox-d7c4f3?style=for-the-badge&amp;logo=discord&amp;logoColor=ffffff&amp;labelColor=615276" alt="Discord: shadows_lunarfox" /></a>
-  <a href="https://t.me/Shadows_Lunarfox" title="Telegram: @Shadows_Lunarfox"><img src="https://img.shields.io/badge/Telegram-b9edf2?style=for-the-badge&amp;logo=telegram&amp;logoColor=3b2d4f" alt="Telegram: @Shadows_Lunarfox" /></a>
-  <a href="https://www.facebook.com/Lunarfoxyuehu/" title="Facebook: Lunarfoxyuehu"><img src="https://img.shields.io/badge/Facebook-bbe8f2?style=for-the-badge&amp;logo=facebook&amp;logoColor=3b2d4f" alt="Facebook: Lunarfoxyuehu" /></a>
-  <a href="https://x.com/ShadowsLunarfox" title="X: @ShadowsLunarfox"><img src="https://img.shields.io/badge/X-ffdab9?style=for-the-badge&amp;logoColor=3b2d4f" alt="X: @ShadowsLunarfox" /></a>
+  <a href="https://lunarfox.my" title="Website: lunarfox.my"><img src="https://img.shields.io/badge/lunarfox.my-ffaec5?style=flat-square&amp;logo=firefox&amp;logoColor=3b2d4f" alt="Website: lunarfox.my" height="21" /></a>
+  <a href="https://discord.com" title="Discord: shadows_lunarfox"><img src="https://img.shields.io/badge/Discord-shadows__lunarfox-d7c4f3?style=flat-square&amp;logo=discord&amp;logoColor=ffffff&amp;labelColor=615276" alt="Discord: shadows_lunarfox" height="21" /></a>
+  <a href="https://x.com/ShadowsLunarfox" title="X: @ShadowsLunarfox"><img src="https://img.shields.io/badge/X-ffdab9?style=flat-square&amp;logoColor=3b2d4f" alt="X: @ShadowsLunarfox" height="21" /></a>
+</p>
+<p align="center">
+  <a href="https://t.me/Shadows_Lunarfox" title="Telegram: @Shadows_Lunarfox"><img src="https://img.shields.io/badge/Telegram-b9edf2?style=flat-square&amp;logo=telegram&amp;logoColor=3b2d4f" alt="Telegram: @Shadows_Lunarfox" height="21" /></a>
+  <a href="https://www.facebook.com/Lunarfoxyuehu/" title="Facebook: Lunarfoxyuehu"><img src="https://img.shields.io/badge/Facebook-bbe8f2?style=flat-square&amp;logo=facebook&amp;logoColor=3b2d4f" alt="Facebook: Lunarfoxyuehu" height="21" /></a>
+  <a href="https://space.bilibili.com/3493269644249683" title="Bilibili: UID 3493269644249683"><img src="https://img.shields.io/badge/Bilibili-ffaec5?style=flat-square&amp;logo=bilibili&amp;logoColor=3b2d4f" alt="Bilibili: UID 3493269644249683" height="21" /></a>
+  <a href="https://www.reddit.com/user/shadowlunarfox/" title="Reddit: u/shadowlunarfox"><img src="https://img.shields.io/badge/Reddit-ffc6a6?style=flat-square&amp;logo=reddit&amp;logoColor=3b2d4f" alt="Reddit: u/shadowlunarfox" height="21" /></a>
+</p>
+<p align="center">
+  <a href="https://www.tiktok.com/@shadows_lunarfox" title="TikTok: @shadows_lunarfox"><img src="https://img.shields.io/badge/TikTok-b9edf2?style=flat-square&amp;logo=tiktok&amp;logoColor=3b2d4f" alt="TikTok: @shadows_lunarfox" height="21" /></a>
+  <img src="https://img.shields.io/badge/Douyin_ID-Shadows__Lunarfox-d7c4f3?style=flat-square&amp;logo=tiktok&amp;logoColor=ffffff&amp;labelColor=615276" alt="Douyin ID: Shadows_Lunarfox" title="Douyin ID: Shadows_Lunarfox" height="21" />
 </p>
 <!-- END contact-links -->
+
+<!-- BEGIN daily-dev-note -->
+<blockquote>
+<p align="center">
+  <strong>💬 <samp>Daily Dev Note</samp></strong><br />
+  <em>Fixed one bug. Unlocked two more.</em><br />
+  <sub>2026-11-06 · Kuala Lumpur</sub>
+</p>
+</blockquote>
+<!-- END daily-dev-note -->
+
+<!-- BEGIN easter-egg -->
+<div align="center">
+<details>
+<summary>🎁 Nothing hidden here</summary>
+
+<p align="center">
+  <img src="assets/profile/hidden-fox.png" alt="Lunarfox's pastel fox avatar" width="112" height="112" /><br />
+  <strong>Achievement unlocked: you found a fox taking a break.</strong><br />
+  <em>Code worked on the first try? Make sure you didn't run yesterday's build.</em>
+</p>
+
+</details>
+</div>
+<!-- END easter-egg -->
 
 <!-- BEGIN learning-badges -->
 <h2 align="center">🏅 <samp>Learning &amp; Badges</samp></h2>
@@ -164,6 +248,12 @@
       <img src="assets/profile/repositories/repo-7-light.svg" alt="ShadowsLunarfox/Custom-Folder-For-Unity: A extension customize the unity project tab A Unity Editor tool for customizing folders in the Project window. It lets you assign custom colors, backgrounds, name colors, and icons so large Unity projects are easier to browse, organize, and recognize." width="49%" />
     </picture>
   </a>
+  <a href="https://github.com/ShadowsLunarfox/QR-Maker">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="assets/profile/repositories/repo-8-dark.svg" />
+      <img src="assets/profile/repositories/repo-8-light.svg" alt="ShadowsLunarfox/QR-Maker: View repository" width="49%" />
+    </picture>
+  </a>
 </p>
 
 <!-- END featured-repositories -->
@@ -173,10 +263,10 @@
 
 <p align="center">
   <picture>
-    <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/profile/stats-dashboard-dark-compact.svg?v=2" />
-    <source media="(max-width: 600px)" srcset="assets/profile/stats-dashboard-light-compact.svg?v=2" />
-    <source media="(prefers-color-scheme: dark)" srcset="assets/profile/stats-dashboard-dark.svg?v=2" />
-    <img src="assets/profile/stats-dashboard-light.svg?v=2" alt="GitHub statistics: stars, yearly commits, pull requests, issues, contributed repositories, rank, contribution streaks with dates, and language percentages" width="100%" />
+    <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/profile/stats-dashboard-dark-compact.svg?v=4" />
+    <source media="(max-width: 600px)" srcset="assets/profile/stats-dashboard-light-compact.svg?v=4" />
+    <source media="(prefers-color-scheme: dark)" srcset="assets/profile/stats-dashboard-dark.svg?v=4" />
+    <img src="assets/profile/stats-dashboard-light.svg?v=4" alt="GitHub statistics: stars, yearly commits, pull requests, issues, contributed repositories, rank, contribution streaks with dates, and language percentages" width="100%" />
   </picture>
 </p>
 
@@ -222,6 +312,19 @@
 
 
 <div align="center">
+
+<!-- BEGIN dev-meme -->
+<h2 align="center">🎭 <samp>Daily Dev Meme</samp></h2>
+
+<p align="center">
+  <a href="https://redd.it/1xihrez">
+    <img src="assets/profile/dev-meme/current.png?v=b72540ad1c1d" alt="Programming meme: heapBig" width="520" />
+  </a>
+</p>
+<p align="center">
+  <sub><a href="https://redd.it/1xihrez">r/ProgrammerHumor · u/Xadartt</a> · 2026-11-06</sub>
+</p>
+<!-- END dev-meme -->
 
 <img src="https://capsule-render.vercel.app/api?type=waving&height=110&section=footer&color=0:b9edf2,35:ffe9a3,70:d7c4f3,100:ffaec5" alt="Profile footer" width="100%" />
 

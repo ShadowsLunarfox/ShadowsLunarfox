@@ -11,6 +11,8 @@ on:
       - .github/workflows/**
       - .github/scripts/**
       - .github/featured-repositories.json
+      - .github/daily-dev-notes.json
+      - .github/dev-meme.json
       - .github/learning-profiles.json
       - .github/profile-3d-settings.json
       - README.md
@@ -33,12 +35,21 @@ jobs:
         with:
           ref: main
           fetch-depth: 0
+      - uses: actions/setup-node@v5
+        with:
+          node-version: "24"
       - name: Create and push the refresh commit
         shell: bash
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git pull --ff-only origin main
+          node --test .github/scripts/generate-daily-dev-note.test.cjs .github/scripts/generate-dev-meme.test.cjs
+          node .github/scripts/generate-daily-dev-note.cjs
+          if ! node .github/scripts/generate-dev-meme.cjs; then
+            echo "Meme refresh unavailable; keeping the previous image."
+          fi
+          git add README.md assets/profile/dev-meme
           # Kuala Lumpur is UTC+8 year-round (POSIX TZ offsets have reversed signs).
           refresh_date=$(TZ=UTC-8 date +%F)
           git commit --allow-empty -m "Daily profile refresh (${refresh_date}, Asia/Kuala_Lumpur)"
