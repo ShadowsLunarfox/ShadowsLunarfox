@@ -124,8 +124,8 @@
 <!-- BEGIN daily-dev-note -->
 <blockquote>
 <h3 align="center">💬 <samp>Daily Dev Note</samp></h3>
-<h3 align="center"><em>Fixed one bug. Unlocked two more.</em></h3>
-<p align="center">2026-11-06 · Kuala Lumpur</p>
+<h3 align="center"><em>First run worked? Check that you didn&#39;t run yesterday&#39;s build.</em></h3>
+<p align="center">2026-11-07 · Kuala Lumpur</p>
 </blockquote>
 <!-- END daily-dev-note -->
 </td>
@@ -328,12 +328,12 @@
 <h2 align="center">🎭 <samp>Daily Dev Meme</samp></h2>
 
 <p align="center">
-  <a href="https://redd.it/1xihrez">
-    <img src="assets/profile/dev-meme/current.png?v=b72540ad1c1d" alt="Programming meme: heapBig" width="520" />
+  <a href="https://redd.it/1xiu4oi">
+    <img src="assets/profile/dev-meme/current.png?v=7f9c83192add" alt="Programming meme: ncisWasAccurateAfterAll" width="299" />
   </a>
 </p>
 <p align="center">
-  <sub><a href="https://redd.it/1xihrez">r/ProgrammerHumor · u/Xadartt</a> · 2026-11-06</sub>
+  <sub><a href="https://redd.it/1xiu4oi">r/ProgrammerHumor · u/BenevolentCheese</a> · 2026-11-07</sub>
 </p>
 <!-- END dev-meme -->
 
