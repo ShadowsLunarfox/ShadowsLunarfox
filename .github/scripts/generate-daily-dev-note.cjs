@@ -37,11 +37,9 @@ function renderDailyNote(note, newline = '\n') {
   return [
     BEGIN,
     '<blockquote>',
-    '<p align="center">',
-    '  <strong>💬 <samp>Daily Dev Note</samp></strong><br />',
-    `  <em>${escapeHtml(note.quote)}</em><br />`,
-    `  <sub>${note.date} · Kuala Lumpur</sub>`,
-    '</p>',
+    '<h3 align="center">💬 <samp>Daily Dev Note</samp></h3>',
+    `<h3 align="center"><em>${escapeHtml(note.quote)}</em></h3>`,
+    `<p align="center">${note.date} · Kuala Lumpur</p>`,
     '</blockquote>',
     END,
   ].join(newline);
