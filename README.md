@@ -71,14 +71,12 @@
 <!-- END professional-intro -->
 
 <!-- BEGIN profile-overview -->
-<table width="100%" role="presentation">
+<table width="100%" align="center" role="presentation">
 <tbody>
 <tr>
 <td width="48%" valign="top">
-<!-- BEGIN languages-and-apps -->
-<h2 align="center">💻 <samp>Languages &amp; Apps</samp></h2>
-
-<h3 align="center">⌨️ <samp>Programming Languages</samp></h3>
+<!-- BEGIN programming-languages -->
+<h2 align="center">⌨️ <samp>Programming Languages</samp></h2>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Python-ffe9a3?style=flat-square&amp;logo=python&amp;logoColor=3b2d4f" alt="Python" width="94" height="28" />
@@ -89,7 +87,11 @@
   <img src="https://img.shields.io/badge/CSS-bbe8f2?style=flat-square&amp;logo=css&amp;logoColor=3b2d4f" alt="CSS" width="72" height="28" />
 </p>
 
-<h3 align="center">🛠️ <samp>Apps I Use</samp></h3>
+<!-- END programming-languages -->
+</td>
+<td width="52%" valign="top">
+<!-- BEGIN apps-i-use -->
+<h2 align="center">🛠️ <samp>Apps I Use</samp></h2>
 
 <p align="center">
   <img src="https://img.shields.io/badge/VS_Code-bce6f4?style=flat-square" title="Visual Studio Code" alt="Visual Studio Code" width="80" height="28" />
@@ -102,24 +104,30 @@
   <img src="https://img.shields.io/badge/Lightroom-bce6f4?style=flat-square" title="Adobe Lightroom" alt="Adobe Lightroom" width="94" height="28" />
   <img src="https://img.shields.io/badge/Photoshop-bbe8f2?style=flat-square" title="Adobe Photoshop" alt="Adobe Photoshop" width="94" height="28" />
 </p>
-<!-- END languages-and-apps -->
+<!-- END apps-i-use -->
 </td>
-<td width="52%" valign="top">
+</tr>
+<tr>
+<td colspan="2" align="center">
 <!-- BEGIN contact-links -->
-<h2 align="center">💌 <samp>Come Say Hello</samp></h2>
+<h3 align="center">💌 <samp>Come Say Hello</samp></h3>
 
 <p align="center">
-  <a href="https://lunarfox.my" title="Website: lunarfox.my"><img src="https://img.shields.io/badge/lunarfox.my-ffaec5?style=flat-square&amp;logo=firefox&amp;logoColor=3b2d4f" alt="Website: lunarfox.my" width="133" height="28" /></a>
-  <a href="https://www.tiktok.com/@shadows_lunarfox" title="TikTok: @shadows_lunarfox"><img src="https://img.shields.io/badge/TikTok-b9edf2?style=flat-square&amp;logo=tiktok&amp;logoColor=3b2d4f" alt="TikTok: @shadows_lunarfox" width="91" height="28" /></a>
-  <a href="https://x.com/ShadowsLunarfox" title="X: @ShadowsLunarfox"><img src="https://img.shields.io/badge/X-ffdab9?style=flat-square&amp;logoColor=3b2d4f" alt="X: @ShadowsLunarfox" width="24" height="28" /></a>
-  <br />
-  <a href="https://t.me/Shadows_Lunarfox" title="Telegram: @Shadows_Lunarfox"><img src="https://img.shields.io/badge/Telegram-b9edf2?style=flat-square&amp;logo=telegram&amp;logoColor=3b2d4f" alt="Telegram: @Shadows_Lunarfox" width="111" height="28" /></a>
-  <a href="https://www.facebook.com/Lunarfoxyuehu/" title="Facebook: Lunarfoxyuehu"><img src="https://img.shields.io/badge/Facebook-bbe8f2?style=flat-square&amp;logo=facebook&amp;logoColor=3b2d4f" alt="Facebook: Lunarfoxyuehu" width="111" height="28" /></a>
-  <br />
-  <a href="https://space.bilibili.com/3493269644249683" title="Bilibili: UID 3493269644249683"><img src="https://img.shields.io/badge/Bilibili-ffaec5?style=flat-square&amp;logo=bilibili&amp;logoColor=3b2d4f" alt="Bilibili: UID 3493269644249683" width="86" height="28" /></a>
-  <a href="https://www.reddit.com/user/shadowlunarfox/" title="Reddit: u/shadowlunarfox"><img src="https://img.shields.io/badge/Reddit-ffc6a6?style=flat-square&amp;logo=reddit&amp;logoColor=3b2d4f" alt="Reddit: u/shadowlunarfox" width="89" height="28" /></a>
+  <a href="https://discord.com" title="Discord: shadows_lunarfox"><img src="https://img.shields.io/badge/Discord-d7c4f3?style=flat-square&amp;logo=discord&amp;logoColor=3b2d4f" alt="Discord: shadows_lunarfox" width="83" height="24" /></a>
+  <a href="https://lunarfox.my" title="Website: lunarfox.my"><img src="https://img.shields.io/badge/lunarfox.my-ffaec5?style=flat-square&amp;logo=firefox&amp;logoColor=3b2d4f" alt="Website: lunarfox.my" width="114" height="24" /></a>
+  <a href="https://www.tiktok.com/@shadows_lunarfox" title="TikTok: @shadows_lunarfox"><img src="https://img.shields.io/badge/TikTok-b9edf2?style=flat-square&amp;logo=tiktok&amp;logoColor=3b2d4f" alt="TikTok: @shadows_lunarfox" width="78" height="24" /></a>
+  <a href="https://x.com/ShadowsLunarfox" title="X: @ShadowsLunarfox"><img src="https://img.shields.io/badge/X-ffdab9?style=flat-square&amp;logoColor=3b2d4f" alt="X: @ShadowsLunarfox" width="21" height="24" /></a>
+  <a href="https://t.me/Shadows_Lunarfox" title="Telegram: @Shadows_Lunarfox"><img src="https://img.shields.io/badge/Telegram-b9edf2?style=flat-square&amp;logo=telegram&amp;logoColor=3b2d4f" alt="Telegram: @Shadows_Lunarfox" width="95" height="24" /></a>
+  <a href="https://www.facebook.com/Lunarfoxyuehu/" title="Facebook: Lunarfoxyuehu"><img src="https://img.shields.io/badge/Facebook-bbe8f2?style=flat-square&amp;logo=facebook&amp;logoColor=3b2d4f" alt="Facebook: Lunarfoxyuehu" width="95" height="24" /></a>
+  <a href="https://space.bilibili.com/3493269644249683" title="Bilibili: UID 3493269644249683"><img src="https://img.shields.io/badge/Bilibili-ffaec5?style=flat-square&amp;logo=bilibili&amp;logoColor=3b2d4f" alt="Bilibili: UID 3493269644249683" width="74" height="24" /></a>
+  <a href="https://www.reddit.com/user/shadowlunarfox/" title="Reddit: u/shadowlunarfox"><img src="https://img.shields.io/badge/Reddit-ffc6a6?style=flat-square&amp;logo=reddit&amp;logoColor=3b2d4f" alt="Reddit: u/shadowlunarfox" width="76" height="24" /></a>
 </p>
 <!-- END contact-links -->
+</td>
+</tr>
+</tbody>
+</table>
+<!-- END profile-overview -->
 
 <!-- BEGIN daily-dev-note -->
 <blockquote>
@@ -128,21 +136,6 @@
 <p align="center">2026-11-08 · Kuala Lumpur</p>
 </blockquote>
 <!-- END daily-dev-note -->
-</td>
-</tr>
-<tr>
-<td colspan="2" align="center">
-<!-- BEGIN contact-accounts -->
-<p align="center">
-  <a href="https://discord.com" title="Discord: shadows_lunarfox"><img src="https://img.shields.io/badge/Discord-shadows__lunarfox-d7c4f3?style=flat-square&amp;logo=discord&amp;logoColor=ffffff&amp;labelColor=615276" alt="Discord: shadows_lunarfox" width="248" height="28" /></a>
-  <img src="https://img.shields.io/badge/Douyin_ID-Shadows__Lunarfox-d7c4f3?style=flat-square&amp;logo=tiktok&amp;logoColor=ffffff&amp;labelColor=615276" alt="Douyin ID: Shadows_Lunarfox" title="Douyin ID: Shadows_Lunarfox" width="276" height="28" />
-</p>
-<!-- END contact-accounts -->
-</td>
-</tr>
-</tbody>
-</table>
-<!-- END profile-overview -->
 
 <!-- BEGIN easter-egg -->
 <div align="center">
@@ -335,7 +328,21 @@
 <p align="center">
   <sub><a href="https://redd.it/1xp9fts">r/ProgrammerHumor · u/Apprehensive_Bit7392</a> · 2026-11-08</sub>
 </p>
+
 <!-- END dev-meme -->
+
+<!-- BEGIN chinese-meme -->
+<h3 align="center">每日中文梗图</h3>
+
+<p align="center">
+  <a href="https://res.apihz.cn/img/bqb/cdaf3c427a1e276e4606c41daf7275e0.jpeg">
+    <img src="assets/profile/dev-meme/chinese-current.jpg?v=41adb58c1f4c" alt="每日中文梗图（随机主题）" width="171" />
+  </a>
+</p>
+<p align="center">
+  <sub><a href="https://api.ruseo.cn/api-doc/bqb">中文表情包 · 澄曜API</a> · 2026-11-08</sub>
+</p>
+<!-- END chinese-meme -->
 
 <img src="https://capsule-render.vercel.app/api?type=waving&height=110&section=footer&color=0:b9edf2,35:ffe9a3,70:d7c4f3,100:ffaec5" alt="Profile footer" width="100%" />
 

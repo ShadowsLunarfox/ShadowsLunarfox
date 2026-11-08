@@ -44,10 +44,13 @@ jobs:
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git pull --ff-only origin main
-          node --test .github/scripts/generate-daily-dev-note.test.cjs .github/scripts/generate-dev-meme.test.cjs
+          node --test .github/scripts/generate-daily-dev-note.test.cjs .github/scripts/generate-dev-meme.test.cjs .github/scripts/generate-chinese-meme.test.cjs
           node .github/scripts/generate-daily-dev-note.cjs
           if ! node .github/scripts/generate-dev-meme.cjs; then
             echo "Meme refresh unavailable; keeping the previous image."
+          fi
+          if ! node .github/scripts/generate-chinese-meme.cjs; then
+            echo "Chinese meme refresh unavailable; keeping the previous image."
           fi
           git add README.md assets/profile/dev-meme
           # Kuala Lumpur is UTC+8 year-round (POSIX TZ offsets have reversed signs).

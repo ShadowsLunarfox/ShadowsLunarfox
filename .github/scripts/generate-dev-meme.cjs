@@ -140,7 +140,7 @@ async function refreshDevMeme({ root = path.resolve(__dirname, '../..'), now = n
   return meme;
 }
 
-module.exports = { eligiblePost, imageInfo, localDate, renderSection, replaceSection, refreshDevMeme };
+module.exports = { eligiblePost, imageInfo, downloadImage, trustedUrl, localDate, renderSection, replaceSection, refreshDevMeme };
 if (require.main === module) refreshDevMeme({ force: process.argv.includes('--force') })
   .then(meme => console.log(`Developer meme ready for ${meme.date}: ${meme.postLink}`))
   .catch(error => { console.error(error.message); process.exitCode = 1; });

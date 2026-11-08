@@ -7,7 +7,8 @@ const { eligiblePost, imageInfo, localDate, replaceSection, refreshDevMeme } = r
 
 const png = Buffer.from('iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAusB9Wl6QAAAAABJRU5ErkJggg==', 'base64');
 const post = { postLink: 'https://redd.it/abc123', subreddit: 'ProgrammerHumor', title: 'A developer joke', url: 'https://i.redd.it/example.png', nsfw: false, spoiler: false, author: 'ExampleAuthor' };
-const readme = 'Before\r\n<!-- BEGIN dev-meme -->\r\nold\r\n<!-- END dev-meme -->\r\nAfter';
+const chineseSection = '<!-- BEGIN chinese-meme -->\r\n<img src="assets/profile/dev-meme/chinese-current.png" alt="每日中文梗图" />\r\n<!-- END chinese-meme -->';
+const readme = `Before\r\n<!-- BEGIN dev-meme -->\r\nold\r\n<!-- END dev-meme -->\r\n${chineseSection}\r\nAfter`;
 const now = new Date('2026-11-06T04:00:00Z');
 const request = async url => String(url).startsWith('https://meme-api.com/')
   ? new Response(JSON.stringify({ memes: [post] }), { headers: { 'content-type': 'application/json' } })
@@ -71,6 +72,21 @@ test('feed failures, unsafe posts and invalid images leave the existing image an
     const after = await Promise.all(['README.md', 'assets/profile/dev-meme/current.png', 'assets/profile/dev-meme/current.json'].map(file => fs.readFile(path.join(root, file))));
     assert.ok(after.every((bytes, index) => bytes.equals(before[index])));
   }
+});
+
+test('refreshing the English meme preserves the independently refreshed Chinese section and image', async t => {
+  const root = await fixture(t);
+  await refreshDevMeme({ root, now, request });
+  const chineseAsset = path.join(root, 'assets/profile/dev-meme/chinese-current.png');
+  await fs.writeFile(chineseAsset, png);
+  const nextRequest = async url => String(url).startsWith('https://meme-api.com/')
+    ? new Response(JSON.stringify({ memes: [{ ...post, postLink: 'https://redd.it/next123' }] }))
+    : request(url);
+  await refreshDevMeme({ root, now: new Date('2026-11-07T04:00:00Z'), request: nextRequest });
+  const updated = await fs.readFile(path.join(root, 'README.md'), 'utf8');
+  assert.ok(updated.includes(chineseSection));
+  assert.ok(updated.includes('https://redd.it/next123'));
+  assert.ok((await fs.readFile(chineseAsset)).equals(png));
 });
 
 test('post text is escaped, while missing and duplicate markers cannot overwrite other sections', () => {
