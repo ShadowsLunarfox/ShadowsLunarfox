@@ -94,7 +94,7 @@ FROM, OUT OF THE USE OR INABILITY TO USE THE FONT SOFTWARE OR FROM
 OTHER DEALINGS IN THE FONT SOFTWARE.
 </metadata>
   <title id="title">GitHub statistics</title>
-  <desc id="description">68 stars; 197 commits in the last year; 2 pull requests; 1 issues; 1 repositories contributed to in the last year; GitHub rank B-. 228 total contributions since 2021-10-04; current streak 35 days, Oct 6 – Nov 9; longest streak 35 days, Oct 6 – Nov 9. JavaScript 76.72%; CSS 10.68%; C# 7.22%; HTML 2.93%; Python 2.16%; PowerShell 0.27%; Batchfile 0.01%.</desc>
+  <desc id="description">68 stars; 197 commits in the last year; 2 pull requests; 1 issues; 1 repositories contributed to in the last year; GitHub rank B-. 229 total contributions since 2021-10-04; current streak 36 days, Oct 6 – Nov 10; longest streak 36 days, Oct 6 – Nov 10. JavaScript 76.72%; CSS 10.68%; C# 7.22%; HTML 2.93%; Python 2.16%; PowerShell 0.27%; Batchfile 0.01%.</desc>
   <defs><clipPath id="language-bar"><rect x="28" y="281" width="784" height="8" rx="4"/></clipPath></defs>
   <style>
 
@@ -172,22 +172,22 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
     <text x="39" y="144" font-size="14" fill="#756782" font-weight="700">Contribution streak</text>
   </g>
     <g class="reveal" style="--stat-delay:0.180s">
-      <title>Total contributions: 228; Oct 4, 2021 – present</title>
-      <text x="28" y="176" font-size="28" fill="#367484" font-weight="700" >228</text>
+      <title>Total contributions: 229; Oct 4, 2021 – present</title>
+      <text x="28" y="176" font-size="28" fill="#367484" font-weight="700" >229</text>
       <text x="28" y="198" font-size="13" fill="#756782" >Total contributions</text>
       <text x="28" y="219" font-size="12" fill="#756782" >Oct 4, 2021 – present</text>
     </g>
 <g class="reveal" style="--stat-delay:0.255s">
-      <title>Current streak · days: 35; Oct 6 – Nov 9</title>
-      <text x="289.3333333333333" y="176" font-size="28" fill="#9c4268" font-weight="700" >35</text>
+      <title>Current streak · days: 36; Oct 6 – Nov 10</title>
+      <text x="289.3333333333333" y="176" font-size="28" fill="#9c4268" font-weight="700" >36</text>
       <text x="289.3333333333333" y="198" font-size="13" fill="#756782" >Current streak · days</text>
-      <text x="289.3333333333333" y="219" font-size="12" fill="#756782" >Oct 6 – Nov 9</text>
+      <text x="289.3333333333333" y="219" font-size="12" fill="#756782" >Oct 6 – Nov 10</text>
     </g>
 <g class="reveal" style="--stat-delay:0.330s">
-      <title>Longest streak · days: 35; Oct 6 – Nov 9</title>
-      <text x="550.6666666666666" y="176" font-size="28" fill="#756092" font-weight="700" >35</text>
+      <title>Longest streak · days: 36; Oct 6 – Nov 10</title>
+      <text x="550.6666666666666" y="176" font-size="28" fill="#756092" font-weight="700" >36</text>
       <text x="550.6666666666666" y="198" font-size="13" fill="#756782" >Longest streak · days</text>
-      <text x="550.6666666666666" y="219" font-size="12" fill="#756782" >Oct 6 – Nov 9</text>
+      <text x="550.6666666666666" y="219" font-size="12" fill="#756782" >Oct 6 – Nov 10</text>
     </g>
     <path d="M28 238H812" stroke="#e6dce9"/>
     <g class="section-heading">
