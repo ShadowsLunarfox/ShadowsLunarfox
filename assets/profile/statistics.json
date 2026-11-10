@@ -1,12 +1,12 @@
 {
   "overview": {
     "stars": 68,
-    "commits": 197,
+    "commits": 198,
     "prs": 2,
     "issues": 1,
     "contribs": 1,
     "rank": "B-",
-    "rankProgress": 0.32381681
+    "rankProgress": 0.32289698
   },
   "streak": {
     "mode": "daily",
@@ -27,33 +27,33 @@
   "languages": [
     {
       "name": "JavaScript",
-      "percent": 76.72,
-      "percentage": "76.72%"
+      "percent": 76.07,
+      "percentage": "76.07%"
     },
     {
       "name": "CSS",
-      "percent": 10.68,
-      "percentage": "10.68%"
+      "percent": 10.58,
+      "percentage": "10.58%"
     },
     {
       "name": "C#",
-      "percent": 7.22,
-      "percentage": "7.22%"
+      "percent": 7.75,
+      "percentage": "7.75%"
     },
     {
       "name": "HTML",
-      "percent": 2.93,
-      "percentage": "2.93%"
+      "percent": 2.91,
+      "percentage": "2.91%"
     },
     {
       "name": "Python",
-      "percent": 2.16,
-      "percentage": "2.16%"
+      "percent": 2.14,
+      "percentage": "2.14%"
     },
     {
       "name": "PowerShell",
-      "percent": 0.27,
-      "percentage": "0.27%"
+      "percent": 0.54,
+      "percentage": "0.54%"
     },
     {
       "name": "Batchfile",
