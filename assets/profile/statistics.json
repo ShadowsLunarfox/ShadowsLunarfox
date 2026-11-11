@@ -27,33 +27,33 @@
   "languages": [
     {
       "name": "JavaScript",
-      "percent": 76.07,
-      "percentage": "76.07%"
+      "percent": 76.36,
+      "percentage": "76.36%"
     },
     {
       "name": "CSS",
-      "percent": 10.58,
-      "percentage": "10.58%"
+      "percent": 10.46,
+      "percentage": "10.46%"
     },
     {
       "name": "C#",
-      "percent": 7.75,
-      "percentage": "7.75%"
+      "percent": 7.65,
+      "percentage": "7.65%"
     },
     {
       "name": "HTML",
-      "percent": 2.91,
-      "percentage": "2.91%"
+      "percent": 2.88,
+      "percentage": "2.88%"
     },
     {
       "name": "Python",
-      "percent": 2.14,
-      "percentage": "2.14%"
+      "percent": 2.11,
+      "percentage": "2.11%"
     },
     {
       "name": "PowerShell",
-      "percent": 0.54,
-      "percentage": "0.54%"
+      "percent": 0.53,
+      "percentage": "0.53%"
     },
     {
       "name": "Batchfile",

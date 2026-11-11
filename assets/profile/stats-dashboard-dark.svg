@@ -94,7 +94,7 @@ FROM, OUT OF THE USE OR INABILITY TO USE THE FONT SOFTWARE OR FROM
 OTHER DEALINGS IN THE FONT SOFTWARE.
 </metadata>
   <title id="title">GitHub statistics</title>
-  <desc id="description">68 stars; 199 commits in the last year; 2 pull requests; 1 issues; 1 repositories contributed to in the last year; GitHub rank B-. 230 total contributions since 2021-10-04; current streak 37 days, Oct 6 – Nov 11; longest streak 37 days, Oct 6 – Nov 11. JavaScript 76.07%; CSS 10.58%; C# 7.75%; HTML 2.91%; Python 2.14%; PowerShell 0.54%; Batchfile 0.01%.</desc>
+  <desc id="description">68 stars; 199 commits in the last year; 2 pull requests; 1 issues; 1 repositories contributed to in the last year; GitHub rank B-. 230 total contributions since 2021-10-04; current streak 37 days, Oct 6 – Nov 11; longest streak 37 days, Oct 6 – Nov 11. JavaScript 76.36%; CSS 10.46%; C# 7.65%; HTML 2.88%; Python 2.11%; PowerShell 0.53%; Batchfile 0.01%.</desc>
   <defs><clipPath id="language-bar"><rect x="28" y="281" width="784" height="8" rx="4"/></clipPath></defs>
   <style>
 
@@ -195,60 +195,60 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
     <text x="39" y="266" font-size="14" fill="#adbac7" font-weight="700">Languages</text>
   </g>
     <rect x="28" y="281" width="784" height="8" rx="4" fill="#353445"/>
-    <g clip-path="url(#language-bar)"><g class="language-grow" style="--language-delay:0.08s"><rect x="28" y="281" width="596.3888" height="8" fill="#ffd166"/><rect x="624.3888" y="281" width="82.9472" height="8" fill="#bbe8f2"/><rect x="707.3359999999999" y="281" width="60.76" height="8" fill="#d7c4f3"/><rect x="768.0959999999999" y="281" width="22.8144" height="8" fill="#ffaec5"/><rect x="790.9103999999999" y="281" width="16.7776" height="8" fill="#ffe9a3"/><rect x="807.6879999999999" y="281" width="4.2336" height="8" fill="#d7c4f3"/><rect x="811.9215999999999" y="281" width="0.0784" height="8" fill="#ffd3b0"/></g></g>
+    <g clip-path="url(#language-bar)"><g class="language-grow" style="--language-delay:0.08s"><rect x="28" y="281" width="598.6623999999999" height="8" fill="#ffd166"/><rect x="626.6623999999999" y="281" width="82.00640000000001" height="8" fill="#bbe8f2"/><rect x="708.6687999999999" y="281" width="59.976000000000006" height="8" fill="#d7c4f3"/><rect x="768.6447999999999" y="281" width="22.5792" height="8" fill="#ffaec5"/><rect x="791.2239999999999" y="281" width="16.5424" height="8" fill="#ffe9a3"/><rect x="807.7664" y="281" width="4.155200000000001" height="8" fill="#d7c4f3"/><rect x="811.9216" y="281" width="0.0784" height="8" fill="#ffd3b0"/></g></g>
     <g class="language-entry">
       <g class="language-pop" style="--language-delay:0.12s">
       <circle cx="32" cy="314" r="4" fill="#ffd166"/>
       <text x="44" y="318" font-size="14" fill="#f1eaf7" >JavaScript</text>
-      <text x="404" y="318" font-size="14" fill="#adbac7" text-anchor="end">76.07%</text>
+      <text x="404" y="318" font-size="14" fill="#adbac7" text-anchor="end">76.36%</text>
       </g>
       <rect class="language-track" x="28" y="327" width="376" height="3" rx="1.5" fill="#353445" opacity=".6"/>
-      <rect class="language-grow language-progress" x="28" y="327" width="286.0232" height="3" rx="1.5" fill="#ffd166" style="--language-delay:0.20s"/>
+      <rect class="language-grow language-progress" x="28" y="327" width="287.1136" height="3" rx="1.5" fill="#ffd166" style="--language-delay:0.20s"/>
     </g>
 <g class="language-entry">
       <g class="language-pop" style="--language-delay:0.19s">
       <circle cx="440" cy="314" r="4" fill="#bbe8f2"/>
       <text x="452" y="318" font-size="14" fill="#f1eaf7" >CSS</text>
-      <text x="812" y="318" font-size="14" fill="#adbac7" text-anchor="end">10.58%</text>
+      <text x="812" y="318" font-size="14" fill="#adbac7" text-anchor="end">10.46%</text>
       </g>
       <rect class="language-track" x="436" y="327" width="376" height="3" rx="1.5" fill="#353445" opacity=".6"/>
-      <rect class="language-grow language-progress" x="436" y="327" width="39.7808" height="3" rx="1.5" fill="#bbe8f2" style="--language-delay:0.27s"/>
+      <rect class="language-grow language-progress" x="436" y="327" width="39.329600000000006" height="3" rx="1.5" fill="#bbe8f2" style="--language-delay:0.27s"/>
     </g>
 <g class="language-entry">
       <g class="language-pop" style="--language-delay:0.26s">
       <circle cx="32" cy="346" r="4" fill="#d7c4f3"/>
       <text x="44" y="350" font-size="14" fill="#f1eaf7" >C#</text>
-      <text x="404" y="350" font-size="14" fill="#adbac7" text-anchor="end">7.75%</text>
+      <text x="404" y="350" font-size="14" fill="#adbac7" text-anchor="end">7.65%</text>
       </g>
       <rect class="language-track" x="28" y="359" width="376" height="3" rx="1.5" fill="#353445" opacity=".6"/>
-      <rect class="language-grow language-progress" x="28" y="359" width="29.14" height="3" rx="1.5" fill="#d7c4f3" style="--language-delay:0.34s"/>
+      <rect class="language-grow language-progress" x="28" y="359" width="28.764" height="3" rx="1.5" fill="#d7c4f3" style="--language-delay:0.34s"/>
     </g>
 <g class="language-entry">
       <g class="language-pop" style="--language-delay:0.33s">
       <circle cx="440" cy="346" r="4" fill="#ffaec5"/>
       <text x="452" y="350" font-size="14" fill="#f1eaf7" >HTML</text>
-      <text x="812" y="350" font-size="14" fill="#adbac7" text-anchor="end">2.91%</text>
+      <text x="812" y="350" font-size="14" fill="#adbac7" text-anchor="end">2.88%</text>
       </g>
       <rect class="language-track" x="436" y="359" width="376" height="3" rx="1.5" fill="#353445" opacity=".6"/>
-      <rect class="language-grow language-progress" x="436" y="359" width="10.941600000000001" height="3" rx="1.5" fill="#ffaec5" style="--language-delay:0.41s"/>
+      <rect class="language-grow language-progress" x="436" y="359" width="10.8288" height="3" rx="1.5" fill="#ffaec5" style="--language-delay:0.41s"/>
     </g>
 <g class="language-entry">
       <g class="language-pop" style="--language-delay:0.40s">
       <circle cx="32" cy="378" r="4" fill="#ffe9a3"/>
       <text x="44" y="382" font-size="14" fill="#f1eaf7" >Python</text>
-      <text x="404" y="382" font-size="14" fill="#adbac7" text-anchor="end">2.14%</text>
+      <text x="404" y="382" font-size="14" fill="#adbac7" text-anchor="end">2.11%</text>
       </g>
       <rect class="language-track" x="28" y="391" width="376" height="3" rx="1.5" fill="#353445" opacity=".6"/>
-      <rect class="language-grow language-progress" x="28" y="391" width="8.0464" height="3" rx="1.5" fill="#ffe9a3" style="--language-delay:0.48s"/>
+      <rect class="language-grow language-progress" x="28" y="391" width="7.933599999999999" height="3" rx="1.5" fill="#ffe9a3" style="--language-delay:0.48s"/>
     </g>
 <g class="language-entry">
       <g class="language-pop" style="--language-delay:0.47s">
       <circle cx="440" cy="378" r="4" fill="#d7c4f3"/>
       <text x="452" y="382" font-size="14" fill="#f1eaf7" >PowerShell</text>
-      <text x="812" y="382" font-size="14" fill="#adbac7" text-anchor="end">0.54%</text>
+      <text x="812" y="382" font-size="14" fill="#adbac7" text-anchor="end">0.53%</text>
       </g>
       <rect class="language-track" x="436" y="391" width="376" height="3" rx="1.5" fill="#353445" opacity=".6"/>
-      <rect class="language-grow language-progress" x="436" y="391" width="2.0304" height="3" rx="1.5" fill="#d7c4f3" style="--language-delay:0.55s"/>
+      <rect class="language-grow language-progress" x="436" y="391" width="1.9928" height="3" rx="1.5" fill="#d7c4f3" style="--language-delay:0.55s"/>
     </g>
 <g class="language-entry">
       <g class="language-pop" style="--language-delay:0.54s">
