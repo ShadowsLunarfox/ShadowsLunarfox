@@ -132,8 +132,8 @@
 <!-- BEGIN daily-dev-note -->
 <blockquote>
 <h3 align="center">💬 <samp>Daily Dev Note</samp></h3>
-<h3 align="center"><em>Sometimes the best comment is a better variable name.</em></h3>
-<p align="center">2026-11-11 · Kuala Lumpur</p>
+<h3 align="center"><em>The program isn&#39;t frozen. It&#39;s contemplating life.</em></h3>
+<p align="center">2026-11-12 · Kuala Lumpur</p>
 </blockquote>
 <!-- END daily-dev-note -->
 
@@ -321,12 +321,12 @@
 <h2 align="center">🎭 <samp>Daily Dev Meme</samp></h2>
 
 <p align="center">
-  <a href="https://redd.it/1xqmwj4">
-    <img src="assets/profile/dev-meme/current.png?v=04a0dc6c9268" alt="Programming meme: everythingGoesIntoThePostHole" width="213" />
+  <a href="https://redd.it/1xl94ur">
+    <img src="assets/profile/dev-meme/current.png?v=f701516896ce" alt="Programming meme: dontComeNearMyRamSammyBoy" width="520" />
   </a>
 </p>
 <p align="center">
-  <sub><a href="https://redd.it/1xqmwj4">r/ProgrammerHumor · u/darad55</a> · 2026-11-11</sub>
+  <sub><a href="https://redd.it/1xl94ur">r/ProgrammerHumor · u/OGxPePe</a> · 2026-11-12</sub>
 </p>
 <!-- END dev-meme -->
 
@@ -334,12 +334,12 @@
 <h3 align="center">每日中文梗图</h3>
 
 <p align="center">
-  <a href="https://res.apihz.cn/img/bqb/730aaa33e21d7fd26a2f9fe44d27f0e8.png">
-    <img src="assets/profile/dev-meme/chinese-current.png?v=c8f70fa92191" alt="每日中文梗图（随机主题）" width="200" />
+  <a href="https://res.apihz.cn/img/bqb/5f9675893971e4c301da8367d31c01bc.jpg">
+    <img src="assets/profile/dev-meme/chinese-current.jpg?v=4f0808c7ef11" alt="每日中文梗图（随机主题）" width="198" />
   </a>
 </p>
 <p align="center">
-  <sub><a href="https://api.ruseo.cn/api-doc/bqb">中文表情包 · 澄曜API</a> · 2026-11-11</sub>
+  <sub><a href="https://api.ruseo.cn/api-doc/bqb">中文表情包 · 澄曜API</a> · 2026-11-12</sub>
 </p>
 <!-- END chinese-meme -->
 
