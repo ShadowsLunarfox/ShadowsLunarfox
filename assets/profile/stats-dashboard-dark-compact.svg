@@ -94,7 +94,7 @@ FROM, OUT OF THE USE OR INABILITY TO USE THE FONT SOFTWARE OR FROM
 OTHER DEALINGS IN THE FONT SOFTWARE.
 </metadata>
   <title id="title">GitHub statistics</title>
-  <desc id="description">68 stars; 199 commits in the last year; 2 pull requests; 1 issues; 1 repositories contributed to in the last year; GitHub rank B-. 230 total contributions since 2021-10-04; current streak 37 days, Oct 6 – Nov 11; longest streak 37 days, Oct 6 – Nov 11. JavaScript 76.36%; CSS 10.46%; C# 7.65%; HTML 2.88%; Python 2.11%; PowerShell 0.53%; Batchfile 0.01%.</desc>
+  <desc id="description">68 stars; 203 commits in the last year; 2 pull requests; 1 issues; 1 repositories contributed to in the last year; GitHub rank B-. 234 total contributions since 2021-10-04; current streak 38 days, Oct 6 – Nov 12; longest streak 38 days, Oct 6 – Nov 12. JavaScript 76.35%; CSS 10.46%; C# 7.67%; HTML 2.88%; Python 2.11%; PowerShell 0.53%; Batchfile 0.01%.</desc>
   <defs><clipPath id="language-bar"><rect x="20" y="350" width="320" height="8" rx="4"/></clipPath></defs>
   <style>
 
@@ -147,7 +147,7 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
       <text x="20" y="89" font-size="12" fill="#adbac7" >Stars</text>
     </g>
 <g class="reveal" style="--stat-delay:0.065s">
-      <text x="126.66666666666667" y="67" font-size="28" fill="#d7c4f3" font-weight="700" >199</text>
+      <text x="126.66666666666667" y="67" font-size="28" fill="#d7c4f3" font-weight="700" >203</text>
       <text x="126.66666666666667" y="89" font-size="12" fill="#adbac7" >Commits · year</text>
     </g>
 <g class="reveal" style="--stat-delay:0.130s">
@@ -172,22 +172,22 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
     <text x="31" y="192" font-size="14" fill="#adbac7" font-weight="700">Contribution streak</text>
   </g>
     <g class="reveal" style="--stat-delay:0.180s">
-      <title>Contributions: 230; Oct 4, 2021 – present</title>
-      <text x="20" y="231" font-size="28" fill="#b9edf2" font-weight="700" >230</text>
+      <title>Contributions: 234; Oct 4, 2021 – present</title>
+      <text x="20" y="231" font-size="28" fill="#b9edf2" font-weight="700" >234</text>
       <text x="20" y="253" font-size="12" fill="#adbac7" >Contributions</text>
       <text x="20" y="274" font-size="11" fill="#adbac7" >Since</text><text x="20" y="288" font-size="11" fill="#adbac7" >Oct 4, 2021</text>
     </g>
 <g class="reveal" style="--stat-delay:0.255s">
-      <title>Current · days: 37; Oct 6 – Nov 11</title>
-      <text x="126.66666666666667" y="231" font-size="28" fill="#ffaec5" font-weight="700" >37</text>
+      <title>Current · days: 38; Oct 6 – Nov 12</title>
+      <text x="126.66666666666667" y="231" font-size="28" fill="#ffaec5" font-weight="700" >38</text>
       <text x="126.66666666666667" y="253" font-size="12" fill="#adbac7" >Current · days</text>
-      <text x="126.66666666666667" y="274" font-size="11" fill="#adbac7" >Oct 6 – Nov 11</text>
+      <text x="126.66666666666667" y="274" font-size="11" fill="#adbac7" >Oct 6 – Nov 12</text>
     </g>
 <g class="reveal" style="--stat-delay:0.330s">
-      <title>Longest · days: 37; Oct 6 – Nov 11</title>
-      <text x="233.33333333333334" y="231" font-size="28" fill="#d7c4f3" font-weight="700" >37</text>
+      <title>Longest · days: 38; Oct 6 – Nov 12</title>
+      <text x="233.33333333333334" y="231" font-size="28" fill="#d7c4f3" font-weight="700" >38</text>
       <text x="233.33333333333334" y="253" font-size="12" fill="#adbac7" >Longest · days</text>
-      <text x="233.33333333333334" y="274" font-size="11" fill="#adbac7" >Oct 6 – Nov 11</text>
+      <text x="233.33333333333334" y="274" font-size="11" fill="#adbac7" >Oct 6 – Nov 12</text>
     </g>
     <path d="M20 307H340" stroke="#353445"/>
     <g class="section-heading">
@@ -195,15 +195,15 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
     <text x="31" y="335" font-size="14" fill="#adbac7" font-weight="700">Languages</text>
   </g>
     <rect x="20" y="350" width="320" height="8" rx="4" fill="#353445"/>
-    <g clip-path="url(#language-bar)"><g class="language-grow" style="--language-delay:0.08s"><rect x="20" y="350" width="244.352" height="8" fill="#ffd166"/><rect x="264.352" y="350" width="33.472" height="8" fill="#bbe8f2"/><rect x="297.824" y="350" width="24.48" height="8" fill="#d7c4f3"/><rect x="322.30400000000003" y="350" width="9.216" height="8" fill="#ffaec5"/><rect x="331.52000000000004" y="350" width="6.751999999999999" height="8" fill="#ffe9a3"/><rect x="338.27200000000005" y="350" width="1.6960000000000002" height="8" fill="#d7c4f3"/><rect x="339.9680000000001" y="350" width="0.032" height="8" fill="#ffd3b0"/></g></g>
+    <g clip-path="url(#language-bar)"><g class="language-grow" style="--language-delay:0.08s"><rect x="20" y="350" width="244.32" height="8" fill="#ffd166"/><rect x="264.32" y="350" width="33.472" height="8" fill="#bbe8f2"/><rect x="297.792" y="350" width="24.544" height="8" fill="#d7c4f3"/><rect x="322.33599999999996" y="350" width="9.216" height="8" fill="#ffaec5"/><rect x="331.55199999999996" y="350" width="6.751999999999999" height="8" fill="#ffe9a3"/><rect x="338.304" y="350" width="1.6960000000000002" height="8" fill="#d7c4f3"/><rect x="340" y="350" width="0.032" height="8" fill="#ffd3b0"/></g></g>
     <g class="language-entry">
       <g class="language-pop" style="--language-delay:0.12s">
       <circle cx="24" cy="385" r="4" fill="#ffd166"/>
       <text x="36" y="389" font-size="14" fill="#f1eaf7" >JavaScript</text>
-      <text x="340" y="389" font-size="14" fill="#adbac7" text-anchor="end">76.36%</text>
+      <text x="340" y="389" font-size="14" fill="#adbac7" text-anchor="end">76.35%</text>
       </g>
       <rect class="language-track" x="20" y="398" width="320" height="3" rx="1.5" fill="#353445" opacity=".6"/>
-      <rect class="language-grow language-progress" x="20" y="398" width="244.352" height="3" rx="1.5" fill="#ffd166" style="--language-delay:0.20s"/>
+      <rect class="language-grow language-progress" x="20" y="398" width="244.32" height="3" rx="1.5" fill="#ffd166" style="--language-delay:0.20s"/>
     </g>
 <g class="language-entry">
       <g class="language-pop" style="--language-delay:0.19s">
@@ -218,10 +218,10 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
       <g class="language-pop" style="--language-delay:0.26s">
       <circle cx="24" cy="441" r="4" fill="#d7c4f3"/>
       <text x="36" y="445" font-size="14" fill="#f1eaf7" >C#</text>
-      <text x="340" y="445" font-size="14" fill="#adbac7" text-anchor="end">7.65%</text>
+      <text x="340" y="445" font-size="14" fill="#adbac7" text-anchor="end">7.67%</text>
       </g>
       <rect class="language-track" x="20" y="454" width="320" height="3" rx="1.5" fill="#353445" opacity=".6"/>
-      <rect class="language-grow language-progress" x="20" y="454" width="24.48" height="3" rx="1.5" fill="#d7c4f3" style="--language-delay:0.34s"/>
+      <rect class="language-grow language-progress" x="20" y="454" width="24.544" height="3" rx="1.5" fill="#d7c4f3" style="--language-delay:0.34s"/>
     </g>
 <g class="language-entry">
       <g class="language-pop" style="--language-delay:0.33s">
