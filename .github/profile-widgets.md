@@ -50,7 +50,18 @@ The header, footer, badges, stats, activity graph, snake, and 3D calendar use th
 | Light-theme text | `#3b2d4f` |
 | Dark-theme text | `#adbac7` |
 
-The typing animation, stats, activity graph, snake, and 3D calendar select readable light/dark variants with `<picture>`. Widget backgrounds stay transparent; the statistics dashboard uses flat pastel accents without a filled background or decorative gradients. The activity workflow writes both `activity.svg` (dark) and `activity-light.svg` (light). Snake and 3D calendar contribution levels share cyan → lavender → peach → pink, with a theme-specific empty cell color. The 3D calendar retains its growing animation and uses a fixed pastel palette rather than cycling through rainbow colors.
+Every image in the README selects a light or dark version through `<picture>`. Existing desktop/mobile statistics variants and project, activity, snake, and 3D variants remain intact. `.github/scripts/apply-profile-themes.cjs` handles the remaining images: the header and public repository count get dark SVG colors; service badges get dark pastel backgrounds and bright logos; and the footer wave gets a dark palette. The statistics dashboard keeps its transparent background and flat accents. Snake and 3D calendar contribution levels retain cyan → lavender → peach → pink and their theme-specific empty cell colors.
+
+The fox avatar, official achievement artwork, and daily memes use self-contained light/dark SVG frames in `assets/profile/themed-images/`. Their original image bytes, proportions, and GIF animation are retained inside a theme-specific surface and border. Official badge SVGs are fetched from Google/Microsoft once and then reused from the cached frames; subsequent runs need no additional badge download. Distinct labels have distinct assets. Content hashes in the URLs refresh the browser cache when an image or theme changes, and obsolete generated frames are removed after the new README is written.
+
+The daily preparation, statistics/header refresh, and learning badge refresh all run the theme script before committing the README and generated images together. Native text, including Daily Dev Note, continues to follow GitHub's theme. When running individual image generators locally, finish with:
+
+```powershell
+node .github/scripts/apply-profile-themes.cjs
+node --test .github/scripts/apply-profile-themes.test.cjs
+```
+
+Generated pictures carry `data-profile-source` in the repository source so another run can recover the original image URL without nesting pictures. This metadata is only for generation; the rendered page uses standard `<picture>`, `<source>`, and `<img>` elements.
 
 `apply-profile-palette.cjs` recolors the 3D calendar's language pie slices and legend swatches to match the skill badges. The statistics card renderer uses the same palette for language bars and labels, preserving the service's percentage values.
 

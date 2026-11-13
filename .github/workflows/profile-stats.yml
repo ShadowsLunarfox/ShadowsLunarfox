@@ -41,12 +41,16 @@ jobs:
         env:
           PROFILE_USERNAME: ${{ github.repository_owner }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - name: Save the refreshed dashboard and badges
+      - name: Apply light and dark image variants
+        id: themes
         if: ${{ !cancelled() && (steps.cards.outcome == 'success' || steps.header.outcome == 'success' || steps.repositories.outcome == 'success') }}
+        run: node .github/scripts/apply-profile-themes.cjs
+      - name: Save the refreshed dashboard and badges
+        if: ${{ !cancelled() && steps.themes.outcome == 'success' }}
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add assets/profile/stats-dashboard-*.svg assets/profile/statistics.json assets/profile/header.svg assets/profile/public-repositories.svg
+          git add README.md assets/profile/themed-images assets/profile/stats-dashboard-*.svg assets/profile/statistics.json assets/profile/header.svg assets/profile/public-repositories.svg
           if ! git diff --cached --quiet; then
             git commit -m "Update profile statistics and badges"
             git pull --rebase origin main

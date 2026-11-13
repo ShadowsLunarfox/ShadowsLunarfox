@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="153.5" height="28" viewBox="0 0 153.5 28" role="img" aria-label="GitHub public repositories: 17">
+  <title>GitHub public repositories: 17</title>
+  <g shape-rendering="crispEdges">
+    <rect width="113" height="28" fill="#302a3d"/>
+    <rect x="113" width="40.5" height="28" fill="#49392f"/>
+  </g>
+  <g fill="#fff" text-anchor="middle" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" text-rendering="geometricPrecision" font-size="100">
+    <text transform="scale(.1)" x="565" y="175" textLength="890">PUBLIC REPOS</text>
+    <text transform="scale(.1)" x="1332.5" y="175" textLength="165" font-weight="bold" fill="#f1eaf7">17</text>
+  </g>
+</svg>
