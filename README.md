@@ -2,8 +2,8 @@
 <div align="center">
 
 <picture data-profile-source="assets/profile/header.svg">
-  <source media="(prefers-color-scheme: dark)" srcset="assets/profile/themed-images/header-dark.svg?v=5d41e8b2b5f2" />
-  <img src="assets/profile/header.svg?v=334a099e3f7a" alt="Shadows_Lunarfox profile header" width="100%" />
+  <source media="(prefers-color-scheme: dark)" srcset="assets/profile/themed-images/header-dark.svg?v=cfc65f3a7687" />
+  <img src="assets/profile/header.svg?v=e8b982e3ba4c" alt="Shadows_Lunarfox profile header" width="100%" />
 </picture>
 
 <!-- BEGIN typing-animation -->
@@ -26,8 +26,8 @@
   <img src="https://img.shields.io/github/stars/ShadowsLunarfox?affiliations=OWNER%2CCOLLABORATOR&amp;style=for-the-badge&amp;color=b9edf2&amp;labelColor=615276" alt="GitHub stars" height="32" />
 </picture>
   <a href="https://github.com/ShadowsLunarfox?tab=repositories&amp;type=public"><picture data-profile-source="assets/profile/public-repositories.svg?v=2">
-  <source media="(prefers-color-scheme: dark)" srcset="assets/profile/themed-images/public-repositories-dark.svg?v=0154eebed376" />
-  <img src="assets/profile/public-repositories.svg?v=82d93f7743ae" alt="GitHub public repositories" height="32" />
+  <source media="(prefers-color-scheme: dark)" srcset="assets/profile/themed-images/public-repositories-dark.svg?v=32461cef9ef8" />
+  <img src="assets/profile/public-repositories.svg?v=44dbc0473f8d" alt="GitHub public repositories" height="32" />
 </picture></a>
 </p>
 
@@ -204,8 +204,8 @@
 <!-- BEGIN daily-dev-note -->
 <blockquote>
 <h3 align="center">💬 <samp>Daily Dev Note</samp></h3>
-<h3 align="center"><em>Closing the gap between &quot;should work&quot; and &quot;doesn&#39;t work&quot;.</em></h3>
-<p align="center">2026-11-13 · Kuala Lumpur</p>
+<h3 align="center"><em>One clear error message beats ten mysterious crashes.</em></h3>
+<p align="center">2026-11-14 · Kuala Lumpur</p>
 </blockquote>
 <!-- END daily-dev-note -->
 
@@ -426,15 +426,15 @@
 <h2 align="center">🎭 <samp>Daily Dev Meme</samp></h2>
 
 <p align="center">
-  <a href="https://redd.it/1xs5c2a">
-    <picture data-profile-source="assets/profile/dev-meme/current.png?v=bec1002913b8">
-  <source media="(prefers-color-scheme: dark)" srcset="assets/profile/themed-images/image-a019b4a9068e-dark.svg?v=3b485fe26c52" />
-  <img src="assets/profile/themed-images/image-a019b4a9068e-light.svg?v=81db9c430dda" alt="Programming meme: iWishThisWereStaged" width="520" />
+  <a href="https://redd.it/1xrwkc1">
+    <picture data-profile-source="assets/profile/dev-meme/current.png?v=04e121d3dd7c">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/profile/themed-images/image-968268e0032d-dark.svg?v=5af875698cbd" />
+  <img src="assets/profile/themed-images/image-968268e0032d-light.svg?v=5bcdcf480edf" alt="Programming meme: meetPotentialLanguage" width="506" />
 </picture>
   </a>
 </p>
 <p align="center">
-  <sub><a href="https://redd.it/1xs5c2a">r/ProgrammerHumor · u/I_Will_Not_Juggle</a> · 2026-11-13</sub>
+  <sub><a href="https://redd.it/1xrwkc1">r/ProgrammerHumor · u/Oblivious_catalyst</a> · 2026-11-14</sub>
 </p>
 <!-- END dev-meme -->
 
@@ -442,15 +442,15 @@
 <h3 align="center">每日中文梗图</h3>
 
 <p align="center">
-  <a href="https://res.apihz.cn/img/bqb/2065604904114f62915ccfcae0b8de4c.jpg">
-    <picture data-profile-source="assets/profile/dev-meme/chinese-current.jpg?v=84e6848a7bf9">
-  <source media="(prefers-color-scheme: dark)" srcset="assets/profile/themed-images/image-b054ebd422db-dark.svg?v=654cb1ecc0bb" />
-  <img src="assets/profile/themed-images/image-b054ebd422db-light.svg?v=057d60a26efa" alt="每日中文梗图（随机主题）" width="351" />
+  <a href="https://res.apihz.cn/img/bqb/8157c8dfa982b76d8e7f3f78229b19c2.jpg">
+    <picture data-profile-source="assets/profile/dev-meme/chinese-current.jpg?v=85644fb8b342">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/profile/themed-images/image-60f80a4320fe-dark.svg?v=f0738803d865" />
+  <img src="assets/profile/themed-images/image-60f80a4320fe-light.svg?v=e38bec2fd55e" alt="每日中文梗图（随机主题）" width="120" />
 </picture>
   </a>
 </p>
 <p align="center">
-  <sub><a href="https://api.ruseo.cn/api-doc/bqb">中文表情包 · 澄曜API</a> · 2026-11-13</sub>
+  <sub><a href="https://api.ruseo.cn/api-doc/bqb">中文表情包 · 澄曜API</a> · 2026-11-14</sub>
 </p>
 <!-- END chinese-meme -->
 
