@@ -1,9 +1,9 @@
 {
-  "width": 355,
-  "height": 213,
-  "imageUrl": "https://res.apihz.cn/img/bqb/242a60e81b384413a16d1c77d9fab84c.jpg",
-  "sha256": "900066bd1a2f1bac600ec206c9cf4e6680b3c5de664e8cbae4fd4dd03d488899",
-  "date": "2026-11-17",
-  "asset": "chinese-current.jpg",
+  "width": 240,
+  "height": 240,
+  "imageUrl": "https://res.apihz.cn/img/bqb/d8ecb02ed26e2fb14d289ea572c35f93.png",
+  "sha256": "ba70e3205467f9ab83dd4fb6796abc49153ec2e0985883c7e6e7b354112e1e50",
+  "date": "2026-11-18",
+  "asset": "chinese-current.png",
   "source": "https://api.ruseo.cn/api-doc/bqb"
 }

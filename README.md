@@ -132,8 +132,8 @@
 <!-- BEGIN daily-dev-note -->
 <blockquote>
 <h3 align="center">💬 <samp>Daily Dev Note</samp></h3>
-<h3 align="center"><em>Fox cache cleared. Reloading inspiration...</em></h3>
-<p align="center">2026-11-17 · Kuala Lumpur</p>
+<h3 align="center"><em>Let yesterday&#39;s script handle today&#39;s repetitive tasks.</em></h3>
+<p align="center">2026-11-18 · Kuala Lumpur</p>
 </blockquote>
 <!-- END daily-dev-note -->
 
@@ -321,12 +321,12 @@
 <h2 align="center">🎭 <samp>Daily Dev Meme</samp></h2>
 
 <p align="center">
-  <a href="https://redd.it/1xvuqmq">
-    <img src="assets/profile/dev-meme/current.png?v=2514d3175a28" alt="Programming meme: cppythRusGoSharp" width="520" />
+  <a href="https://redd.it/1xvic71">
+    <img src="assets/profile/dev-meme/current.png?v=ebbe1dd61316" alt="Programming meme: manWhyTheyGottaMakeGameDevThisHard" width="260" />
   </a>
 </p>
 <p align="center">
-  <sub><a href="https://redd.it/1xvuqmq">r/ProgrammerHumor · u/Depixelation</a> · 2026-11-17</sub>
+  <sub><a href="https://redd.it/1xvic71">r/ProgrammerHumor · u/Juandice__</a> · 2026-11-18</sub>
 </p>
 <!-- END dev-meme -->
 
@@ -334,12 +334,12 @@
 <h3 align="center">每日中文梗图</h3>
 
 <p align="center">
-  <a href="https://res.apihz.cn/img/bqb/242a60e81b384413a16d1c77d9fab84c.jpg">
-    <img src="assets/profile/dev-meme/chinese-current.jpg?v=900066bd1a2f" alt="每日中文梗图（随机主题）" width="355" />
+  <a href="https://res.apihz.cn/img/bqb/d8ecb02ed26e2fb14d289ea572c35f93.png">
+    <img src="assets/profile/dev-meme/chinese-current.png?v=ba70e3205467" alt="每日中文梗图（随机主题）" width="240" />
   </a>
 </p>
 <p align="center">
-  <sub><a href="https://api.ruseo.cn/api-doc/bqb">中文表情包 · 澄曜API</a> · 2026-11-17</sub>
+  <sub><a href="https://api.ruseo.cn/api-doc/bqb">中文表情包 · 澄曜API</a> · 2026-11-18</sub>
 </p>
 <!-- END chinese-meme -->
 
