@@ -94,7 +94,7 @@ FROM, OUT OF THE USE OR INABILITY TO USE THE FONT SOFTWARE OR FROM
 OTHER DEALINGS IN THE FONT SOFTWARE.
 </metadata>
   <title id="title">GitHub statistics</title>
-  <desc id="description">69 stars; 211 commits in the last year; 2 pull requests; 1 issues; 1 repositories contributed to in the last year; GitHub rank B-. 242 total contributions since 2021-10-04; current streak 44 days, Oct 6 – Nov 18; longest streak 44 days, Oct 6 – Nov 18. JavaScript 76.52%; CSS 10.37%; C# 7.60%; HTML 2.89%; Python 2.09%; PowerShell 0.53%; Batchfile 0.01%.</desc>
+  <desc id="description">69 stars; 211 commits in the last year; 2 pull requests; 1 issues; 1 repositories contributed to in the last year; GitHub rank B-. 242 total contributions since 2021-10-04; current streak 44 days, Oct 6 – Nov 18; longest streak 44 days, Oct 6 – Nov 18. JavaScript 76.55%; CSS 10.34%; C# 7.59%; HTML 2.89%; Python 2.09%; PowerShell 0.53%; Batchfile 0.01%.</desc>
   <defs><clipPath id="language-bar"><rect x="20" y="350" width="320" height="8" rx="4"/></clipPath></defs>
   <style>
 
@@ -195,33 +195,33 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
     <text x="31" y="335" font-size="14" fill="#adbac7" font-weight="700">Languages</text>
   </g>
     <rect x="20" y="350" width="320" height="8" rx="4" fill="#353445"/>
-    <g clip-path="url(#language-bar)"><g class="language-grow" style="--language-delay:0.08s"><rect x="20" y="350" width="244.86399999999998" height="8" fill="#ffd166"/><rect x="264.864" y="350" width="33.184" height="8" fill="#bbe8f2"/><rect x="298.048" y="350" width="24.32" height="8" fill="#d7c4f3"/><rect x="322.368" y="350" width="9.248000000000001" height="8" fill="#ffaec5"/><rect x="331.616" y="350" width="6.688" height="8" fill="#ffe9a3"/><rect x="338.304" y="350" width="1.6960000000000002" height="8" fill="#d7c4f3"/><rect x="340" y="350" width="0.032" height="8" fill="#ffd3b0"/></g></g>
+    <g clip-path="url(#language-bar)"><g class="language-grow" style="--language-delay:0.08s"><rect x="20" y="350" width="244.96" height="8" fill="#ffd166"/><rect x="264.96000000000004" y="350" width="33.088" height="8" fill="#bbe8f2"/><rect x="298.048" y="350" width="24.288" height="8" fill="#d7c4f3"/><rect x="322.336" y="350" width="9.248000000000001" height="8" fill="#ffaec5"/><rect x="331.584" y="350" width="6.688" height="8" fill="#ffe9a3"/><rect x="338.272" y="350" width="1.6960000000000002" height="8" fill="#d7c4f3"/><rect x="339.968" y="350" width="0.032" height="8" fill="#ffd3b0"/></g></g>
     <g class="language-entry">
       <g class="language-pop" style="--language-delay:0.12s">
       <circle cx="24" cy="385" r="4" fill="#ffd166"/>
       <text x="36" y="389" font-size="14" fill="#f1eaf7" >JavaScript</text>
-      <text x="340" y="389" font-size="14" fill="#adbac7" text-anchor="end">76.52%</text>
+      <text x="340" y="389" font-size="14" fill="#adbac7" text-anchor="end">76.55%</text>
       </g>
       <rect class="language-track" x="20" y="398" width="320" height="3" rx="1.5" fill="#353445" opacity=".6"/>
-      <rect class="language-grow language-progress" x="20" y="398" width="244.86399999999998" height="3" rx="1.5" fill="#ffd166" style="--language-delay:0.20s"/>
+      <rect class="language-grow language-progress" x="20" y="398" width="244.96" height="3" rx="1.5" fill="#ffd166" style="--language-delay:0.20s"/>
     </g>
 <g class="language-entry">
       <g class="language-pop" style="--language-delay:0.19s">
       <circle cx="24" cy="413" r="4" fill="#bbe8f2"/>
       <text x="36" y="417" font-size="14" fill="#f1eaf7" >CSS</text>
-      <text x="340" y="417" font-size="14" fill="#adbac7" text-anchor="end">10.37%</text>
+      <text x="340" y="417" font-size="14" fill="#adbac7" text-anchor="end">10.34%</text>
       </g>
       <rect class="language-track" x="20" y="426" width="320" height="3" rx="1.5" fill="#353445" opacity=".6"/>
-      <rect class="language-grow language-progress" x="20" y="426" width="33.184" height="3" rx="1.5" fill="#bbe8f2" style="--language-delay:0.27s"/>
+      <rect class="language-grow language-progress" x="20" y="426" width="33.088" height="3" rx="1.5" fill="#bbe8f2" style="--language-delay:0.27s"/>
     </g>
 <g class="language-entry">
       <g class="language-pop" style="--language-delay:0.26s">
       <circle cx="24" cy="441" r="4" fill="#d7c4f3"/>
       <text x="36" y="445" font-size="14" fill="#f1eaf7" >C#</text>
-      <text x="340" y="445" font-size="14" fill="#adbac7" text-anchor="end">7.60%</text>
+      <text x="340" y="445" font-size="14" fill="#adbac7" text-anchor="end">7.59%</text>
       </g>
       <rect class="language-track" x="20" y="454" width="320" height="3" rx="1.5" fill="#353445" opacity=".6"/>
-      <rect class="language-grow language-progress" x="20" y="454" width="24.32" height="3" rx="1.5" fill="#d7c4f3" style="--language-delay:0.34s"/>
+      <rect class="language-grow language-progress" x="20" y="454" width="24.288" height="3" rx="1.5" fill="#d7c4f3" style="--language-delay:0.34s"/>
     </g>
 <g class="language-entry">
       <g class="language-pop" style="--language-delay:0.33s">
