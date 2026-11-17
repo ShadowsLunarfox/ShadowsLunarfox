@@ -94,7 +94,7 @@ FROM, OUT OF THE USE OR INABILITY TO USE THE FONT SOFTWARE OR FROM
 OTHER DEALINGS IN THE FONT SOFTWARE.
 </metadata>
   <title id="title">GitHub statistics</title>
-  <desc id="description">68 stars; 207 commits in the last year; 2 pull requests; 1 issues; 1 repositories contributed to in the last year; GitHub rank B-. 238 total contributions since 2021-10-04; current streak 42 days, Oct 6 – Nov 16; longest streak 42 days, Oct 6 – Nov 16. JavaScript 76.52%; CSS 10.36%; C# 7.60%; HTML 2.89%; Python 2.09%; PowerShell 0.53%; Batchfile 0.01%.</desc>
+  <desc id="description">68 stars; 209 commits in the last year; 2 pull requests; 1 issues; 1 repositories contributed to in the last year; GitHub rank B-. 240 total contributions since 2021-10-04; current streak 42 days, Oct 6 – Nov 16; longest streak 42 days, Oct 6 – Nov 16. JavaScript 76.52%; CSS 10.36%; C# 7.60%; HTML 2.89%; Python 2.09%; PowerShell 0.53%; Batchfile 0.01%.</desc>
   <defs><clipPath id="language-bar"><rect x="20" y="350" width="320" height="8" rx="4"/></clipPath></defs>
   <style>
 
@@ -147,7 +147,7 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
       <text x="20" y="89" font-size="12" fill="#756782" >Stars</text>
     </g>
 <g class="reveal" style="--stat-delay:0.065s">
-      <text x="126.66666666666667" y="67" font-size="28" fill="#756092" font-weight="700" >207</text>
+      <text x="126.66666666666667" y="67" font-size="28" fill="#756092" font-weight="700" >209</text>
       <text x="126.66666666666667" y="89" font-size="12" fill="#756782" >Commits · year</text>
     </g>
 <g class="reveal" style="--stat-delay:0.130s">
@@ -172,8 +172,8 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
     <text x="31" y="192" font-size="14" fill="#756782" font-weight="700">Contribution streak</text>
   </g>
     <g class="reveal" style="--stat-delay:0.180s">
-      <title>Contributions: 238; Oct 4, 2021 – present</title>
-      <text x="20" y="231" font-size="28" fill="#367484" font-weight="700" >238</text>
+      <title>Contributions: 240; Oct 4, 2021 – present</title>
+      <text x="20" y="231" font-size="28" fill="#367484" font-weight="700" >240</text>
       <text x="20" y="253" font-size="12" fill="#756782" >Contributions</text>
       <text x="20" y="274" font-size="11" fill="#756782" >Since</text><text x="20" y="288" font-size="11" fill="#756782" >Oct 4, 2021</text>
     </g>
