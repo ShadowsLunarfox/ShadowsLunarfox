@@ -123,7 +123,7 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
   }
 </style>
   <rect x="8.5" y="8.5" width="543" height="183" rx="6" fill="none" stroke="#444c56"/>
-  <defs><clipPath id="language-bar"><rect x="28" y="143" width="504" height="5" rx="2.5"/></clipPath></defs><g class="language-grow" style="--language-delay:0.08s" clip-path="url(#language-bar)"><rect x="28" y="143" width="421.44627653265013" height="5" fill="#ffd166"/><rect x="449.44627653265013" y="143" width="82.51208447431787" height="5" fill="#bbe8f2"/><rect x="531.9583610069681" y="143" width="0.04163899303201341" height="5" fill="#ffaec5"/></g>
+  <defs><clipPath id="language-bar"><rect x="28" y="143" width="504" height="5" rx="2.5"/></clipPath></defs><g class="language-grow" style="--language-delay:0.08s" clip-path="url(#language-bar)"><rect x="28" y="143" width="421.3742686699775" height="5" fill="#ffd166"/><rect x="449.3742686699775" y="143" width="82.54935400767123" height="5" fill="#bbe8f2"/><rect x="531.9236226776487" y="143" width="0.07637732235124463" height="5" fill="#ffaec5"/></g>
   <g font-family="Comic Neue, cursive" fill="#adbac7">
     <text x="28" y="46" font-size="18" font-weight="600" fill="#ffaec5">Roblox-Customizer</text>
     <rect x="478.5" y="28.5" width="53" height="23" rx="11.5" fill="none" stroke="#444c56"/>
