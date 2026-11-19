@@ -94,7 +94,7 @@ FROM, OUT OF THE USE OR INABILITY TO USE THE FONT SOFTWARE OR FROM
 OTHER DEALINGS IN THE FONT SOFTWARE.
 </metadata>
   <title id="title">GitHub statistics</title>
-  <desc id="description">69 stars; 214 commits in the last year; 2 pull requests; 1 issues; 1 repositories contributed to in the last year; GitHub rank B-. 245 total contributions since 2021-10-04; current streak 45 days, Oct 6 – Nov 19; longest streak 45 days, Oct 6 – Nov 19. JavaScript 76.22%; CSS 10.62%; C# 7.80%; HTML 2.93%; Python 2.15%; PowerShell 0.26%; Batchfile 0.01%.</desc>
+  <desc id="description">69 stars; 217 commits in the last year; 2 pull requests; 1 issues; 1 repositories contributed to in the last year; GitHub rank B-. 245 total contributions since 2021-10-04; current streak 45 days, Oct 6 – Nov 19; longest streak 45 days, Oct 6 – Nov 19. JavaScript 76.22%; CSS 10.62%; C# 7.80%; HTML 2.93%; Python 2.15%; PowerShell 0.26%; Batchfile 0.01%.</desc>
   <defs><clipPath id="language-bar"><rect x="28" y="281" width="784" height="8" rx="4"/></clipPath></defs>
   <style>
 
@@ -147,7 +147,7 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
       <text x="28" y="96" font-size="13" fill="#adbac7" >Stars</text>
     </g>
 <g class="reveal" style="--stat-delay:0.065s">
-      <text x="158.66666666666666" y="74" font-size="28" fill="#d7c4f3" font-weight="700" >214</text>
+      <text x="158.66666666666666" y="74" font-size="28" fill="#d7c4f3" font-weight="700" >217</text>
       <text x="158.66666666666666" y="96" font-size="13" fill="#adbac7" >Commits · last year</text>
     </g>
 <g class="reveal" style="--stat-delay:0.130s">
