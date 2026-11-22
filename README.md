@@ -1,6 +1,7 @@
 
 <div align="center">
 
+
 <img src="assets/profile/header.svg" alt="Shadows_Lunarfox profile header" width="100%" />
 
 <!-- BEGIN typing-animation -->
