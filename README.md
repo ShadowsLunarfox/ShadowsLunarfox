@@ -133,8 +133,8 @@
 <!-- BEGIN daily-dev-note -->
 <blockquote>
 <h3 align="center">💬 <samp>Daily Dev Note</samp></h3>
-<h3 align="center"><em>&quot;Just a temporary fix&quot; is often a lifetime commitment.</em></h3>
-<p align="center">2026-11-24 · Kuala Lumpur</p>
+<h3 align="center"><em>Small commits count. Progress doesn&#39;t need to be dramatic.</em></h3>
+<p align="center">2026-11-25 · Kuala Lumpur</p>
 </blockquote>
 <!-- END daily-dev-note -->
 
@@ -322,12 +322,12 @@
 <h2 align="center">🎭 <samp>Daily Dev Meme</samp></h2>
 
 <p align="center">
-  <a href="https://redd.it/1xyq526">
-    <img src="assets/profile/dev-meme/current.png?v=e2590a5440a9" alt="Programming meme: craigGentry" width="337" />
+  <a href="https://redd.it/1y02ivk">
+    <img src="assets/profile/dev-meme/current.png?v=3e63fcce292e" alt="Programming meme: thanksWebSphere" width="453" />
   </a>
 </p>
 <p align="center">
-  <sub><a href="https://redd.it/1xyq526">r/ProgrammerHumor · u/CowReasonable1108</a> · 2026-11-24</sub>
+  <sub><a href="https://redd.it/1y02ivk">r/ProgrammerHumor · u/redkinoko</a> · 2026-11-25</sub>
 </p>
 <!-- END dev-meme -->
 
