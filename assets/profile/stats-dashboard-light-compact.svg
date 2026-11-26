@@ -94,7 +94,7 @@ FROM, OUT OF THE USE OR INABILITY TO USE THE FONT SOFTWARE OR FROM
 OTHER DEALINGS IN THE FONT SOFTWARE.
 </metadata>
   <title id="title">GitHub statistics</title>
-  <desc id="description">69 stars; 221 commits in the last year; 2 pull requests; 1 issues; 1 repositories contributed to in the last year; GitHub rank B-. 253 total contributions since 2021-10-04; current streak 1 days, Nov 24 – Nov 24; longest streak 48 days, Oct 6 – Nov 22. JavaScript 76.30%; CSS 10.59%; C# 7.78%; HTML 2.92%; Python 2.14%; PowerShell 0.26%; Batchfile 0.01%.</desc>
+  <desc id="description">69 stars; 221 commits in the last year; 2 pull requests; 1 issues; 1 repositories contributed to in the last year; GitHub rank B-. 253 total contributions since 2021-10-04; current streak 0 days, No active streak; longest streak 48 days, Oct 6 – Nov 22. JavaScript 76.30%; CSS 10.59%; C# 7.78%; HTML 2.92%; Python 2.14%; PowerShell 0.26%; Batchfile 0.01%.</desc>
   <defs><clipPath id="language-bar"><rect x="20" y="350" width="320" height="8" rx="4"/></clipPath></defs>
   <style>
 
@@ -178,10 +178,10 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
       <text x="20" y="274" font-size="11" fill="#756782" >Since</text><text x="20" y="288" font-size="11" fill="#756782" >Oct 4, 2021</text>
     </g>
 <g class="reveal" style="--stat-delay:0.255s">
-      <title>Current · days: 1; Nov 24 – Nov 24</title>
-      <text x="126.66666666666667" y="231" font-size="28" fill="#9c4268" font-weight="700" >1</text>
+      <title>Current · days: 0; No active streak</title>
+      <text x="126.66666666666667" y="231" font-size="28" fill="#9c4268" font-weight="700" >0</text>
       <text x="126.66666666666667" y="253" font-size="12" fill="#756782" >Current · days</text>
-      <text x="126.66666666666667" y="274" font-size="11" fill="#756782" >Nov 24 – Nov 24</text>
+      <text x="126.66666666666667" y="274" font-size="11" fill="#756782" >No active streak</text>
     </g>
 <g class="reveal" style="--stat-delay:0.330s">
       <title>Longest · days: 48; Oct 6 – Nov 22</title>
